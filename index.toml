@@ -2,7 +2,7 @@ hash-format = "sha256"
 
 [[files]]
 file = "README.md"
-hash = "30798ec0ccc27c01a2a80627aa269e54415e01b742620376f920e96abc586f18"
+hash = "fb30c6dfe4d19e02e3f8128b1cc861d5aa2699f8fa07c49e695c69314bdd5cd2"
 
 [[files]]
 file = "config/MouseTweaks.cfg"
@@ -94,7 +94,7 @@ hash = "b2e79b2ddb83baba336731e1bdc383d2b1a42d86b9f631afe8081a0445f3a901"
 
 [[files]]
 file = "config/fancymenu/assets/entegre_animation.fma"
-hash = "4f978d4b650cd551f842b3265955e26484a6fa91b5626b6dbf97f9580b80c0c8"
+hash = "837f01a96c294b52ef3672cf5ea1b3c8459bcb7f39d774d6d08613e0535b95dd"
 
 [[files]]
 file = "config/fancymenu/assets/entegre_rotating_logo.gif"
@@ -817,6 +817,14 @@ metafile = true
 [[files]]
 file = "options.txt"
 hash = "8e28ba4163a03cde05cd22d0aac3f8ffe14bcb0b68c19ca7f59279ee4864f5bf"
+
+[[files]]
+file = "packwiz-installer-bootstrap.jar"
+hash = "a8fbb24dc604278e97f4688e82d3d91a318b98efc08d5dbfcbcbcab6443d116c"
+
+[[files]]
+file = "readme.me"
+hash = "884d12a4c0003f45ad532e19656927076dc88bbe5d41940904ebfb7f813bedc1"
 
 [[files]]
 file = "resourcepacks/yet-another-texture-pack.pw.toml"
