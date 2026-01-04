@@ -94,7 +94,7 @@ hash = "b2e79b2ddb83baba336731e1bdc383d2b1a42d86b9f631afe8081a0445f3a901"
 
 [[files]]
 file = "config/fancymenu/assets/entegre_animation.fma"
-hash = "837f01a96c294b52ef3672cf5ea1b3c8459bcb7f39d774d6d08613e0535b95dd"
+hash = "f0ebcce35e4c1eaa824683844a958108c221d4c9294c47dfd0851e511465c876"
 
 [[files]]
 file = "config/fancymenu/assets/entegre_rotating_logo.gif"
@@ -772,11 +772,6 @@ metafile = true
 [[files]]
 file = "mods/shulkerboxtooltip.pw.toml"
 hash = "11db2f1acc702cfc92d43efd8800b4b9db54e3c059ec1d35754618adacffc334"
-metafile = true
-
-[[files]]
-file = "mods/simple-voice-chat.pw.toml"
-hash = "9ff1a261860fcb16a7c7f124d738abcdfc1297363412d237540685003ff04d6b"
 metafile = true
 
 [[files]]
