@@ -1,0 +1,13 @@
+name = "Yet another texture pack"
+filename = "YATP Alpha 1.2.zip"
+side = "client"
+
+[download]
+url = "https://cdn.modrinth.com/data/XQkPTRhr/versions/MWzNQv8b/YATP%20Alpha%201.2.zip"
+hash-format = "sha512"
+hash = "ee5875ec8bda8ffa53ba086558915d0a2bc7d1f3b690a6a0025c09237b09fc2598db06b028244e038a8513ffab47252d6a7f1f4d4d97e5d1d599e47bc1c3a735"
+
+[update]
+[update.modrinth]
+mod-id = "XQkPTRhr"
+version = "MWzNQv8b"

@@ -1,0 +1,16 @@
+filename = 'packetfixer-fabric-3.3.3-1.21.11.jar'
+name = 'Packet Fixer'
+side = 'both'
+x-prismlauncher-loaders = [ 'quilt', 'fabric' ]
+x-prismlauncher-mc-versions = [ '1.21.11' ]
+x-prismlauncher-release-type = 'release'
+
+[download]
+hash = 'feb5d29bffb97a733d413c39869171d5597a8e06906488088e5c866d6d11f073f9bb6176779234f934ad644ed66af4ad1887d12f7fd1da2c5610d4c2e2955dda'
+hash-format = 'sha512'
+mode = 'url'
+url = 'https://cdn.modrinth.com/data/c7m1mi73/versions/6s1GSqtg/packetfixer-fabric-3.3.3-1.21.11.jar'
+
+[update.modrinth]
+mod-id = 'c7m1mi73'
+version = '6s1GSqtg'

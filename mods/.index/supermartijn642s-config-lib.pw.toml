@@ -1,0 +1,16 @@
+filename = 'supermartijn642configlib-1.1.8-fabric-mc1.21.11.jar'
+name = "SuperMartijn642's Config Library"
+side = 'both'
+x-prismlauncher-loaders = [ 'quilt', 'fabric' ]
+x-prismlauncher-mc-versions = [ '1.21.11' ]
+x-prismlauncher-release-type = 'release'
+
+[download]
+hash = '89330ac0aead9c906a845ca000dafcbacd84185609c306691f64734ef0cffb4b4f4c72d12c7aefad2de8169dcd5d5c25bd79bdfeedf81c0263488290a5f38000'
+hash-format = 'sha512'
+mode = 'url'
+url = 'https://cdn.modrinth.com/data/LN9BxssP/versions/CwICbJN9/supermartijn642configlib-1.1.8-fabric-mc1.21.11.jar'
+
+[update.modrinth]
+mod-id = 'LN9BxssP'
+version = 'CwICbJN9'

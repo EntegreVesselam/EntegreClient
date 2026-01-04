@@ -1,0 +1,26 @@
+filename = 'PresenceFootsteps-1.12.3+1.21.11.jar'
+name = 'Presence Footsteps'
+side = 'client'
+x-prismlauncher-loaders = [ 'quilt', 'fabric' ]
+x-prismlauncher-mc-versions = [
+    '1.21.11',
+    '1.21.11 Pre-Release 1',
+    '1.21.11 Pre-Release 2',
+    '1.21.11 Pre-Release 3',
+    '1.21.11 Pre-Release 4',
+    '1.21.11 Pre-Release 5',
+    '1.21.11 rc1',
+    '1.21.11 rc2',
+    '1.21.11 rc3'
+]
+x-prismlauncher-release-type = 'release'
+
+[download]
+hash = '9884a96b7f4f649b2d76dff42d861894656e7ce19be30057379a5b2a8f19018a64eb2b30458997b50693c4366e88e239b3e9d9e6089ae321e3d908d36dd4ac72'
+hash-format = 'sha512'
+mode = 'url'
+url = 'https://cdn.modrinth.com/data/rcTfTZr3/versions/eEkO3jAC/PresenceFootsteps-1.12.3%2B1.21.11.jar'
+
+[update.modrinth]
+mod-id = 'rcTfTZr3'
+version = 'eEkO3jAC'

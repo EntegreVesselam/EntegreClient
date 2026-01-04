@@ -1,0 +1,16 @@
+filename = 'logical_zoom-0.0.34.jar'
+name = 'Logical Zoom'
+side = 'both'
+x-prismlauncher-loaders = [ 'fabric' ]
+x-prismlauncher-mc-versions = [ '1.21.11' ]
+x-prismlauncher-release-type = 'release'
+
+[download]
+hash = 'bb2e9b07f07c6ae8d3bd4a5771374b9c4865e6af9345d7a6c0e9ecee9272b120b8c10331d1f1128e62fb8f79c272eff5245c4cef56cee8a0bd6807d8c5efc32c'
+hash-format = 'sha512'
+mode = 'url'
+url = 'https://cdn.modrinth.com/data/8bOImuGU/versions/BZnk4yTe/logical_zoom-0.0.34.jar'
+
+[update.modrinth]
+mod-id = '8bOImuGU'
+version = 'BZnk4yTe'

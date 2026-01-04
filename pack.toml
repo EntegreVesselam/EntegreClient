@@ -1,0 +1,13 @@
+name = "Entegre Client"
+author = "Tzesh"
+version = "1.0.0"
+pack-format = "packwiz:1.1.0"
+
+[index]
+file = "index.toml"
+hash-format = "sha256"
+hash = "d86a1d30c40bf4aa019e4c3594335e82032a97b7835c48f4ae9bbbdf62653091"
+
+[versions]
+fabric = "0.18.4"
+minecraft = "1.21.11"

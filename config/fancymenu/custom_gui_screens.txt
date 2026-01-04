@@ -1,0 +1,6 @@
+type = custom_gui_screens
+
+overridden_screens {
+  net.minecraft.class_442 = entegre_vesselam
+}
+
