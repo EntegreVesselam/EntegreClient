@@ -2,7 +2,7 @@ hash-format = "sha256"
 
 [[files]]
 file = ".claude/settings.local.json"
-hash = "82fb5ca04e2b852a71075152c63746a3e60cd50da86aab83604d99d3c551b696"
+hash = "2a4b819b0721fa54f2b4f349b493b5fd152302ea88574169014833d3444766cd"
 
 [[files]]
 file = "README.md"
@@ -639,6 +639,11 @@ hash = "92fe5ddac0f4a6b0bdb3dd94797245fb14b7c2b4498522697e1de54e2f183d56"
 metafile = true
 
 [[files]]
+file = "mods/controlify.pw.toml"
+hash = "042b44569b655273c718eaff43dc9b95088d17a14626babda8a0bedf4028eb14"
+metafile = true
+
+[[files]]
 file = "mods/drippy-loading-screen.pw.toml"
 hash = "c1e3d2858f72160a067a15be85b249a9e88dcec9f68c2ed8c1b49318245a944c"
 metafile = true
@@ -771,6 +776,11 @@ metafile = true
 [[files]]
 file = "mods/presence-footsteps.pw.toml"
 hash = "f7a3ee85819e1ffd7e503da5b79c0c562568f6d147bd8fff6141fb681f41fd05"
+metafile = true
+
+[[files]]
+file = "mods/reeses-sodium-options.pw.toml"
+hash = "a3539ea7dcea3202dc20b7a13723bb0327304092006bb3bb9eda0f836b7bfa8f"
 metafile = true
 
 [[files]]
