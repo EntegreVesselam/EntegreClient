@@ -6,7 +6,7 @@ hash = "9c199ca2cfe7a840c73d8ae8d66281baa9c16c7589719d96530e2819904db533"
 
 [[files]]
 file = "README.md"
-hash = "fb30c6dfe4d19e02e3f8128b1cc861d5aa2699f8fa07c49e695c69314bdd5cd2"
+hash = "589760b8041b7f2e6545bd7e2d3ab9b6d210d8126b02a22ae14b79f35a098e01"
 
 [[files]]
 file = "config/MouseTweaks.cfg"
@@ -824,6 +824,11 @@ hash = "a3539ea7dcea3202dc20b7a13723bb0327304092006bb3bb9eda0f836b7bfa8f"
 metafile = true
 
 [[files]]
+file = "mods/resourcify.pw.toml"
+hash = "b9419c5fe4e3c5256fb2fac1d6cc17752166c973beec2bceb62b0fd3ef9f1286"
+metafile = true
+
+[[files]]
 file = "mods/searchables.pw.toml"
 hash = "d7f32cb2cdc345359db18c50734d6026809b32a8c14b4c0ab8cc58024798c3b7"
 metafile = true
@@ -831,6 +836,11 @@ metafile = true
 [[files]]
 file = "mods/shulkerboxtooltip.pw.toml"
 hash = "1247aeab072550607efae60b907f04a1c4d431f0e91d0cf38d79083bc86831b1"
+metafile = true
+
+[[files]]
+file = "mods/smooth-swapping.pw.toml"
+hash = "d6c82cf25b93ae98b952d00c5d7d17c3fbb56593783e91d795cd74b4f94355b7"
 metafile = true
 
 [[files]]
@@ -851,6 +861,11 @@ metafile = true
 [[files]]
 file = "mods/supermartijn642s-config-lib.pw.toml"
 hash = "9361a6f13eb0a38ed62c45563c88d283831a6f513914f5e55050408475e8e364"
+metafile = true
+
+[[files]]
+file = "mods/threadtweak.pw.toml"
+hash = "a74c61728bd409dd03522f2a37ac8de6c22a51ec4e031b578ac1eda41a93dd72"
 metafile = true
 
 [[files]]
