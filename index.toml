@@ -6,7 +6,7 @@ hash = "7a00298a23b2dc89b0d9a595799eb3ab43d355eab55d715cee2ea37d94429d8d"
 
 [[files]]
 file = "CHANGELOG.md"
-hash = "ddc40a48e0579e9aa22d6e9fe3bbe5a616a06d2ad6cae90334c582a4753b69e5"
+hash = "fecbc61ccc849659623017a9b8607ed1df12aed463076ca9b52d3d13d326f8b6"
 
 [[files]]
 file = "LICENSE"
@@ -14,7 +14,7 @@ hash = "db7c7abe0a58e4d29b536da34f565d140da8f37021edbe65b31fbef15b1ee133"
 
 [[files]]
 file = "README.md"
-hash = "589760b8041b7f2e6545bd7e2d3ab9b6d210d8126b02a22ae14b79f35a098e01"
+hash = "4bdcf69c49d5c7841f2a972ddaaabdeff2d8ca33625a69cd0e51e0b79b8d3c69"
 
 [[files]]
 file = "config/MouseTweaks.cfg"

@@ -29,6 +29,8 @@ Bu paket, sunucu deneyimini iyileştirmek; performansı maksimize etmek, ticaret
 * **Dynamic FPS:** Oyun arka plandayken FPS'i düşürür, pil ömrünü uzatır (Steam Deck için ideal).
 * **Clumps:** XP kürelerini gruplandırarak lag'ı azaltır.
 * **Debugify:** Mojang'ın düzeltmediği onlarca vanilla bug'ını düzeltir.
+* **BadOptimizations:** Render dışı oyun mantığını optimize eder.
+* **ThreadTweak:** Thread önceliklerini optimize eder (Steam Deck gibi az çekirdekli cihazlar için).
 
 #### 🛠️ Yaşam Kalitesi (QoL) & Ticaret
 *Hayatta kalmayı ve ticareti keyifli hale getiren araçlar.*
@@ -48,6 +50,18 @@ Bu paket, sunucu deneyimini iyileştirmek; performansı maksimize etmek, ticaret
 * **Controlling:** Mod tuş atamalarını arayabilir ve çakışmaları kolayca görebilirsiniz.
 * **Bobby:** Sunucu render mesafesinin ötesinde chunk'ları yerel olarak önbelleğe alarak görüş mesafesini artırır.
 * **Better Mount HUD:** Ata/tekneye binerken HUD'u iyileştirir.
+* **Enchantment Descriptions:** Büyülü kitaplardaki büyülerin ne yaptığını açıklar.
+* **Better Statistics Screen:** İstatistik ekranını daha kullanışlı ve okunabilir hale getirir.
+* **Fabrishot:** Çok yüksek çözünürlüklü ekran görüntüleri almanızı sağlar.
+* **Resourcify:** Oyun içinden kaynak paketleri ve shader'ları indirip yönetmenizi sağlar.
+* **Smooth Swapping:** Envanterde eşya taşırken yumuşak animasyonlar ekler.
+
+#### 🏗️ İnşa ve Şematik Araçları
+* **Litematica:** Şematik dosyalarını yükleyip holografik rehber olarak kullanarak blok blok inşa yapmanızı sağlar.
+* **Tweakeroo:** Hassas blok yerleştirme, serbest kamera ve inşa kolaylıkları.
+* **MiniHUD:** Işık seviyesi, spawn alanları, yapı sınırları gibi bilgileri ekranda gösterir.
+* **Syncmatica:** Sunucudaki diğer oyuncularla Litematica şematiklerini paylaşmanızı sağlar.
+* **Continuity:** Bağlantılı dokular (cam, kitaplık vb.) ekler.
 
 #### 🎮 Steam Deck ve Kontrolcü Desteği
 * **Controlify:** Tam kontrolcü desteği (Steam Deck, Xbox, PlayStation). Gyro aiming, ekran üstü tuş ikonları ve menü navigasyonu.
@@ -74,7 +88,7 @@ Bu paket, sunucu deneyimini iyileştirmek; performansı maksimize etmek, ticaret
 
 #### ⚙️ Teknik Altyapı ve Kütüphaneler
 *Diğer modların çalışması için gerekli olan çekirdek dosyalar.*
-*Fabric API, Cloth Config v20, Fabric Language Kotlin, Konkrete (FancyMenu için), Packet Fixer (Bağlantı kararlılığı), Placeholder API, SuperMartijn642's Config Library, libIPN (Inventory Profiles için), Searchables (Controlling için).*
+*Fabric API, Cloth Config v20, Fabric Language Kotlin, Konkrete (FancyMenu için), Packet Fixer (Bağlantı kararlılığı), Placeholder API, SuperMartijn642's Config Library, libIPN (Inventory Profiles için), Searchables (Controlling için), MaLiLib (Litematica/MiniHUD/Tweakeroo için), Architectury API, TCDCommons API, Prickle.*
 
 > **Not:** Bağımlılık modları (kütüphaneler) dışındaki tüm modlar isteğe bağlıdır. İlk çalıştırmada packwiz-installer hangi modları kurmak istediğinizi soracaktır.
 
@@ -104,6 +118,8 @@ This pack is specially crafted for the **Entegre Vesselam** server (2013-Present
 * **Dynamic FPS:** Reduces FPS when the game is in the background, saving battery life (ideal for Steam Deck).
 * **Clumps:** Groups XP orbs together to reduce lag.
 * **Debugify:** Fixes dozens of vanilla Minecraft bugs that Mojang hasn't addressed.
+* **BadOptimizations:** Optimizes non-rendering game logic.
+* **ThreadTweak:** Optimizes thread priority for limited-core devices (ideal for Steam Deck).
 
 #### 🛠️ Quality of Life (QoL) & Trade
 *Tools to make survival and trading more enjoyable.*
@@ -123,6 +139,18 @@ This pack is specially crafted for the **Entegre Vesselam** server (2013-Present
 * **Controlling:** Searchable keybindings menu, easily spot key conflicts.
 * **Bobby:** Caches chunks client-side to extend render distance beyond server limits.
 * **Better Mount HUD:** Improved HUD when riding horses, boats, etc.
+* **Enchantment Descriptions:** Shows what enchantments do on enchanted books.
+* **Better Statistics Screen:** Improved and more readable statistics UI.
+* **Fabrishot:** Take extremely high-resolution screenshots.
+* **Resourcify:** Browse and install resource packs and shaders in-game.
+* **Smooth Swapping:** Smooth item move animations in inventories.
+
+#### 🏗️ Building & Schematic Tools
+* **Litematica:** Load schematics and use holographic overlays to build block-by-block in survival.
+* **Tweakeroo:** Accurate block placement, free camera, and building QoL tweaks.
+* **MiniHUD:** Configurable overlay showing light levels, spawn spheres, structure bounding boxes.
+* **Syncmatica:** Share Litematica schematics with other players on the server.
+* **Continuity:** Connected textures for glass, bookshelves, and more.
 
 #### 🎮 Steam Deck & Controller Support
 * **Controlify:** Full controller support (Steam Deck, Xbox, PlayStation). Gyro aiming, on-screen button prompts, and menu navigation.
@@ -149,7 +177,7 @@ This pack is specially crafted for the **Entegre Vesselam** server (2013-Present
 
 #### ⚙️ Technical & Libraries
 *Core files required for other mods to function.*
-*Fabric API, Cloth Config v20, Fabric Language Kotlin, Konkrete, Packet Fixer, Placeholder API, SuperMartijn642's Config Library, libIPN, Searchables.*
+*Fabric API, Cloth Config v20, Fabric Language Kotlin, Konkrete, Packet Fixer, Placeholder API, SuperMartijn642's Config Library, libIPN, Searchables, MaLiLib (for Litematica/MiniHUD/Tweakeroo), Architectury API, TCDCommons API, Prickle.*
 
 > **Note:** All mods except dependency libraries are optional. On first launch, packwiz-installer will ask which mods you'd like to install.
 

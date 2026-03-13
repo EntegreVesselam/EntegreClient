@@ -1,5 +1,26 @@
 # Changelog
 
+## v2.1.0
+
+### New Mods — Building & Schematics
+- **Litematica** - Schematic loading with holographic build guides
+- **Tweakeroo** - Accurate block placement, free camera, building tweaks
+- **MiniHUD** - Light levels, spawn spheres, structure bounding boxes overlay
+- **Syncmatica** - Share schematics with other players on the server
+- **Continuity** - Connected textures (glass, bookshelves, etc.)
+
+### New Mods — QoL & Information
+- **Enchantment Descriptions** - Shows what enchantments do on books
+- **Better Statistics Screen** - Improved statistics UI
+- **Fabrishot** - Take high-resolution screenshots
+- **BadOptimizations** - Non-rendering game logic optimizations
+
+### Dependencies Added
+- MaLiLib (required by Litematica, MiniHUD, Tweakeroo)
+- Architectury API (required by Better Statistics Screen)
+- TCDCommons API (required by Better Statistics Screen)
+- Prickle (required by Enchantment Descriptions)
+
 ## v2.0.0
 
 ### New Mods
