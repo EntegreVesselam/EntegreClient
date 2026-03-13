@@ -2,7 +2,15 @@ hash-format = "sha256"
 
 [[files]]
 file = ".claude/settings.local.json"
-hash = "9c199ca2cfe7a840c73d8ae8d66281baa9c16c7589719d96530e2819904db533"
+hash = "73371c7e95b21ca1a9ad9d5ece99aa48b235877ac0255a6e165185917c94bd93"
+
+[[files]]
+file = "CHANGELOG.md"
+hash = "ddc40a48e0579e9aa22d6e9fe3bbe5a616a06d2ad6cae90334c582a4753b69e5"
+
+[[files]]
+file = "LICENSE"
+hash = "db7c7abe0a58e4d29b536da34f565d140da8f37021edbe65b31fbef15b1ee133"
 
 [[files]]
 file = "README.md"
@@ -286,7 +294,7 @@ hash = "b627c4456e6fa0bc4b5f85e2f1cd949faedae3cb9afdaf2a5f52e6f3b6ae1f01"
 
 [[files]]
 file = "config/sodium-options.json"
-hash = "0c34e9630f481e6af9dac31ca068ff3ec95f761d95b4385ff52d20d24b8f4411"
+hash = "790fa36434ae761bd5d7f468d753c613634812b33514da0011def86c80b31b3e"
 
 [[files]]
 file = "config/sound_physics_remastered/occlusion.properties"
@@ -714,6 +722,16 @@ hash = "9893a46b92d89e78a9c49256824102cf83f55cb86d36947092a348b0d361d6df"
 metafile = true
 
 [[files]]
+file = "mods/falling-leaves.pw.toml"
+hash = "4467d1d747718c8d915d4a859b0404750cc6e826fc60ccf825f3228a03934533"
+metafile = true
+
+[[files]]
+file = "mods/fallingleaves.pw.toml"
+hash = "c698766bdbac77ecb3ea9b9bb832cd625f6cf04f60fa0df851a5737bdffa8268"
+metafile = true
+
+[[files]]
 file = "mods/fancymenu.pw.toml"
 hash = "ab259eb7a80f2b54367ab70c435b3b9647bb21360fb7c175023252c59932652b"
 metafile = true
@@ -890,15 +908,16 @@ metafile = true
 
 [[files]]
 file = "options.txt"
-hash = "8e28ba4163a03cde05cd22d0aac3f8ffe14bcb0b68c19ca7f59279ee4864f5bf"
+hash = "c2f9f3aea56787fbad5a47f34bd380e11836de6895519c2ff7fe448abff5de2e"
 
 [[files]]
 file = "packwiz-installer-bootstrap.jar"
 hash = "a8fbb24dc604278e97f4688e82d3d91a318b98efc08d5dbfcbcbcab6443d116c"
 
 [[files]]
-file = "readme.me"
-hash = "884d12a4c0003f45ad532e19656927076dc88bbe5d41940904ebfb7f813bedc1"
+file = "resourcepacks/crystal-vanilla-tweaks.pw.toml"
+hash = "3554b5b59ea2b44a9615741a68a2c197f64ba30aab7f2303901fef150e9367b1"
+metafile = true
 
 [[files]]
 file = "resourcepacks/yet-another-texture-pack.pw.toml"

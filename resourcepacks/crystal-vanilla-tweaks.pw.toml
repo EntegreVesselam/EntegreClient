@@ -1,0 +1,13 @@
+name = "Crystal Vanilla Tweaks"
+filename = "Crystal Vanilla Tweaks 1.21.11.zip"
+side = "client"
+
+[download]
+url = "https://cdn.modrinth.com/data/sn2HxtR3/versions/UQUtn6zI/Crystal%20Vanilla%20Tweaks%201.21.11.zip"
+hash-format = "sha512"
+hash = "64e4a2ca3a0e4f0c2c5b1a95282eb24ab5030092b25999676bef10f7b504879804f16df01e175b7c3c77cf0adb92e810c9fe28ec63aa4c372496c9ccdbdc4ffa"
+
+[update]
+[update.modrinth]
+mod-id = "sn2HxtR3"
+version = "UQUtn6zI"
