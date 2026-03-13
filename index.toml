@@ -722,13 +722,8 @@ hash = "9893a46b92d89e78a9c49256824102cf83f55cb86d36947092a348b0d361d6df"
 metafile = true
 
 [[files]]
-file = "mods/falling-leaves.pw.toml"
-hash = "4467d1d747718c8d915d4a859b0404750cc6e826fc60ccf825f3228a03934533"
-metafile = true
-
-[[files]]
 file = "mods/fallingleaves.pw.toml"
-hash = "c698766bdbac77ecb3ea9b9bb832cd625f6cf04f60fa0df851a5737bdffa8268"
+hash = "918e8d5859d1a61064470550e048ae24c1c7f0f72aec128262b9159d0c2ed622"
 metafile = true
 
 [[files]]
