@@ -2,7 +2,7 @@ hash-format = "sha256"
 
 [[files]]
 file = ".claude/settings.local.json"
-hash = "2a4b819b0721fa54f2b4f349b493b5fd152302ea88574169014833d3444766cd"
+hash = "9c199ca2cfe7a840c73d8ae8d66281baa9c16c7589719d96530e2819904db533"
 
 [[files]]
 file = "README.md"
@@ -624,6 +624,26 @@ hash = "d59e1c6c7a6f1fbafab92327720b79b29a2319990cb785937a2c64ae27382bf6"
 metafile = true
 
 [[files]]
+file = "mods/better-block-entities.pw.toml"
+hash = "2842f67dd3108a7ec65cf8aff110642ec0b9ba0ab1455b0da73f05d1028307e6"
+metafile = true
+
+[[files]]
+file = "mods/better-mount-hud.pw.toml"
+hash = "7e8d96bcac65ef700d3f50b5d7aa5b9e1e6418f1d1dfd4c74b8a005e5b9c3607"
+metafile = true
+
+[[files]]
+file = "mods/betterf3.pw.toml"
+hash = "6f010ee536afedd0424883902e53acb65a07f98472928ce9577c1ae2d6577aac"
+metafile = true
+
+[[files]]
+file = "mods/bobby.pw.toml"
+hash = "c12899a192fa62b5aac340a125e0d004128cf14347921d5dfeff7bdcdf8a3adb"
+metafile = true
+
+[[files]]
 file = "mods/capes.pw.toml"
 hash = "f90493dc42a7d17e544aba6f758f8ac4752a67c23d95d1cb057d4b49c65b14ae"
 metafile = true
@@ -639,8 +659,23 @@ hash = "92fe5ddac0f4a6b0bdb3dd94797245fb14b7c2b4498522697e1de54e2f183d56"
 metafile = true
 
 [[files]]
+file = "mods/clumps.pw.toml"
+hash = "096c603d7c233a6b8c9ac5c53ec9b3e8b01b15479660b99df663174f063716e1"
+metafile = true
+
+[[files]]
 file = "mods/controlify.pw.toml"
 hash = "042b44569b655273c718eaff43dc9b95088d17a14626babda8a0bedf4028eb14"
+metafile = true
+
+[[files]]
+file = "mods/controlling.pw.toml"
+hash = "bd86ccedd09ba1af98dd6a1109c77b1ab1c52ec9d39738e70b857b19d368394a"
+metafile = true
+
+[[files]]
+file = "mods/debugify.pw.toml"
+hash = "8304a82841a7e6ec5af35979259fb7da3031cf1140efd1d40579e07245d5e093"
 metafile = true
 
 [[files]]
@@ -651,6 +686,11 @@ metafile = true
 [[files]]
 file = "mods/durability-tooltip.pw.toml"
 hash = "f883375dd61ceba605add1aeb2d080af89185acaa96f997890c9c8b8c1da621b"
+metafile = true
+
+[[files]]
+file = "mods/dynamic-fps.pw.toml"
+hash = "ecf17d72c40418482b78e358ad014d5d1951e45dcbdad8825e15277e4a4c1c34"
 metafile = true
 
 [[files]]
@@ -784,8 +824,18 @@ hash = "a3539ea7dcea3202dc20b7a13723bb0327304092006bb3bb9eda0f836b7bfa8f"
 metafile = true
 
 [[files]]
+file = "mods/searchables.pw.toml"
+hash = "d7f32cb2cdc345359db18c50734d6026809b32a8c14b4c0ab8cc58024798c3b7"
+metafile = true
+
+[[files]]
 file = "mods/shulkerboxtooltip.pw.toml"
 hash = "1247aeab072550607efae60b907f04a1c4d431f0e91d0cf38d79083bc86831b1"
+metafile = true
+
+[[files]]
+file = "mods/sodium-extra.pw.toml"
+hash = "5615168ae2d99e7c3ca72c899645e51ee40a52ba71dd32fae2c35fa7042818fe"
 metafile = true
 
 [[files]]
