@@ -11,3 +11,7 @@ hash = "54a91977bed9eef58fedb25bc3d845e1bbac5a0c056c9e5f2672d40f54b8193f813eaf89
 [update.modrinth]
 mod-id = "89Wsn8GD"
 version = "GAQAG80Q"
+
+[option]
+optional = true
+default = true

@@ -11,3 +11,7 @@ hash = "d32206cb8d6fac7f0b579f7269203135777283e1639ccb68f8605e9f5469b5b54305fd36
 [update.modrinth]
 mod-id = "EsAfCjCV"
 version = "59ti1rvg"
+
+[option]
+optional = true
+default = true

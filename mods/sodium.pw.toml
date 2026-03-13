@@ -11,3 +11,7 @@ hash = "55b5ade20dc70e8c9a0f7b6a8ba835d49efd3c4f8360869d6551f13e3a016c44dd78c5ec
 [update.modrinth]
 mod-id = "AANobbMI"
 version = "ZPWbiWXz"
+
+[option]
+optional = true
+default = true

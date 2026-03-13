@@ -11,3 +11,7 @@ hash = "1222e523900fafa6690f992d889471dbe9819de33ac72b0c26f6b6563a181befe714d0d7
 [update.modrinth]
 mod-id = "NNAgCjsB"
 version = "Dx3xsUER"
+
+[option]
+optional = true
+default = true

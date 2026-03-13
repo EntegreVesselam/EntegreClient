@@ -11,3 +11,7 @@ hash = "4472d904e60e04dfcc2252fabe089343bb4b684607ff279ca3a8976a8624f8d4c2d3c7c9
 [update.modrinth]
 mod-id = "smUP7V3r"
 version = "dCPa5AFM"
+
+[option]
+optional = true
+default = true
