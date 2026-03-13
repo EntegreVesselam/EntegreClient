@@ -1,10 +1,6 @@
 hash-format = "sha256"
 
 [[files]]
-file = ".claude/settings.local.json"
-hash = "7a00298a23b2dc89b0d9a595799eb3ab43d355eab55d715cee2ea37d94429d8d"
-
-[[files]]
 file = "CHANGELOG.md"
 hash = "fecbc61ccc849659623017a9b8607ed1df12aed463076ca9b52d3d13d326f8b6"
 
