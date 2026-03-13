@@ -2,7 +2,7 @@ hash-format = "sha256"
 
 [[files]]
 file = ".claude/settings.local.json"
-hash = "73371c7e95b21ca1a9ad9d5ece99aa48b235877ac0255a6e165185917c94bd93"
+hash = "0cf76754e81031ad1fb9c2d1a4887e0525048860090180237597e31d8178990b"
 
 [[files]]
 file = "CHANGELOG.md"
@@ -672,6 +672,11 @@ hash = "096c603d7c233a6b8c9ac5c53ec9b3e8b01b15479660b99df663174f063716e1"
 metafile = true
 
 [[files]]
+file = "mods/continuity.pw.toml"
+hash = "241f283686e1a30036ea9cfc54c89886a3bd8fab5d69d6659a0bc7f4da744550"
+metafile = true
+
+[[files]]
 file = "mods/controlify.pw.toml"
 hash = "042b44569b655273c718eaff43dc9b95088d17a14626babda8a0bedf4028eb14"
 metafile = true
@@ -777,6 +782,11 @@ hash = "55799fdb0c8a48d66d8664b5d2d82937f2f50b2c74d78701ec9a350143738fec"
 metafile = true
 
 [[files]]
+file = "mods/litematica.pw.toml"
+hash = "3a1e5a42f451e733b4cc5b2ea428547056f2049a759f975bc03d52b62479bc15"
+metafile = true
+
+[[files]]
 file = "mods/lithium.pw.toml"
 hash = "6acf5fe2f5d94a18a9f8eeb0291f54ce56b2265963b637361ed4bc93ad5e1ca0"
 metafile = true
@@ -787,8 +797,18 @@ hash = "7f8c049b9f77b4aa5504e6e67165965639ed9616404dace3153b123e3871a501"
 metafile = true
 
 [[files]]
+file = "mods/malilib.pw.toml"
+hash = "ea89277e095f61f86592bac8b8cad7835bd1e05e6924e8c97fa7aa3e568eaf5a"
+metafile = true
+
+[[files]]
 file = "mods/melody.pw.toml"
 hash = "132d82c90b5163cb25f95e69202c7014414d1038ec919cee2ab024bb71bd9991"
+metafile = true
+
+[[files]]
+file = "mods/minihud.pw.toml"
+hash = "076a5d7d148c8402e3e1ef57988bc55ca8bd7b7b43f26dfb6cc4e8cb707b1f1d"
 metafile = true
 
 [[files]]
@@ -877,8 +897,18 @@ hash = "9361a6f13eb0a38ed62c45563c88d283831a6f513914f5e55050408475e8e364"
 metafile = true
 
 [[files]]
+file = "mods/syncmatica.pw.toml"
+hash = "8810ae23c01cdc8128b08aeee1204bc3d3a21fd51c7a7fedeb607a5c601d95c7"
+metafile = true
+
+[[files]]
 file = "mods/threadtweak.pw.toml"
 hash = "a74c61728bd409dd03522f2a37ac8de6c22a51ec4e031b578ac1eda41a93dd72"
+metafile = true
+
+[[files]]
+file = "mods/tweakeroo.pw.toml"
+hash = "62275fe33772039c3cd490a04536528bca9a96e7c0ef3a9ecdba8b26683d3e24"
 metafile = true
 
 [[files]]
