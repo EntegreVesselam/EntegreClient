@@ -22,7 +22,13 @@ Bu paket, sunucu deneyimini iyileştirmek; performansı maksimize etmek, ticaret
 * **More Culling:** EntityCulling'in kapsamadığı blok yüzeylerini ve eşyaları optimize eder.
 * **ImmediatelyFast:** Arayüz ve metinlerin çizim hızını artırır (VBO optimizasyonu).
 * **Krypton:** Ağ (Network) trafiğini optimize eder, ping dalgalanmalarını azaltır.
+* **ModernFix:** Oyunun açılış hızını artırır ve birçok eski Minecraft bug'ını düzeltir, RAM tüketimini iyileştirir.
 * **Fast IP Ping:** Sunucu listesindeki ping değerinin daha hızlı yüklenmesini sağlar.
+* **Better Block Entities:** Sandık, yatak, tabela gibi blok varlıklarının render performansını artırır.
+* **Sodium Extra:** Sodium'a ek ayarlar ekler (animasyonlar, parçacıklar, sis vb. kontrolü).
+* **Dynamic FPS:** Oyun arka plandayken FPS'i düşürür, pil ömrünü uzatır (Steam Deck için ideal).
+* **Clumps:** XP kürelerini gruplandırarak lag'ı azaltır.
+* **Debugify:** Mojang'ın düzeltmediği onlarca vanilla bug'ını düzeltir.
 
 #### 🛠️ Yaşam Kalitesi (QoL) & Ticaret
 *Hayatta kalmayı ve ticareti keyifli hale getiren araçlar.*
@@ -38,6 +44,14 @@ Bu paket, sunucu deneyimini iyileştirmek; performansı maksimize etmek, ticaret
 * **Logical Zoom:** Optifine'daki gibi "Zoom" yapmanızı sağlar.
 * **No Chat Reports:** Microsoft'un sohbet raporlama/banlama sistemini devre dışı bırakarak özgür iletişim sağlar.
 * **Mod Menu:** Yüklü modların listesini ve ayarlarını görmenizi sağlayan menü.
+* **BetterF3:** Debug ekranını (F3) daha temiz ve okunabilir hale getirir.
+* **Controlling:** Mod tuş atamalarını arayabilir ve çakışmaları kolayca görebilirsiniz.
+* **Bobby:** Sunucu render mesafesinin ötesinde chunk'ları yerel olarak önbelleğe alarak görüş mesafesini artırır.
+* **Better Mount HUD:** Ata/tekneye binerken HUD'u iyileştirir.
+
+#### 🎮 Steam Deck ve Kontrolcü Desteği
+* **Controlify:** Tam kontrolcü desteği (Steam Deck, Xbox, PlayStation). Gyro aiming, ekran üstü tuş ikonları ve menü navigasyonu.
+* **Reese's Sodium Options:** Sodium ayar ekranını kontrolcü ile daha kolay kullanılabilir hale getirir.
 
 #### 🎨 Görsellik ve Atmosfer
 *Vesselam dünyasını daha canlı kılan estetik dokunuşlar.*
@@ -60,7 +74,9 @@ Bu paket, sunucu deneyimini iyileştirmek; performansı maksimize etmek, ticaret
 
 #### ⚙️ Teknik Altyapı ve Kütüphaneler
 *Diğer modların çalışması için gerekli olan çekirdek dosyalar.*
-*Fabric API, Cloth Config v20, Fabric Language Kotlin, Konkrete (FancyMenu için), Packet Fixer (Bağlantı kararlılığı), Placeholder API, SuperMartijn642's Config Library, libIPN (Inventory Profiles için).*
+*Fabric API, Cloth Config v20, Fabric Language Kotlin, Konkrete (FancyMenu için), Packet Fixer (Bağlantı kararlılığı), Placeholder API, SuperMartijn642's Config Library, libIPN (Inventory Profiles için), Searchables (Controlling için).*
+
+> **Not:** Bağımlılık modları (kütüphaneler) dışındaki tüm modlar isteğe bağlıdır. İlk çalıştırmada packwiz-installer hangi modları kurmak istediğinizi soracaktır.
 
 </details>
 
@@ -81,7 +97,13 @@ This pack is specially crafted for the **Entegre Vesselam** server (2013-Present
 * **More Culling:** Optimizes block faces and items not covered by EntityCulling.
 * **ImmediatelyFast:** Speeds up immediate mode rendering (UI, text).
 * **Krypton:** Optimizes network traffic, reducing ping jitter.
+* **ModernFix:** Speeds up game startup and fixes various Minecraft bugs, improves RAM usage.
 * **Fast IP Ping:** Speeds up server list pinging.
+* **Better Block Entities:** Faster rendering of block entities (chests, beds, signs, etc.).
+* **Sodium Extra:** Additional toggle options for Sodium (animations, particles, fog, etc.).
+* **Dynamic FPS:** Reduces FPS when the game is in the background, saving battery life (ideal for Steam Deck).
+* **Clumps:** Groups XP orbs together to reduce lag.
+* **Debugify:** Fixes dozens of vanilla Minecraft bugs that Mojang hasn't addressed.
 
 #### 🛠️ Quality of Life (QoL) & Trade
 *Tools to make survival and trading more enjoyable.*
@@ -97,6 +119,14 @@ This pack is specially crafted for the **Entegre Vesselam** server (2013-Present
 * **Logical Zoom:** Adds a zoom key (similar to Optifine).
 * **No Chat Reports:** Disables Microsoft's chat reporting telemetry for free communication.
 * **Mod Menu:** Menu to view and configure installed mods.
+* **BetterF3:** Cleaner, more readable debug screen (F3).
+* **Controlling:** Searchable keybindings menu, easily spot key conflicts.
+* **Bobby:** Caches chunks client-side to extend render distance beyond server limits.
+* **Better Mount HUD:** Improved HUD when riding horses, boats, etc.
+
+#### 🎮 Steam Deck & Controller Support
+* **Controlify:** Full controller support (Steam Deck, Xbox, PlayStation). Gyro aiming, on-screen button prompts, and menu navigation.
+* **Reese's Sodium Options:** Controller-friendly Sodium settings UI.
 
 #### 🎨 Visuals & Atmosphere
 *Aesthetic touches to make the Vesselam world more alive.*
@@ -119,6 +149,8 @@ This pack is specially crafted for the **Entegre Vesselam** server (2013-Present
 
 #### ⚙️ Technical & Libraries
 *Core files required for other mods to function.*
-*Fabric API, Cloth Config v20, Fabric Language Kotlin, Konkrete, Packet Fixer, Placeholder API, SuperMartijn642's Config Library, libIPN.*
+*Fabric API, Cloth Config v20, Fabric Language Kotlin, Konkrete, Packet Fixer, Placeholder API, SuperMartijn642's Config Library, libIPN, Searchables.*
+
+> **Note:** All mods except dependency libraries are optional. On first launch, packwiz-installer will ask which mods you'd like to install.
 
 </details>
