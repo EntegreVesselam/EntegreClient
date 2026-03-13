@@ -1,2 +1,38 @@
+# === macOS ===
+.DS_Store
+
+# === Packwiz build output ===
 *.mrpack
-*.DS_Store
+
+# === Player-specific Xaero map data ===
+# These are generated per-player and should not be part of the modpack
+xaero/minimap/Multiplayer_*/
+xaero/world-map/Multiplayer_*/
+*.xwmc
+*.xwmc.outdated
+*.lock
+
+# === Minecraft backup files ===
+servers.dat_old
+*.backup*
+
+# === Per-installation generated files ===
+config/sodium-fingerprint.json
+
+# === Shader pack binaries (downloaded by packwiz at runtime) ===
+shaderpacks/*.zip
+
+# === Mod JAR files (downloaded by packwiz at runtime) ===
+mods/*.jar
+
+# === Minecraft runtime directories ===
+logs/
+crash-reports/
+saves/
+screenshots/
+.fabric/
+*.log
+
+# === Java ===
+*.class
+
