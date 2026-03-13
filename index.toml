@@ -2,7 +2,7 @@ hash-format = "sha256"
 
 [[files]]
 file = ".claude/settings.local.json"
-hash = "0cf76754e81031ad1fb9c2d1a4887e0525048860090180237597e31d8178990b"
+hash = "7a00298a23b2dc89b0d9a595799eb3ab43d355eab55d715cee2ea37d94429d8d"
 
 [[files]]
 file = "CHANGELOG.md"
@@ -632,6 +632,16 @@ hash = "d59e1c6c7a6f1fbafab92327720b79b29a2319990cb785937a2c64ae27382bf6"
 metafile = true
 
 [[files]]
+file = "mods/architectury-api.pw.toml"
+hash = "ff1763afa21669a76a9ca65735944986ec4ef7a0d440b98ee2154aafa46356c8"
+metafile = true
+
+[[files]]
+file = "mods/badoptimizations.pw.toml"
+hash = "4344e12831879e088ff1ffad6407ec094364ed1c1bc42bbee03fa41abcc41560"
+metafile = true
+
+[[files]]
 file = "mods/better-block-entities.pw.toml"
 hash = "2842f67dd3108a7ec65cf8aff110642ec0b9ba0ab1455b0da73f05d1028307e6"
 metafile = true
@@ -639,6 +649,11 @@ metafile = true
 [[files]]
 file = "mods/better-mount-hud.pw.toml"
 hash = "7e8d96bcac65ef700d3f50b5d7aa5b9e1e6418f1d1dfd4c74b8a005e5b9c3607"
+metafile = true
+
+[[files]]
+file = "mods/better-stats.pw.toml"
+hash = "269d9a14d738c9a77a234cf322f08916b6b2d942307d04f496c9889cfbcd8e13"
 metafile = true
 
 [[files]]
@@ -712,6 +727,11 @@ hash = "6961008cc041fc56299f281756d8dc6997a2dfb4bad638007a30d3f50498b8b1"
 metafile = true
 
 [[files]]
+file = "mods/enchantment-descriptions.pw.toml"
+hash = "77c550309ddfa8cd6ecea65c14cd9a520daac8326f9ac6c55b0dacabb64d4425"
+metafile = true
+
+[[files]]
 file = "mods/entityculling.pw.toml"
 hash = "a2bb6397712c02ca068cf67a46188a3ae3dce6e883e29d9e5a73613df7b6f720"
 metafile = true
@@ -724,6 +744,11 @@ metafile = true
 [[files]]
 file = "mods/fabric-language-kotlin.pw.toml"
 hash = "9893a46b92d89e78a9c49256824102cf83f55cb86d36947092a348b0d361d6df"
+metafile = true
+
+[[files]]
+file = "mods/fabrishot.pw.toml"
+hash = "5b13f8c4459d7a3d1e2edf107661504783e685e66e1a3f59113792ba690cb297"
 metafile = true
 
 [[files]]
@@ -852,6 +877,11 @@ hash = "f7a3ee85819e1ffd7e503da5b79c0c562568f6d147bd8fff6141fb681f41fd05"
 metafile = true
 
 [[files]]
+file = "mods/prickle.pw.toml"
+hash = "8045b697f79d97cbaea8f53ebdfa2bde80683da5e3c1924a2a0b56ce030c6aee"
+metafile = true
+
+[[files]]
 file = "mods/reeses-sodium-options.pw.toml"
 hash = "a3539ea7dcea3202dc20b7a13723bb0327304092006bb3bb9eda0f836b7bfa8f"
 metafile = true
@@ -899,6 +929,11 @@ metafile = true
 [[files]]
 file = "mods/syncmatica.pw.toml"
 hash = "8810ae23c01cdc8128b08aeee1204bc3d3a21fd51c7a7fedeb607a5c601d95c7"
+metafile = true
+
+[[files]]
+file = "mods/tcdcommons.pw.toml"
+hash = "7d5967a6fd97f0ae7107bdaf548061ec54bff059fee062f785f80becc44d0e55"
 metafile = true
 
 [[files]]
