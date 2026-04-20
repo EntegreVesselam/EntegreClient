@@ -31,6 +31,7 @@ Bu paket, sunucu deneyimini iyileştirmek; performansı maksimize etmek, ticaret
 * **Debugify:** Mojang'ın düzeltmediği onlarca vanilla bug'ını düzeltir.
 * **BadOptimizations:** Render dışı oyun mantığını optimize eder.
 * **ThreadTweak:** Thread önceliklerini optimize eder (Steam Deck gibi az çekirdekli cihazlar için).
+* **RenderScale:** Oyunun render ölçeğini dinamik olarak ayarlamanızı sağlar; FPS/görüntü kalitesi dengesini ihtiyacınıza göre optimize edin.
 
 #### 🛠️ Yaşam Kalitesi (QoL) & Ticaret
 *Hayatta kalmayı ve ticareti keyifli hale getiren araçlar.*
@@ -62,6 +63,7 @@ Bu paket, sunucu deneyimini iyileştirmek; performansı maksimize etmek, ticaret
 * **MiniHUD:** Işık seviyesi, spawn alanları, yapı sınırları gibi bilgileri ekranda gösterir.
 * **Syncmatica:** Sunucudaki diğer oyuncularla Litematica şematiklerini paylaşmanızı sağlar.
 * **Continuity:** Bağlantılı dokular (cam, kitaplık vb.) ekler.
+* **Freecam:** Karakterden kameranızı ayırarak dünyayı özgürce dolaşmanızı sağlar; ekran görüntüsü ve inşa planlama için idealdir.
 
 #### 🎮 Steam Deck ve Kontrolcü Desteği
 * **Controlify:** Tam kontrolcü desteği (Steam Deck, Xbox, PlayStation). Gyro aiming, ekran üstü tuş ikonları ve menü navigasyonu.
@@ -89,6 +91,10 @@ Bu paket, sunucu deneyimini iyileştirmek; performansı maksimize etmek, ticaret
 #### ⚙️ Teknik Altyapı ve Kütüphaneler
 *Diğer modların çalışması için gerekli olan çekirdek dosyalar.*
 *Fabric API, Cloth Config v20, Fabric Language Kotlin, Konkrete (FancyMenu için), Packet Fixer (Bağlantı kararlılığı), Placeholder API, SuperMartijn642's Config Library, libIPN (Inventory Profiles için), Searchables (Controlling için), MaLiLib (Litematica/MiniHUD/Tweakeroo için), Architectury API, TCDCommons API, Prickle.*
+
+#### 🖼️ Kaynak Paketleri
+* **EAA_Golem:** Entegre Vesselam sunucusuna özel Golem (EAA) tekstür paketi.
+* **ESK_Golem:** Entegre Vesselam sunucusuna özel Golem (ESK) tekstür paketi.
 
 > **Not:** Bağımlılık modları (kütüphaneler) dışındaki tüm modlar isteğe bağlıdır. İlk çalıştırmada packwiz-installer hangi modları kurmak istediğinizi soracaktır.
 
@@ -120,6 +126,7 @@ This pack is specially crafted for the **Entegre Vesselam** server (2013-Present
 * **Debugify:** Fixes dozens of vanilla Minecraft bugs that Mojang hasn't addressed.
 * **BadOptimizations:** Optimizes non-rendering game logic.
 * **ThreadTweak:** Optimizes thread priority for limited-core devices (ideal for Steam Deck).
+* **RenderScale:** Dynamically adjust the render resolution scale to fine-tune the balance between FPS and image quality.
 
 #### 🛠️ Quality of Life (QoL) & Trade
 *Tools to make survival and trading more enjoyable.*
@@ -151,6 +158,7 @@ This pack is specially crafted for the **Entegre Vesselam** server (2013-Present
 * **MiniHUD:** Configurable overlay showing light levels, spawn spheres, structure bounding boxes.
 * **Syncmatica:** Share Litematica schematics with other players on the server.
 * **Continuity:** Connected textures for glass, bookshelves, and more.
+* **Freecam:** Detaches your camera from your character to freely fly around the world; ideal for screenshots and build planning.
 
 #### 🎮 Steam Deck & Controller Support
 * **Controlify:** Full controller support (Steam Deck, Xbox, PlayStation). Gyro aiming, on-screen button prompts, and menu navigation.
@@ -178,6 +186,10 @@ This pack is specially crafted for the **Entegre Vesselam** server (2013-Present
 #### ⚙️ Technical & Libraries
 *Core files required for other mods to function.*
 *Fabric API, Cloth Config v20, Fabric Language Kotlin, Konkrete, Packet Fixer, Placeholder API, SuperMartijn642's Config Library, libIPN, Searchables, MaLiLib (for Litematica/MiniHUD/Tweakeroo), Architectury API, TCDCommons API, Prickle.*
+
+#### 🖼️ Resource Packs
+* **EAA_Golem:** Custom Golem (EAA) texture pack made specifically for Entegre Vesselam.
+* **ESK_Golem:** Custom Golem (ESK) texture pack made specifically for Entegre Vesselam.
 
 > **Note:** All mods except dependency libraries are optional. On first launch, packwiz-installer will ask which mods you'd like to install.
 

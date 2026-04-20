@@ -10,7 +10,7 @@ hash = "db7c7abe0a58e4d29b536da34f565d140da8f37021edbe65b31fbef15b1ee133"
 
 [[files]]
 file = "README.md"
-hash = "4bdcf69c49d5c7841f2a972ddaaabdeff2d8ca33625a69cd0e51e0b79b8d3c69"
+hash = "c2582f7c01581b52fae614d13c1738f15c8ba59e7591245f06ecc21361064135"
 
 [[files]]
 file = "config/MouseTweaks.cfg"
@@ -768,6 +768,11 @@ hash = "e9d6d270b060dbbc8bca8b589b7788eb2db1f53da4e5e0f6f8ff310518eb48de"
 metafile = true
 
 [[files]]
+file = "mods/freecam.pw.toml"
+hash = "166fe4db80443c9247c9914904e1243f96afe27abd222b3de77fb3690eb1f3f8"
+metafile = true
+
+[[files]]
 file = "mods/immediatelyfast.pw.toml"
 hash = "5e9de7d477ad0ed04641aeabcac002798eb72be42bc7924e13ecfe4b77859b0b"
 metafile = true
@@ -883,6 +888,11 @@ hash = "a3539ea7dcea3202dc20b7a13723bb0327304092006bb3bb9eda0f836b7bfa8f"
 metafile = true
 
 [[files]]
+file = "mods/renderscale.pw.toml"
+hash = "ea027ce62431b7ed096eaad0e6afb0f5b4297854a489dc324b09229811dcf540"
+metafile = true
+
+[[files]]
 file = "mods/resourcify.pw.toml"
 hash = "b9419c5fe4e3c5256fb2fac1d6cc17752166c973beec2bceb62b0fd3ef9f1286"
 metafile = true
@@ -899,7 +909,7 @@ metafile = true
 
 [[files]]
 file = "mods/smooth-swapping.pw.toml"
-hash = "d6c82cf25b93ae98b952d00c5d7d17c3fbb56593783e91d795cd74b4f94355b7"
+hash = "dee84dc5d3abca3f06be1dffdd2d8d9ee2adec15ae3052943811a255da5982cf"
 metafile = true
 
 [[files]]
@@ -969,6 +979,14 @@ hash = "c2f9f3aea56787fbad5a47f34bd380e11836de6895519c2ff7fe448abff5de2e"
 [[files]]
 file = "packwiz-installer-bootstrap.jar"
 hash = "a8fbb24dc604278e97f4688e82d3d91a318b98efc08d5dbfcbcbcab6443d116c"
+
+[[files]]
+file = "resourcepacks/EAA_Golem.zip"
+hash = "200d0ea1b2440cd32b115aac5150bedadac1d95a3716e7c7fa0a1a7e57689107"
+
+[[files]]
+file = "resourcepacks/ESK_Golem.zip"
+hash = "4a4f1bc5a8850a796261f1d88119cab9ac12b79e0f7f4b7ebd32334d7b7e84c8"
 
 [[files]]
 file = "resourcepacks/crystal-vanilla-tweaks.pw.toml"
