@@ -66,7 +66,6 @@ Bu paket, sunucu deneyimini iyileştirmek; performansı maksimize etmek, ticaret
 * **MiniHUD:** Işık seviyesi, spawn alanları, yapı sınırları gibi bilgileri ekranda gösterir.
 * **Syncmatica:** Sunucudaki diğer oyuncularla Litematica şematiklerini paylaşmanızı sağlar.
 * **Continuity:** Bağlantılı dokular (cam, kitaplık vb.) ekler.
-* **Freecam:** Karakterden kameranızı ayırarak dünyayı özgürce dolaşmanızı sağlar; ekran görüntüsü ve inşa planlama için idealdir.
 
 #### 🎮 Steam Deck ve Kontrolcü Desteği
 * **Controlify:** Tam kontrolcü desteği (Steam Deck, Xbox, PlayStation). Gyro aiming, ekran üstü tuş ikonları ve menü navigasyonu.
@@ -164,7 +163,6 @@ This pack is specially crafted for the **Entegre Vesselam** server (2013-Present
 * **MiniHUD:** Configurable overlay showing light levels, spawn spheres, structure bounding boxes.
 * **Syncmatica:** Share Litematica schematics with other players on the server.
 * **Continuity:** Connected textures for glass, bookshelves, and more.
-* **Freecam:** Detaches your camera from your character to freely fly around the world; ideal for screenshots and build planning.
 
 #### 🎮 Steam Deck & Controller Support
 * **Controlify:** Full controller support (Steam Deck, Xbox, PlayStation). Gyro aiming, on-screen button prompts, and menu navigation.

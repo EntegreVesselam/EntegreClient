@@ -10,7 +10,7 @@ hash = "db7c7abe0a58e4d29b536da34f565d140da8f37021edbe65b31fbef15b1ee133"
 
 [[files]]
 file = "README.md"
-hash = "8b2310bbfc061d2e8b934aa40164405a042f4fe2a18062fee0adbbd9af4c48c8"
+hash = "a677c8146b5890c7aa061470055eccde9a19ded4cded711d4c0085d860a46899"
 
 [[files]]
 file = "config/MouseTweaks.cfg"
@@ -765,11 +765,6 @@ metafile = true
 [[files]]
 file = "mods/ferrite-core.pw.toml"
 hash = "e9d6d270b060dbbc8bca8b589b7788eb2db1f53da4e5e0f6f8ff310518eb48de"
-metafile = true
-
-[[files]]
-file = "mods/freecam.pw.toml"
-hash = "166fe4db80443c9247c9914904e1243f96afe27abd222b3de77fb3690eb1f3f8"
 metafile = true
 
 [[files]]
