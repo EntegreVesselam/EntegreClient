@@ -10,7 +10,7 @@ hash = "db7c7abe0a58e4d29b536da34f565d140da8f37021edbe65b31fbef15b1ee133"
 
 [[files]]
 file = "README.md"
-hash = "ccddb01cb944fe7b80a7c07598384bf9f196d3598c562cf889c419b3e840f659"
+hash = "dcb8b126f9cd2e62746e6c03c85cec4ed6dd469a42f7892781a4dd70ff151198"
 
 [[files]]
 file = "config/MouseTweaks.cfg"
@@ -765,6 +765,11 @@ metafile = true
 [[files]]
 file = "mods/ferrite-core.pw.toml"
 hash = "e9d6d270b060dbbc8bca8b589b7788eb2db1f53da4e5e0f6f8ff310518eb48de"
+metafile = true
+
+[[files]]
+file = "mods/forge-config-api-port.pw.toml"
+hash = "238b3ceb4214a682480ce00eefae5d34efa299ff6ff667e4b2f2ed503c6e76ee"
 metafile = true
 
 [[files]]

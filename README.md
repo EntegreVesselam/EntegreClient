@@ -93,7 +93,7 @@ Bu paket, sunucu deneyimini iyileştirmek; performansı maksimize etmek, ticaret
 
 #### ⚙️ Teknik Altyapı ve Kütüphaneler
 *Diğer modların çalışması için gerekli olan çekirdek dosyalar.*
-*Fabric API, Cloth Config v20, Fabric Language Kotlin, Konkrete (FancyMenu için), Packet Fixer (Bağlantı kararlılığı), Placeholder API, SuperMartijn642's Config Library, libIPN (Inventory Profiles için), Searchables (Controlling için), MaLiLib (Litematica/MiniHUD/Tweakeroo için), Architectury API, TCDCommons API, Prickle.*
+*Fabric API, Cloth Config v20, Fabric Language Kotlin, Konkrete (FancyMenu için), Packet Fixer (Bağlantı kararlılığı), Placeholder API, SuperMartijn642's Config Library, libIPN (Inventory Profiles için), Searchables (Controlling için), MaLiLib (Litematica/MiniHUD/Tweakeroo için), Architectury API, TCDCommons API, Prickle, Forge Config API Port (Shoulder Surfing için).*
 
 #### 🖼️ Kaynak Paketleri
 * **EAA_Golem:** Entegre Vesselam sunucusuna özel Golem (EAA) tekstür paketi.
@@ -191,7 +191,7 @@ This pack is specially crafted for the **Entegre Vesselam** server (2013-Present
 
 #### ⚙️ Technical & Libraries
 *Core files required for other mods to function.*
-*Fabric API, Cloth Config v20, Fabric Language Kotlin, Konkrete, Packet Fixer, Placeholder API, SuperMartijn642's Config Library, libIPN, Searchables, MaLiLib (for Litematica/MiniHUD/Tweakeroo), Architectury API, TCDCommons API, Prickle.*
+*Fabric API, Cloth Config v20, Fabric Language Kotlin, Konkrete, Packet Fixer, Placeholder API, SuperMartijn642's Config Library, libIPN, Searchables, MaLiLib (for Litematica/MiniHUD/Tweakeroo), Architectury API, TCDCommons API, Prickle, Forge Config API Port (required by Shoulder Surfing).*
 
 #### 🖼️ Resource Packs
 * **EAA_Golem:** Custom Golem (EAA) texture pack made specifically for Entegre Vesselam.
