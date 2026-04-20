@@ -909,7 +909,7 @@ metafile = true
 
 [[files]]
 file = "mods/smooth-swapping.pw.toml"
-hash = "dee84dc5d3abca3f06be1dffdd2d8d9ee2adec15ae3052943811a255da5982cf"
+hash = "d6c82cf25b93ae98b952d00c5d7d17c3fbb56593783e91d795cd74b4f94355b7"
 metafile = true
 
 [[files]]
@@ -1015,8 +1015,8 @@ file = "shaderpacks/ComplementaryReimagined_r5.5.1.zip.txt"
 hash = "09bf17a4166403474765f709e55fccf235069d01ec31da32b141d57f2fde9e48"
 
 [[files]]
-file = "shaderpacks/ComplementaryReimagined_r5.6.1.zip"
-hash = "33153747d25fbee470acb42ccf4f26b03cc551bb900d4c6d3389b5500dd84839"
+file = "shaderpacks/ComplementaryReimagined_r5.8_dev_260421.zip"
+hash = "0c832325a1920a6f6c2113610af2082eac4ea3109328a0e92172acd0ecc1d462"
 
 [[files]]
 file = "xaero/minimap/Multiplayer_entegrevesselam.com/config.txt"
