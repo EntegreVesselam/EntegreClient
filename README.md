@@ -59,6 +59,7 @@ Bu paket, sunucu deneyimini iyileştirmek; performansı maksimize etmek, ticaret
 * **Fabrishot:** Çok yüksek çözünürlüklü ekran görüntüleri almanızı sağlar.
 * **Resourcify:** Oyun içinden kaynak paketleri ve shader'ları indirip yönetmenizi sağlar.
 * **Smooth Swapping:** Envanterde eşya taşırken yumuşak animasyonlar ekler.
+* **Shoulder Surfing Reloaded:** Üçüncü şahıs kamerasını omuz üstü perspektifine alarak nişan almayı ve genel görüşü iyileştirir.
 
 #### 🏗️ İnşa ve Şematik Araçları
 * **Litematica:** Şematik dosyalarını yükleyip holografik rehber olarak kullanarak blok blok inşa yapmanızı sağlar.
@@ -156,6 +157,7 @@ This pack is specially crafted for the **Entegre Vesselam** server (2013-Present
 * **Fabrishot:** Take extremely high-resolution screenshots.
 * **Resourcify:** Browse and install resource packs and shaders in-game.
 * **Smooth Swapping:** Smooth item move animations in inventories.
+* **Shoulder Surfing Reloaded:** Shifts the third-person camera to an over-the-shoulder perspective for improved aiming and visibility.
 
 #### 🏗️ Building & Schematic Tools
 * **Litematica:** Load schematics and use holographic overlays to build block-by-block in survival.

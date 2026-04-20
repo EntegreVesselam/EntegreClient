@@ -10,7 +10,7 @@ hash = "db7c7abe0a58e4d29b536da34f565d140da8f37021edbe65b31fbef15b1ee133"
 
 [[files]]
 file = "README.md"
-hash = "a677c8146b5890c7aa061470055eccde9a19ded4cded711d4c0085d860a46899"
+hash = "ccddb01cb944fe7b80a7c07598384bf9f196d3598c562cf889c419b3e840f659"
 
 [[files]]
 file = "config/MouseTweaks.cfg"
@@ -890,6 +890,11 @@ metafile = true
 [[files]]
 file = "mods/searchables.pw.toml"
 hash = "d7f32cb2cdc345359db18c50734d6026809b32a8c14b4c0ab8cc58024798c3b7"
+metafile = true
+
+[[files]]
+file = "mods/shoulder-surfing-reloaded.pw.toml"
+hash = "91732e79cf70e254a074d65d200760b983a7d91aeec7f031d275f1fface304f1"
 metafile = true
 
 [[files]]
