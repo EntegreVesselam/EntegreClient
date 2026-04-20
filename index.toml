@@ -888,11 +888,6 @@ hash = "a3539ea7dcea3202dc20b7a13723bb0327304092006bb3bb9eda0f836b7bfa8f"
 metafile = true
 
 [[files]]
-file = "mods/renderscale.pw.toml"
-hash = "ea027ce62431b7ed096eaad0e6afb0f5b4297854a489dc324b09229811dcf540"
-metafile = true
-
-[[files]]
 file = "mods/resourcify.pw.toml"
 hash = "b9419c5fe4e3c5256fb2fac1d6cc17752166c973beec2bceb62b0fd3ef9f1286"
 metafile = true
@@ -955,6 +950,26 @@ metafile = true
 [[files]]
 file = "mods/visuality.pw.toml"
 hash = "06e99976b4708361afc5572efae1ee2e45a6aa50dd9504350189e2f69a945e5d"
+metafile = true
+
+[[files]]
+file = "mods/voxy-extra.pw.toml"
+hash = "05f3b82ae1721974f1edd8e5d6ec011f58c8dbf3f0e286f87451a44d7515b36e"
+metafile = true
+
+[[files]]
+file = "mods/voxy-server-side.pw.toml"
+hash = "18eb9129e3e54d707fffcfd1ad88fed1656f03d89bcee36bf8ce21fa5199227a"
+metafile = true
+
+[[files]]
+file = "mods/voxy-worldgen.pw.toml"
+hash = "717869eefa92b82bfcbceec54c266b7e8c2f3caf18dac45f19edce3e3b410593"
+metafile = true
+
+[[files]]
+file = "mods/voxy.pw.toml"
+hash = "a95bb88431e9bc086ea72f57a1751c5c7514bdb73adc11a9dffea7f3e8eded5b"
 metafile = true
 
 [[files]]

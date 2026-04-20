@@ -31,7 +31,10 @@ Bu paket, sunucu deneyimini iyileştirmek; performansı maksimize etmek, ticaret
 * **Debugify:** Mojang'ın düzeltmediği onlarca vanilla bug'ını düzeltir.
 * **BadOptimizations:** Render dışı oyun mantığını optimize eder.
 * **ThreadTweak:** Thread önceliklerini optimize eder (Steam Deck gibi az çekirdekli cihazlar için).
-* **RenderScale:** Oyunun render ölçeğini dinamik olarak ayarlamanızı sağlar; FPS/görüntü kalitesi dengesini ihtiyacınıza göre optimize edin.
+* **Voxy:** Distant Horizons benzeri LOD (Level of Detail) sistemiyle sunucu render mesafesinin çok ötesinde arazi görünümü sağlar.
+* **Voxy WorldGen:** Voxy'nin arazi oluşturma kalitesini ve hızını artırır.
+* **Voxy Extra:** Voxy'ye ek görsel ve işlevsel iyileştirmeler ekler.
+* **Voxy Server Side:** Sunucu tarafında Voxy desteği sağlayan bileşen.
 
 #### 🛠️ Yaşam Kalitesi (QoL) & Ticaret
 *Hayatta kalmayı ve ticareti keyifli hale getiren araçlar.*
@@ -126,7 +129,10 @@ This pack is specially crafted for the **Entegre Vesselam** server (2013-Present
 * **Debugify:** Fixes dozens of vanilla Minecraft bugs that Mojang hasn't addressed.
 * **BadOptimizations:** Optimizes non-rendering game logic.
 * **ThreadTweak:** Optimizes thread priority for limited-core devices (ideal for Steam Deck).
-* **RenderScale:** Dynamically adjust the render resolution scale to fine-tune the balance between FPS and image quality.
+* **Voxy:** LOD (Level of Detail) rendering far beyond the server's render distance, similar to Distant Horizons.
+* **Voxy WorldGen:** Improves the quality and speed of terrain generation for Voxy.
+* **Voxy Extra:** Additional visual and functional enhancements on top of Voxy.
+* **Voxy Server Side:** Server-side component required to fully support Voxy clients.
 
 #### 🛠️ Quality of Life (QoL) & Trade
 *Tools to make survival and trading more enjoyable.*
