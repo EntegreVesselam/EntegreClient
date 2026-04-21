@@ -1,5 +1,21 @@
 # Changelog
 
+## Unreleased
+
+### New Mods
+- **Shoulder Surfing Reloaded** - Over-the-shoulder third-person camera perspective for improved aiming
+
+### Updated
+- **Voxy Server Side** updated to v0.2.1; now installed client-side as well (side changed from server to both)
+- **Forge Config API Port** updated to correct 1.21.11 build (v21.11.1)
+- **Shoulder Surfing Reloaded** updated to correct 1.21.11 build
+
+### Removed
+- **Freecam** - removed from the pack
+
+### Dependencies Added
+- Forge Config API Port (required by Shoulder Surfing Reloaded)
+
 ## v2.1.0
 
 ### New Mods — Building & Schematics
