@@ -34,7 +34,7 @@ Bu paket, sunucu deneyimini iyileştirmek; performansı maksimize etmek, ticaret
 * **Voxy:** Distant Horizons benzeri LOD (Level of Detail) sistemiyle sunucu render mesafesinin çok ötesinde arazi görünümü sağlar.
 * **Voxy WorldGen:** Voxy'nin arazi oluşturma kalitesini ve hızını artırır.
 * **Voxy Extra:** Voxy'ye ek görsel ve işlevsel iyileştirmeler ekler.
-* **Voxy Server Side:** Sunucu tarafında Voxy desteği sağlayan bileşen.
+* **Voxy Server Side:** Voxy'nin sunucu tarafında çalışmasını sağlar; tam uyum için istemciye de yüklenir.
 
 #### 🛠️ Yaşam Kalitesi (QoL) & Ticaret
 *Hayatta kalmayı ve ticareti keyifli hale getiren araçlar.*
@@ -132,7 +132,7 @@ This pack is specially crafted for the **Entegre Vesselam** server (2013-Present
 * **Voxy:** LOD (Level of Detail) rendering far beyond the server's render distance, similar to Distant Horizons.
 * **Voxy WorldGen:** Improves the quality and speed of terrain generation for Voxy.
 * **Voxy Extra:** Additional visual and functional enhancements on top of Voxy.
-* **Voxy Server Side:** Server-side component required to fully support Voxy clients.
+* **Voxy Server Side:** Enables Voxy support on the server side; also installed client-side for full compatibility.
 
 #### 🛠️ Quality of Life (QoL) & Trade
 *Tools to make survival and trading more enjoyable.*
