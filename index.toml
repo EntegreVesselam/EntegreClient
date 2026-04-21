@@ -964,7 +964,7 @@ metafile = true
 
 [[files]]
 file = "mods/voxy-server-side.pw.toml"
-hash = "18eb9129e3e54d707fffcfd1ad88fed1656f03d89bcee36bf8ce21fa5199227a"
+hash = "3f958c1d1be5380b93856df11222afe9c3a3c5e00f8e0d805d46dcc30032538d"
 metafile = true
 
 [[files]]
