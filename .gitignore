@@ -39,3 +39,17 @@ screenshots/
 # === Java ===
 *.class
 
+
+# Per-device scoped marker credential (never distribute).
+config/entegre-markers/
+marker-sync/.gradle/
+marker-sync/build/
+marker-sync/run/
+
+# Locally built Entegre bridge is bundled; downloaded third-party JARs remain excluded.
+!mods/entegre-markers-0.1.1.jar
+
+
+# Python maintenance cache
+__pycache__/
+*.pyc

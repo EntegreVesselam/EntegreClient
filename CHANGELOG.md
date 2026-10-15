@@ -1,3 +1,12 @@
+## 2.1.1 — packwiz marker eşitlemesi
+
+- Entegre Markers0.1.1 mevcut Prism/Fabric0.18.4 kurulumuna otomatik dağıtılır.
+- Xaero Minimap26.6.0 ve WorldMap1.47.0 eşitleme API uyumu için birlikte güncellenir.
+- Eski belge hash hataları indirme yapmayan kalıcı uyumluluk kayıtlarıyla giderilir.
+- Eski oyuncu/cache dosyaları aktif dağıtımdan çıkarılır; var olan yerel dosyalar
+  silinmesin diye eski sahiplik URI'leri korunur. Temiz kurulum bunları indirmez.
+- Diğer mevcut mod sürümleri ve loader korunur; kullanıcı eşleştirmesi siteye özeldir.
+
 # Changelog
 
 ## Unreleased

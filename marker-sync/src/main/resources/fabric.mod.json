@@ -1,0 +1,10 @@
+{
+  "schemaVersion": 1, "id": "entegre_markers", "version": "${version}",
+  "name": "Entegre Markers",
+  "description": "Site tarafından onaylanan ortak markerları salt okunur Xaero katmanında gösterir.",
+  "environment": "client",
+  "entrypoints": {"client": ["com.entegrevesselam.markers.EntegreMarkers"]},
+  "license": "MIT",
+  "depends": {"fabricloader": ">=0.18.4", "minecraft": "1.21.11", "java": ">=21", "fabric-api": ">=0.141.3"},
+  "suggests": {"xaerominimap": "26.6.0", "xaeroworldmap": "1.47.0"}
+}
