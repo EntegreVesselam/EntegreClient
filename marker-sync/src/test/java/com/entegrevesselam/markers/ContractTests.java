@@ -38,7 +38,7 @@ public final class ContractTests {
         check(state.needsApply(), "authorization recovery reapplies same revision");
         var late = state.begin(300000, true, true); state.close();
         check(!state.accept(late, 13), "shutdown drops late response");
-        testSnapshot(); testApi(); testStore(); testBody(); testPolling(); testOwnership();
+        testSnapshot(); testApi(); testStore(); testBody(); testPolling(); testOwnership(); testAppearance();
         System.out.println("PASS state: epoch, revision, dimensions/subworld, auth, foreground, in-flight, shutdown");
     }
 
@@ -146,5 +146,25 @@ public final class ContractTests {
         rejects(() -> Ownership.verifyContents(actual,expected), "unexpected record prevents destructive clear");
         check(actual.get("unexpected-personal") == personal, "collision check never mutates personal records");
         System.out.println("PASS ownership: existing layer, realm identity, record identity, collision no mutation");
+    }
+
+    static void testAppearance() {
+        check(MarkerAppearance.initials("Çınar Kalesi").equals("ÇK"), "use name initials instead of category E");
+        check(MarkerAppearance.initials("Şehir").equals("ŞEH"), "single word uses first three letters");
+        check(MarkerAppearance.initials("  kuzey-güney  portalı ").equals("KGP"), "split punctuation and whitespace");
+        check(MarkerAppearance.initials("İstanbul Özel Üs Merkezi").equals("İÖÜ"), "maximum three initials");
+        check(MarkerAppearance.initials("😀 kale").equals("KAL"), "emoji is not an initial");
+        String supplementary = MarkerAppearance.initials("\uD801\uDC28a kale");
+        check(supplementary.codePointCount(0,supplementary.length()) == 2 && supplementary.codePointAt(0) == 0x10400, "supplementary letters survive uppercasing without broken surrogate");
+        String astralWords = MarkerAppearance.initials("\uD801\uDC28 \uD801\uDC29 alpha");
+        check(astralWords.length()<=3 && astralWords.codePoints().noneMatch(c -> c>=0xD800 && c<=0xDFFF), "multiple supplementary initials fit three UTF16 units without broken surrogate");
+        String astralWord = MarkerAppearance.initials("\uD801\uDC28\uD801\uDC29\uD801\uDC2Aabc");
+        check(astralWord.length()<=3 && astralWord.codePoints().noneMatch(c -> c>=0xD800 && c<=0xDFFF), "single supplementary word fits Xaero short label budget");
+        check(MarkerAppearance.initials("!!!").equals("?"), "empty letter fallback");
+        for (int color=0;color<16;color++) if(color!=4) check(MarkerAppearance.color("id",color)==color,"explicit non-default palette preserved");
+        Set<Integer> colors = new HashSet<>();
+        for(int i=0;i<32;i++) { int c=MarkerAppearance.color("synthetic-"+i,4); check(c>=0 && c<=15,"Xaero palette"); check(c==MarkerAppearance.color("synthetic-"+i,4),"stable color by ID"); colors.add(c); }
+        check(colors.size()>=6,"default markers get distinguishable colors");
+        System.out.println("PASS appearance: Unicode initials, short names, palette preservation and stable default colors");
     }
 }

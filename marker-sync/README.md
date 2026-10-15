@@ -9,7 +9,7 @@ waypoint görünümü/kişisel kayıt korunumu kabul testleri henüz **BLOCKED**
 
 - Minecraft **1.21.11**, Java hedefi **21**, Fabric Loader **0.18.4**.
 - Xaero Minimap **26.6.0** (`e0EvhWco`), World Map **1.47.0** (`oMGDn8rs`).
-- Fabric API **0.141.3+1.21.11**; köprü **0.1.1**. Mevcut Prism loader/API sürümleri korunur.
+- Fabric API **0.141.3+1.21.11**; köprü **0.1.2**. Mevcut Prism loader/API sürümleri korunur.
 - Yarn `1.21.11+build.6`, Loom **1.14.10**, Gradle **9.2.1**.
 - Wrapper dağıtımı resmi Gradle kaynağından gelir ve SHA256 ile sabitlenmiştir.
 - Site projesine veya istemci paketine yeni çalışma zamanı bağımlılığı eklenmez.
@@ -24,7 +24,7 @@ Java21 kurulu bir terminalde, bu dizinde:
 ./gradlew contractTest
 ```
 
-Çıktı: `build/libs/entegre-markers-0.1.1.jar` (remap edilmiş dağıtım JAR'ı).
+Çıktı: `build/libs/entegre-markers-0.1.2.jar` (remap edilmiş dağıtım JAR'ı).
 `-sources.jar` oyun modu değildir. Testler JUnit yerine Java assertion çalıştırıcısı
 kullanır: `test` ve `check` görevleri `contractTest`'e bağlıdır. Varsayılan Gradle
 JUnit keşfinin sıfır test bulması test başarısı olarak kullanılmaz; gerçek
@@ -160,3 +160,42 @@ düğümlerinin çalıştırılabilir callback'leri bulunduğunu doğrular. Hiç
 Smoke modunun sınıfları/metadata'sı dağıtım ve sources JAR'larına eklenmez.
 Böylece girişsiz açılış ve komut callback kaydı ayrı kanıtlanır; canlı sunucunun
 sohbet ekranında komut çalıştırma ve gerçek waypoint kabulü ayrıca doğrulanmalıdır.
+
+
+## 0.1.2 — isim baş harfleri, renk ve yalnız tam harita
+
+Ortak marker simgesi artık kategoriye göre sabit E/H/F vb. değildir: isimdeki
+kelimelerin baş harfleri, tek kelimede ilk harfler kullanılır; en fazla **3 UTF-16 birimi** (surrogate çifti bölünmeden), NFC normalizasyonu ve locale-independent uppercase uygulanır.
+Türkçe harfler ve supplementary karakterler kesik surrogate üretmeden korunur.
+Örnek: `Çınar Kalesi → ÇK`, `Şehir → ŞEH`. Noktalama/emoji harf sayılmaz; harf/rakam
+bulunamazsa `?` kullanılır. Üç birim sınırı bridge'in kısa etiket tercihidir; supplementary harflerde daha az harf çıkabilir;
+Xaero'nun gerçek String/getInitials API'sine sentetik native getter testi uygulanır.
+
+Site API/UI varsayılan rengi olan **4 (dark red)**, marker ID'sinden deterministik
+üretilen açık renk paleti `{6,9,10,11,12,13,14,15}` ile gösterilir. ID değişmedikçe
+renk isim düzenlemesinde veya yeniden bağlantıda değişmez. 4 dışındaki bütün açık
+API renk değerleri korunur. API varsayılan4 ile özellikle seçilmiş4 arasında bayrak
+vermediğinden, özellikle seçilmiş dark red de otomatik palete dönüşür; diğer
+renkler aynı kalır. Site kaydı bu yerel gösterim tercihiyle değiştirilmez.
+
+Ortak waypoint oluşturulduktan sonra gerçek Xaero26.6.0 API'sinde
+`setVisibility(WaypointVisibilityType.WORLD_MAP_LOCAL)` uygulanır. Bu seçim
+**yalnız tam dünya haritasında** gösterim içindir: oyun dünyasındaki HUD işaretleri
+ve **minimap işaretleri görünmez**. Xaero'nun hazır enum seçeneği HUD'ı kapatırken
+minimap'i açık tutmaz; özel renderer mixin'i eklenmez. `disabled=true` kullanılmaz;
+tam haritada gösterilebilmesi için waypoint enabled kalır. Bu ayar yalnız yeni
+bridge waypoint nesnesine yapılır; kişisel waypoint, set ve genel Xaero ayarına
+yazılmaz. Yetki, origin sahipliği, epoch ve dünya/subworld kontrolleri aynıdır.
+
+Regression kanıtı: bağımsız isim testi önce `use name initials instead of category E`
+ile RED, gerçek dev client testi önce `native managed marker must hide from world HUD`
+ile RED. 0.1.2 düzeltmesinde native getter/filter smoke; isim, renk, görünürlük,
+enabled durumu ve kişisel yeni waypoint'in varsayılan HUD davranışının korunmasını
+doğrular. Aynı ad/koordinatlı sentetik kişisel waypoint'e ayar uygulanmaz.
+Gerçek multiplayer harita pikseli/oyun içi görünüm ve Windows testi ayrıca
+**NOT RUN** kalır; native getter/filter kanıtı bu gözlem yerine geçmez.
+
+Kullanıcının Xaero GUI'sinden kaydedebildiği render override'larının sonraki açılışta
+önceden boş origin yaratabilmesi, mevcut exact-object ownership kontrolü için ayrı
+inceleme konusudur. Bu görünüm düzeltmesi o sahiplik sınırını gevşetmez ve kişisel
+ayar dosyalarını değiştirmez.

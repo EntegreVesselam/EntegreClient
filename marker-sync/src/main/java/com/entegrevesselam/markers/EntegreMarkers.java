@@ -36,7 +36,7 @@ public final class EntegreMarkers implements ClientModInitializer {
             .then(literal("status").executes(c -> { message(status); return 1; }))
             .then(literal("pair").executes(c -> { pair(); return 1; }))
             .then(literal("forget").executes(c -> { forget(); return 1; }))));
-        org.slf4j.LoggerFactory.getLogger("EntegreMarkers").info("Entegre Markers 0.1.1 initialized; client command registration callback installed; Xaero compatible={}", !incompatible);
+        org.slf4j.LoggerFactory.getLogger("EntegreMarkers").info("Entegre Markers 0.1.2 initialized; client command registration callback installed; Xaero compatible={}", !incompatible);
         ClientTickEvents.END_CLIENT_TICK.register(ignored -> tick());
         ClientLifecycleEvents.CLIENT_STOPPING.register(ignored -> { stopped = true; pairEpoch++; state.close(); safeHide(); worker.shutdownNow(); });
     }

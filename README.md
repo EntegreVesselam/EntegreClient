@@ -1,9 +1,9 @@
 # Entegre Client — otomatik marker güncellemesi
 
-## 2.1.1 — mevcut Prism kurulumu için
+## 2.1.2 — mevcut Prism kurulumu için
 
 Minecraft1.21.11 / Fabric0.18.4 / FabricAPI0.141.3 korunur. Bu sürüm,
-Entegre Markers0.1.1 ve gereken Xaero Minimap26.6.0 / WorldMap1.47.0 güncellemesini
+Entegre Markers0.1.2 ve gereken Xaero Minimap26.6.0 / WorldMap1.47.0 güncellemesini
 packwiz ile dağıtır; diğer mevcut mod sürümlerini değiştirmez. Complementary
 shader metadata ile indirilir; mevcut Iris seçimi `preserve` ile korunur.
 
@@ -17,6 +17,11 @@ yazın. Site hesabıyla cihazı onaylayın. `/entegremarkers status` eşitleme d
 `/entegremarkers forget` yerel bağlantıyı kaldırmayı sağlar. Oyun öndeyken liste
 60s aralıkla okunur. Sunucuya ek plugin gerekmez; veri korunan site API'sinden
 gelir. Kişisel waypoint dosyaları yerine ayrı Xaero runtime katmanı kullanılır.
+
+Ortak markerlar yalnız tam ekran dünya haritasında görünür; oyun içi HUD ve
+minimap üzerinde görünmez. İsimlerden en fazla üç karakterlik kısa harfler
+üretilir. Varsayılan renkteki noktalar sabit, canlı renklerle ayrılır; sitedeki
+özel renkler korunur. Kişisel waypoint ayarlarına veya dosyalarına dokunulmaz.
 
 ## Kişisel veriyi koruyan eski paket geçişi
 
