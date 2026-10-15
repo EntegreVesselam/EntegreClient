@@ -36,7 +36,7 @@ final class XaeroLayer {
         ThirdPartyWaypoints existing = manager.getAll().stream().filter(p -> p.getOriginId().equals(origin)).findFirst().orElse(null);
         ThirdPartyWaypoints target = ownership.open(manager,existing,() -> manager.get(origin));
         Map<String,Waypoint> next = new LinkedHashMap<>();
-        for (Snapshot.Marker m : markers) if (m.dimension().equals(context.dimension())) next.put(m.id(),new Waypoint(m.x(),m.y(),m.z(),m.name(),symbol(m.icon()),xaero.hud.minimap.waypoint.WaypointColor.fromIndex(m.color())));
+        for (Snapshot.Marker m : markers) if (m.dimension().equals(context.dimension())) next.put(m.id(),waypoint(m));
         hide(); layer = target;
         if (!layer.isEmpty()) throw new IllegalStateException("ownership_collision");
         final MinimapSession expectedSession = session; final MinimapWorld expectedWorld = world;
@@ -57,5 +57,10 @@ final class XaeroLayer {
         }
         owned.clear(); layer = null;
     }
-    private static String symbol(String icon) { return switch(icon) { case "home" -> "H"; case "shop" -> "$"; case "farm" -> "F"; case "portal" -> "P"; default -> "E"; }; }
+    static Waypoint waypoint(Snapshot.Marker marker) {
+        Waypoint waypoint = new Waypoint(marker.x(),marker.y(),marker.z(),marker.name(),MarkerAppearance.initials(marker.name()),
+            xaero.hud.minimap.waypoint.WaypointColor.fromIndex(MarkerAppearance.color(marker.id(),marker.color())));
+        waypoint.setVisibility(xaero.hud.minimap.waypoint.WaypointVisibilityType.WORLD_MAP_LOCAL);
+        return waypoint;
+    }
 }

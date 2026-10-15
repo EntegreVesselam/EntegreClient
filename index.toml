@@ -428,8 +428,8 @@ hash = "77c550309ddfa8cd6ecea65c14cd9a520daac8326f9ac6c55b0dacabb64d4425"
 metafile = true
 
 [[files]]
-file = "mods/entegre-markers-0.1.1.jar"
-hash = "c02d7b9b7836d0d2ea98ed6aba44c999f20f68bff3e8bdf8f9f02321ac13bad3"
+file = "mods/entegre-markers-0.1.2.jar"
+hash = "94016ccb2c4ad29c03f104614fbadc7eabfcf79d73f1a0af5576f418d905ae66"
 
 [[files]]
 file = "mods/entityculling.pw.toml"

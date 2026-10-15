@@ -1,3 +1,9 @@
+## 2.1.2
+
+- Ortak markerlar E yerine isimlerinden kısa harflerle, yalnız tam ekran dünya haritasında görünür.
+- Varsayılan marker renkleri sabit bir paletle çeşitlenir; özel renkler korunur.
+- Kişisel waypoint ve genel Xaero ayarları değişmez.
+
 ## 2.1.1 — packwiz marker eşitlemesi
 
 - Entegre Markers0.1.1 mevcut Prism/Fabric0.18.4 kurulumuna otomatik dağıtılır.

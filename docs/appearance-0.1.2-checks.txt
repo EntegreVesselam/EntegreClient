@@ -1,0 +1,22 @@
+JAR SHA256 94016ccb2c4ad29c03f104614fbadc7eabfcf79d73f1a0af5576f418d905ae66
+PASS snapshot: strict fields, dimensions, coordinates, IDs, icons, UTF8, empty, 1000 and 256KiB boundaries
+PASS API: in-memory wire only, fixed origin, token scope, timeout, pairing URI/expiry, pending
+PASS store: temporary fixture only, atomic persistence, owner-only POSIX, expiry, forget
+PASS HTTP body: streaming limit and cancellation
+PASS pairing scheduler: fake clock 5 second/10 minute, foreground, target, one in flight
+PASS ownership: existing layer, realm identity, record identity, collision no mutation
+PASS appearance: Unicode initials, short names, palette preservation and stable default colors
+PASS state: epoch, revision, dimensions/subworld, auth, foreground, in-flight, shutdown
+BUILD SUCCESSFUL in 4s
+[02:31:26] [main/INFO] (FabricLoader/GameProvider) Loading Minecraft 1.21.11 with Fabric Loader 0.18.4
+	- fabric-api 0.141.3+1.21.11
+	- xaerominimap 26.6.0
+	- xaeroworldmap 1.47.0
+[02:31:29] [Render thread/INFO] (EntegreMarkers) Entegre Markers 0.1.2 initialized; client command registration callback installed; Xaero compatible=true
+[02:31:30] [Render thread/INFO] (EntegreMarkersSmoke) PASS native Xaero waypoint getters: Unicode initials, color, world-map-only visibility, enabled and canonical data retained
+[02:31:30] [Render thread/INFO] (EntegreMarkersSmoke) PASS actual Fabric0.18.4/API0.141.3 event registered /entegremarkers pair/status/forget in Brigadier; disconnected client; no command executed
+[02:31:31] [Render thread/INFO] (Minecraft) Sound engine started
+[02:31:31] [Render thread/INFO] (Minecraft) Created: 1024x1024x0 minecraft:textures/atlas/gui.png-atlas
+PASS label <=3 UTF16 units with no split surrogate, multiple supplementary regression.
+PASS JAR excludes smoke/test/credential/player data.
+Full world map only; minimap+world HUD hidden. Native class getters/filters asserted; actual multiplayer pixels and Windows NOT RUN.

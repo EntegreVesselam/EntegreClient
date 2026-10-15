@@ -23,6 +23,20 @@ public final class CommandRegistrationSmoke implements ClientModInitializer {
                 var child = root.getChild(name);
                 if (child == null || child.getCommand() == null) throw new AssertionError("missing subcommand " + name);
             }
+            var fixture = new Snapshot.Marker("synthetic-appearance","Çınar Kalesi","","world","minecraft:overworld",1,64,2,4,"poi",1);
+            var waypoint = XaeroLayer.waypoint(fixture);
+            if(!waypoint.getInitials().equals("ÇK")) throw new AssertionError("native name initials");
+            if(waypoint.getVisibility()!=xaero.hud.minimap.waypoint.WaypointVisibilityType.WORLD_MAP_LOCAL) throw new AssertionError("native managed marker must hide from world HUD");
+            if(waypoint.isDisabled()) throw new AssertionError("map marker must remain enabled");
+            if(new xaero.hud.minimap.waypoint.render.world.WaypointWorldRenderProvider().filter.test(waypoint)) throw new AssertionError("native HUD filter must hide managed point");
+            if(new xaero.hud.minimap.waypoint.render.WaypointMapRenderProvider().filter.test(waypoint)) throw new AssertionError("world-map-only also intentionally hides minimap");
+            var personal = new xaero.common.minimap.waypoints.Waypoint(1,64,2,"Çınar Kalesi","P",xaero.hud.minimap.waypoint.WaypointColor.DARK_RED);
+            if(personal.getVisibility()!=xaero.hud.minimap.waypoint.WaypointVisibilityType.LOCAL || personal.getColor()!=4 || !personal.getInitials().equals("P")) throw new AssertionError("personal waypoint defaults must remain unchanged");
+            if(!new xaero.hud.minimap.waypoint.render.world.WaypointWorldRenderProvider().filter.test(personal)) throw new AssertionError("personal HUD eligibility preserved");
+
+            if(waypoint.getColor()!=MarkerAppearance.color(fixture.id(),4)) throw new AssertionError("native automatic color");
+            if(waypoint.getX()!=1 || waypoint.getY()!=64 || waypoint.getZ()!=2 || !waypoint.getName().equals(fixture.name())) throw new AssertionError("native canonical coordinates/name unchanged");
+            org.slf4j.LoggerFactory.getLogger("EntegreMarkersSmoke").info("PASS native Xaero waypoint getters: Unicode initials, color, world-map-only visibility, enabled and canonical data retained");
             org.slf4j.LoggerFactory.getLogger("EntegreMarkersSmoke").info("PASS actual Fabric0.18.4/API0.141.3 event registered /entegremarkers pair/status/forget in Brigadier; disconnected client; no command executed");
         });
     }
