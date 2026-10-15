@@ -1,0 +1,29 @@
+name: Verify packwiz distribution
+on:
+  pull_request:
+  push:
+    branches: [main]
+permissions:
+  contents: read
+jobs:
+  checks:
+    runs-on: ubuntu-latest
+    timeout-minutes: 10
+    steps:
+      - uses: actions/checkout@11d5960a326750d5838078e36cf38b85af677262
+      - name: Verify pack hashes and immutable compatibility rows
+        run: python3 scripts/verify-pack.py
+      - name: Build pinned packwiz for preservation tests
+        run: |
+          go install github.com/packwiz/packwiz@52b123018f9e19b49703f76e78ad415642acf5c5
+          echo "$(go env GOPATH)/bin" >> "$GITHUB_PATH"
+      - name: Verify refresh preservation and rejection cases
+        run: python3 scripts/check-pack-compat.py
+      - name: Fetch checksum-pinned reference installer
+        run: |
+          curl --fail --location --retry 3 --output "$RUNNER_TEMP/packwiz-installer.jar" https://github.com/packwiz/packwiz-installer/releases/download/v0.5.14/packwiz-installer.jar
+          printf '%s  %s\n' c9f646908d340d84773948a9a7d98bc1dae250d35e1016dc6e2b8459760b5598 "$RUNNER_TEMP/packwiz-installer.jar" | sha256sum --check --status
+      - name: Verify old and fresh installation data preservation
+        env:
+          PACKWIZ_INSTALLER_JAR: ${{ runner.temp }}/packwiz-installer.jar
+        run: python3 scripts/check-packwiz-migration.py

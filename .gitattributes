@@ -1,0 +1,4 @@
+# Preserve packwiz hash bytes on Windows, macOS and Linux.
+* -text
+# Gradle Windows launcher intentionally uses CRLF.
+*.bat whitespace=cr-at-eol

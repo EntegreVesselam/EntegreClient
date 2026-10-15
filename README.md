@@ -1,3 +1,46 @@
+# Entegre Client — otomatik marker güncellemesi
+
+## 2.1.1 — mevcut Prism kurulumu için
+
+Minecraft1.21.11 / Fabric0.18.4 / FabricAPI0.141.3 korunur. Bu sürüm,
+Entegre Markers0.1.1 ve gereken Xaero Minimap26.6.0 / WorldMap1.47.0 güncellemesini
+packwiz ile dağıtır; diğer mevcut mod sürümlerini değiştirmez. Complementary
+shader metadata ile indirilir; mevcut Iris seçimi `preserve` ile korunur.
+
+Prism açılış komutu aynı kalır: mevcut `packwiz-installer-bootstrap.jar` ve
+`https://raw.githubusercontent.com/EntegreVesselam/EntegreClient/main/pack.toml`.
+Oyunu kapatıp aynı instance'ı yeniden açın. Kurucu hatası varsa oyunu devam
+ettirmek yerine hatayı bildirin; mod JAR'ını elle kopyalamak gerekmez.
+
+Sunucuya `entegrevesselam.com` adresiyle girdikten sonra `/entegremarkers pair`
+yazın. Site hesabıyla cihazı onaylayın. `/entegremarkers status` eşitleme durumunu,
+`/entegremarkers forget` yerel bağlantıyı kaldırmayı sağlar. Oyun öndeyken liste
+60s aralıkla okunur. Sunucuya ek plugin gerekmez; veri korunan site API'sinden
+gelir. Kişisel waypoint dosyaları yerine ayrı Xaero runtime katmanı kullanılır.
+
+## Kişisel veriyi koruyan eski paket geçişi
+
+Eski paket bazı oyuncu/cache dosyalarını yanlışlıkla yönetiyordu. Bunların eski
+URI'leri kalıcı, indirme yapmayan uyumluluk kayıtları olarak indekste tutulur.
+Mevcut dosyalar silinmez veya okunup yeniden dağıtılmaz; temiz kurulumda bu
+eski dosyalar oluşturulmaz. Eski URI kayıtlarını silmek eski kurulumlarda veri
+silebilir; görünürde gereksiz diye kaldırmayın. `compatibility/` kaynağı ve
+üçüncü taraf installer davranışı `docs/packwiz-migration.md` içinde açıklanır.
+
+Bakımda doğrudan `packwiz refresh` yerine Python3.11+ ile:
+
+```sh
+python3 scripts/refresh-pack.py
+python3 scripts/verify-pack.py
+python3 scripts/check-pack-compat.py
+PACKWIZ_INSTALLER_JAR=/absolute/packwiz-installer.jar python3 scripts/check-packwiz-migration.py
+```
+
+Minecraft oyun içi/Windows kabulü gerçek kullanıcı oturumuyla ayrıca doğrulanır.
+Eski oyuncu instance'ını test uğruna silmeyin veya sıfırlamayın.
+
+---
+
 # 🏰 Entegre Vesselam - Client
 
 **Entegre Vesselam** (2013-∞) sunucusu için özel olarak hazırlanmış resmi mod paketidir.

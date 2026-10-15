@@ -1,0 +1,14 @@
+{
+ "entegre_markers.unpaired":"Entegre markers: not paired. /entegremarkers pair",
+ "entegre_markers.incompatible":"Entegre markers disabled: requires Xaero Minimap 26.6.0 and World Map 1.47.0, or the layer has an ownership conflict.",
+ "entegre_markers.waiting_server":"Entegre markers only work on entegrevesselam.com after its world is ready.",
+ "entegre_markers.expired":"Pairing or device access expired. /entegremarkers pair",
+ "entegre_markers.denied":"Entegre markers hidden: site access denied. Check membership and pair again.",
+ "entegre_markers.ready":"Entegre markers are up to date. Your personal waypoint sets are preserved.",
+ "entegre_markers.offline":"Connection failed or invalid response; the last valid layer is retained.",
+ "entegre_markers.pair_pending":"Waiting for device approval; polling at least 5 seconds apart.",
+ "entegre_markers.browser_opened":"Browser opened for site approval. Microsoft sign-in happens only in your browser.",
+ "entegre_markers.pair_failed":"Could not start pairing. Retry /entegremarkers pair.",
+ "entegre_markers.paired":"Device paired; shared markers will be fetched.",
+ "entegre_markers.store_failed":"Could not save or remove local device access. Check file permissions."
+}

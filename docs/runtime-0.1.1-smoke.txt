@@ -1,0 +1,13 @@
+Isolated macOS arm64 Java21 runSmoke; actual Fabric command event, no command execution, account/world/server connection
+[02:12:44] [main/INFO] (FabricLoader/GameProvider) Loading Minecraft 1.21.11 with Fabric Loader 0.18.4
+	- entegre_markers 0.1.1
+	- fabric-api 0.141.3+1.21.11
+	- xaerominimap 26.6.0
+	- xaeroworldmap 1.47.0
+[02:12:47] [Render thread/INFO] (EntegreMarkers) Entegre Markers 0.1.1 initialized; client command registration callback installed; Xaero compatible=true
+[02:12:49] [Render thread/INFO] (EntegreMarkersSmoke) PASS actual Fabric0.18.4/API0.141.3 event registered /entegremarkers pair/status/forget in Brigadier; disconnected client; no command executed
+[02:12:49] [Render thread/INFO] (WorldMap) Loading Xaero's World Map - Stage 2/2
+[02:12:49] [Render thread/INFO] (XaeroMinimap) Loading Xaero's Minimap - Stage 2/2
+[02:12:50] [Render thread/INFO] (Minecraft) Sound engine started
+[02:12:50] [Render thread/INFO] (Minecraft) Created: 1024x1024x0 minecraft:textures/atlas/gui.png-atlas
+Development process38717 stopped. Windows/realworld marker acceptance NOT RUN.

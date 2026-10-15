@@ -1,2 +1,56 @@
-.claude/
+# Repository and maintenance files are not Minecraft content.
 .git/
+.claude/
+.DS_Store
+**/.DS_Store
+.gitignore
+.gitattributes
+.packwizignore
+AGENTS.md
+README.md
+CHANGELOG.md
+LICENSE
+scripts/
+docs/
+.developer-toolpack/
+*.mrpack
+packwiz-installer-bootstrap.jar
+
+# Old metadata copies; only mods/*.pw.toml are authoritative.
+mods/.index/
+
+# Player data and generated files must never be distributed.
+xaero/
+servers.dat_old
+*.xwmc
+*.xwmc.outdated
+*.lock
+*.backup*
+config/sodium-fingerprint.json
+logs/
+crash-reports/
+saves/
+screenshots/
+.fabric/
+*.log
+*.class
+mods/*.jar
+
+# Shader binaries are downloaded using metadata instead.
+shaderpacks/*.zip
+shaderpacks/*.zip.txt
+
+**/README.md
+**/CHANGELOG.md
+
+# Bridge sources/build tools and local device secrets are never game content.
+marker-sync/
+config/entegre-markers/
+
+# Locally built Entegre bridge is bundled; downloaded third-party JARs remain excluded.
+!mods/entegre-markers-0.1.1.jar
+
+# Permanent legacy ownership tombstones are generated, never distributed as files.
+compatibility/
+
+.github/

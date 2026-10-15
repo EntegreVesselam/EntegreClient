@@ -1,0 +1,59 @@
+plugins { id 'fabric-loom' version '1.14.10' }
+version = '0.1.1'
+group = 'com.entegrevesselam'
+base { archivesName = 'entegre-markers' }
+repositories { maven { url = 'https://api.modrinth.com/maven' } }
+// Xaero embeds its required library; Loom development runs do not load nested jars automatically.
+configurations { xaeroBundle { transitive = false } }
+dependencies { xaeroBundle 'maven.modrinth:xaeros-minimap:e0EvhWco' }
+def xaeroLibDirectory = file('.gradle/xaero-library')
+def xaeroLib = new File(xaeroLibDirectory, 'xaerolib-fabric-1.21.11-1.7.3.jar')
+if (!xaeroLib.exists()) {
+    copy {
+        from zipTree(configurations.xaeroBundle.singleFile)
+        include 'META-INF/jars/xaerolib-fabric-1.21.11-1.7.3.jar'
+        eachFile { path = name }
+        includeEmptyDirs = false
+        into xaeroLibDirectory
+    }
+}
+dependencies {
+    modLocalRuntime files(xaeroLib)
+    minecraft 'com.mojang:minecraft:1.21.11'
+    mappings 'net.fabricmc:yarn:1.21.11+build.6:v2'
+    modImplementation 'net.fabricmc:fabric-loader:0.18.4'
+    modImplementation 'net.fabricmc.fabric-api:fabric-api:0.141.3+1.21.11'
+    modCompileOnly 'maven.modrinth:xaeros-minimap:e0EvhWco'
+    modCompileOnly 'maven.modrinth:xaeros-world-map:oMGDn8rs'
+    modLocalRuntime 'maven.modrinth:xaeros-minimap:e0EvhWco'
+    modLocalRuntime 'maven.modrinth:xaeros-world-map:oMGDn8rs'
+}
+java { toolchain { languageVersion = JavaLanguageVersion.of(21) }; withSourcesJar() }
+tasks.withType(JavaCompile).configureEach { options.release = 21 }
+processResources { inputs.property 'version', project.version; filesMatching('fabric.mod.json') { expand 'version': project.version } }
+tasks.register('contractTest', JavaExec) { dependsOn testClasses; classpath = sourceSets.test.runtimeClasspath; mainClass = 'com.entegrevesselam.markers.ContractTests'; enableAssertions = true }
+check.dependsOn contractTest
+
+// Assertions run through contractTest; this module intentionally has no JUnit dependency.
+tasks.named("test") { dependsOn contractTest; failOnNoDiscoveredTests = false }
+
+// A separate source set keeps the real-client command probe out of both published JARs.
+sourceSets {
+    smoke {
+        compileClasspath += sourceSets.main.output + sourceSets.main.compileClasspath
+        runtimeClasspath += sourceSets.main.output + sourceSets.main.runtimeClasspath
+    }
+}
+loom {
+    mods {
+        entegre_markers { sourceSet sourceSets.main }
+        entegre_markers_smoke { sourceSet sourceSets.smoke }
+    }
+    runs {
+        smoke {
+            client()
+            source sourceSets.smoke
+            runDir 'run'
+        }
+    }
+}

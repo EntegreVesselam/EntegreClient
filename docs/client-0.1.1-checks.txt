@@ -1,0 +1,10 @@
+JAR SHA256 c02d7b9b7836d0d2ea98ed6aba44c999f20f68bff3e8bdf8f9f02321ac13bad3
+PASS snapshot: strict fields, dimensions, coordinates, IDs, icons, UTF8, empty, 1000 and 256KiB boundaries
+PASS API: in-memory wire only, fixed origin, token scope, timeout, pairing URI/expiry, pending
+PASS store: temporary fixture only, atomic persistence, owner-only POSIX, expiry, forget
+PASS HTTP body: streaming limit and cancellation
+PASS pairing scheduler: fake clock 5 second/10 minute, foreground, target, one in flight
+PASS ownership: existing layer, realm identity, record identity, collision no mutation
+PASS state: epoch, revision, dimensions/subworld, auth, foreground, in-flight, shutdown
+BUILD SUCCESSFUL in 5s
+PASS distribution and sources JARs exclude smoke/test/player/credential data
