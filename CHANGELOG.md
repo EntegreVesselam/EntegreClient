@@ -1,5 +1,7 @@
-# 2.4.1 — iki Prism profili / Minecraft26.3 (2026-10-18)
+# 2.4.1 — iki Prism profili / Minecraft26.3 (2026-10-19)
 
+- Mevcut 1.21.11 oyuncuları için varsayılan 26.2 geçişi, profil yedeği ve Prism yeniden açılış koruması.
+- Haber/etkinlik menüsü ve yeni Friends/yardımcı düğme uyumluluğu.
 - Ayrı26.2 ve26.3 profil/Packwiz kanalı; Java25/Fabric0.19.5.
 - Kullanıcının Voxy0.2.20-beta / 23b3486 test JAR'ını içerir; Extra ve WorldGen kapalıdır.
 - Canlı2.1.5 topluluk menüsü ve marker0.1.3 davranışları korunur; Markers0.2.1 portu.

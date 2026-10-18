@@ -1,4 +1,7 @@
-# Topluluk menüsü — yerel aday
+# Topluluk menüsü — 2.1.4 hazırlık kaydı
+
+Güncel 2.1.6 menü/uzak kaynak düzeltmesi: [Duyurular ve etkinlikler](community-events.md).
+Aşağıdaki ilk aday gözlemleri tarihsel 2.1.4 kapsamındadır.
 
 Sonraki fotoğraf havuzu değişikliği: [Anı fotoğrafları](community-memories.md).
 

@@ -5,10 +5,10 @@ import java.util.Arrays;
 public final class LauncherTest {
     public static void main(String[] args) {
         var normal = Launcher.parseArguments(new String[0]);
-        check(normal.packUrl().equals(Launcher.DEFAULT_PACK_URL), "normal launch uses existing pack");
+        check(normal.packUrl().equals(ProfileMigration.channelUrl(Launcher.DEFAULT_PACK_URL)), "normal launch uses existing pack");
         check(!normal.settings() && !normal.preview(), "normal launch mode");
         var command = Arrays.asList(Launcher.upstreamArguments(normal));
-        check(command.equals(Arrays.asList("--timeout", "0", "--title", "Entegre Vesselam", Launcher.DEFAULT_PACK_URL)), "no countdown; GUI remains enabled");
+        check(command.equals(Arrays.asList("--timeout", "0", "--title", "Entegre Vesselam", ProfileMigration.channelUrl(Launcher.DEFAULT_PACK_URL))), "no countdown; GUI remains enabled");
         check(Launcher.parseArguments(new String[]{"--settings"}).settings(), "separate settings access");
         check(Launcher.parseArguments(new String[]{"--preview"}).preview(), "preview mode");
         var local = Launcher.parseArguments(new String[]{"--settings", "http://127.0.0.1:8765/pack.toml"});

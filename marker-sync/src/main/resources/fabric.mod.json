@@ -3,11 +3,12 @@
   "id": "entegre_markers",
   "version": "${version}",
   "name": "Entegre Markers",
-  "description": "Site tarafından onaylanan ortak markerları salt okunur Xaero katmanında gösterir.",
+  "description": "Site taraf\u0131ndan onaylanan ortak markerlar\u0131 salt okunur Xaero katman\u0131nda g\u00f6sterir.",
   "environment": "client",
   "entrypoints": {
     "client": [
-      "com.entegrevesselam.markers.EntegreMarkers"
+      "com.entegrevesselam.markers.EntegreMarkers",
+      "com.entegrevesselam.markers.TitleMenuCompat"
     ]
   },
   "license": "MIT",

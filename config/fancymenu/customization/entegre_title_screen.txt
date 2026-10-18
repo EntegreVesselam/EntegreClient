@@ -66,16 +66,16 @@ element {
 
 element {
   shape = rectangle
-  color = #0D1714D9
+  color = #0B1412F2
   interactable = false
   element_type = shape
   instance_identifier = community-play-panel
   custom_element_layer_name = community-play-panel
   anchor_point = top-left
-  advanced_posx = {"placeholder":"calc","values":{"expression":"({"placeholder":"guiwidth"}/2-((200+({"placeholder":"guiwidth"}-48)/2-abs(200-({"placeholder":"guiwidth"}-48)/2))/2)-8)-8","decimal":"false"}}
-  advanced_posy = {"placeholder":"calc","values":{"expression":"(({"placeholder":"guiheight"}-160)/2)-6","decimal":"false"}}
-  advanced_width = {"placeholder":"calc","values":{"expression":"((200+({"placeholder":"guiwidth"}-48)/2-abs(200-({"placeholder":"guiwidth"}-48)/2))/2)+16","decimal":"false"}}
-  advanced_height = {"placeholder":"calc","values":{"expression":"170","decimal":"false"}}
+  advanced_posx = {"placeholder":"calc","values":{"expression":"({"placeholder":"guiwidth"}/2-((240+({"placeholder":"guiwidth"}-48)/2-abs(240-({"placeholder":"guiwidth"}-48)/2))/2)-8)-8","decimal":"false"}}
+  advanced_posy = {"placeholder":"calc","values":{"expression":"(({"placeholder":"guiheight"}-220)/2)-6","decimal":"false"}}
+  advanced_width = {"placeholder":"calc","values":{"expression":"((240+({"placeholder":"guiwidth"}-48)/2-abs(240-({"placeholder":"guiwidth"}-48)/2))/2)+16","decimal":"false"}}
+  advanced_height = {"placeholder":"calc","values":{"expression":"218","decimal":"false"}}
   x = 0
   y = 0
   width = 100
@@ -93,16 +93,16 @@ element {
 
 element {
   shape = rectangle
-  color = #0D1714D9
+  color = #0B1412F2
   interactable = false
   element_type = shape
   instance_identifier = community-news-panel
   custom_element_layer_name = community-news-panel
   anchor_point = top-left
   advanced_posx = {"placeholder":"calc","values":{"expression":"({"placeholder":"guiwidth"}/2+8)-8","decimal":"false"}}
-  advanced_posy = {"placeholder":"calc","values":{"expression":"(({"placeholder":"guiheight"}-160)/2)-6","decimal":"false"}}
-  advanced_width = {"placeholder":"calc","values":{"expression":"((200+({"placeholder":"guiwidth"}-48)/2-abs(200-({"placeholder":"guiwidth"}-48)/2))/2)+16","decimal":"false"}}
-  advanced_height = {"placeholder":"calc","values":{"expression":"170","decimal":"false"}}
+  advanced_posy = {"placeholder":"calc","values":{"expression":"(({"placeholder":"guiheight"}-220)/2)-6","decimal":"false"}}
+  advanced_width = {"placeholder":"calc","values":{"expression":"((240+({"placeholder":"guiwidth"}-48)/2-abs(240-({"placeholder":"guiwidth"}-48)/2))/2)+16","decimal":"false"}}
+  advanced_height = {"placeholder":"calc","values":{"expression":"218","decimal":"false"}}
   x = 0
   y = 0
   width = 100
@@ -126,9 +126,9 @@ element {
   instance_identifier = community-play-accent
   custom_element_layer_name = community-play-accent
   anchor_point = top-left
-  advanced_posx = {"placeholder":"calc","values":{"expression":"({"placeholder":"guiwidth"}/2-((200+({"placeholder":"guiwidth"}-48)/2-abs(200-({"placeholder":"guiwidth"}-48)/2))/2)-8)-8","decimal":"false"}}
-  advanced_posy = {"placeholder":"calc","values":{"expression":"(({"placeholder":"guiheight"}-160)/2)-6","decimal":"false"}}
-  advanced_width = {"placeholder":"calc","values":{"expression":"((200+({"placeholder":"guiwidth"}-48)/2-abs(200-({"placeholder":"guiwidth"}-48)/2))/2)+16","decimal":"false"}}
+  advanced_posx = {"placeholder":"calc","values":{"expression":"({"placeholder":"guiwidth"}/2-((240+({"placeholder":"guiwidth"}-48)/2-abs(240-({"placeholder":"guiwidth"}-48)/2))/2)-8)-8","decimal":"false"}}
+  advanced_posy = {"placeholder":"calc","values":{"expression":"(({"placeholder":"guiheight"}-220)/2)-6","decimal":"false"}}
+  advanced_width = {"placeholder":"calc","values":{"expression":"((240+({"placeholder":"guiwidth"}-48)/2-abs(240-({"placeholder":"guiwidth"}-48)/2))/2)+16","decimal":"false"}}
   advanced_height = {"placeholder":"calc","values":{"expression":"1","decimal":"false"}}
   x = 0
   y = 0
@@ -154,8 +154,8 @@ element {
   custom_element_layer_name = community-news-accent
   anchor_point = top-left
   advanced_posx = {"placeholder":"calc","values":{"expression":"({"placeholder":"guiwidth"}/2+8)-8","decimal":"false"}}
-  advanced_posy = {"placeholder":"calc","values":{"expression":"(({"placeholder":"guiheight"}-160)/2)-6","decimal":"false"}}
-  advanced_width = {"placeholder":"calc","values":{"expression":"((200+({"placeholder":"guiwidth"}-48)/2-abs(200-({"placeholder":"guiwidth"}-48)/2))/2)+16","decimal":"false"}}
+  advanced_posy = {"placeholder":"calc","values":{"expression":"(({"placeholder":"guiheight"}-220)/2)-6","decimal":"false"}}
+  advanced_width = {"placeholder":"calc","values":{"expression":"((240+({"placeholder":"guiwidth"}-48)/2-abs(240-({"placeholder":"guiwidth"}-48)/2))/2)+16","decimal":"false"}}
   advanced_height = {"placeholder":"calc","values":{"expression":"1","decimal":"false"}}
   x = 0
   y = 0
@@ -181,8 +181,8 @@ element {
   instance_identifier = community-logo
   custom_element_layer_name = community-logo
   anchor_point = top-left
-  advanced_posx = {"placeholder":"calc","values":{"expression":"({"placeholder":"guiwidth"}/2-((200+({"placeholder":"guiwidth"}-48)/2-abs(200-({"placeholder":"guiwidth"}-48)/2))/2)-8)","decimal":"false"}}
-  advanced_posy = {"placeholder":"calc","values":{"expression":"(({"placeholder":"guiheight"}-160)/2)+6","decimal":"false"}}
+  advanced_posx = {"placeholder":"calc","values":{"expression":"({"placeholder":"guiwidth"}/2-((240+({"placeholder":"guiwidth"}-48)/2-abs(240-({"placeholder":"guiwidth"}-48)/2))/2)-8)","decimal":"false"}}
+  advanced_posy = {"placeholder":"calc","values":{"expression":"(({"placeholder":"guiheight"}-220)/2)+6","decimal":"false"}}
   advanced_width = {"placeholder":"calc","values":{"expression":"28","decimal":"false"}}
   advanced_height = {"placeholder":"calc","values":{"expression":"28","decimal":"false"}}
   x = 0
@@ -205,7 +205,7 @@ element {
   source_mode = direct
   interactable = false
   shadow = true
-  scale = 1.7
+  scale = 1.5
   base_color = #EDF2E9FF
   text_border = 0
   line_spacing = 3
@@ -218,9 +218,9 @@ element {
   instance_identifier = community-entegre
   custom_element_layer_name = community-entegre
   anchor_point = top-left
-  advanced_posx = {"placeholder":"calc","values":{"expression":"({"placeholder":"guiwidth"}/2-((200+({"placeholder":"guiwidth"}-48)/2-abs(200-({"placeholder":"guiwidth"}-48)/2))/2)-8)+36","decimal":"false"}}
-  advanced_posy = {"placeholder":"calc","values":{"expression":"(({"placeholder":"guiheight"}-160)/2)+3","decimal":"false"}}
-  advanced_width = {"placeholder":"calc","values":{"expression":"((200+({"placeholder":"guiwidth"}-48)/2-abs(200-({"placeholder":"guiwidth"}-48)/2))/2)-36","decimal":"false"}}
+  advanced_posx = {"placeholder":"calc","values":{"expression":"({"placeholder":"guiwidth"}/2-((240+({"placeholder":"guiwidth"}-48)/2-abs(240-({"placeholder":"guiwidth"}-48)/2))/2)-8)+36","decimal":"false"}}
+  advanced_posy = {"placeholder":"calc","values":{"expression":"(({"placeholder":"guiheight"}-220)/2)+3","decimal":"false"}}
+  advanced_width = {"placeholder":"calc","values":{"expression":"((240+({"placeholder":"guiwidth"}-48)/2-abs(240-({"placeholder":"guiwidth"}-48)/2))/2)-36","decimal":"false"}}
   advanced_height = {"placeholder":"calc","values":{"expression":"18","decimal":"false"}}
   x = 0
   y = 0
@@ -242,7 +242,7 @@ element {
   source_mode = direct
   interactable = false
   shadow = true
-  scale = 1.7
+  scale = 1.5
   base_color = #BCE095FF
   text_border = 0
   line_spacing = 3
@@ -255,9 +255,9 @@ element {
   instance_identifier = community-vesselam
   custom_element_layer_name = community-vesselam
   anchor_point = top-left
-  advanced_posx = {"placeholder":"calc","values":{"expression":"({"placeholder":"guiwidth"}/2-((200+({"placeholder":"guiwidth"}-48)/2-abs(200-({"placeholder":"guiwidth"}-48)/2))/2)-8)+36","decimal":"false"}}
-  advanced_posy = {"placeholder":"calc","values":{"expression":"(({"placeholder":"guiheight"}-160)/2)+21","decimal":"false"}}
-  advanced_width = {"placeholder":"calc","values":{"expression":"((200+({"placeholder":"guiwidth"}-48)/2-abs(200-({"placeholder":"guiwidth"}-48)/2))/2)-36","decimal":"false"}}
+  advanced_posx = {"placeholder":"calc","values":{"expression":"({"placeholder":"guiwidth"}/2-((240+({"placeholder":"guiwidth"}-48)/2-abs(240-({"placeholder":"guiwidth"}-48)/2))/2)-8)+36","decimal":"false"}}
+  advanced_posy = {"placeholder":"calc","values":{"expression":"(({"placeholder":"guiheight"}-220)/2)+21","decimal":"false"}}
+  advanced_width = {"placeholder":"calc","values":{"expression":"((240+({"placeholder":"guiwidth"}-48)/2-abs(240-({"placeholder":"guiwidth"}-48)/2))/2)-36","decimal":"false"}}
   advanced_height = {"placeholder":"calc","values":{"expression":"18","decimal":"false"}}
   x = 0
   y = 0
@@ -279,10 +279,10 @@ element {
   source_mode = direct
   interactable = false
   shadow = true
-  scale = 0.8
+  scale = 1.0
   base_color = #DCE6D2FF
   text_border = 0
-  line_spacing = 3
+  line_spacing = 1
   enable_scrolling = false
   auto_line_wrapping = true
   parse_markdown = true
@@ -292,10 +292,10 @@ element {
   instance_identifier = community-quote
   custom_element_layer_name = community-quote
   anchor_point = top-left
-  advanced_posx = {"placeholder":"calc","values":{"expression":"({"placeholder":"guiwidth"}/2-((200+({"placeholder":"guiwidth"}-48)/2-abs(200-({"placeholder":"guiwidth"}-48)/2))/2)-8)","decimal":"false"}}
-  advanced_posy = {"placeholder":"calc","values":{"expression":"(({"placeholder":"guiheight"}-160)/2)+44","decimal":"false"}}
-  advanced_width = {"placeholder":"calc","values":{"expression":"((200+({"placeholder":"guiwidth"}-48)/2-abs(200-({"placeholder":"guiwidth"}-48)/2))/2)","decimal":"false"}}
-  advanced_height = {"placeholder":"calc","values":{"expression":"19","decimal":"false"}}
+  advanced_posx = {"placeholder":"calc","values":{"expression":"({"placeholder":"guiwidth"}/2-((240+({"placeholder":"guiwidth"}-48)/2-abs(240-({"placeholder":"guiwidth"}-48)/2))/2)-8)","decimal":"false"}}
+  advanced_posy = {"placeholder":"calc","values":{"expression":"(({"placeholder":"guiheight"}-220)/2)+40","decimal":"false"}}
+  advanced_width = {"placeholder":"calc","values":{"expression":"((240+({"placeholder":"guiwidth"}-48)/2-abs(240-({"placeholder":"guiwidth"}-48)/2))/2)","decimal":"false"}}
+  advanced_height = {"placeholder":"calc","values":{"expression":"26","decimal":"false"}}
   x = 0
   y = 0
   width = 100
@@ -316,7 +316,7 @@ element {
   source_mode = direct
   interactable = false
   shadow = true
-  scale = 1.25
+  scale = 1.0
   base_color = #BCE095FF
   text_border = 0
   line_spacing = 3
@@ -330,9 +330,9 @@ element {
   custom_element_layer_name = community-news-title
   anchor_point = top-left
   advanced_posx = {"placeholder":"calc","values":{"expression":"({"placeholder":"guiwidth"}/2+8)","decimal":"false"}}
-  advanced_posy = {"placeholder":"calc","values":{"expression":"(({"placeholder":"guiheight"}-160)/2)+6","decimal":"false"}}
-  advanced_width = {"placeholder":"calc","values":{"expression":"((200+({"placeholder":"guiwidth"}-48)/2-abs(200-({"placeholder":"guiwidth"}-48)/2))/2)","decimal":"false"}}
-  advanced_height = {"placeholder":"calc","values":{"expression":"16","decimal":"false"}}
+  advanced_posy = {"placeholder":"calc","values":{"expression":"(({"placeholder":"guiheight"}-220)/2)","decimal":"false"}}
+  advanced_width = {"placeholder":"calc","values":{"expression":"((240+({"placeholder":"guiwidth"}-48)/2-abs(240-({"placeholder":"guiwidth"}-48)/2))/2)","decimal":"false"}}
+  advanced_height = {"placeholder":"calc","values":{"expression":"20","decimal":"false"}}
   x = 0
   y = 0
   width = 100
@@ -348,52 +348,16 @@ element {
   stretch_y = false
 }
 
-element {
-  source = Sunucuda neler oluyor?
-  source_mode = direct
-  interactable = false
-  shadow = true
-  scale = 0.8
-  base_color = #EDF2E9FF
-  text_border = 0
-  line_spacing = 3
-  enable_scrolling = false
-  auto_line_wrapping = true
-  parse_markdown = true
-  remove_html_breaks = true
-  hyperlink_color = #BCE095FF
-  element_type = text_v2
-  instance_identifier = community-news-subtitle
-  custom_element_layer_name = community-news-subtitle
-  anchor_point = top-left
-  advanced_posx = {"placeholder":"calc","values":{"expression":"({"placeholder":"guiwidth"}/2+8)","decimal":"false"}}
-  advanced_posy = {"placeholder":"calc","values":{"expression":"(({"placeholder":"guiheight"}-160)/2)+24","decimal":"false"}}
-  advanced_width = {"placeholder":"calc","values":{"expression":"((200+({"placeholder":"guiwidth"}-48)/2-abs(200-({"placeholder":"guiwidth"}-48)/2))/2)","decimal":"false"}}
-  advanced_height = {"placeholder":"calc","values":{"expression":"12","decimal":"false"}}
-  x = 0
-  y = 0
-  width = 100
-  height = 20
-  auto_sizing = false
-  stay_on_screen = false
-  base_opacity = 1.0
-  appearance_delay = no_delay
-  fade_in_v2 = no_fading
-  fade_out = no_fading
-  enable_parallax = false
-  stretch_x = false
-  stretch_y = false
-}
 
 element {
-  source = [source:web]https://entegrevesselam.com/api/client-announcements/text
+  source = [source:web]https://entegrevesselam.com/api/client-announcements/menu.txt
   source_mode = resource
   interactable = true
   shadow = true
-  scale = 0.85
+  scale = 1.0
   base_color = #EDF2E9FF
   text_border = 0
-  line_spacing = 3
+  line_spacing = 1
   enable_scrolling = true
   auto_line_wrapping = true
   parse_markdown = true
@@ -404,9 +368,9 @@ element {
   custom_element_layer_name = community-news-feed
   anchor_point = top-left
   advanced_posx = {"placeholder":"calc","values":{"expression":"({"placeholder":"guiwidth"}/2+8)","decimal":"false"}}
-  advanced_posy = {"placeholder":"calc","values":{"expression":"(({"placeholder":"guiheight"}-160)/2)+40","decimal":"false"}}
-  advanced_width = {"placeholder":"calc","values":{"expression":"((200+({"placeholder":"guiwidth"}-48)/2-abs(200-({"placeholder":"guiwidth"}-48)/2))/2)","decimal":"false"}}
-  advanced_height = {"placeholder":"calc","values":{"expression":"79","decimal":"false"}}
+  advanced_posy = {"placeholder":"calc","values":{"expression":"(({"placeholder":"guiheight"}-220)/2)+16","decimal":"false"}}
+  advanced_width = {"placeholder":"calc","values":{"expression":"((240+({"placeholder":"guiwidth"}-48)/2-abs(240-({"placeholder":"guiwidth"}-48)/2))/2)","decimal":"false"}}
+  advanced_height = {"placeholder":"calc","values":{"expression":"70","decimal":"false"}}
   x = 0
   y = 0
   width = 100
@@ -427,7 +391,7 @@ element {
   source_mode = direct
   interactable = true
   shadow = true
-  scale = 0.8
+  scale = 1.0
   base_color = #EDF2E9FF
   text_border = 0
   line_spacing = 3
@@ -440,10 +404,10 @@ element {
   instance_identifier = community-links
   custom_element_layer_name = community-links
   anchor_point = top-left
-  advanced_posx = {"placeholder":"calc","values":{"expression":"({"placeholder":"guiwidth"}/2+8)","decimal":"false"}}
-  advanced_posy = {"placeholder":"calc","values":{"expression":"(({"placeholder":"guiheight"}-160)/2)+123","decimal":"false"}}
-  advanced_width = {"placeholder":"calc","values":{"expression":"((200+({"placeholder":"guiwidth"}-48)/2-abs(200-({"placeholder":"guiwidth"}-48)/2))/2)","decimal":"false"}}
-  advanced_height = {"placeholder":"calc","values":{"expression":"13","decimal":"false"}}
+  advanced_posx = {"placeholder":"calc","values":{"expression":"({"placeholder":"guiwidth"}/2-((240+({"placeholder":"guiwidth"}-48)/2-abs(240-({"placeholder":"guiwidth"}-48)/2))/2)-8)","decimal":"false"}}
+  advanced_posy = {"placeholder":"calc","values":{"expression":"(({"placeholder":"guiheight"}-220)/2)+188","decimal":"false"}}
+  advanced_width = {"placeholder":"calc","values":{"expression":"((240+({"placeholder":"guiwidth"}-48)/2-abs(240-({"placeholder":"guiwidth"}-48)/2))/2)","decimal":"false"}}
+  advanced_height = {"placeholder":"calc","values":{"expression":"20","decimal":"false"}}
   x = 0
   y = 0
   width = 100
@@ -471,8 +435,8 @@ element {
   custom_element_layer_name = community-all-news
   anchor_point = top-left
   advanced_posx = {"placeholder":"calc","values":{"expression":"({"placeholder":"guiwidth"}/2+8)","decimal":"false"}}
-  advanced_posy = {"placeholder":"calc","values":{"expression":"(({"placeholder":"guiheight"}-160)/2)+138","decimal":"false"}}
-  advanced_width = {"placeholder":"calc","values":{"expression":"((200+({"placeholder":"guiwidth"}-48)/2-abs(200-({"placeholder":"guiwidth"}-48)/2))/2)","decimal":"false"}}
+  advanced_posy = {"placeholder":"calc","values":{"expression":"(({"placeholder":"guiheight"}-220)/2)+164","decimal":"false"}}
+  advanced_width = {"placeholder":"calc","values":{"expression":"((240+({"placeholder":"guiwidth"}-48)/2-abs(240-({"placeholder":"guiwidth"}-48)/2))/2)","decimal":"false"}}
   advanced_height = {"placeholder":"calc","values":{"expression":"20","decimal":"false"}}
   x = 0
   y = 0
@@ -490,11 +454,11 @@ element {
 }
 
 element {
-  source = Entegre Client 2.1.5
+  source = Entegre Client 2.4.1 | 26.3
   source_mode = direct
   interactable = false
   shadow = true
-  scale = 0.65
+  scale = 1.0
   base_color = #DCE6D2FF
   text_border = 0
   line_spacing = 3
@@ -508,9 +472,9 @@ element {
   custom_element_layer_name = community-version
   anchor_point = top-left
   advanced_posx = {"placeholder":"calc","values":{"expression":"4","decimal":"false"}}
-  advanced_posy = {"placeholder":"calc","values":{"expression":"{"placeholder":"guiheight"}-21","decimal":"false"}}
-  advanced_width = {"placeholder":"calc","values":{"expression":"112","decimal":"false"}}
-  advanced_height = {"placeholder":"calc","values":{"expression":"8","decimal":"false"}}
+  advanced_posy = {"placeholder":"calc","values":{"expression":"{"placeholder":"guiheight"}-25","decimal":"false"}}
+  advanced_width = {"placeholder":"calc","values":{"expression":"220","decimal":"false"}}
+  advanced_height = {"placeholder":"calc","values":{"expression":"20","decimal":"false"}}
   x = 0
   y = 0
   width = 100
@@ -649,9 +613,9 @@ vanilla_button {
   advanced_horizontal_tilt_mode = false
   is_hidden = false
   automated_button_clicks = 0
-  advanced_posx = {"placeholder":"calc","values":{"expression":"({"placeholder":"guiwidth"}/2-((200+({"placeholder":"guiwidth"}-48)/2-abs(200-({"placeholder":"guiwidth"}-48)/2))/2)-8)","decimal":"false"}}
-  advanced_posy = {"placeholder":"calc","values":{"expression":"(({"placeholder":"guiheight"}-160)/2)+66","decimal":"false"}}
-  advanced_width = {"placeholder":"calc","values":{"expression":"((200+({"placeholder":"guiwidth"}-48)/2-abs(200-({"placeholder":"guiwidth"}-48)/2))/2)","decimal":"false"}}
+  advanced_posx = {"placeholder":"calc","values":{"expression":"({"placeholder":"guiwidth"}/2-((240+({"placeholder":"guiwidth"}-48)/2-abs(240-({"placeholder":"guiwidth"}-48)/2))/2)-8)","decimal":"false"}}
+  advanced_posy = {"placeholder":"calc","values":{"expression":"(({"placeholder":"guiheight"}-220)/2)+66","decimal":"false"}}
+  advanced_width = {"placeholder":"calc","values":{"expression":"((240+({"placeholder":"guiwidth"}-48)/2-abs(240-({"placeholder":"guiwidth"}-48)/2))/2)","decimal":"false"}}
   advanced_height = {"placeholder":"calc","values":{"expression":"20","decimal":"false"}}
 }
 
@@ -780,9 +744,9 @@ vanilla_button {
   advanced_horizontal_tilt_mode = false
   is_hidden = false
   automated_button_clicks = 0
-  advanced_posx = {"placeholder":"calc","values":{"expression":"({"placeholder":"guiwidth"}/2-((200+({"placeholder":"guiwidth"}-48)/2-abs(200-({"placeholder":"guiwidth"}-48)/2))/2)-8)+(((200+({"placeholder":"guiwidth"}-48)/2-abs(200-({"placeholder":"guiwidth"}-48)/2))/2)+4)/2","decimal":"false"}}
-  advanced_posy = {"placeholder":"calc","values":{"expression":"(({"placeholder":"guiheight"}-160)/2)+114","decimal":"false"}}
-  advanced_width = {"placeholder":"calc","values":{"expression":"(((200+({"placeholder":"guiwidth"}-48)/2-abs(200-({"placeholder":"guiwidth"}-48)/2))/2)-4)/2","decimal":"false"}}
+  advanced_posx = {"placeholder":"calc","values":{"expression":"({"placeholder":"guiwidth"}/2-((240+({"placeholder":"guiwidth"}-48)/2-abs(240-({"placeholder":"guiwidth"}-48)/2))/2)-8)+(((240+({"placeholder":"guiwidth"}-48)/2-abs(240-({"placeholder":"guiwidth"}-48)/2))/2)+4)/2","decimal":"false"}}
+  advanced_posy = {"placeholder":"calc","values":{"expression":"(({"placeholder":"guiheight"}-220)/2)+114","decimal":"false"}}
+  advanced_width = {"placeholder":"calc","values":{"expression":"(((240+({"placeholder":"guiwidth"}-48)/2-abs(240-({"placeholder":"guiwidth"}-48)/2))/2)-4)/2","decimal":"false"}}
   advanced_height = {"placeholder":"calc","values":{"expression":"20","decimal":"false"}}
 }
 
@@ -847,9 +811,9 @@ vanilla_button {
   advanced_horizontal_tilt_mode = false
   is_hidden = false
   automated_button_clicks = 0
-  advanced_posx = {"placeholder":"calc","values":{"expression":"({"placeholder":"guiwidth"}/2-((200+({"placeholder":"guiwidth"}-48)/2-abs(200-({"placeholder":"guiwidth"}-48)/2))/2)-8)","decimal":"false"}}
-  advanced_posy = {"placeholder":"calc","values":{"expression":"(({"placeholder":"guiheight"}-160)/2)+114","decimal":"false"}}
-  advanced_width = {"placeholder":"calc","values":{"expression":"(((200+({"placeholder":"guiwidth"}-48)/2-abs(200-({"placeholder":"guiwidth"}-48)/2))/2)-4)/2","decimal":"false"}}
+  advanced_posx = {"placeholder":"calc","values":{"expression":"({"placeholder":"guiwidth"}/2-((240+({"placeholder":"guiwidth"}-48)/2-abs(240-({"placeholder":"guiwidth"}-48)/2))/2)-8)","decimal":"false"}}
+  advanced_posy = {"placeholder":"calc","values":{"expression":"(({"placeholder":"guiheight"}-220)/2)+114","decimal":"false"}}
+  advanced_width = {"placeholder":"calc","values":{"expression":"(((240+({"placeholder":"guiwidth"}-48)/2-abs(240-({"placeholder":"guiwidth"}-48)/2))/2)-4)/2","decimal":"false"}}
   advanced_height = {"placeholder":"calc","values":{"expression":"20","decimal":"false"}}
 }
 
@@ -914,9 +878,9 @@ vanilla_button {
   advanced_horizontal_tilt_mode = false
   is_hidden = false
   automated_button_clicks = 0
-  advanced_posx = {"placeholder":"calc","values":{"expression":"({"placeholder":"guiwidth"}/2-((200+({"placeholder":"guiwidth"}-48)/2-abs(200-({"placeholder":"guiwidth"}-48)/2))/2)-8)","decimal":"false"}}
-  advanced_posy = {"placeholder":"calc","values":{"expression":"(({"placeholder":"guiheight"}-160)/2)+90","decimal":"false"}}
-  advanced_width = {"placeholder":"calc","values":{"expression":"((200+({"placeholder":"guiwidth"}-48)/2-abs(200-({"placeholder":"guiwidth"}-48)/2))/2)","decimal":"false"}}
+  advanced_posx = {"placeholder":"calc","values":{"expression":"({"placeholder":"guiwidth"}/2-((240+({"placeholder":"guiwidth"}-48)/2-abs(240-({"placeholder":"guiwidth"}-48)/2))/2)-8)","decimal":"false"}}
+  advanced_posy = {"placeholder":"calc","values":{"expression":"(({"placeholder":"guiheight"}-220)/2)+90","decimal":"false"}}
+  advanced_width = {"placeholder":"calc","values":{"expression":"((240+({"placeholder":"guiwidth"}-48)/2-abs(240-({"placeholder":"guiwidth"}-48)/2))/2)","decimal":"false"}}
   advanced_height = {"placeholder":"calc","values":{"expression":"20","decimal":"false"}}
 }
 
@@ -1167,9 +1131,9 @@ vanilla_button {
   advanced_horizontal_tilt_mode = false
   is_hidden = false
   automated_button_clicks = 0
-  advanced_posx = {"placeholder":"calc","values":{"expression":"({"placeholder":"guiwidth"}/2-((200+({"placeholder":"guiwidth"}-48)/2-abs(200-({"placeholder":"guiwidth"}-48)/2))/2)-8)","decimal":"false"}}
-  advanced_posy = {"placeholder":"calc","values":{"expression":"(({"placeholder":"guiheight"}-160)/2)+138","decimal":"false"}}
-  advanced_width = {"placeholder":"calc","values":{"expression":"((200+({"placeholder":"guiwidth"}-48)/2-abs(200-({"placeholder":"guiwidth"}-48)/2))/2)","decimal":"false"}}
+  advanced_posx = {"placeholder":"calc","values":{"expression":"({"placeholder":"guiwidth"}/2-((240+({"placeholder":"guiwidth"}-48)/2-abs(240-({"placeholder":"guiwidth"}-48)/2))/2)-8)","decimal":"false"}}
+  advanced_posy = {"placeholder":"calc","values":{"expression":"(({"placeholder":"guiheight"}-220)/2)+138","decimal":"false"}}
+  advanced_width = {"placeholder":"calc","values":{"expression":"((240+({"placeholder":"guiwidth"}-48)/2-abs(240-({"placeholder":"guiwidth"}-48)/2))/2)","decimal":"false"}}
   advanced_height = {"placeholder":"calc","values":{"expression":"20","decimal":"false"}}
 }
 
@@ -1280,6 +1244,301 @@ vanilla_button {
   stay_on_screen = true
   element_loading_requirement_container_identifier = e9a3f7fe-4ac2-43fe-aef4-474cd32404fd-1748387217490
   [loading_requirement_container_meta:e9a3f7fe-4ac2-43fe-aef4-474cd32404fd-1748387217490] = [groups:][instances:]
+  enable_parallax = false
+  parallax_intensity_v2 = 0.5
+  invert_parallax = false
+  animated_offset_x = 0
+  animated_offset_y = 0
+  load_once_per_session = false
+  in_editor_color = #FFC800FF
+  layer_hidden_in_editor = false
+  rotation_degrees = 0.0
+  advanced_rotation_mode = false
+  vertical_tilt_degrees = 0.0
+  advanced_vertical_tilt_mode = false
+  horizontal_tilt_degrees = 0.0
+  advanced_horizontal_tilt_mode = false
+  is_hidden = true
+  automated_button_clicks = 0
+}
+
+element {
+  source = ETKİNLİKLER
+  source_mode = direct
+  interactable = false
+  shadow = true
+  scale = 1.0
+  base_color = #E8C98FFF
+  text_border = 0
+  line_spacing = 3
+  enable_scrolling = false
+  auto_line_wrapping = true
+  parse_markdown = true
+  remove_html_breaks = true
+  hyperlink_color = #BCE095FF
+  element_type = text_v2
+  instance_identifier = community-events-title
+  custom_element_layer_name = community-events-title
+  anchor_point = top-left
+  advanced_posx = {"placeholder":"calc","values":{"expression":"({"placeholder":"guiwidth"}/2+8)","decimal":"false"}}
+  advanced_posy = {"placeholder":"calc","values":{"expression":"(({"placeholder":"guiheight"}-220)/2)+92","decimal":"false"}}
+  advanced_width = {"placeholder":"calc","values":{"expression":"((240+({"placeholder":"guiwidth"}-48)/2-abs(240-({"placeholder":"guiwidth"}-48)/2))/2)","decimal":"false"}}
+  advanced_height = {"placeholder":"calc","values":{"expression":"20","decimal":"false"}}
+  x = 0
+  y = 0
+  width = 100
+  height = 20
+  auto_sizing = false
+  stay_on_screen = false
+  base_opacity = 1.0
+  appearance_delay = no_delay
+  fade_in_v2 = no_fading
+  fade_out = no_fading
+  enable_parallax = false
+  stretch_x = false
+  stretch_y = false
+}
+
+element {
+  source = [source:web]https://entegrevesselam.com/api/client-events/menu.txt
+  source_mode = resource
+  interactable = true
+  shadow = true
+  scale = 1.0
+  base_color = #EDF2E9FF
+  text_border = 0
+  line_spacing = 1
+  enable_scrolling = true
+  auto_line_wrapping = true
+  parse_markdown = true
+  remove_html_breaks = true
+  hyperlink_color = #E8C98FFF
+  element_type = text_v2
+  instance_identifier = community-events-feed
+  custom_element_layer_name = community-events-feed
+  anchor_point = top-left
+  advanced_posx = {"placeholder":"calc","values":{"expression":"({"placeholder":"guiwidth"}/2+8)","decimal":"false"}}
+  advanced_posy = {"placeholder":"calc","values":{"expression":"(({"placeholder":"guiheight"}-220)/2)+108","decimal":"false"}}
+  advanced_width = {"placeholder":"calc","values":{"expression":"((240+({"placeholder":"guiwidth"}-48)/2-abs(240-({"placeholder":"guiwidth"}-48)/2))/2)","decimal":"false"}}
+  advanced_height = {"placeholder":"calc","values":{"expression":"50","decimal":"false"}}
+  x = 0
+  y = 0
+  width = 100
+  height = 20
+  auto_sizing = false
+  stay_on_screen = false
+  base_opacity = 1.0
+  appearance_delay = no_delay
+  fade_in_v2 = no_fading
+  fade_out = no_fading
+  enable_parallax = false
+  stretch_x = false
+  stretch_y = false
+}
+
+element {
+  label = Tüm etkinlikler >
+  description = Sitede açılır
+  navigatable = true
+  restartbackgroundanimations = false
+  nine_slice_custom_background = false
+  [executable_action_instance:community-all-events-open][action_type:openlink] = https://entegrevesselam.com/events
+  element_type = custom_button
+  instance_identifier = community-all-events
+  custom_element_layer_name = community-all-events
+  anchor_point = top-left
+  advanced_posx = {"placeholder":"calc","values":{"expression":"({"placeholder":"guiwidth"}/2+8)","decimal":"false"}}
+  advanced_posy = {"placeholder":"calc","values":{"expression":"(({"placeholder":"guiheight"}-220)/2)+188","decimal":"false"}}
+  advanced_width = {"placeholder":"calc","values":{"expression":"((240+({"placeholder":"guiwidth"}-48)/2-abs(240-({"placeholder":"guiwidth"}-48)/2))/2)","decimal":"false"}}
+  advanced_height = {"placeholder":"calc","values":{"expression":"20","decimal":"false"}}
+  x = 0
+  y = 0
+  width = 100
+  height = 20
+  auto_sizing = false
+  stay_on_screen = false
+  base_opacity = 1.0
+  appearance_delay = no_delay
+  fade_in_v2 = no_fading
+  fade_out = no_fading
+  enable_parallax = false
+  stretch_x = false
+  stretch_y = false
+}
+
+
+
+vanilla_button {
+  button_element_executable_block_identifier = 10616632-e664-4598-854d-803233f3899a-1748387217490
+  [executable_block:10616632-e664-4598-854d-803233f3899a-1748387217490][type:generic] = [executables:]
+  restartbackgroundanimations = true
+  nine_slice_custom_background = false
+  nine_slice_border_x = 5
+  nine_slice_border_y = 5
+  navigatable = true
+  widget_active_state_requirement_container_identifier = 6bbcce13-b7be-4618-ad95-898e6a7912eb-1748387217490
+  [loading_requirement_container_meta:6bbcce13-b7be-4618-ad95-898e6a7912eb-1748387217490] = [groups:][instances:]
+  is_template = false
+  template_apply_width = false
+  template_apply_height = false
+  template_apply_posx = false
+  template_apply_posy = false
+  template_apply_opacity = false
+  template_apply_visibility = false
+  template_apply_label = false
+  template_share_with = buttons
+  nine_slice_slider_handle = false
+  nine_slice_slider_handle_border_x = 5
+  nine_slice_slider_handle_border_y = 5
+  element_type = vanilla_button
+  instance_identifier = entegre_titlescreen_friends_button
+  appearance_delay = no_delay
+  appearance_delay_seconds = 1.0
+  fade_in_v2 = no_fading
+  fade_in_speed = 1.0
+  fade_out = no_fading
+  fade_out_speed = 1.0
+  base_opacity = 1.0
+  auto_sizing = false
+  auto_sizing_base_screen_width = 1920
+  auto_sizing_base_screen_height = 1200
+  sticky_anchor = false
+  anchor_point = vanilla
+  x = 327
+  y = 204
+  width = 200
+  height = 20
+  stretch_x = false
+  stretch_y = false
+  stay_on_screen = true
+  element_loading_requirement_container_identifier = b1db5e28-065e-43d8-9e67-02eb70413566-1748387217490
+  [loading_requirement_container_meta:b1db5e28-065e-43d8-9e67-02eb70413566-1748387217490] = [groups:][instances:]
+  enable_parallax = false
+  parallax_intensity_v2 = 0.5
+  invert_parallax = false
+  animated_offset_x = 0
+  animated_offset_y = 0
+  load_once_per_session = false
+  in_editor_color = #FFC800FF
+  layer_hidden_in_editor = false
+  rotation_degrees = 0.0
+  advanced_rotation_mode = false
+  vertical_tilt_degrees = 0.0
+  advanced_vertical_tilt_mode = false
+  horizontal_tilt_degrees = 0.0
+  advanced_horizontal_tilt_mode = false
+  is_hidden = true
+  automated_button_clicks = 0
+}
+
+vanilla_button {
+  button_element_executable_block_identifier = 5e2312f4-885d-4490-a232-dc57cb103e2e-1748387217490
+  [executable_block:5e2312f4-885d-4490-a232-dc57cb103e2e-1748387217490][type:generic] = [executables:]
+  restartbackgroundanimations = true
+  nine_slice_custom_background = false
+  nine_slice_border_x = 5
+  nine_slice_border_y = 5
+  navigatable = true
+  widget_active_state_requirement_container_identifier = a3e5a7b8-95c1-4ad9-b3f6-6b0f325393a2-1748387217490
+  [loading_requirement_container_meta:a3e5a7b8-95c1-4ad9-b3f6-6b0f325393a2-1748387217490] = [groups:][instances:]
+  is_template = false
+  template_apply_width = false
+  template_apply_height = false
+  template_apply_posx = false
+  template_apply_posy = false
+  template_apply_opacity = false
+  template_apply_visibility = false
+  template_apply_label = false
+  template_share_with = buttons
+  nine_slice_slider_handle = false
+  nine_slice_slider_handle_border_x = 5
+  nine_slice_slider_handle_border_y = 5
+  element_type = vanilla_button
+  instance_identifier = mc_titlescreen_language_button
+  appearance_delay = no_delay
+  appearance_delay_seconds = 1.0
+  fade_in_v2 = no_fading
+  fade_in_speed = 1.0
+  fade_out = no_fading
+  fade_out_speed = 1.0
+  base_opacity = 1.0
+  auto_sizing = false
+  auto_sizing_base_screen_width = 1920
+  auto_sizing_base_screen_height = 1200
+  sticky_anchor = false
+  anchor_point = vanilla
+  x = 327
+  y = 204
+  width = 200
+  height = 20
+  stretch_x = false
+  stretch_y = false
+  stay_on_screen = true
+  element_loading_requirement_container_identifier = d6e14410-7ae5-40d4-b62e-7602654d547c-1748387217490
+  [loading_requirement_container_meta:d6e14410-7ae5-40d4-b62e-7602654d547c-1748387217490] = [groups:][instances:]
+  enable_parallax = false
+  parallax_intensity_v2 = 0.5
+  invert_parallax = false
+  animated_offset_x = 0
+  animated_offset_y = 0
+  load_once_per_session = false
+  in_editor_color = #FFC800FF
+  layer_hidden_in_editor = false
+  rotation_degrees = 0.0
+  advanced_rotation_mode = false
+  vertical_tilt_degrees = 0.0
+  advanced_vertical_tilt_mode = false
+  horizontal_tilt_degrees = 0.0
+  advanced_horizontal_tilt_mode = false
+  is_hidden = true
+  automated_button_clicks = 0
+}
+
+vanilla_button {
+  button_element_executable_block_identifier = 7c85f7a1-f474-424e-8a67-2f4dfb23236d-1748387217490
+  [executable_block:7c85f7a1-f474-424e-8a67-2f4dfb23236d-1748387217490][type:generic] = [executables:]
+  restartbackgroundanimations = true
+  nine_slice_custom_background = false
+  nine_slice_border_x = 5
+  nine_slice_border_y = 5
+  navigatable = true
+  widget_active_state_requirement_container_identifier = f0b097f0-643b-4110-892f-2ac9845e1928-1748387217490
+  [loading_requirement_container_meta:f0b097f0-643b-4110-892f-2ac9845e1928-1748387217490] = [groups:][instances:]
+  is_template = false
+  template_apply_width = false
+  template_apply_height = false
+  template_apply_posx = false
+  template_apply_posy = false
+  template_apply_opacity = false
+  template_apply_visibility = false
+  template_apply_label = false
+  template_share_with = buttons
+  nine_slice_slider_handle = false
+  nine_slice_slider_handle_border_x = 5
+  nine_slice_slider_handle_border_y = 5
+  element_type = vanilla_button
+  instance_identifier = mc_titlescreen_accessibility_button
+  appearance_delay = no_delay
+  appearance_delay_seconds = 1.0
+  fade_in_v2 = no_fading
+  fade_in_speed = 1.0
+  fade_out = no_fading
+  fade_out_speed = 1.0
+  base_opacity = 1.0
+  auto_sizing = false
+  auto_sizing_base_screen_width = 1920
+  auto_sizing_base_screen_height = 1200
+  sticky_anchor = false
+  anchor_point = vanilla
+  x = 327
+  y = 204
+  width = 200
+  height = 20
+  stretch_x = false
+  stretch_y = false
+  stay_on_screen = true
+  element_loading_requirement_container_identifier = 3697e990-a5e0-4d62-b5e0-47b5e1b9b71a-1748387217490
+  [loading_requirement_container_meta:3697e990-a5e0-4d62-b5e0-47b5e1b9b71a-1748387217490] = [groups:][instances:]
   enable_parallax = false
   parallax_intensity_v2 = 0.5
   invert_parallax = false

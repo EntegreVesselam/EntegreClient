@@ -1,54 +1,42 @@
-Entegre Client2.4.1 — iki profil yayın notu
-18 Ekim2026
+Entegre Client 2.4.1 — iki Prism profili
+19 Ekim 2026
 
-Seçim: Prism içinde Entegre Client26.2 ve Entegre Client26.3. Her biri kendi
-Packwiz kanalını ve oyun klasörünü kullanır. Her iki starter Java25 gerektirir.
-26.2 LWJGL3.4.1,26.3 LWJGL3.4.3 ve Fabric0.19.5 resmi Prism/Fabric metadata'sıyla sabit.
-Eski main kanalı değiştirilmez; mevcut1.21.11 kurulumuna otomatik sürüm değiştirme uygulanmaz.
+Varsayılan: mevcut 1.21.11 oyuncusu güncelleyici geçişinden sonra 26.2'ye geçer.
+26.3 ayrı Prism profili/Packwiz kanalıdır. Java 25 ve Fabric 0.19.5 gerekir.
+26.2 LWJGL 3.4.1, 26.3 LWJGL 3.4.3 kullanır. Geçişte Prism bir kez tamamen
+kapatılıp açılır; yeni modlar eski oyun sürümüyle başlatılmaz. Ayrıntı:
+docs/26x-followup-rollout.txt. Profil yedeklenir, kişisel veri taşınmaz.
 
-26.2: Voxy0.2.19-beta / Extra0.2.6 / WorldGen2.4.3 / LSS0.19.0.
-Sodium0.9.2 / Iris1.11.4 / Reese2.2.4 / SodiumExtra0.9.4 birlikte pinlidir.
-74 resmi üçüncü taraf mod; ThreadTweak/Fabrishot/YATP destek dışı.
-Normal production Fabric/Knot açılışı dağıtılacak gerçek JAR'larla tamamlandı;
-Voxy/Extra/WorldGen yüklendi ve LSS Voxy raw ingest bridge kaydetti.
-Loom geliştirme açılışında ModernFix development login shim hatası ve Globals
-uniform yarışı görüldü. Test fixture'ında devenv shim kapatıldı; Globals hatası
-Voxy ailesi olmadan da sürdü. Production açılışı bu geçici test ayarı olmadan
-başarılı oldu. Bu nedenle gerçek paketin ModernFix ayarları değiştirilmedi.
-26.2 smoke native Xaero16 renk/getter/filter kontrolleri geçti; daha sonraki
-komut akışının tamamı Globals yarışı yüzünden development ortamında bitirilemedi.
-Java assertion sözleşme testleri geçti.
+26.2: Voxy 0.2.19-beta, Extra 0.2.6, WorldGen 2.4.3, LSS 0.19.0.
+Sodium 0.9.2 / Iris 1.11.4 / Reese 2.2.4 / SodiumExtra 0.9.4 birlikte pinlidir.
+74 resmi üçüncü taraf mod; ThreadTweak/Fabrishot/YATP için uygun sürüm yok.
 
-26.3: Kullanıcı dosyası Voxy0.2.20-beta23b3486 doğrudan bundle. SHA256:
-f8d3b719d3e9216d592fb8c46f244d204d7c81bfa068f7ddc0b9abdc763f3527
-Modrinth yayını olmayan beta değiştirilmedi. Extra/WorldGen/Drippy26.3 kapalı;
-ThreadTweak/Fabrishot/YATP de destek dışı.70 resmi mod + kullanıcı Voxy betası.
-Sodium0.9.2 / Iris1.11.7 / Reese2.2.5 / Extra0.9.4 birlikte pinli.
-Son canlı menü ve Markers0.2.1 ile tam smoke açılışı/16 renk/native komut akışı
-PASS; pair/sync/status/forget, hedef/odak/pending/60s sınırlaması, sentetik HTTP,
-kişisel waypoint yazmama ve kapanış doğrulandı. LSS Voxy köprüsü kaydetti.
+26.3: Kullanıcının Voxy 0.2.20-beta / 23b3486 JAR'ı değişmeden paketlenir.
+SHA256: f8d3b719d3e9216d592fb8c46f244d204d7c81bfa068f7ddc0b9abdc763f3527
+Extra/WorldGen/Drippy kapalıdır; ThreadTweak/Fabrishot/YATP de destek dışıdır.
+70 resmi mod + kullanıcı Voxy betası. Sodium 0.9.2 / Iris 1.11.7 / Reese 2.2.5 /
+SodiumExtra 0.9.4 birlikte pinlidir. LSS 0.19.0 Voxy köprüsünü kaydeder.
 
-Her iki kanal, son canlı2.1.5 commit'i üzerine hazırlanmıştır.0.1.3 marker
-hata düzeltmeleri geri alınmadı. Updater engine/bootstrap/transition binary'leri,
-özel EAA/ESK ZIP'leri ve compatibility registry byte'ları canlı sürümle aynıdır.
-186 kalıcı koruma satırı strict verifier ve gerçek packwiz0.5.14 sentetik
-old→new/repeat/skip/fresh/duplicate-ownership matrisiyle kontrol edilir.
+Son canlı 2.1.5 topluluk fotoğrafları ve marker 0.1.3 davranışları korunur.
+Markers 0.2.1, komut/davet/sync/16 renk ve odak/60 saniye korumalarını 26.x'e taşır.
+7b2e6e9 haber/etkinlik düzeni eklenmiştir; başlık ve replik kesilmeleri giderilir.
+Yeni Friends/dil/erişilebilirlik düğmeleri yalnız özel ana menüde gizlenir.
+FancyMenu'nün yeni vanilla düğme kimlikleri BEFORE_INIT aşamasında eşlenir;
+üç gizli düzen kaydı çizimi kapatır. FancyMenu isteğe bağlı kapatılırsa vanilla
+menüye dokunulmaz. Site .txt kaynakları HTTP 200 ile doğrulandı.
 
-Donanım sınırı: bu Mac OpenGL4.1 sunar; her iki Voxy sürümü renderer'ı kapattı.
-Voxy'nin gerçek LOD çizimi, Windows/Linux GPU, shader açık LOD, gerçek26.3 server
-bağlantısı ve cross-version LOD akışı test edilmedi. Realms hataları hesapsız
-sentetik açılışa aittir. Controlify/FancyMenu ayar kısayolu compat kapalı kalır;
-Tweakeroo bazı sis/freecam/view-bob mixinlerini Sodium/Iris ile kapatır.
+Doğrulama: iki oyun sürümünün normal production Fabric açılışı ve iki menü
+boyutunda FancyMenu gizlilik kontrolleri; Java marker sözleşmeleri; updater
+profil yönlendirme/yedek/restart/Java21 engeli; 11 gerçek GUI installer süreci
+ve 8 bootstrap geçiş süreci; katı pack/index/hash doğrulaması; 186 kalıcı
+oyuncu dosyası koruma kaydı ve Packwiz 0.5.14 korunma matrisi; tekrar üretilebilir
+8 allowlist dosyalı Prism starter'ları. Hesap/token/harita/saves dağıtılmaz.
 
-Prism starter ZIP'leri yalnız8 allowlist dosya içerir: profil, ikon, instance
-komutu, doğrulanmış bootstrap/engine JAR'ları ve checksum'ları. Oyuncu hesabı,
-options/config/harita/saves/token/packwiz.json içermez; modlar ilk açılışta kendi
-kanalından gelir. İki ZIP farklı profil adı ve kanal URL'si taşır. Böylece profil
-seçimi Minecraft başlamadan tamamlanır. Komutla farklı profile sürüm yazılması yok.
-
-Kaynaklar:
-https://meta.prismlauncher.org/v1/net.minecraft/26.2.json
-https://meta.prismlauncher.org/v1/net.minecraft/26.3.json
-https://www.prismlauncher.org/wiki/getting-started/command-line-interface/
-https://github.com/VoX/lod-server-support/blob/main/README.md
-https://hangar.papermc.io/ViaVersion/ViaBackwards/versions/5.12.1
+Sınırlar: bu Mac'te OpenGL 4.1 yüzünden Voxy renderer kendini kapatır. Gerçek
+LOD çizimi, Windows/Linux GPU, shader açık LOD, canlı sunucu/cross-version LOD
+akışı ve eski Voxy veritabanı geçişi test edilmedi. Controlify/FancyMenu ayar
+kısayolu entegrasyonu ve bazı Tweakeroo/Sodium/Iris alt özellikleri sınırlıdır.
+26.2 Loom geliştirme ortamındaki ModernFix login shim ve Globals uniform
+hataları production açılışında oluşmadı; gerçek paketin ayarları değiştirilmedi.
+26.3 native marker komut/renk/filtre smoke akışı geçti. Gerçek Prism arayüzünde
+uçtan uca sürüm geçişi ve Windows kabulü yapılmadı.

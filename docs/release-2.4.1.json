@@ -12,5 +12,11 @@
     "minecraft-26.2",
     "minecraft-26.3"
   ],
-  "published_at_verification": false
+  "published_at_verification": false,
+  "default_legacy_target": "26.2",
+  "events_source_commit": "7b2e6e9",
+  "restart_guard": true,
+  "friends_title_hidden": true,
+  "publication_authorized_date": "2026-10-19",
+  "site_feeds_http_status": 200
 }
