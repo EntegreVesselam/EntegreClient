@@ -38,7 +38,7 @@ public final class ContractTests {
         check(state.needsApply(), "authorization recovery reapplies same revision");
         var late = state.begin(300000, true, true); state.close();
         check(!state.accept(late, 13), "shutdown drops late response");
-        testSnapshot(); testApi(); testStore(); testBody(); testPolling(); testOwnership(); testAppearance();
+        testSnapshot(); testApi(); testStore(); testBody(); testPolling(); testOwnership(); testAppearance(); testPairingInvitation();
         System.out.println("PASS state: epoch, revision, dimensions/subworld, auth, foreground, in-flight, shutdown");
     }
 
@@ -148,6 +148,26 @@ public final class ContractTests {
         System.out.println("PASS ownership: existing layer, realm identity, record identity, collision no mutation");
     }
 
+    static void testPairingInvitation() {
+        SyncState state = new SyncState();
+        var target = new SyncState.Context("entegrevesselam.com","minecraft:overworld","realm/A");
+        check(!state.offerPairing(true,false,false),"no pairing invite outside target context");
+        Object connection = new Object(); state.connection(connection); state.context(target);
+        check(!state.offerPairing(false,false,false),"background must not consume invite");
+        check(!state.offerPairing(true,true,false),"paired device needs no invite");
+        check(!state.offerPairing(true,false,true),"pending pairing needs no invite");
+        check(state.offerPairing(true,false,false),"first eligible target visit offers pairing");
+        check(!state.offerPairing(true,false,false),"no repeated chat invitation during visit");
+        state.context(new SyncState.Context("entegrevesselam.com","minecraft:the_nether","realm/A"));
+        check(!state.offerPairing(true,false,false),"dimension switch must not spam invite");
+        state.context(null);state.context(target);state.connection(connection);
+        check(!state.offerPairing(true,false,false),"temporary world loading must not reset invitation");
+        state.connection(new Object());
+        check(state.offerPairing(true,false,false),"next target visit may offer pairing again");
+        state.close();check(!state.offerPairing(true,false,false),"closed client cannot invite");
+        System.out.println("PASS pairing invitation: target, foreground, device/pending, once per visit, dimension and close guards");
+    }
+
     static void testAppearance() {
         check(MarkerAppearance.initials("Çınar Kalesi").equals("ÇK"), "use name initials instead of category E");
         check(MarkerAppearance.initials("Şehir").equals("ŞEH"), "single word uses first three letters");
@@ -161,10 +181,7 @@ public final class ContractTests {
         String astralWord = MarkerAppearance.initials("\uD801\uDC28\uD801\uDC29\uD801\uDC2Aabc");
         check(astralWord.length()<=3 && astralWord.codePoints().noneMatch(c -> c>=0xD800 && c<=0xDFFF), "single supplementary word fits Xaero short label budget");
         check(MarkerAppearance.initials("!!!").equals("?"), "empty letter fallback");
-        for (int color=0;color<16;color++) if(color!=4) check(MarkerAppearance.color("id",color)==color,"explicit non-default palette preserved");
-        Set<Integer> colors = new HashSet<>();
-        for(int i=0;i<32;i++) { int c=MarkerAppearance.color("synthetic-"+i,4); check(c>=0 && c<=15,"Xaero palette"); check(c==MarkerAppearance.color("synthetic-"+i,4),"stable color by ID"); colors.add(c); }
-        check(colors.size()>=6,"default markers get distinguishable colors");
-        System.out.println("PASS appearance: Unicode initials, short names, palette preservation and stable default colors");
+        for (int color=0;color<16;color++) check(MarkerAppearance.color("id",color)==color,"site-selected palette index " + color + " must survive client rendering");
+        System.out.println("PASS appearance: Unicode initials, short names and all 16 site colors preserved");
     }
 }

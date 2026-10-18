@@ -1,0 +1,138 @@
+{
+  "date": "2026-10-18",
+  "status": "passed-local-candidate",
+  "baseCommit": "166cfd093c19d82bd91a572023e17cad1ac6836d",
+  "packVersion": "2.1.5",
+  "bridgeVersion": "0.1.3",
+  "environment": {
+    "minecraft": "1.21.11",
+    "fabricLoader": "0.18.4",
+    "fabricApi": "0.141.3+1.21.11",
+    "xaeroMinimap": "26.6.0",
+    "xaeroWorldMap": "1.47.0",
+    "java": "21.0.12.1",
+    "platform": "macOS arm64"
+  },
+  "checks": {
+    "redBeforeImplementation": [
+      "color 4 preservation failed",
+      "native sync command missing"
+    ],
+    "contractGroups": 9,
+    "cleanBuildRemap": "passed",
+    "nativeActualFabricAndXaero": "passed",
+    "nativeNormalShutdown": true,
+    "nativeProbe": [
+      "all 16 site-selected palette indices preserved by actual Xaero waypoint objects",
+      "Unicode initials, coordinates, WORLD_MAP_LOCAL filters and personal waypoint defaults",
+      "actual Fabric command event and Brigadier callbacks: pair, bare, sync, status, forget",
+      "native Text local RUN_COMMAND invitation target",
+      "synthetic transport and context: target, pending, foreground, in-flight and 60-second guards"
+    ],
+    "invitationState": "once per connection; dimension and temporary world loading do not reset; next connection may invite again",
+    "packVerifier": "passed",
+    "packCompatibility": "passed",
+    "updaterVerifier": "passed",
+    "distributionSmokeAndTestsExcluded": true
+  },
+  "preservation": {
+    "indexedFiles": 370,
+    "permanentCompatibilityRows": 186,
+    "unchangedThirdPartyModMetadataFiles": 76,
+    "updaterAndLauncherByteIdenticalToBase": true,
+    "deviceStorageAndOwnershipImplementationUnchanged": true,
+    "sourceAndDeviceDataExcludedFromPack": true,
+    "personalDataReadOrCopied": false,
+    "liveApiOrGameConnection": false,
+    "automaticBrowserOnJoin": false,
+    "additionalJoinSyncRequest": false
+  },
+  "artifacts": {
+    "mods/entegre-markers-0.1.3.jar": "74fc87fdd6932d5d053816b245ff5a5fb36bdf34faf3453c6b954b9731448759",
+    "pack.toml": "99478e5927c42083b94896fab7524a113f7d4fb185be6ad635540d03579aa093",
+    "index.toml": "e74462d6622dfd1827e69da6915e2716b2d488b64c55ce78b4f0eedbdda989e9",
+    "config/fancymenu/customization/entegre_title_screen.txt": "815133efeb7a6112f905c14bef08db26578724637c54b72c7acfc426daa567aa"
+  },
+  "sourceSha256": {
+    "marker-sync/src/main/java/com/entegrevesselam/markers/DeviceStore.java": "d1f176e258fb79af2065aa3037b392350ad8917d99ad6baa1344eaf3381df851",
+    "marker-sync/src/main/java/com/entegrevesselam/markers/EntegreMarkers.java": "ad9455be1ccf4075765d545433f70b5be4eeec8f957c0a87c17cad1967aa302a",
+    "marker-sync/src/main/java/com/entegrevesselam/markers/MarkerApi.java": "75e0508046616c97308667a472ad3719b31f4a146e841d14f7e4df7c417fbc45",
+    "marker-sync/src/main/java/com/entegrevesselam/markers/MarkerAppearance.java": "f357821bce2e74d921b02a2e6f0330b9e422660e664ed63b438d3e396240e24b",
+    "marker-sync/src/main/java/com/entegrevesselam/markers/Ownership.java": "a2c1a6236a23a28085df1bfacb69e8c9c3f50c5dee6acfd466e29fe74e95c6c4",
+    "marker-sync/src/main/java/com/entegrevesselam/markers/PollSchedule.java": "7f1ff1cd9c150bacefefd71aa71cc8793afaa89ec0a9558ac7fe590720ddfc2e",
+    "marker-sync/src/main/java/com/entegrevesselam/markers/Snapshot.java": "e6e0cfad4be51bb45240a13575176882bef91e4928bcebda6f4d6c4e6ebf047a",
+    "marker-sync/src/main/java/com/entegrevesselam/markers/SyncState.java": "d738b2a678f43c8dc903a6925f24fd0597cf452ee382d3ddb8218500a57e0da8",
+    "marker-sync/src/main/java/com/entegrevesselam/markers/XaeroLayer.java": "9592c98831863e6901c9d1990e703542103df7ad6b5f234cd34c814b57f8d08f",
+    "marker-sync/src/main/resources/assets/entegre_markers/lang/en_us.json": "a0344a43fdd58cb534c274f678736f780f558dbeb975af678ae88b6d4ad03159",
+    "marker-sync/src/main/resources/assets/entegre_markers/lang/tr_tr.json": "dac3c840a293a9462dacf8d2143cb508d7b0766e5b6a61355885f7b36000c3b8",
+    "marker-sync/src/main/resources/fabric.mod.json": "29be45992a92f01ce0cb3b13db51ec2722d8cef3c7aae42618526453170fba44",
+    "marker-sync/src/smoke/java/com/entegrevesselam/markers/CommandRegistrationSmoke.java": "76614017bf0cceb81f20a1d71e7d67a05d90b88feeb75a2630eb2b03c1d96ba5",
+    "marker-sync/src/smoke/resources/fabric.mod.json": "924e84810b6a6141663b736aa0587dd38a908b1dd066602a920e6bdfbb35c98b",
+    "marker-sync/src/test/java/com/entegrevesselam/markers/ContractTests.java": "07052ca056c1d230dca6b63d5d49c407f2b2b4d8c81e1f29e6eb3a205a31676b",
+    "marker-sync/build.gradle": "663dd1e89c600e02e9b252ab21c2b87ad3f8fe251b9fcd37dc005f6249c091a6"
+  },
+  "evidence": {
+    "contractRed": {
+      "logSha256": "484845d196b231f5426484d704b5ca987ca1ad229bc1008329091c51113363a4",
+      "excerpts": [
+        "PASS snapshot: strict fields, dimensions, coordinates, IDs, icons, UTF8, empty, 1000 and 256KiB boundaries",
+        "PASS API: in-memory wire only, fixed origin, token scope, timeout, pairing URI/expiry, pending",
+        "PASS store: temporary fixture only, atomic persistence, owner-only POSIX, expiry, forget",
+        "PASS HTTP body: streaming limit and cancellation",
+        "PASS pairing scheduler: fake clock 5 second/10 minute, foreground, target, one in flight",
+        "PASS ownership: existing layer, realm identity, record identity, collision no mutation",
+        "Exception in thread \"main\" java.lang.AssertionError: site-selected palette index 4 must survive client rendering",
+        "BUILD FAILED in 22s"
+      ]
+    },
+    "nativeRed": {
+      "logSha256": "bd0e814883582ea30eaecca4b372176688325e9b156149351bb20ae7a71f040d",
+      "excerpts": [
+        "net.fabricmc.loader.impl.FormattedException: java.lang.AssertionError: missing subcommand sync",
+        "Caused by: java.lang.AssertionError: missing subcommand sync",
+        "BUILD FAILED in 17s"
+      ]
+    },
+    "contractGreen": {
+      "logSha256": "62ba32e7e4b66437fe1f26439c7c69908ef6931994ee901721a26f4bff7dc453",
+      "excerpts": [
+        "PASS snapshot: strict fields, dimensions, coordinates, IDs, icons, UTF8, empty, 1000 and 256KiB boundaries",
+        "PASS API: in-memory wire only, fixed origin, token scope, timeout, pairing URI/expiry, pending",
+        "PASS store: temporary fixture only, atomic persistence, owner-only POSIX, expiry, forget",
+        "PASS HTTP body: streaming limit and cancellation",
+        "PASS pairing scheduler: fake clock 5 second/10 minute, foreground, target, one in flight",
+        "PASS ownership: existing layer, realm identity, record identity, collision no mutation",
+        "PASS appearance: Unicode initials, short names and all 16 site colors preserved",
+        "PASS pairing invitation: target, foreground, device/pending, once per visit, dimension and close guards",
+        "PASS state: epoch, revision, dimensions/subworld, auth, foreground, in-flight, shutdown",
+        "BUILD SUCCESSFUL in 6s"
+      ]
+    },
+    "nativeGreen": {
+      "logSha256": "9c278171249403ee5604b9cea767d5763d833a8ecfc7a098d12177647b513311",
+      "excerpts": [
+        "PASS snapshot: strict fields, dimensions, coordinates, IDs, icons, UTF8, empty, 1000 and 256KiB boundaries",
+        "PASS API: in-memory wire only, fixed origin, token scope, timeout, pairing URI/expiry, pending",
+        "PASS store: temporary fixture only, atomic persistence, owner-only POSIX, expiry, forget",
+        "PASS HTTP body: streaming limit and cancellation",
+        "PASS pairing scheduler: fake clock 5 second/10 minute, foreground, target, one in flight",
+        "PASS ownership: existing layer, realm identity, record identity, collision no mutation",
+        "PASS appearance: Unicode initials, short names and all 16 site colors preserved",
+        "PASS pairing invitation: target, foreground, device/pending, once per visit, dimension and close guards",
+        "PASS state: epoch, revision, dimensions/subworld, auth, foreground, in-flight, shutdown",
+        "PASS native Xaero: all 16 exact colors, initials, world-map-only filters, personal defaults and coordinates",
+        "PASS native commands: local clickable pair, bare unpaired pair, paired sync, pending/target/foreground/60-second guards, status and forget",
+        "DONE synthetic transport only; no browser, account, world, live server or real waypoint data",
+        "BUILD SUCCESSFUL in 13s"
+      ]
+    }
+  },
+  "limits": [
+    "HTTP substituted by in-memory transport; no live OAuth/device approval or real Minecraft server used.",
+    "No real multiplayer chat mouse click or world-map pixel observation; native command/API behavior was executed.",
+    "Windows and personal saved-data upgrade acceptance not run; existing ownership/state/storage contract tests passed.",
+    "Memories slideshow/loading visuals were previously tested in the 2.1.4 candidate; final title-only version label is 2.1.5.",
+    "Existing development shader/refmap and Gradle deprecation warnings remain."
+  ],
+  "publication": "Not performed by this worker; coordinator owns release after website publication."
+}

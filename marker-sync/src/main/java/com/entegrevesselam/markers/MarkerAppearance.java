@@ -5,7 +5,6 @@ import java.util.regex.Pattern;
 /** Pure display policy; the server's marker ID remains the ownership/update key. */
 final class MarkerAppearance {
     private static final Pattern WORD = Pattern.compile("[\\p{L}\\p{N}][\\p{L}\\p{M}\\p{N}]*");
-    private static final int[] PALETTE = {6,9,10,11,12,13,14,15};
     static String initials(String name) {
         var matcher = WORD.matcher(Normalizer.normalize(name,Normalizer.Form.NFC));
         List<String> words = new ArrayList<>();
@@ -24,7 +23,6 @@ final class MarkerAppearance {
         return upper.substring(0,end);
     }
     static int color(String id, int color) {
-        // The API/UI default is palette index4 (dark red); every other supplied value is explicit.
-        return color == 4 ? PALETTE[Math.floorMod(id.hashCode(),PALETTE.length)] : color;
+        return color;
     }
 }

@@ -1,3 +1,12 @@
+## 2.1.5 — Anılar ve harita eşitlemesi
+
+- Ana menüde altı topluluk fotoğrafı, 27 saniyelik aralıklarla rastgele ve yumuşak geçişlerle gösterilir.
+- Yükleme ekranı her açılışta tek bir rastgele fotoğraf seçer; fotoğrafların oranları korunur.
+- Harita renkleri sitedeki seçimle birebir eşleşir; koyu kırmızı dahil 16 renk korunur.
+- Eşleşmemiş oyuncuya sunucu bağlantısı başına bir kez tıklanabilir “Haritayı bağla” daveti gösterilir.
+- `/entegremarkers` ve `/entegremarkers sync`, eşleşme yoksa bağlamayı başlatır; eşleşmişse mevcut 60 saniyelik istek aralığıyla eşitler.
+- Entegre Markers 0.1.3; kişisel waypoint'ler, diğer mod sürümleri ve güncelleyici korunur.
+
 ## 2.1.4 — Topluluk menüsü
 
 - Yükleme ekranı ve ana menü, Eylül topluluk fotoğraflarıyla yenilendi.

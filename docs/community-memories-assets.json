@@ -1,0 +1,65 @@
+{
+  "processing": "Proportional contain fit into 1920x1080, solid #10151d padding, JPEG quality 90, no crop or scene editing. Dates refer to Discord sharing, not capture.",
+  "images": [
+    {
+      "original": "city-september-2026.jpg",
+      "sha256": "9eb20e0448f7a22a29244008bd81ecab8abd7d334feeec7e8fcf8d34d36b4b7f",
+      "width": 1721,
+      "height": 675,
+      "sharedOn": "2026-09-15",
+      "sharedBy": "Flowingday16",
+      "source": "https://discord.com/channels/565637723180761108/580140119487414316/1549165424573157608",
+      "clientFrame": "frame-01.jpg"
+    },
+    {
+      "original": "building-september-2026.png",
+      "sha256": "abcfe0e506cec74554966c87d34cc96ddfe53a86197ca6e554cf0f1a7cb76881",
+      "width": 1919,
+      "height": 1054,
+      "sharedOn": "2026-09-29",
+      "sharedBy": "Kaylorex",
+      "source": "https://discord.com/channels/565637723180761108/580140119487414316/1554500526987542680",
+      "clientFrame": "frame-02.jpg"
+    },
+    {
+      "original": "panorama-august-2026.jpg",
+      "sha256": "8c253634e0e7c661ba33c6f943fe991b224abb0250d9ae31272ea7a4cd47c8b6",
+      "width": 1913,
+      "height": 490,
+      "sharedOn": "2026-09-11",
+      "sharedBy": "Flowingday16",
+      "source": "https://discord.com/channels/565637723180761108/580140119487414316/1547939255815512165",
+      "clientFrame": "frame-03.jpg"
+    },
+    {
+      "original": "corridor-july-2026.png",
+      "sha256": "1829be95467a6d8eb0f6d0d0ee0ff9f4dddd2c2cf6758988cff432549bb184d4",
+      "width": 1920,
+      "height": 1080,
+      "sharedOn": "2026-07-17",
+      "sharedBy": "Flowingday16",
+      "source": "https://discord.com/channels/565637723180761108/580140119487414316/1527449248017285152",
+      "clientFrame": "frame-04.jpg"
+    },
+    {
+      "original": "corridor-detail-july-2026.png",
+      "sha256": "12796fd71b988541975720cbaa8425aad69e73bfccb4d4f17f40a13539ea3170",
+      "width": 1920,
+      "height": 1080,
+      "sharedOn": "2026-07-17",
+      "sharedBy": "Flowingday16",
+      "source": "https://discord.com/channels/565637723180761108/580140119487414316/1527449248017285152",
+      "clientFrame": "frame-05.jpg"
+    },
+    {
+      "original": "tnt-before-may-2026.png",
+      "sha256": "193f0494ba328c4748771600eb960ae376bdf8f1a78d7a2fe0d00c3a2f7e9a65",
+      "width": 1920,
+      "height": 1080,
+      "sharedOn": "2026-05-17",
+      "sharedBy": "EminGT",
+      "source": "https://discord.com/channels/565637723180761108/580140119487414316/1505321654937583616",
+      "clientFrame": "frame-06.jpg"
+    }
+  ]
+}

@@ -7,7 +7,8 @@ final class SyncState {
     private Context context, appliedContext;
     private long epoch, revision = -1, appliedRevision = -1, lastStart = Long.MIN_VALUE;
     private Request inFlight;
-    private boolean authorized, closed;
+    private Object connection;
+    private boolean authorized, closed, invitationOffered;
     void context(Context value) {
         if (!Objects.equals(context, value)) { context = value; epoch++; }
         if (value == null) { authorized = false; revision = -1; appliedContext = null; }
@@ -34,6 +35,13 @@ final class SyncState {
     boolean needsApply() { return visible() && (!Objects.equals(context, appliedContext) || revision != appliedRevision); }
     void applied() { appliedContext = context; appliedRevision = revision; }
     boolean visible() { return !closed && context != null && authorized; }
+    void connection(Object value) { if (connection != value) { connection = value; invitationOffered = false; } }
+    boolean syncing() { return inFlight != null; }
+    boolean offerPairing(boolean foreground, boolean paired, boolean pending) {
+        if (closed || context == null || !foreground || paired || pending || invitationOffered) return false;
+        invitationOffered = true;
+        return true;
+    }
     void resetDevice() { epoch++; authorized = false; revision = -1; appliedContext = null; lastStart = Long.MIN_VALUE; }
     void close() { closed = true; epoch++; authorized = false; }
 }
