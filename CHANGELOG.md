@@ -1,3 +1,11 @@
+## 2.1.6 — Daha okunaklı duyurular ve etkinlikler
+
+- Duyurular ve yaklaşan etkinlikler ayrı başlıklar altında; yazılar net piksel ölçeğinde ve daha koyu panellerde gösterilir.
+- İlk duyuru ve ilk etkinlik küçük ekranda da okunur; sonraki kayıtlar ayrı ayrı kaydırılır.
+- Tüm duyurular ve Tüm etkinlikler için iki bağımsız site düğmesi vardır.
+- Metin kaynakları `.txt` ile biter; FancyMenu'nün ilk açılışta senkron MIME sorgusuyla çizimi bekletmesi önlenir.
+- Fotoğraf havuzu, yükleme ekranı, harita köprüsü, diğer modlar ve güncelleyici değişmedi.
+
 ## 2.1.5 — Anılar ve harita eşitlemesi
 
 - Ana menüde altı topluluk fotoğrafı, 27 saniyelik aralıklarla rastgele ve yumuşak geçişlerle gösterilir.

@@ -158,7 +158,7 @@ hash = "40ea43c356edcdf436453b4425e3e44200bb443231653c5cd1b0ce2eb1c9e99b"
 
 [[files]]
 file = "config/fancymenu/customization/entegre_title_screen.txt"
-hash = "815133efeb7a6112f905c14bef08db26578724637c54b72c7acfc426daa567aa"
+hash = "5181f9c07b43ad889d4c9b4fcb7ff3b3c62ff6613d03451cdb0b1a142c4ac567"
 
 [[files]]
 file = "config/fancymenu/layout_editor/widgets/element_layer_control.lewidget"

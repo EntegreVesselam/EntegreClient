@@ -1,0 +1,239 @@
+{
+  "date": "2026-10-18",
+  "status": "passed-local-candidate",
+  "baseCommit": "2c5112d62135bf18a42f9545783972a28c225860",
+  "packVersion": "2.1.6",
+  "environment": {
+    "minecraft": "1.21.11",
+    "fabric": "0.18.4",
+    "fancymenu": "3.8.4",
+    "java": "21.0.9",
+    "platform": "macOS arm64",
+    "worldOrGameServerConnected": false,
+    "realAccountUsed": false
+  },
+  "firstLoadDiagnosis": {
+    "originalPublicFeedEmptyMs": 185,
+    "extensionlessDelayedFeed": "render thread blocked during remote MIME detection; watchdog after test receiver stopped",
+    "blockingCallChain": [
+      "at java.net.URLConnection.getContentType(java.base@21.0.9/Unknown Source)",
+      "at de.keksuccino.fancymenu.util.WebUtils.getMimeType(WebUtils.java:89)",
+      "at de.keksuccino.fancymenu.util.file.type.FileType.isFileTypeWebAdvanced(FileType.java:87)",
+      "at de.keksuccino.fancymenu.util.resource.ResourceHandler.get(ResourceHandler.java:74)",
+      "at de.keksuccino.fancymenu.util.resource.ResourceSupplier.get(ResourceSupplier.java:119)",
+      "at de.keksuccino.fancymenu.customization.element.elements.text.v2.TextElement.renderTick(TextElement.java:158)"
+    ],
+    "txtDelayedFeed": {
+      "delayMs": 12000,
+      "firstTitleAtMs": 6640,
+      "textReadyAtMs": 18632,
+      "requests": 1,
+      "menuRenderingContinued": true,
+      "normalShutdown": true
+    },
+    "productChangedDuringDiagnosis": false
+  },
+  "candidate": {
+    "newsSource": "https://entegrevesselam.com/api/client-announcements/menu.txt",
+    "eventsSource": "https://entegrevesselam.com/api/client-events/menu.txt",
+    "queryParameters": false,
+    "bodyScale": 1.0,
+    "bodyLineSpacing": 1,
+    "panelColor": "#0B1412F2",
+    "newsHeight": 70,
+    "eventsHeight": 50,
+    "maxColumnWidth": 240,
+    "minimumTestColumnWidth": 136,
+    "independentFeedScrolling": true,
+    "newLoadingFramework": false
+  },
+  "nativeAcceptance": {
+    "framebufferSizes": [
+      [
+        1280,
+        720
+      ],
+      [
+        640,
+        480
+      ]
+    ],
+    "guiSizes": [
+      [
+        640,
+        360
+      ],
+      [
+        320,
+        240
+      ]
+    ],
+    "longTurkishFixtureFirstNewsAndEventFullyVisible": true,
+    "quoteTwoLinesVisible": true,
+    "offlineFeedsEmptyButNativeButtonsAndExternalLinkActionsAvailable": true,
+    "nativeLinkTargets": [
+      "https://entegrevesselam.com/announcements",
+      "https://entegrevesselam.com/events"
+    ],
+    "osLinkOpeningIntercepted": true,
+    "finalNativeLayoutMatchesCandidateExceptLocalhostSourceUrls": true,
+    "normalShutdown": true,
+    "testOnlyChanges": [
+      "development menu class names",
+      "intro bypass in test options",
+      "two remote source URLs replaced with localhost .txt fixtures"
+    ]
+  },
+  "preservation": {
+    "nativeWidgetBlocks": 12,
+    "nativeWidgetChanges": "only existing advanced posx/posy/width geometry; all remaining fields byte-identical",
+    "protectedFilesByteIdentical": 166,
+    "protectedGroups": [
+      "mod JARs and metadata",
+      "updater and launcher",
+      "marker-sync sources and assets",
+      "slideshow properties/images",
+      "FancyMenu existing media",
+      "loading layouts",
+      "customizablemenus registry"
+    ],
+    "indexedFiles": 370,
+    "permanentCompatibilityRows": 186,
+    "changedGamePayloads": [
+      "config/fancymenu/customization/entegre_title_screen.txt"
+    ]
+  },
+  "checks": {
+    "guardedRefresh": "passed",
+    "verifyPack": "passed",
+    "checkPackCompatibility": "passed",
+    "checkUpdater": "passed",
+    "gitDiffCheck": "passed",
+    "starterReproducibilityAndNegativeChecks": "passed"
+  },
+  "artifacts": {
+    "config/fancymenu/customization/entegre_title_screen.txt": "5181f9c07b43ad889d4c9b4fcb7ff3b3c62ff6613d03451cdb0b1a142c4ac567",
+    "pack.toml": "18d9d1271721ef59105b52e6cd29065583f5ef471450b8661e4c04cbe5d329ae",
+    "index.toml": "580b55d5965b5a86217cc79d260f8e262b3c07637837b280d6550c5d5f44dcc5",
+    "docs/previews/community-events-menu.png": "fc4e581eb653a5c4cbf4d57b5ff6cd54e3163a8bd0888eb8f18c3064fc382fba",
+    "docs/previews/community-events-small.png": "dfe3b8ae905ca26f9764839e643afd848ac9e072757a54baad311a17e37caf00",
+    "docs/previews/community-events-offline.png": "64c790dddd6c0035922b9ff17b2493731f4c66bf213ffbd7693165dfd8a9b330"
+  },
+  "starter": {
+    "filename": "EntegreClient-v2.1.6.zip",
+    "sha256": "811de7ee943e8222326141121c2f4639a3925ace3ceedd978e17a6e1012a02e6",
+    "bytes": 3796140,
+    "allowlistedFiles": 8
+  },
+  "fixtures": {
+    "events.txt": {
+      "sha256": "c6812f5aa0a6e6bc1bbe85ea3f6490a48468f18857e0118bc876c5b3ed8d5e99",
+      "text": "[Birlikte şehir turu ve yeni meydanda buluşma günü](https://entegrevesselam.com/board/synthetic-event-a)\n24.10.2026 — 21:00 TSİ\n\n[Ortak inşa ve kaynak toplama akşamı](https://entegrevesselam.com/board/synthetic-event-b)\n25.10.2026 — 20:30 TSİ\n\n[Tüm etkinlikler](https://entegrevesselam.com/events)\n"
+    },
+    "news.txt": {
+      "sha256": "1a2eebc5845d8056cf53d7415e71636b52165155d8fcd0a1d714b8a93df72e1a",
+      "text": "[EntegreMMO ile madencilik ve odunculuk güncellemesi](https://entegrevesselam.com/announcements/synthetic-a)\nBecerilerimizi keşfet, ortak yapılar için birlikte malzeme biriktir.\n\n[Yeni fotoğraflar ve topluluk anıları artık sitede](https://entegrevesselam.com/announcements/synthetic-b)\nŞehirden, toplantılardan ve günlük maceralardan kareleri keşfedin.\n\n[Tüm duyurular](https://entegrevesselam.com/announcements)\n"
+    }
+  },
+  "nativeEvidence": {
+    "readability": {
+      "sha256": "c40600b45598bc35114f0e1101c4f62e1a8adcec4794092cad4657e7bd2cc48a",
+      "observations": [
+        "ISOLATED mode=readability; synthetic username; no server list/world/account copied",
+        "FEED tick=1 elapsed=6998 text=",
+        "CAPTURE feed-change-1 framebuffer=1280x720 gui=640x360 screen=net.minecraft.client.gui.screen.TitleScreen overlay=none",
+        "CAPTURE first-2 framebuffer=1280x720 gui=640x360 screen=net.minecraft.client.gui.screen.TitleScreen overlay=none",
+        "CAPTURE first-10 framebuffer=1280x720 gui=640x360 screen=net.minecraft.client.gui.screen.TitleScreen overlay=none",
+        "FEED tick=14 elapsed=7183 text=[EntegreMMO: Oynadıkça gelişen Vanilla deneyimi](https://entegrevesselam.com/announcements/cmv8jx9cr0000070ayn2evcoo)\\n14.10.2026 — Entegre Vesselam için mcMMO tabanlı beceri sistemimizi EntegreMMO adıyla düzenledik. Maden kazarken, odun top…\\n\\n[1.21.x Güncellemesi Tamamlandı](https://entegrevesselam.com/announcements/cmqinriup0001a4l8wbfkdq1t)\\n18.06.2026 — Sunucumuz Paper üzerinde Minecraft 1.21.x sürümüne başarıyla güncellendi. Tüm eklentiler ve veri paketleri gü…\\n\\n[Entegre Vesselam'a Hoş Geldiniz!](https://entegrevesselam.com/announcements/cmqinriun0000a4l84fvmryro)\\n18.06.2026 — Entegre Vesselam'ın resmî web sitesine hoş geldiniz. Sunucumuz 2013'ten beri yayında Minecraft'ın en güvenili…\\n\\n[Tüm duyurular](https://entegrevesselam.com/announcements)",
+        "CAPTURE feed-change-14 framebuffer=1280x720 gui=640x360 screen=net.minecraft.client.gui.screen.TitleScreen overlay=none",
+        "CAPTURE first-40 framebuffer=1280x720 gui=640x360 screen=net.minecraft.client.gui.screen.TitleScreen overlay=none",
+        "CAPTURE first-160 framebuffer=1280x720 gui=640x360 screen=net.minecraft.client.gui.screen.TitleScreen overlay=none",
+        "CAPTURE small framebuffer=640x480 gui=320x240 screen=net.minecraft.client.gui.screen.TitleScreen overlay=none",
+        "CAPTURE final framebuffer=1280x720 gui=640x360 screen=net.minecraft.client.gui.screen.TitleScreen overlay=none",
+        "DONE disconnected native first-load and small layout"
+      ]
+    },
+    "slow": {
+      "sha256": "a37d848659443b78b26241fc83546a729f4014122bcbf8d8d2bea89ece1c0e3f",
+      "observations": [
+        "ISOLATED mode=slow; synthetic username; no server list/world/account copied",
+        "FAIL watchdog",
+        "FAIL watchdog",
+        "FAIL watchdog",
+        "FAIL watchdog",
+        "FAIL watchdog",
+        "FAIL watchdog",
+        "FAIL watchdog",
+        "FAIL watchdog",
+        "FAIL watchdog",
+        "FAIL watchdog"
+      ]
+    },
+    "slowtxt": {
+      "sha256": "98ee26085da66376f683875863c777ed83a8851a4b7096894980c0932ea59858",
+      "observations": [
+        "ISOLATED mode=slowtxt; synthetic username; no server list/world/account copied",
+        "FEED tick=1 elapsed=6640 text=",
+        "CAPTURE feed-change-1 framebuffer=1280x720 gui=640x360 screen=net.minecraft.client.gui.screen.TitleScreen overlay=none",
+        "CAPTURE first-2 framebuffer=1280x720 gui=640x360 screen=net.minecraft.client.gui.screen.TitleScreen overlay=none",
+        "CAPTURE first-10 framebuffer=1280x720 gui=640x360 screen=net.minecraft.client.gui.screen.TitleScreen overlay=none",
+        "CAPTURE first-40 framebuffer=1280x720 gui=640x360 screen=net.minecraft.client.gui.screen.TitleScreen overlay=none",
+        "CAPTURE first-160 framebuffer=1280x720 gui=640x360 screen=net.minecraft.client.gui.screen.TitleScreen overlay=none",
+        "CAPTURE small framebuffer=640x480 gui=320x240 screen=net.minecraft.client.gui.screen.TitleScreen overlay=none",
+        "FEED tick=241 elapsed=18632 text=[Sentetik duyuru](https://entegrevesselam.com/announcements/synthetic)\\n18.10.2026 — Metin ağdan sonra geldi.",
+        "CAPTURE feed-change-241 framebuffer=640x480 gui=320x240 screen=net.minecraft.client.gui.screen.TitleScreen overlay=none",
+        "CAPTURE final framebuffer=1280x720 gui=640x360 screen=net.minecraft.client.gui.screen.TitleScreen overlay=none",
+        "DONE disconnected native first-load and small layout"
+      ]
+    },
+    "eventsfinal": {
+      "sha256": "eaf520b67966a92421629682ee4c33d527ba07424752cec2fedcd57a5e67f2a6",
+      "observations": [
+        "ISOLATED mode=eventsfinal; synthetic username; no server list/world/account copied",
+        "FEED tick=1 elapsed=5279 text=",
+        "CAPTURE feed-change-1 framebuffer=1280x720 gui=640x360 screen=net.minecraft.client.gui.screen.TitleScreen overlay=none",
+        "FEED tick=2 elapsed=5319 text=[EntegreMMO ile madencilik ve odunculuk güncellemesi](https://entegrevesselam.com/announcements/synthetic-a)\\nBecerilerimizi keşfet, ortak yapılar için birlikte malzeme biriktir.\\n\\n[Yeni fotoğraflar ve topluluk anıları artık sitede](https://entegrevesselam.com/announcements/synthetic-b)\\nŞehirden, toplantılardan ve günlük maceralardan kareleri keşfedin.\\n\\n[Tüm duyurular](https://entegrevesselam.com/announcements)",
+        "CAPTURE feed-change-2 framebuffer=1280x720 gui=640x360 screen=net.minecraft.client.gui.screen.TitleScreen overlay=none",
+        "CAPTURE first-2 framebuffer=1280x720 gui=640x360 screen=net.minecraft.client.gui.screen.TitleScreen overlay=none",
+        "CAPTURE first-10 framebuffer=1280x720 gui=640x360 screen=net.minecraft.client.gui.screen.TitleScreen overlay=none",
+        "CAPTURE first-40 framebuffer=1280x720 gui=640x360 screen=net.minecraft.client.gui.screen.TitleScreen overlay=none",
+        "CAPTURE first-160 framebuffer=1280x720 gui=640x360 screen=net.minecraft.client.gui.screen.TitleScreen overlay=none",
+        "CAPTURE small framebuffer=640x480 gui=320x240 screen=net.minecraft.client.gui.screen.TitleScreen overlay=none",
+        "CAPTURE final framebuffer=1280x720 gui=640x360 screen=net.minecraft.client.gui.screen.TitleScreen overlay=none",
+        "ACTION_CLICK community-all-news text=Tüm duyurular >",
+        "EXTERNAL_LINK_INTERCEPTED https://entegrevesselam.com/announcements",
+        "ACTION_CLICK community-all-events text=Tüm etkinlikler >",
+        "EXTERNAL_LINK_INTERCEPTED https://entegrevesselam.com/events",
+        "DONE disconnected native first-load and small layout"
+      ]
+    },
+    "eventsoffline": {
+      "sha256": "d8fc79385777d5355324471aa025c8d2ec6d9318bb07608072f1f739dd020ed2",
+      "observations": [
+        "ISOLATED mode=eventsoffline; synthetic username; no server list/world/account copied",
+        "FEED tick=1 elapsed=4799 text=",
+        "CAPTURE feed-change-1 framebuffer=1280x720 gui=640x360 screen=net.minecraft.client.gui.screen.TitleScreen overlay=none",
+        "CAPTURE first-2 framebuffer=1280x720 gui=640x360 screen=net.minecraft.client.gui.screen.TitleScreen overlay=none",
+        "CAPTURE first-10 framebuffer=1280x720 gui=640x360 screen=net.minecraft.client.gui.screen.TitleScreen overlay=none",
+        "CAPTURE first-40 framebuffer=1280x720 gui=640x360 screen=net.minecraft.client.gui.screen.TitleScreen overlay=none",
+        "CAPTURE first-160 framebuffer=1280x720 gui=640x360 screen=net.minecraft.client.gui.screen.TitleScreen overlay=none",
+        "CAPTURE small framebuffer=640x480 gui=320x240 screen=net.minecraft.client.gui.screen.TitleScreen overlay=none",
+        "CAPTURE final framebuffer=1280x720 gui=640x360 screen=net.minecraft.client.gui.screen.TitleScreen overlay=none",
+        "ACTION_CLICK community-all-news text=Tüm duyurular >",
+        "EXTERNAL_LINK_INTERCEPTED https://entegrevesselam.com/announcements",
+        "ACTION_CLICK community-all-events text=Tüm etkinlikler >",
+        "EXTERNAL_LINK_INTERCEPTED https://entegrevesselam.com/events",
+        "DONE disconnected native first-load and small layout"
+      ]
+    }
+  },
+  "limits": [
+    "Final candidate feeds used localhost synthetic data; new public endpoints must be published and checked before client release.",
+    "Later records may require scrolling; no claim that both full lists fit simultaneously at minimum GUI size.",
+    "Native scroll implementation is retained; this candidate probe captured first records and clicked both separate site buttons.",
+    "Windows, real Prism intro, real accounts, worlds and game servers not tested.",
+    "Resource caching remains FancyMenu session behavior; no periodic live refresh promised.",
+    "The controlled extensionless delayed-feed run intentionally failed its watchdog and is diagnosis evidence, not a passing test."
+  ],
+  "publication": "Not performed by this worker; coordinator releases website first and client afterward."
+}

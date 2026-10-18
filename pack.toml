@@ -1,12 +1,12 @@
 name = "Entegre Client"
 author = "Tzesh"
-version = "2.1.5"
+version = "2.1.6"
 pack-format = "packwiz:1.1.0"
 
 [index]
 file = "index.toml"
 hash-format = "sha256"
-hash = "e74462d6622dfd1827e69da6915e2716b2d488b64c55ce78b4f0eedbdda989e9"
+hash = "580b55d5965b5a86217cc79d260f8e262b3c07637837b280d6550c5d5f44dcc5"
 
 [versions]
 fabric = "0.18.4"

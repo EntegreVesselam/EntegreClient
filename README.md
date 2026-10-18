@@ -1,21 +1,23 @@
-# Entegre Client — 2.1.5
+# Entegre Client — 2.1.6
 
 Ana menü altı topluluk fotoğrafını 27 saniyelik aralıklarla rastgele gösterir.
 Yükleme ekranı her yeni açılışta tek fotoğraf seçer; görüntü oranları korunur.
-Kısa replikler, son üç site duyurusu ve Pano / Galeri / Harita kısayolları korunur.
+Daha net yazılarla son iki duyuru ve yaklaşan etkinlikler ayrı alanlarda gösterilir.
+Küçük ekranda sonraki kayıtlar kendi alanında kaydırılır. Tüm duyurular ve Tüm
+etkinlikler düğmeleri, Pano / Galeri / Harita kısayollarıyla birlikte görünür kalır.
 Harita işaretleri sitedeki renk seçimini aynen kullanır; oyundan tek tıklamayla
 cihaz bağlama ve otomatik eşitleme desteklenir.
 
 **Mevcut oyuncular:** Oyunu kapatıp Prism'deki aynı kurulumu yeniden açın;
-normal paket güncellemesi yeni fotoğrafları ve harita köprüsünü getirir. Yeni bir ZIP kurmanız gerekmez.
+normal paket güncellemesi yeni menü düzenini getirir. Yeni bir ZIP kurmanız gerekmez.
 FancyMenu/Drippy isteğe bağlı seçimleri korunur; bu menü bu modlar seçiliyken görünür.
 İnternet olmadığında yerel görseller ve oyun seçenekleri açılmaya devam eder.
 Haber kaynağı oturumda önbelleklenebilir; anlık bildirim değildir.
 
-**Yeni kurulum:** [EntegreClient-v2.1.5.zip](https://github.com/EntegreVesselam/EntegreClient/releases/tag/v2.1.5)
+**Yeni kurulum:** [EntegreClient-v2.1.6.zip](https://github.com/EntegreVesselam/EntegreClient/releases/tag/v2.1.6)
 dosyasını Prism'e içe aktarın. Küçük başlangıç paketi modları ilk açılışta indirir.
 Görseller ve kontrol kapsamı: [anılar](docs/community-memories.md),
-[topluluk menüsü](docs/community-menu.md), [harita köprüsü](marker-sync/README.md).
+[duyurular ve etkinlikler](docs/community-events.md), [harita köprüsü](marker-sync/README.md).
 
 ---
 
@@ -45,7 +47,7 @@ Windows/Prism kabul sınırı: [doğrulama](launcher/docs/verification.md).
 
 # Entegre Client — otomatik marker güncellemesi
 
-## 2.1.5 — mevcut Prism kurulumu için
+## 2.1.6 — mevcut Prism kurulumu için
 
 Minecraft1.21.11 / Fabric0.18.4 / FabricAPI0.141.3 korunur. Bu sürüm,
 Entegre Markers0.1.3 köprüsünü mevcut Xaero Minimap26.6.0 / WorldMap1.47.0 ile
