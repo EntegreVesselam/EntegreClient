@@ -1,18 +1,21 @@
-# Entegre Client — 2.1.4
+# Entegre Client — 2.1.5
 
-Ana menü ve yükleme ekranı topluluğun güncel fotoğraflarıyla yenilendi. Kısa
-Entegre replikleri, son üç site duyurusu ve Pano / Galeri / Harita kısayolları eklendi.
-Duyuru başlığı ilgili yazıyı, Tüm duyurular düğmesi sitedeki listeyi açar.
+Ana menü altı topluluk fotoğrafını 27 saniyelik aralıklarla rastgele gösterir.
+Yükleme ekranı her yeni açılışta tek fotoğraf seçer; görüntü oranları korunur.
+Kısa replikler, son üç site duyurusu ve Pano / Galeri / Harita kısayolları korunur.
+Harita işaretleri sitedeki renk seçimini aynen kullanır; oyundan tek tıklamayla
+cihaz bağlama ve otomatik eşitleme desteklenir.
 
 **Mevcut oyuncular:** Oyunu kapatıp Prism'deki aynı kurulumu yeniden açın;
-normal paket güncellemesi yeni menüyü getirir. Yeni bir ZIP kurmanız gerekmez.
+normal paket güncellemesi yeni fotoğrafları ve harita köprüsünü getirir. Yeni bir ZIP kurmanız gerekmez.
 FancyMenu/Drippy isteğe bağlı seçimleri korunur; bu menü bu modlar seçiliyken görünür.
 İnternet olmadığında yerel görseller ve oyun seçenekleri açılmaya devam eder.
 Haber kaynağı oturumda önbelleklenebilir; anlık bildirim değildir.
 
-**Yeni kurulum:** [EntegreClient-v2.1.4.zip](https://github.com/EntegreVesselam/EntegreClient/releases/tag/v2.1.4)
+**Yeni kurulum:** [EntegreClient-v2.1.5.zip](https://github.com/EntegreVesselam/EntegreClient/releases/tag/v2.1.5)
 dosyasını Prism'e içe aktarın. Küçük başlangıç paketi modları ilk açılışta indirir.
-Güncel görseller ve kontrol kapsamı: [topluluk menüsü](docs/community-menu.md).
+Görseller ve kontrol kapsamı: [anılar](docs/community-memories.md),
+[topluluk menüsü](docs/community-menu.md), [harita köprüsü](marker-sync/README.md).
 
 ---
 
@@ -42,11 +45,11 @@ Windows/Prism kabul sınırı: [doğrulama](launcher/docs/verification.md).
 
 # Entegre Client — otomatik marker güncellemesi
 
-## 2.1.2 — mevcut Prism kurulumu için
+## 2.1.5 — mevcut Prism kurulumu için
 
 Minecraft1.21.11 / Fabric0.18.4 / FabricAPI0.141.3 korunur. Bu sürüm,
-Entegre Markers0.1.2 ve gereken Xaero Minimap26.6.0 / WorldMap1.47.0 güncellemesini
-packwiz ile dağıtır; diğer mevcut mod sürümlerini değiştirmez. Complementary
+Entegre Markers0.1.3 köprüsünü mevcut Xaero Minimap26.6.0 / WorldMap1.47.0 ile
+packwiz üzerinden dağıtır; diğer mevcut mod sürümlerini değiştirmez. Complementary
 shader metadata ile indirilir; mevcut Iris seçimi `preserve` ile korunur.
 
 Prism açılış komutu aynı kalır: mevcut `packwiz-installer-bootstrap.jar` ve
@@ -54,16 +57,18 @@ Prism açılış komutu aynı kalır: mevcut `packwiz-installer-bootstrap.jar` v
 Oyunu kapatıp aynı instance'ı yeniden açın. Kurucu hatası varsa oyunu devam
 ettirmek yerine hatayı bildirin; mod JAR'ını elle kopyalamak gerekmez.
 
-Sunucuya `entegrevesselam.com` adresiyle girdikten sonra `/entegremarkers pair`
-yazın. Site hesabıyla cihazı onaylayın. `/entegremarkers status` eşitleme durumunu,
-`/entegremarkers forget` yerel bağlantıyı kaldırmayı sağlar. Oyun öndeyken liste
-60s aralıkla okunur. Sunucuya ek plugin gerekmez; veri korunan site API'sinden
+Sunucuya `entegrevesselam.com` adresiyle girdikten sonra sohbetteki
+**[Haritayı bağla]** bağlantısına tıklayın veya `/entegremarkers` yazın. Site
+hesabıyla cihazı bir kez onaylayın; sonraki eşitlemeler otomatik yapılır.
+`/entegremarkers sync` bağlı cihazda eşitlemeyi ister; eşleşme yoksa bağlamayı
+başlatır. `/entegremarkers status` durumu gösterir; `/entegremarkers forget`
+yerel bağlantıyı kaldırır. Oyun öndeyken liste 60 saniye aralıkla okunur;
+elle komut da bu aralığı ve aynı anda tek istek sınırını korur. Sunucuya ek plugin gerekmez; veri korunan site API'sinden
 gelir. Kişisel waypoint dosyaları yerine ayrı Xaero runtime katmanı kullanılır.
 
 Ortak markerlar yalnız tam ekran dünya haritasında görünür; oyun içi HUD ve
 minimap üzerinde görünmez. İsimlerden en fazla üç karakterlik kısa harfler
-üretilir. Varsayılan renkteki noktalar sabit, canlı renklerle ayrılır; sitedeki
-özel renkler korunur. Kişisel waypoint ayarlarına veya dosyalarına dokunulmaz.
+üretilir. Sitede seçilen 16 rengin tamamı, koyu kırmızı dahil aynen korunur. Kişisel waypoint ayarlarına veya dosyalarına dokunulmaz.
 
 ## Kişisel veriyi koruyan eski paket geçişi
 

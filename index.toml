@@ -125,8 +125,32 @@ file = "config/fancymenu/customizablemenus.txt"
 hash = "9f0a730e0597da9fa59ce466bd2a1e7a65d3c190e7ae2e7d3ce55fad6211819c"
 
 [[files]]
+file = "config/fancymenu/customization/entegre_loading_memory_01.txt"
+hash = "648040f9e095b86b8153f637e2fcf91c3f7497f1f7e40e0a518691423d76696d"
+
+[[files]]
+file = "config/fancymenu/customization/entegre_loading_memory_02.txt"
+hash = "9c07eeedb879cbebadb9148c7d4b9c7b7f356a7649486859091559a963e2c30b"
+
+[[files]]
+file = "config/fancymenu/customization/entegre_loading_memory_03.txt"
+hash = "0ae07b270c950d82bcdae844398c42485a01007b362570175484ef86835838aa"
+
+[[files]]
+file = "config/fancymenu/customization/entegre_loading_memory_04.txt"
+hash = "86e7cfd96e54b895e17f8509e5d753bb847672a05eb8b04088f403f02c72fdbe"
+
+[[files]]
+file = "config/fancymenu/customization/entegre_loading_memory_05.txt"
+hash = "7b7b975356c84dc58e05f8de400e5f56daa022424bd5c1ad30cdcc5921976ef8"
+
+[[files]]
+file = "config/fancymenu/customization/entegre_loading_memory_06.txt"
+hash = "514750b56408b0a4d5e0036b614752572228f3d47fe89faeb628f971c1ea4dc3"
+
+[[files]]
 file = "config/fancymenu/customization/entegre_loading_screen.txt"
-hash = "40e154925729ff6c92fb24c6bfef1ae7fc53927070bec1bf1e003611ce073594"
+hash = "cd86a336e925695c7c538d913236a11eee90425197910d1c3a62602b754841a0"
 
 [[files]]
 file = "config/fancymenu/customization/entegre_multiplayer_screen_layout.txt"
@@ -134,7 +158,7 @@ hash = "40ea43c356edcdf436453b4425e3e44200bb443231653c5cd1b0ce2eb1c9e99b"
 
 [[files]]
 file = "config/fancymenu/customization/entegre_title_screen.txt"
-hash = "7b344300917ac8f4db0b21b8756e85fb909ff3d7a483f4b61176d814477c084a"
+hash = "815133efeb7a6112f905c14bef08db26578724637c54b72c7acfc426daa567aa"
 
 [[files]]
 file = "config/fancymenu/layout_editor/widgets/element_layer_control.lewidget"
@@ -147,6 +171,34 @@ hash = "9a25d3dc708e43eabafce5479a13c02dae15bc7f673afb2745b8b2ba48a97dc0"
 [[files]]
 file = "config/fancymenu/options.txt"
 hash = "37bb59847ab943f525619c0752eb782057aec433ebd80ddd0610b4ac8db5c207"
+
+[[files]]
+file = "config/fancymenu/slideshows/community-memories/images/frame-01.jpg"
+hash = "22ce63f7386c3e085bafc7f9c30aecb3233676826a40cda7c54bd7cff67303ec"
+
+[[files]]
+file = "config/fancymenu/slideshows/community-memories/images/frame-02.jpg"
+hash = "dd6c7129cd7dbda551a41631e5b0ecc777ac22d06143600ba60444c7be3a84b6"
+
+[[files]]
+file = "config/fancymenu/slideshows/community-memories/images/frame-03.jpg"
+hash = "0c0020f4c3e842b92b85dc12a652b4e389e086320cba17f7553301fe9933da7f"
+
+[[files]]
+file = "config/fancymenu/slideshows/community-memories/images/frame-04.jpg"
+hash = "a8411e3303eb6e51482cfe3728b2d56a166d3b0dfec34d032323ab75aaea57cd"
+
+[[files]]
+file = "config/fancymenu/slideshows/community-memories/images/frame-05.jpg"
+hash = "69ff094e207d1dea9cbed42897c5f6f4625ac8b846d50f8f81c0ef7db95aebca"
+
+[[files]]
+file = "config/fancymenu/slideshows/community-memories/images/frame-06.jpg"
+hash = "d29ae8abb0c52f994ce7518f9121763bef94b3d1da67cef2ef2b0bc62f991cdb"
+
+[[files]]
+file = "config/fancymenu/slideshows/community-memories/properties.txt"
+hash = "45c7d03fea31e1fd4fc56fe274007eae65adef44fa66b673a468c4ca66280064"
 
 [[files]]
 file = "config/fancymenu/ui_themes/dark.json"
@@ -456,8 +508,8 @@ hash = "77c550309ddfa8cd6ecea65c14cd9a520daac8326f9ac6c55b0dacabb64d4425"
 metafile = true
 
 [[files]]
-file = "mods/entegre-markers-0.1.2.jar"
-hash = "94016ccb2c4ad29c03f104614fbadc7eabfcf79d73f1a0af5576f418d905ae66"
+file = "mods/entegre-markers-0.1.3.jar"
+hash = "74fc87fdd6932d5d053816b245ff5a5fb36bdf34faf3453c6b954b9731448759"
 
 [[files]]
 file = "mods/entegre-updater-transition-0.1.0.jar"

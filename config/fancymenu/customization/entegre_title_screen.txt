@@ -14,15 +14,9 @@ layout-meta {
 }
 
 menu_background {
-  image_path = [source:local]/config/fancymenu/assets/community-city-2026.jpg
-  slide = false
-  repeat_texture = false
-  parallax = false
-  parallax_intensity = 0.02
-  invert_parallax = false
-  restart_animated_on_menu_load = false
+  slideshow_name = community-memories
   instance_identifier = b07f1bf3-9a9a-4575-a205-77a4467b6894-1767485326979
-  background_type = image
+  background_type = slideshow
 }
 
 customization {
@@ -496,7 +490,7 @@ element {
 }
 
 element {
-  source = Entegre Client 2.1.4
+  source = Entegre Client 2.1.5
   source_mode = direct
   interactable = false
   shadow = true

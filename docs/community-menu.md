@@ -1,5 +1,7 @@
 # Topluluk menüsü — yerel aday
 
+Sonraki fotoğraf havuzu değişikliği: [Anı fotoğrafları](community-memories.md).
+
 18 Ekim 2026. Yayımlanmış 2.1.3 tabanı (`c591f283`) üzerinde hazırlanmıştır.
 İlk yerel adaydan sonra kullanıcının açık yayın talebiyle sürüm 2.1.4 hazırlandı;
 güncelleme kanalı aynı kaldı. Yayın sonucu `release-2.1.4.md` belgesinde tutulur.

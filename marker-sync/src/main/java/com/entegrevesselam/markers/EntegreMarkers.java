@@ -7,6 +7,8 @@ import net.fabricmc.fabric.api.client.event.lifecycle.v1.ClientTickEvents;
 import net.fabricmc.fabric.api.client.event.lifecycle.v1.ClientLifecycleEvents;
 import net.minecraft.client.MinecraftClient;
 import net.minecraft.text.Text;
+import net.minecraft.text.ClickEvent;
+import net.minecraft.util.Formatting;
 import net.minecraft.util.Util;
 import java.util.*;
 import java.util.concurrent.*;
@@ -32,11 +34,12 @@ public final class EntegreMarkers implements ClientModInitializer {
         if (!version("xaerominimap","26.6.0") || !version("xaeroworldmap","1.47.0")) { incompatible = true; status = "incompatible"; }
         else { try { layer = new XaeroLayer(client); } catch (LinkageError e) { incompatible = true; status = "incompatible"; } }
         ClientCommandRegistrationCallback.EVENT.register((dispatcher, registry) -> dispatcher.register(literal("entegremarkers")
-            .executes(c -> { message(status); return 1; })
+            .executes(c -> { connectOrSync(); return 1; })
             .then(literal("status").executes(c -> { message(status); return 1; }))
             .then(literal("pair").executes(c -> { pair(); return 1; }))
+            .then(literal("sync").executes(c -> { connectOrSync(); return 1; }))
             .then(literal("forget").executes(c -> { forget(); return 1; }))));
-        org.slf4j.LoggerFactory.getLogger("EntegreMarkers").info("Entegre Markers 0.1.2 initialized; client command registration callback installed; Xaero compatible={}", !incompatible);
+        org.slf4j.LoggerFactory.getLogger("EntegreMarkers").info("Entegre Markers 0.1.3 initialized; client command registration callback installed; Xaero compatible={}", !incompatible);
         ClientTickEvents.END_CLIENT_TICK.register(ignored -> tick());
         ClientLifecycleEvents.CLIENT_STOPPING.register(ignored -> { stopped = true; pairEpoch++; state.close(); safeHide(); worker.shutdownNow(); });
     }
@@ -50,6 +53,7 @@ public final class EntegreMarkers implements ClientModInitializer {
     private void tick() {
         if (stopped || incompatible) return;
         long now = System.currentTimeMillis();
+        state.connection(client.getNetworkHandler());
         try {
             var server = client.getCurrentServerEntry(); SyncState.Context next = null;
             if (client.world != null && client.getServer() == null && server != null && targetServer(server.address)) next = layer.context("entegrevesselam.com",client.world.getRegistryKey().getValue().toString());
@@ -61,20 +65,39 @@ public final class EntegreMarkers implements ClientModInitializer {
             if (pairing != null && now >= pairing.expiresAt()) { pairing = null; pairBusy = false; pairEpoch++; status = "expired"; }
             if (pairing != null && !pairBusy && pollSchedule.begin(now,client.isWindowFocused(),context != null)) poll(now);
             if (state.needsApply() && snapshot != null) { layer.replace(context,snapshot.markers(),device.ownerId()); state.applied(); }
-            SyncState.Request request = state.begin(now,client.isWindowFocused(),device != null && pairing == null);
-            if (request != null) {
-                String token = device.token();
-                worker.execute(() -> {
-                    try {
-                        MarkerApi.Response response = api.markers(token);
-                        if (response.status() == 401 || response.status() == 403) { client.execute(() -> { state.denied(request); if (!state.visible()) { safeHide(); status = "denied"; } }); return; }
-                        if (response.status() != 200) throw new IllegalArgumentException("http_status");
-                        Snapshot received = Snapshot.parse(response.body());
-                        client.execute(() -> { if (state.accept(request,received.revision())) { snapshot = received; status = "ready"; } });
-                    } catch (Exception e) { client.execute(() -> { state.failed(request); if (!stopped) status = "offline"; }); }
-                });
-            }
+            if (client.player != null && state.offerPairing(client.isWindowFocused(),device != null,pairing != null || pairBusy))
+                client.player.sendMessage(pairingInvitation(),false);
+            requestMarkers(now);
         } catch (RuntimeException | LinkageError e) { safeHide(); incompatible = true; status = "incompatible"; }
+    }
+    static Text pairingInvitation() {
+        return Text.translatable("entegre_markers.connect_invite").append(" ").append(
+            Text.translatable("entegre_markers.connect_action").styled(style -> style.withColor(Formatting.GREEN)
+                .withUnderline(true).withClickEvent(new ClickEvent.RunCommand("/entegremarkers pair"))));
+    }
+    private void connectOrSync() {
+        if (incompatible) { message("incompatible"); return; }
+        long now = System.currentTimeMillis();
+        if (device == null || now >= device.expiresAt()) { pair(); return; }
+        if (pairBusy || pairing != null) { message("pair_pending"); return; }
+        if (context == null) { message("waiting_server"); return; }
+        requestMarkers(now);
+        message(state.syncing() ? "syncing" : "sync_wait");
+    }
+    private void requestMarkers(long now) {
+        SyncState.Request request = state.begin(now,client.isWindowFocused(),device != null && pairing == null);
+        if (request != null) {
+            String token = device.token();
+            worker.execute(() -> {
+                try {
+                    MarkerApi.Response response = api.markers(token);
+                    if (response.status() == 401 || response.status() == 403) { client.execute(() -> { state.denied(request); if (!state.visible()) { safeHide(); status = "denied"; } }); return; }
+                    if (response.status() != 200) throw new IllegalArgumentException("http_status");
+                    Snapshot received = Snapshot.parse(response.body());
+                    client.execute(() -> { if (state.accept(request,received.revision())) { snapshot = received; status = "ready"; } });
+                } catch (Exception e) { client.execute(() -> { state.failed(request); if (!stopped) status = "offline"; }); }
+            });
+        }
     }
     private void pair() {
         if (incompatible) { message("incompatible"); return; }

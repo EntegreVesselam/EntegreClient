@@ -1,0 +1,8 @@
+type = slideshow
+
+slideshow-meta {
+  name = community-memories
+  duration = 27
+  fadespeed = 2
+  randomize = true
+}

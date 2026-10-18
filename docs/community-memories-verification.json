@@ -1,0 +1,192 @@
+{
+  "date": "2026-10-18",
+  "status": "passed-local-candidate",
+  "baseCommit": "166cfd093c19d82bd91a572023e17cad1ac6836d",
+  "environment": {
+    "minecraft": "1.21.11",
+    "fabric": "0.18.4",
+    "fancymenu": "3.8.4",
+    "drippyloadingscreen": "3.1.1",
+    "java": "21",
+    "platform": "macOS arm64",
+    "account": "synthetic",
+    "copiedUserWorldOrAccount": false
+  },
+  "native": {
+    "completed": true,
+    "normalShutdown": true,
+    "errorLogEntries": 0,
+    "slideshowFrames": [
+      {
+        "frame": "frame-05.jpg",
+        "intervalMs": 0
+      },
+      {
+        "frame": "frame-04.jpg",
+        "intervalMs": 13513
+      },
+      {
+        "frame": "frame-02.jpg",
+        "intervalMs": 27013
+      },
+      {
+        "frame": "frame-04.jpg",
+        "intervalMs": 27005
+      }
+    ],
+    "loadingCycles": [
+      {
+        "cycle": 1,
+        "observedTicks": 62,
+        "frame": "frame-01.jpg",
+        "stable": true
+      },
+      {
+        "cycle": 2,
+        "observedTicks": 62,
+        "frame": "frame-05.jpg",
+        "stable": true
+      },
+      {
+        "cycle": 3,
+        "observedTicks": 59,
+        "frame": "frame-06.jpg",
+        "stable": true
+      },
+      {
+        "cycle": 4,
+        "observedTicks": 58,
+        "frame": "frame-02.jpg",
+        "stable": true
+      }
+    ],
+    "loadingActiveLayouts": 2,
+    "loadingPhotoCountAtOnce": 1,
+    "crossfadeObserved": true,
+    "viewports": [
+      [
+        1280,
+        720
+      ],
+      [
+        640,
+        480
+      ]
+    ],
+    "guiSizes": [
+      [
+        640,
+        360
+      ],
+      [
+        320,
+        240
+      ]
+    ],
+    "testOnlyChanges": [
+      "development class names in customizablemenus.txt",
+      "existing intro skipped in test options",
+      "announcement source replaced with local synthetic text"
+    ],
+    "buttonActionsRetested": false
+  },
+  "preservation": {
+    "titleOnlyBackgroundChanged": true,
+    "loadingOnlyPhotoMoved": true,
+    "randomLoadingLayouts": 6,
+    "photoSourcesPresent": true,
+    "packMetadataAndVersions": true,
+    "updaterCheckPassed": true,
+    "packCompatibilityCheckPassed": true,
+    "packVerifierPassed": true,
+    "indexedFiles": 370,
+    "permanentCompatibilityRows": 186,
+    "newIndexEntryCount": 13,
+    "changedExistingIndexEntries": [
+      "config/fancymenu/customization/entegre_loading_screen.txt",
+      "config/fancymenu/customization/entegre_title_screen.txt"
+    ]
+  },
+  "images": [
+    {
+      "file": "config/fancymenu/slideshows/community-memories/images/frame-01.jpg",
+      "width": 1920,
+      "height": 1080,
+      "sha256": "22ce63f7386c3e085bafc7f9c30aecb3233676826a40cda7c54bd7cff67303ec"
+    },
+    {
+      "file": "config/fancymenu/slideshows/community-memories/images/frame-02.jpg",
+      "width": 1920,
+      "height": 1080,
+      "sha256": "dd6c7129cd7dbda551a41631e5b0ecc777ac22d06143600ba60444c7be3a84b6"
+    },
+    {
+      "file": "config/fancymenu/slideshows/community-memories/images/frame-03.jpg",
+      "width": 1920,
+      "height": 1080,
+      "sha256": "0c0020f4c3e842b92b85dc12a652b4e389e086320cba17f7553301fe9933da7f"
+    },
+    {
+      "file": "config/fancymenu/slideshows/community-memories/images/frame-04.jpg",
+      "width": 1920,
+      "height": 1080,
+      "sha256": "a8411e3303eb6e51482cfe3728b2d56a166d3b0dfec34d032323ab75aaea57cd"
+    },
+    {
+      "file": "config/fancymenu/slideshows/community-memories/images/frame-05.jpg",
+      "width": 1920,
+      "height": 1080,
+      "sha256": "69ff094e207d1dea9cbed42897c5f6f4625ac8b846d50f8f81c0ef7db95aebca"
+    },
+    {
+      "file": "config/fancymenu/slideshows/community-memories/images/frame-06.jpg",
+      "width": 1920,
+      "height": 1080,
+      "sha256": "d29ae8abb0c52f994ce7518f9121763bef94b3d1da67cef2ef2b0bc62f991cdb"
+    }
+  ],
+  "previews": [
+    {
+      "file": "docs/previews/community-memories-menu.png",
+      "sha256": "cde297657e9daaa8436c70f94d876f02c891bbe624e17a0b3e16740d936cf9d8"
+    },
+    {
+      "file": "docs/previews/community-memories-fade.png",
+      "sha256": "dfaf32f17560da7ad65ee7b75cfb97ad6272e868223e68221a30944022012c52"
+    },
+    {
+      "file": "docs/previews/community-memories-small.png",
+      "sha256": "23304ca8bbfe35276bef8255d21fefee7b96a4883865839b1913037f62a2e2eb"
+    },
+    {
+      "file": "docs/previews/community-memories-loading-city.png",
+      "sha256": "a4bf66c3c7a6bce8870f91ad7f10f8be54c6b35a67d89ed06989a1216deef4f4"
+    },
+    {
+      "file": "docs/previews/community-memories-loading-tnt.png",
+      "sha256": "20f8b9f9228fc36a55dcfc6d2db2cac3feca92bff5d8b2fa41fbd08bef7d2039"
+    }
+  ],
+  "configSha256": {
+    "config/fancymenu/customization/entegre_title_screen.txt": "19d52f9c46b5c3327c2054e404ca21acbf6a36188b9a647265459e1025d80cb5",
+    "config/fancymenu/customization/entegre_loading_screen.txt": "cd86a336e925695c7c538d913236a11eee90425197910d1c3a62602b754841a0",
+    "config/fancymenu/customization/entegre_loading_memory_01.txt": "648040f9e095b86b8153f637e2fcf91c3f7497f1f7e40e0a518691423d76696d",
+    "config/fancymenu/customization/entegre_loading_memory_02.txt": "9c07eeedb879cbebadb9148c7d4b9c7b7f356a7649486859091559a963e2c30b",
+    "config/fancymenu/customization/entegre_loading_memory_03.txt": "0ae07b270c950d82bcdae844398c42485a01007b362570175484ef86835838aa",
+    "config/fancymenu/customization/entegre_loading_memory_04.txt": "86e7cfd96e54b895e17f8509e5d753bb847672a05eb8b04088f403f02c72fdbe",
+    "config/fancymenu/customization/entegre_loading_memory_05.txt": "7b7b975356c84dc58e05f8de400e5f56daa022424bd5c1ad30cdcc5921976ef8",
+    "config/fancymenu/customization/entegre_loading_memory_06.txt": "514750b56408b0a4d5e0036b614752572228f3d47fe89faeb628f971c1ea4dc3",
+    "config/fancymenu/slideshows/community-memories/properties.txt": "45c7d03fea31e1fd4fc56fe274007eae65adef44fa66b673a468c4ca66280064"
+  },
+  "packSha256": "7db96ebab9ce74c7001c366ef46629c0560924000e6359a469aee0de2497f995",
+  "indexSha256": "ead1701f57084c66636a9de31f629e7563b543d5fedd9cc411081f6fde60a13b",
+  "resolvedDuringNativeTest": [
+    "Missing properties.txt top-level type declaration; added type = slideshow and repeated native acceptance successfully."
+  ],
+  "limits": [
+    "First transition uses half duration in FancyMenu 3.8.4; subsequent measured transitions are 27 seconds.",
+    "Random slideshow prevents consecutive duplicates but is not shuffle without replacement.",
+    "Loading cache refresh depends on FancyMenu detecting a new screen; arbitrary consecutive same-class overlay reinitialization is not guaranteed to reroll.",
+    "Windows, complete production Prism intro, real account and live game connection not tested; no publish/installation performed."
+  ]
+}

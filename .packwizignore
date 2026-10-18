@@ -48,7 +48,7 @@ marker-sync/
 config/entegre-markers/
 
 # Locally built Entegre bridge is bundled; downloaded third-party JARs remain excluded.
-!mods/entegre-markers-0.1.2.jar
+!mods/entegre-markers-0.1.3.jar
 
 # Permanent legacy ownership tombstones are generated, never distributed as files.
 compatibility/
