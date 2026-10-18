@@ -24,7 +24,7 @@ public final class ProfileMigrationTest {
             check(Files.readString(instance.resolve("mmc-pack.before-entegre-26.2.json")).equals(old), "exact original rollback snapshot");
             String migrated = Files.readString(profile);
             check(migrated.contains("26.2") && migrated.contains("3.4.1") && migrated.contains("0.19.5"), "complete target runtime");
-            check(!migrated.contains("intermediary") && migrated.contains("preserve me") && migrated.contains("custom.safe"), "unknown metadata retained; obsolete mapping removed");
+            check(migrated.contains("intermediary") && migrated.contains("preserve me") && migrated.contains("custom.safe"), "unknown metadata retained; required mapping retained");
             check(!ProfileMigration.prepare(game,"26.2") && migrated.equals(Files.readString(profile)), "retry is byte-identical");
             check(Files.readString(game.resolve("options.txt")).equals("player settings"), "player settings untouched");
             check(ProfileMigration.prepare(game,"26.3") && Files.readString(profile).contains("3.4.3"), "26.3 uses correct LWJGL");

@@ -1,0 +1,19 @@
+2.4.2 — Tekrarlanan Prism geçiş uyarısı düzeltmesi (19 Ekim 2026)
+
+Neden: Prism Fabric 0.19.5 metadata'sı 26.2 ve 26.3'te de net.fabricmc.intermediary
+bileşenini zorunlu tutuyor. 2.4.1 geçişi bu bileşeni silince Prism onu sonraki
+açılışta tekrar ekliyor ve guard yeniden restart istiyordu. Bileşen şimdi hedef
+Minecraft sürümüne güncellenir; eksikse bir kez eklenir. Eski sürüm cache alanları
+sürüm değişiminde temizlenir. Yeni starter'lar aynı bileşeni doğru sürümle içerir.
+
+Döngüde kalan 2.4.1 motoru guard öncesinde güncelleme indirmediği için kendini
+bu hatadan kurtaramaz. Onarım ZIP'i yalnız engine.jar + engine.sha256 içerir.
+Prism tamamen kapalıyken profil klasörünün içine çıkarılır; harita/ayar/saves
+ve instance.cfg/mmc-pack.json içermez. Sonraki açılış düzeltilmiş motoru çalıştırır.
+
+Test: Prism'in gerçek yayınlanmış Fabric/intermediary metadata bağımlılığına
+uygun iki profil eski motorda yeniden geçişe düşüyordu (regression-before.log).
+Düzeltmede 26.2 ve 26.3 çözülmüş profilleri byte-byte değişmeden kalır. Eksik
+bileşen bir kez eklenir, tekrar çalıştırma değişiklik yapmaz. Yedek, kişisel veri,
+Java21 engeli ve ilk restart süreçleri ayrıca kontrol edilir. Windows'ta gerçek
+Prism arayüzüyle uçtan uca kullanıcı doğrulaması henüz yapılmadı.

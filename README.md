@@ -1,3 +1,11 @@
+# 2.4.2 düzeltmesi
+
+Tekrarlanan sürüm geçişi uyarısı giderildi. Uyarıda kalan 2.4.1 oyuncuları,
+Prism kapalıyken [onarım ZIP’ini](https://github.com/EntegreVesselam/EntegreClient/releases/download/v2.4.2/EntegreClient-2.4.2-gecis-onarim.zip)
+profil klasörünün içine çıkarmalı. Yalnız iki güncelleyici dosyası yenilenir.
+Yeni kurulum için [2.4.2 yayını](https://github.com/EntegreVesselam/EntegreClient/releases/tag/v2.4.2).
+Ayrıntı: docs/release-2.4.2.txt. Aşağıdaki 2.4.1 notları tarihçedir.
+
 # Entegre Client 2.4.1 — 26.2 varsayılan / 26.3 ayrı profil
 
 Mevcut oyuncular normal güncellemeyle **26.2** kanalına yönlendirilir.
