@@ -387,11 +387,11 @@ hash = "0c24e2531e2fefb120bbbdbdfca673e8c266199408e7df288b505b8e66c361b1"
 
 [[files]]
 file = "entegre-updater/engine.jar"
-hash = "7a087b64d269deda98c729e32bdc2057d6b01b8502fd8bcf4fe6484a704cd083"
+hash = "77b65e8b0da624e8c09eb43d01cd6dd425c375f2786ee272db21c5c4b6b7e972"
 
 [[files]]
 file = "entegre-updater/engine.sha256"
-hash = "ce2371bc098991f95ea8edef6ce7af8e036b4b929ae9756828d3f9cac5376ad0"
+hash = "8aa2d80c3f29744d63557ac6ac140be43f780fe292bcf4d08de70317c8b3ea17"
 
 [[files]]
 file = "icon.png"

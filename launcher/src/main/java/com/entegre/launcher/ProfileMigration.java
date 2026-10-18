@@ -12,7 +12,7 @@ public final class ProfileMigration {
     public static String channelUrl(String url) {
         if (url.equals(RAW + "main/pack.toml") || url.equals(
                 "https://github.com/EntegreVesselam/EntegreClient/raw/main/pack.toml")) {
-            return RAW + "minecraft-26.2/pack.toml";
+            return RAW + "minecraft-26.3/pack.toml";
         }
         return url;
     }
