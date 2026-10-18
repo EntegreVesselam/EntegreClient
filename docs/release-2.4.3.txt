@@ -24,3 +24,6 @@ fabrika kaydının görünen ad/ip alanı doğrulanır. ZIP içindeki servers.da
 motor payload’ları index hashleriyle eşleştirilir; profil bağımlılık testleri,
 paket koruma kayıtları ve yerel gerçek istemci açılışı kontrol edilir.
 Gerçek sunucu bağlantısı/LOD ve Windows Prism kullanıcı kabulü test edilmedi.
+
+Mevcut servers.dat dosyaları preserve=true ile korunur; kaydedilmiş diğer
+sunucular fabrika listesiyle değiştirilmez. Yeni ZIP doğru varsayılanı içerir.
