@@ -92,6 +92,7 @@ def starter_files():
     profile = {"formatVersion": 1, "components": [
         {"uid": "org.lwjgl3", "version": "3.4.1", "dependencyOnly": True},
         {"uid": "net.minecraft", "version": versions["minecraft"], "important": True},
+        {"uid": "net.fabricmc.intermediary", "version": versions["minecraft"], "dependencyOnly": True},
         {"uid": "net.fabricmc.fabric-loader", "version": versions["fabric"]},
     ]}
     files["mmc-pack.json"] = (json.dumps(profile, indent=2, sort_keys=True) + "\n").encode()

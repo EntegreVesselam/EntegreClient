@@ -1,3 +1,8 @@
+# 2.4.2 — Prism geçiş döngüsü düzeltmesi (2026-10-19)
+
+- Prism’in zorunlu Fabric bileşeni korunur ve doğru sürüme güncellenir.
+- Yeni starter’lar doğru bağımlılığı hazır içerir; mevcut döngü için iki dosyalık onarım ZIP’i.
+
 # 2.4.1 — iki Prism profili / Minecraft26.2 (2026-10-19)
 
 - Mevcut 1.21.11 oyuncuları için varsayılan 26.2 geçişi, profil yedeği ve Prism yeniden açılış koruması.

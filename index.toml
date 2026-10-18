@@ -158,7 +158,7 @@ hash = "40ea43c356edcdf436453b4425e3e44200bb443231653c5cd1b0ce2eb1c9e99b"
 
 [[files]]
 file = "config/fancymenu/customization/entegre_title_screen.txt"
-hash = "67d290eb8cc4b9e531fd4cfadc98567b15f139654063d90a7860f9cf0d5e1a44"
+hash = "c88d31f843e732033728cb3589a7db07d3ad9e802b2bd1e1e1482fff7277933c"
 
 [[files]]
 file = "config/fancymenu/layout_editor/widgets/element_layer_control.lewidget"
@@ -387,11 +387,11 @@ hash = "0c24e2531e2fefb120bbbdbdfca673e8c266199408e7df288b505b8e66c361b1"
 
 [[files]]
 file = "entegre-updater/engine.jar"
-hash = "46fb985456e61a44d3d97d3159b9d9573fd0a321ff63061a96a921a83429d073"
+hash = "7a087b64d269deda98c729e32bdc2057d6b01b8502fd8bcf4fe6484a704cd083"
 
 [[files]]
 file = "entegre-updater/engine.sha256"
-hash = "031733a744d5264b703ed26da23c6d82c4635a4bfaa6b099e1b76d8257d14506"
+hash = "ce2371bc098991f95ea8edef6ce7af8e036b4b929ae9756828d3f9cac5376ad0"
 
 [[files]]
 file = "icon.png"
