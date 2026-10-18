@@ -53,3 +53,9 @@ marker-sync/run/
 # Python maintenance cache
 __pycache__/
 *.pyc
+
+# The client transition is bundled; rollback state remains local.
+!mods/entegre-updater-transition-0.1.0.jar
+entegre-updater/*backup*
+.entegre-updater-disabled
+.entegre-bootstrap-*

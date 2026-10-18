@@ -1,3 +1,13 @@
+## 2.1.3 — Türkçe güncelleyici
+
+- Entegre tasarımlı Türkçe açılış penceresi; normal açılışta seçenek sayacı yok.
+- Mod seçimi ve hata pencerelerinin metinleri Türkçe; kayıtlı seçenekler korunur.
+- Bilinen mevcut Prism kurulumuna yedekli otomatik geçiş; komut aynı kalır.
+- Güncelleyici motorunun sonraki sürümleri aynı paket kanalıyla gelir.
+- Yeni Prism başlangıç ZIP’i Türkçe pencereyi ilk açılışta kullanır; modlar açılışta indirilir.
+- Yerel GUI, geçiş, kendi motorunu güncelleme ve geri alma testleri var.
+  Gerçek Windows/Prism oturumuyla kabul henüz yapılmadı.
+
 ## 2.1.2
 
 - Ortak markerlar E yerine isimlerinden kısa harflerle, yalnız tam ekran dünya haritasında görünür.

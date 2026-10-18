@@ -314,6 +314,22 @@ file = "config/xaeropatreon.txt"
 hash = "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
 
 [[files]]
+file = "entegre-updater/bootstrap.jar"
+hash = "20c0c2a94e351f64f0978235b85ebb8bd5ed8938662a8b021015bba9d24785ca"
+
+[[files]]
+file = "entegre-updater/bootstrap.sha256"
+hash = "0c24e2531e2fefb120bbbdbdfca673e8c266199408e7df288b505b8e66c361b1"
+
+[[files]]
+file = "entegre-updater/engine.jar"
+hash = "03be01fa3dc055156dee55b955cce4a6455744de89800e3bd31a8ec8a2d3e154"
+
+[[files]]
+file = "entegre-updater/engine.sha256"
+hash = "5e780241d078f4734036e1aa269ff65b0765467fb816e4516a8034b060faf060"
+
+[[files]]
 file = "icon.png"
 hash = "0ce41d5bad327cb51856b00782f80eb06fe1000c064abc8322796db7337dbb03"
 
@@ -430,6 +446,10 @@ metafile = true
 [[files]]
 file = "mods/entegre-markers-0.1.2.jar"
 hash = "94016ccb2c4ad29c03f104614fbadc7eabfcf79d73f1a0af5576f418d905ae66"
+
+[[files]]
+file = "mods/entegre-updater-transition-0.1.0.jar"
+hash = "8ce65189148fb6a93b3a0736b324c72d65cfb8a93bf9f0578a492dc9b712333a"
 
 [[files]]
 file = "mods/entityculling.pw.toml"

@@ -1,0 +1,6 @@
+build/
+dist/
+__pycache__/
+**/__pycache__/
+*.pyc
+vendor/packwiz-installer-0.5.14.jar

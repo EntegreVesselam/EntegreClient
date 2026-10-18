@@ -13,6 +13,10 @@ jobs:
       - uses: actions/checkout@11d5960a326750d5838078e36cf38b85af677262
       - name: Verify pack hashes and immutable compatibility rows
         run: python3 scripts/verify-pack.py
+      - name: Verify Entegre updater payloads and migration wiring
+        run: python3 scripts/check-updater.py
+      - name: Verify clean reproducible Prism starter
+        run: python3 scripts/build-prism-release.py --self-check
       - name: Build pinned packwiz for preservation tests
         run: |
           go install github.com/packwiz/packwiz@52b123018f9e19b49703f76e78ad415642acf5c5
