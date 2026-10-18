@@ -1,3 +1,9 @@
+# 2.4.3 — Tek paket ve sunucu adresi (2026-10-19)
+
+- Tek EntegreClient-v2.4.3.zip / Entegre Client profili, Minecraft 26.2.
+- Varsayılan gerçek sunucu IP’si entegrevesselam.com; fabrika kaydı ZIP içinde hazır.
+- Marker eşitlemesi entegrevesselam.com ve ugurdindar.com adreslerini kabul eder.
+
 # 2.4.1 geçişi — 19 Ekim 2026
 
 - Yeni motor eski main adresini varsayılan 26.2 kanalına yönlendirir.

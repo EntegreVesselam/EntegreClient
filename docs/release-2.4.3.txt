@@ -1,0 +1,26 @@
+2.4.3 — tek ZIP / varsayılan sunucu adresi
+19 Ekim 2026
+
+Güncel yayın yalnız EntegreClient-v2.4.3.zip içerir (yanında SHA256 vardır).
+Prism profili Entegre Client; oyun26.2/Fabric0.19.5/LWJGL3.4.1/Java25.
+Intermediary26.2 baştan doğru profilde bulunur. Yeni kullanıcılar eski
+profili sürüm geçirerek dönüştürmez; ZIP’i ayrı profil olarak içe aktarır.
+Gelecekte normal paket kontrolü aynı minecraft-26.2 kanalından sürer.
+
+Varsayılan servers.dat eski bağlantı IP’si ugurdindar.com yerine
+entegrevesselam.com kullanır. Adı zaten entegrevesselam.com idi; gerçek ip
+alanı da güncellendi. ZIP yalnız fabrikadaki tek sunucu kaydını içerir,
+oyuncunun gerçek sunucu listesi okunmaz veya paketlenmez.
+
+Marker hedef kontrolü entegrevesselam.com ve ugurdindar.com kabul eder;
+her ikisinin büyük harf yazımı ve :25565 biçimi geçerlidir. API origin ve
+kanonik sunucu kimliği entegrevesselam.com olarak kalır. Kişisel Xaero
+kayıtları taşınmaz/yeniden adlandırılmaz; ilgisiz host/port kabul edilmez.
+
+Test: alias hatası ve yanlış gerçek NBT ip alanı ayrı ayrı eski durumda
+tekrar üretildi. Yeni sözleşme testleri her iki hostu/varsayılan portu ve
+reddedilmesi gereken hostları kontrol eder. Minecraft’ın NBT okuyucusu ile
+fabrika kaydının görünen ad/ip alanı doğrulanır. ZIP içindeki servers.dat ve
+motor payload’ları index hashleriyle eşleştirilir; profil bağımlılık testleri,
+paket koruma kayıtları ve yerel gerçek istemci açılışı kontrol edilir.
+Gerçek sunucu bağlantısı/LOD ve Windows Prism kullanıcı kabulü test edilmedi.
