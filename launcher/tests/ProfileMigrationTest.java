@@ -6,11 +6,12 @@ import java.util.Arrays;
 public final class ProfileMigrationTest {
     public static void main(String[] args) throws Exception {
         String main = Launcher.DEFAULT_PACK_URL;
-        String channel = main.replace("/main/", "/minecraft-26.2/");
-        check(ProfileMigration.channelUrl(main).equals(channel), "legacy raw URL routes to 26.2");
+        String channel = main.replace("/main/", "/minecraft-26.3/");
+        check(ProfileMigration.channelUrl(main).equals(channel), "legacy raw URL defaults to 26.3");
         check(ProfileMigration.channelUrl("https://github.com/EntegreVesselam/EntegreClient/raw/main/pack.toml").equals(channel), "legacy public starter URL");
-        String other = main.replace("/main/", "/minecraft-26.3/");
-        check(ProfileMigration.channelUrl(other).equals(other), "explicit 26.3 retained");
+        String other = main.replace("/main/", "/minecraft-26.2/");
+        check(ProfileMigration.channelUrl(other).equals(other), "explicit 26.2 retained");
+        check(ProfileMigration.channelUrl(channel).equals(channel), "explicit 26.3 retained");
         check(ProfileMigration.targetVersion("https://example.com/minecraft-26.3/pack.toml") == null, "unrelated channels untouched");
         Path instance = Files.createTempDirectory("entegre-profile-test-");
         try {

@@ -1,0 +1,21 @@
+2.4.4 — tek ZIP / varsayılan Minecraft26.3
+19 Ekim2026
+
+Yeni EntegreClient-v2.4.4.zip yalnız26.3 profilini hazırlar; Java25,
+Fabric0.19.5, LWJGL3.4.3 ve Intermediary26.3. main adresini çözen güncel
+motorun varsayılan hedefi26.3; açık26.2 ve26.3 kanalları aynen korunur.
+26.2 kanalındaki2.4.3 kullanıcılarının mevcut profili otomatik dönüştürülmez.
+Geçiş: yeni ZIP’i Prism’e ayrı profil olarak içe aktarın, eski profili saklayın.
+
+Voxy0.2.20-beta-23b3486 kullanılır. Extra/WorldGen’in Modrinth API’sinde26.3
+uyumlu yayını19Ekim2026 kontrolünde yok; uyumsuz26.2 modları yüklenmez.
+Fabrika servers.dat hem ad hem IP olarak entegrevesselam.com; yeni ZIP’e dahil.
+Kayıtlı kişisel sunucular preserve=true ile korunur. Marker iki alan adını da
+kabul eder;26.3’e özgü Blaze3D.openUri çağrısı korunur. Kişisel Xaero verisi yok.
+
+Doğrulama: varsayılan kanal testi eski motorda26.3 beklentisiyle başarısız,
+yeni motorda başarılı. Açık26.2 kanalı korunur. Prism Intermediary bağımlılığı,
+idempotent tekrar, yedek ve kişisel veri koruma testleri çalıştırılır.
+Marker Gradle build/contract testleri gerçek Minecraft NBT okuyucusuyla varsayılan
+IP’yi ve iki aliası doğrular. Paket/hash/ZIP ve yerel gerçek oyun menüsü kontrolü.
+Gerçek GPU Voxy LOD, canlı sunucu bağlantısı ve Windows Prism kabulü kapsam dışı.
