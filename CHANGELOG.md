@@ -1,3 +1,12 @@
+## 2.1.4 — Topluluk menüsü
+
+- Yükleme ekranı ve ana menü, Eylül topluluk fotoğraflarıyla yenilendi.
+- Ana menüye son üç site duyurusu ve tıklanabilir başlıkları eklendi.
+- Pano, Galeri, Harita ve Tüm duyurular bağlantıları eklendi.
+- Sekiz kısa replik, 12 saniyelik dengeli bir havuzdan seçilir.
+- Türkçe telif satırı taşması düzeltildi; sürüm etiketi ayrı satıra alındı.
+- Minecraft, Fabric, modlar ve güncelleyici sürümleri değişmedi.
+
 ## 2.1.3 — Türkçe güncelleyici
 
 - Entegre tasarımlı Türkçe açılış penceresi; normal açılışta seçenek sayacı yok.

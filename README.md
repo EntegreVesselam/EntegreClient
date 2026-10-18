@@ -1,3 +1,21 @@
+# Entegre Client — 2.1.4
+
+Ana menü ve yükleme ekranı topluluğun güncel fotoğraflarıyla yenilendi. Kısa
+Entegre replikleri, son üç site duyurusu ve Pano / Galeri / Harita kısayolları eklendi.
+Duyuru başlığı ilgili yazıyı, Tüm duyurular düğmesi sitedeki listeyi açar.
+
+**Mevcut oyuncular:** Oyunu kapatıp Prism'deki aynı kurulumu yeniden açın;
+normal paket güncellemesi yeni menüyü getirir. Yeni bir ZIP kurmanız gerekmez.
+FancyMenu/Drippy isteğe bağlı seçimleri korunur; bu menü bu modlar seçiliyken görünür.
+İnternet olmadığında yerel görseller ve oyun seçenekleri açılmaya devam eder.
+Haber kaynağı oturumda önbelleklenebilir; anlık bildirim değildir.
+
+**Yeni kurulum:** [EntegreClient-v2.1.4.zip](https://github.com/EntegreVesselam/EntegreClient/releases/tag/v2.1.4)
+dosyasını Prism'e içe aktarın. Küçük başlangıç paketi modları ilk açılışta indirir.
+Güncel görseller ve kontrol kapsamı: [topluluk menüsü](docs/community-menu.md).
+
+---
+
 # Entegre Client — 2.1.3
 
 Türkçe Entegre güncelleme penceresi eklendi; normal açılıştaki 10 saniyelik
