@@ -1,10 +1,10 @@
-# Entegre Client2.4.1 — Minecraft 26.3
+# Entegre Client2.4.2 — Minecraft 26.3
 
 İki ayrı Prism profili sunulur: **Entegre Client26.2** ve **Entegre Client26.3**.
 Bu kaynak ağacı yalnız **26.3** kanalına aittir. Java25 / Fabric0.19.5 gerekir.
 Kullanıcının Voxy0.2.20-beta / 23b3486 test JAR'ını içerir; Extra ve WorldGen kapalıdır.
 
-Yeni kurulumda GitHub2.4.1 yayınındaki `EntegreClient-v2.4.1-mc26.3.zip`
+Yeni kurulumda GitHub2.4.2 yayınındaki `EntegreClient-v2.4.2-mc26.3.zip`
 dosyasını Prism'e içe aktarın. İki sürümü kullanmak için iki ZIP'i de ayrı profil
 olarak içe aktarın. Her profil kendi mod/ayar/harita/LOD klasörünü ve Türkçe
 güncelleyiciyi kullanır. Bir profili diğerinin üstüne açmayın; eski kişisel

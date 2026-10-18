@@ -33,24 +33,38 @@ public final class ProfileMigration {
         catch (RuntimeException bad) { throw new IOException("Prism profili okunamadı.", bad); }
         JsonArray components = data.get("components") == null ? null : data.get("components").getAsJsonArray();
         if (components == null) throw new IOException("Prism sürüm bileşenleri eksik.");
-        boolean minecraft = false, loader = false, lwjgl = false, changed = false;
+        boolean minecraft = false, loader = false, lwjgl = false, intermediary = false, changed = false;
         JsonArray updated = new JsonArray();
         for (Object rawItem : components) {
             JsonObject component = ((JsonElement) rawItem).getAsJsonObject();
             String uid = component.get("uid").getAsString();
             String desired = switch (uid) {
                 case "net.minecraft" -> { minecraft = true; yield target; }
+                case "net.fabricmc.intermediary" -> { intermediary = true; yield target; }
                 case "net.fabricmc.fabric-loader" -> { loader = true; yield "0.19.5"; }
                 case "org.lwjgl3" -> { lwjgl = true; yield target.equals("26.2") ? "3.4.1" : "3.4.3"; }
                 default -> null;
             };
-            if (uid.equals("net.fabricmc.intermediary")) { changed = true; continue; }
             if (desired != null && (component.get("version") == null || !desired.equals(component.get("version").getAsString()))) {
-                component.add("version", new JsonPrimitive(desired)); changed = true;
+                component.add("version", new JsonPrimitive(desired));
+                clearCachedVersionData(component);
+                changed = true;
+            } else if (desired != null && component.get("cachedVersion") != null
+                    && !desired.equals(component.get("cachedVersion").getAsString())) {
+                clearCachedVersionData(component);
+                changed = true;
             }
             updated.add(component);
         }
         if (!minecraft || !loader || !lwjgl) throw new IOException("Prism Minecraft/Fabric/LWJGL bileşenleri eksik; ayrı paketi içe aktarın.");
+        if (!intermediary) {
+            JsonObject mappings = new JsonObject();
+            mappings.add("uid", new JsonPrimitive("net.fabricmc.intermediary"));
+            mappings.add("version", new JsonPrimitive(target));
+            mappings.add("dependencyOnly", new JsonPrimitive(true));
+            updated.add(mappings);
+            changed = true;
+        }
         if (!changed) return false;
         data.add("components", updated);
         Path backup = instance.resolve("mmc-pack.before-entegre-" + target + ".json");
@@ -65,6 +79,11 @@ public final class ProfileMigration {
             Files.move(temporary, profile, StandardCopyOption.ATOMIC_MOVE, StandardCopyOption.REPLACE_EXISTING);
         } finally { Files.deleteIfExists(temporary); }
         return true;
+    }
+    private static void clearCachedVersionData(JsonObject component) {
+        component.entrySet().removeIf(raw -> java.util.Set.of(
+                "cachedVersion", "cachedRequires", "cachedConflicts", "cachedVolatile")
+                .contains(((java.util.Map.Entry<?, ?>) raw).getKey()));
     }
     private ProfileMigration() {}
 }
