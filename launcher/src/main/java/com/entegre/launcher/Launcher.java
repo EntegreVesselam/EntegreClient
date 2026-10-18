@@ -2,6 +2,8 @@ package com.entegre.launcher;
 
 import java.awt.GraphicsEnvironment;
 import java.net.URI;
+import java.nio.file.Path;
+import javax.swing.JOptionPane;
 import javax.swing.UIManager;
 import link.infra.packwiz.installer.Main;
 import link.infra.packwiz.installer.ui.data.InstallProgress;
@@ -36,7 +38,7 @@ public final class Launcher {
                     || ("http".equalsIgnoreCase(uri.getScheme()) && loopback))) {
             throw new IllegalArgumentException("HTTPS paket adresi gerekiyor; HTTP yalnız yerel denemede kullanılabilir.");
         }
-        return new LaunchRequest(packUrl, settings, preview);
+        return new LaunchRequest(ProfileMigration.channelUrl(packUrl), settings, preview);
     }
 
     public static String[] upstreamArguments(LaunchRequest request) {
@@ -77,6 +79,26 @@ public final class Launcher {
             preview.submitProgress(new InstallProgress("Downloading Entegre Markers", 7, 12));
             preview.disableOptionsButton(true);
             return;
+        }
+        String target = ProfileMigration.targetVersion(request.packUrl());
+        if (target != null) {
+            try {
+                if (ProfileMigration.prepare(Path.of("."), target)) {
+                    JOptionPane.showMessageDialog(null, "Profil Minecraft " + target + " için hazırlandı.\n"
+                            + "Prism’i tamamen kapatıp yeniden açın ve oyunu tekrar başlatın.\n"
+                            + "Bu sürüm Java 25 gerektirir; Prism isterse Java 25’i seçin.",
+                            "Entegre Vesselam — Sürüm geçişi", JOptionPane.INFORMATION_MESSAGE);
+                    System.exit(3);
+                    return;
+                }
+                if (Runtime.version().feature() < 25) {
+                    throw new java.io.IOException("Prism profilinin Java ayarından Java 25’i seçip yeniden başlatın.");
+                }
+            } catch (java.io.IOException | RuntimeException failure) {
+                JOptionPane.showMessageDialog(null, failure.getMessage(), "Entegre Vesselam — Geçiş durduruldu", JOptionPane.ERROR_MESSAGE);
+                System.exit(2);
+                return;
+            }
         }
         new Main(upstreamArguments(request));
         System.exit(0);

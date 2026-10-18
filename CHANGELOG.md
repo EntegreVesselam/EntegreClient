@@ -1,3 +1,10 @@
+# 2.4.1 geçişi — 19 Ekim 2026
+
+- Yeni motor eski main adresini varsayılan 26.2 kanalına yönlendirir.
+- Profil yedeği, Minecraft/Fabric/LWJGL hazırlığı ve yeniden açılış koruması.
+- 26.3 ayrı starter/kanal; Java 25 zorunluluğu.
+- Eski motor güvenliği için main 1.21.11 mod/oyun metadata'sını korur.
+
 ## 2.1.5 — Anılar ve harita eşitlemesi
 
 - Ana menüde altı topluluk fotoğrafı, 27 saniyelik aralıklarla rastgele ve yumuşak geçişlerle gösterilir.

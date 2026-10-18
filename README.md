@@ -1,3 +1,25 @@
+# Entegre Client 2.4.1 — 26.2 varsayılan / 26.3 ayrı profil
+
+Mevcut oyuncular normal güncellemeyle **26.2** kanalına yönlendirilir.
+İlk açılış yeni güncelleyiciyi teslim eder; sonraki açılış profili yedekler ve
+Prism'i tamamen kapatıp açmanızı ister. **Java 25** seçili olmalıdır.
+Bu main paketinin 1.21.11 metadata'sı yalnız eski motorlara güvenli teslim için
+korunur; hedef oyun sürümü 26.2'dir. Teknik akış: `docs/26x-followup-rollout.txt`.
+
+Yeni kurulumda [26.2 ZIP](https://github.com/EntegreVesselam/EntegreClient/releases/download/v2.4.1/EntegreClient-v2.4.1-mc26.2.zip)
+veya [ayrı 26.3 ZIP](https://github.com/EntegreVesselam/EntegreClient/releases/download/v2.4.1/EntegreClient-v2.4.1-mc26.3.zip)
+dosyasını Prism'e içe aktarın. İki sürüm için iki ayrı profil kullanın.
+
+26.2'de Voxy/Extra/WorldGen; 26.3'te Voxy beta vardır, Extra/WorldGen kapalıdır.
+Haber/etkinlik menüsü ve ortada kalan Friends/yardımcı düğmeler düzeltildi.
+İki site metin kaynağı HTTP 200 ile kontrol edildi. Gerçek GPU LOD çizimi,
+canlı oyun sunucusuyla LOD akışı, Windows ve gerçek Prism yeniden başlatma
+kabulü henüz tamamlanmadı.
+
+---
+
+Aşağıdaki 2.1.5 notları tarihçedir.
+
 # Entegre Client — 2.1.5
 
 Ana menü altı topluluk fotoğrafını 27 saniyelik aralıklarla rastgele gösterir.
