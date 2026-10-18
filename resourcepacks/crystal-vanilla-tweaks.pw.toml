@@ -1,13 +1,13 @@
 name = "Crystal Vanilla Tweaks"
-filename = "Crystal Vanilla Tweaks 1.21.11.zip"
+filename = "Crystal Vanilla Tweaks 26.2.zip"
 side = "client"
 
 [download]
-url = "https://cdn.modrinth.com/data/sn2HxtR3/versions/UQUtn6zI/Crystal%20Vanilla%20Tweaks%201.21.11.zip"
+url = "https://cdn.modrinth.com/data/sn2HxtR3/versions/41MlOqSZ/Crystal%20Vanilla%20Tweaks%2026.2.zip"
 hash-format = "sha512"
-hash = "64e4a2ca3a0e4f0c2c5b1a95282eb24ab5030092b25999676bef10f7b504879804f16df01e175b7c3c77cf0adb92e810c9fe28ec63aa4c372496c9ccdbdc4ffa"
+hash = "ee9d8960b1b1f7852cd1f7ddebca7f1898ccf7984b65df2a9447e4532fba3a4fb52122ae48d0cb9738ba467831fc59692a772fbfde7b8516599447b21a7b2b6c"
 
 [update]
 [update.modrinth]
 mod-id = "sn2HxtR3"
-version = "UQUtn6zI"
+version = "41MlOqSZ"

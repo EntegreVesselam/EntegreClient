@@ -1,3 +1,12 @@
+# 2.4.1 — iki Prism profili / Minecraft26.2 (2026-10-18)
+
+- Ayrı26.2 ve26.3 profil/Packwiz kanalı; Java25/Fabric0.19.5.
+- Voxy0.2.19-beta, Voxy Extra0.2.6 ve Voxy WorldGen2.4.3 içerir.
+- Canlı2.1.5 topluluk menüsü ve marker0.1.3 davranışları korunur; Markers0.2.1 portu.
+- Paket/hash/koruma/updater/starter kontrolleri; macOS açılışı. Gerçek GPU LOD/server kabulü henüz yok.
+
+---
+
 ## 2.1.5 — Anılar ve harita eşitlemesi
 
 - Ana menüde altı topluluk fotoğrafı, 27 saniyelik aralıklarla rastgele ve yumuşak geçişlerle gösterilir.

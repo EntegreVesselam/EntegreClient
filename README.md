@@ -1,3 +1,44 @@
+# Entegre Client2.4.1 — Minecraft 26.2
+
+İki ayrı Prism profili sunulur: **Entegre Client26.2** ve **Entegre Client26.3**.
+Bu kaynak ağacı yalnız **26.2** kanalına aittir. Java25 / Fabric0.19.5 gerekir.
+Voxy0.2.19-beta, Voxy Extra0.2.6 ve Voxy WorldGen2.4.3 içerir.
+
+Yeni kurulumda GitHub2.4.1 yayınındaki `EntegreClient-v2.4.1-mc26.2.zip`
+dosyasını Prism'e içe aktarın. İki sürümü kullanmak için iki ZIP'i de ayrı profil
+olarak içe aktarın. Her profil kendi mod/ayar/harita/LOD klasörünü ve Türkçe
+güncelleyiciyi kullanır. Bir profili diğerinin üstüne açmayın; eski kişisel
+harita/LOD dosyalarını ilk teste taşımayın. Mevcut1.21.11 kurulumu korunur.
+
+Bu profilin Packwiz adresi:
+`https://raw.githubusercontent.com/EntegreVesselam/EntegreClient/minecraft-26.2/pack.toml`
+Eski `main/pack.toml` adresi bu profilin kanalı değildir. Starter ZIP doğru adresi
+ve doğru Minecraft/Fabric/LWJGL profilini hazırlar; komutu elle değiştirmeniz gerekmez.
+Manuel updater ayar çağrısında `--settings` yanına bu kanalın adresini ekleyin.
+
+Sunucu26.3 kalır. ViaVersion/ViaBackwards5.12.1 eski26.2 istemci bağlantısını,
+LOD Server Support0.19.0 farklı oyun sürümleri arasında LOD aktarımını desteklediğini
+bildirir. Yeni26.3 blok/eşya görünümleri26.2'de alternatiflerle gösterilebilir.
+Bu client paketiyle canlı sunucu bağlantısı ve gerçek LOD akışı test edilmedi.
+
+**Test sınırı:** macOS/OpenGL4.1'de Voxy çizimi kendini kapatır; Windows/Linux'ta
+uygun GPU/driver ile dünya/LOD kabulü gerekir. İki profil aynı anda aynı oyuncu
+verisini yazmaz. Kontrolcü, shader açık LOD ve eski Voxy veritabanı geçişi denenmedi.
+ThreadTweak/Fabrishot/YATP'nin uyumlu yayını yok. Controlify/FancyMenu ayar kısayolu
+entegrasyonu ve bazı Tweakeroo/Sodium/Iris alt özellikleri sınırlı kalır.
+
+Entegre Markers0.2.1, canlı0.1.3'ün eşleştirme daveti, `/entegremarkers sync`,
+bağlantı/odak/60s korumaları ve sitenin16 rengini aynen koruyan26.x portudur.
+Canlı2.1.5 topluluk menüsü/anı görselleri korunur. Güncelleyici binary'leri aynı;
+186 kalıcı oyuncu dosyası koruma kaydı korunur. Ayrıntı: `docs/dual-profile-release.txt`.
+
+**Bakım:** `python3 scripts/refresh-pack.py`, ardından `verify-pack.py`,
+`check-pack-compat.py`, `check-updater.py` ve starter self-check.
+Export yalnız staging kopyasında yapılır; kaynak index'teki kalıcı koruma satırları
+normal `packwiz refresh` ile silinmemelidir. Alt bölümler eski yayın tarihçesidir.
+
+---
+
 # Entegre Client — 2.1.5
 
 Ana menü altı topluluk fotoğrafını 27 saniyelik aralıklarla rastgele gösterir.

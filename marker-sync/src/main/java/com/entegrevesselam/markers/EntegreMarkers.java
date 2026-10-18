@@ -2,20 +2,20 @@ package com.entegrevesselam.markers;
 import net.fabricmc.api.ClientModInitializer;
 import net.fabricmc.loader.api.FabricLoader;
 import net.fabricmc.fabric.api.client.command.v2.ClientCommandRegistrationCallback;
-import static net.fabricmc.fabric.api.client.command.v2.ClientCommandManager.literal;
+import static net.fabricmc.fabric.api.client.command.v2.ClientCommands.literal;
 import net.fabricmc.fabric.api.client.event.lifecycle.v1.ClientTickEvents;
 import net.fabricmc.fabric.api.client.event.lifecycle.v1.ClientLifecycleEvents;
-import net.minecraft.client.MinecraftClient;
-import net.minecraft.text.Text;
-import net.minecraft.text.ClickEvent;
-import net.minecraft.util.Formatting;
+import net.minecraft.client.Minecraft;
+import net.minecraft.network.chat.Component;
+import net.minecraft.network.chat.ClickEvent;
+import net.minecraft.ChatFormatting;
 import net.minecraft.util.Util;
 import java.util.*;
 import java.util.concurrent.*;
 public final class EntegreMarkers implements ClientModInitializer {
     private final SyncState state = new SyncState();
     private final ExecutorService worker = Executors.newSingleThreadExecutor(r -> { Thread t = new Thread(r,"entegre-markers-http"); t.setDaemon(true); return t; });
-    private MinecraftClient client;
+    private Minecraft client;
     private MarkerApi api;
     private DeviceStore store;
     private DeviceStore.Device device;
@@ -28,7 +28,7 @@ public final class EntegreMarkers implements ClientModInitializer {
     private PollSchedule pollSchedule;
     private boolean pairBusy, stopped, incompatible;
     @Override public void onInitializeClient() {
-        client = MinecraftClient.getInstance(); api = new MarkerApi();
+        client = Minecraft.getInstance(); api = new MarkerApi();
         store = new DeviceStore(FabricLoader.getInstance().getConfigDir()); device = store.load(System.currentTimeMillis());
         if (device != null) status = "waiting_server";
         if (!version("xaerominimap","26.6.0") || !version("xaeroworldmap","1.47.0")) { incompatible = true; status = "incompatible"; }
@@ -39,12 +39,12 @@ public final class EntegreMarkers implements ClientModInitializer {
             .then(literal("pair").executes(c -> { pair(); return 1; }))
             .then(literal("sync").executes(c -> { connectOrSync(); return 1; }))
             .then(literal("forget").executes(c -> { forget(); return 1; }))));
-        org.slf4j.LoggerFactory.getLogger("EntegreMarkers").info("Entegre Markers 0.1.3 initialized; client command registration callback installed; Xaero compatible={}", !incompatible);
+        org.slf4j.LoggerFactory.getLogger("EntegreMarkers").info("Entegre Markers 0.2.1 initialized; client command registration callback installed; Xaero compatible={}", !incompatible);
         ClientTickEvents.END_CLIENT_TICK.register(ignored -> tick());
         ClientLifecycleEvents.CLIENT_STOPPING.register(ignored -> { stopped = true; pairEpoch++; state.close(); safeHide(); worker.shutdownNow(); });
     }
     private boolean version(String mod, String expected) { return FabricLoader.getInstance().getModContainer(mod).map(m -> expected.equals(m.getMetadata().getVersion().getFriendlyString())).orElse(false); }
-    private void message(String key) { if (client.player != null) client.player.sendMessage(Text.translatable("entegre_markers."+key),false); }
+    private void message(String key) { if (client.player != null) client.player.sendSystemMessage(Component.translatable("entegre_markers."+key)); }
     static boolean targetServer(String address) { return address != null && Set.of("entegrevesselam.com","entegrevesselam.com:25565").contains(address.toLowerCase(Locale.ROOT)); }
     private void safeHide() {
         if (layer == null) return;
@@ -53,27 +53,27 @@ public final class EntegreMarkers implements ClientModInitializer {
     private void tick() {
         if (stopped || incompatible) return;
         long now = System.currentTimeMillis();
-        state.connection(client.getNetworkHandler());
+        state.connection(client.getConnection());
         try {
-            var server = client.getCurrentServerEntry(); SyncState.Context next = null;
-            if (client.world != null && client.getServer() == null && server != null && targetServer(server.address)) next = layer.context("entegrevesselam.com",client.world.getRegistryKey().getValue().toString());
+            var server = client.getCurrentServer(); SyncState.Context next = null;
+            if (client.level != null && client.getSingleplayerServer() == null && server != null && targetServer(server.ip)) next = layer.context("entegrevesselam.com",client.level.dimension().identifier().toString());
             if (!Objects.equals(context,next)) {
                 safeHide(); context = next; state.context(next);
                 if (next == null) { snapshot = null; status = device == null ? "unpaired" : "waiting_server"; }
             }
             if (device != null && now >= device.expiresAt()) { device = null; state.resetDevice(); snapshot = null; safeHide(); status = "expired"; }
             if (pairing != null && now >= pairing.expiresAt()) { pairing = null; pairBusy = false; pairEpoch++; status = "expired"; }
-            if (pairing != null && !pairBusy && pollSchedule.begin(now,client.isWindowFocused(),context != null)) poll(now);
+            if (pairing != null && !pairBusy && pollSchedule.begin(now,client.isWindowActive(),context != null)) poll(now);
             if (state.needsApply() && snapshot != null) { layer.replace(context,snapshot.markers(),device.ownerId()); state.applied(); }
-            if (client.player != null && state.offerPairing(client.isWindowFocused(),device != null,pairing != null || pairBusy))
-                client.player.sendMessage(pairingInvitation(),false);
+            if (client.player != null && state.offerPairing(client.isWindowActive(),device != null,pairing != null || pairBusy))
+                client.player.sendSystemMessage(pairingInvitation());
             requestMarkers(now);
         } catch (RuntimeException | LinkageError e) { safeHide(); incompatible = true; status = "incompatible"; }
     }
-    static Text pairingInvitation() {
-        return Text.translatable("entegre_markers.connect_invite").append(" ").append(
-            Text.translatable("entegre_markers.connect_action").styled(style -> style.withColor(Formatting.GREEN)
-                .withUnderline(true).withClickEvent(new ClickEvent.RunCommand("/entegremarkers pair"))));
+    static Component pairingInvitation() {
+        return Component.translatable("entegre_markers.connect_invite").append(" ").append(
+            Component.translatable("entegre_markers.connect_action").withStyle(style -> style.withColor(ChatFormatting.GREEN)
+                .withUnderlined(true).withClickEvent(new ClickEvent.RunCommand("/entegremarkers pair"))));
     }
     private void connectOrSync() {
         if (incompatible) { message("incompatible"); return; }
@@ -85,7 +85,7 @@ public final class EntegreMarkers implements ClientModInitializer {
         message(state.syncing() ? "syncing" : "sync_wait");
     }
     private void requestMarkers(long now) {
-        SyncState.Request request = state.begin(now,client.isWindowFocused(),device != null && pairing == null);
+        SyncState.Request request = state.begin(now,client.isWindowActive(),device != null && pairing == null);
         if (request != null) {
             String token = device.token();
             worker.execute(() -> {
@@ -111,7 +111,7 @@ public final class EntegreMarkers implements ClientModInitializer {
                 client.execute(() -> {
                     if (stopped || epoch != pairEpoch) return;
                     pairBusy = false; pairing = received; pollSchedule = new PollSchedule(System.currentTimeMillis(),received.expiresAt());
-                    Util.getOperatingSystem().open(received.verificationUri()); message("browser_opened");
+                    Util.getPlatform().openUri(received.verificationUri()); message("browser_opened");
                 });
             } catch (Exception e) { client.execute(() -> { if (epoch == pairEpoch) { pairBusy = false; status = "pair_failed"; message(status); } }); }
         });

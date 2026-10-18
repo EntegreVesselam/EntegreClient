@@ -1,16 +1,16 @@
 name = "Voxy"
-filename = "voxy-0.2.13-alpha.jar"
+filename = "voxy-0.2.19-beta.jar"
 side = "client"
 
 [download]
-url = "https://cdn.modrinth.com/data/fxxUqruK/versions/k5PZxsfL/voxy-0.2.13-alpha.jar"
+url = "https://cdn.modrinth.com/data/fxxUqruK/versions/LzyXnE51/voxy-0.2.19-beta.jar"
 hash-format = "sha512"
-hash = "1052f153be78c6f7fa46c4334dc40ce2aa4048a394949eb51d3e95300f56fce1b5b81a4b7d2a0aae0fc268cb36b30078f121feccba4999a7b3c790a1c7a53a4f"
+hash = "9071acefff00f952b049134f7ee8b5c8be27646ade992274f9a32e4adf7ad0932f9755530fa212a8e65cc23b3ed5dc643af139be83fcb89c778d8c8e723b9c3a"
 
 [update]
 [update.modrinth]
 mod-id = "fxxUqruK"
-version = "k5PZxsfL"
+version = "LzyXnE51"
 
 [option]
 optional = true
