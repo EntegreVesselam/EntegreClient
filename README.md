@@ -1,3 +1,27 @@
+# Entegre Client — 2.1.3
+
+Türkçe Entegre güncelleme penceresi eklendi; normal açılıştaki 10 saniyelik
+seçenek sayacı kaldırıldı. Mod seçimleri, kişisel ayarlar ve mevcut 186 kalıcı
+uyumluluk kaydı korunur. Minecraft/Fabric ve diğer mod sürümleri değişmez.
+
+**Mevcut oyuncular:** Prism'de aynı kurulumu açın; tekrar indirme veya komut
+ayarı gerekmez. İlk açılış geçiş dosyalarını alır; Minecraft başlayınca eski
+başlatıcı yedeklenir. Sonraki açılışta aynı komut Türkçe Entegre penceresini açar.
+Eski ekranın bir kez görünmesi normaldir. Sonraki güncelleyici motoru sürümleri
+de aynı paket kanalıyla otomatik gelir.
+
+**Yeni kurulum:** [v2.1.3 sürümündeki EntegreClient-v2.1.3.zip dosyasını](https://github.com/EntegreVesselam/EntegreClient/releases/tag/v2.1.3)
+Prism'e içe aktarın. Bu küçük başlangıç paketi ilk açılışta Türkçe pencereyi
+açar; modlar oradan indirilir ve isteğe bağlı modlar sorulur. Mevcut oyuncular
+bu ZIP'i eski kurulumun üzerine açmamalı; normal açılış yeterlidir.
+
+İngilizce seçimi sonraki işe bırakıldı. Dışarıdan gelen mod açıklamaları ve
+teknik hata ayrıntıları çevrilmez. Desteklenen komutlar, geri alma ve derleme:
+[güncelleyici yönergesi](launcher/README.md). Test kapsamı ve gerçek
+Windows/Prism kabul sınırı: [doğrulama](launcher/docs/verification.md).
+
+---
+
 # Entegre Client — otomatik marker güncellemesi
 
 ## 2.1.2 — mevcut Prism kurulumu için

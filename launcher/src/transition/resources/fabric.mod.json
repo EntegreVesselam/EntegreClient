@@ -1,0 +1,10 @@
+{
+  "schemaVersion": 1,
+  "id": "entegre_updater_transition",
+  "version": "0.1.0",
+  "name": "Entegre Güncelleyici Geçişi",
+  "description": "Entegre güncelleme penceresini desteklenen Prism kurulumunda bir sonraki açılış için hazırlar.",
+  "environment": "client",
+  "entrypoints": { "client": ["com.entegre.transition.TransitionClient"] },
+  "depends": { "fabricloader": ">=0.18.4", "java": ">=17" }
+}

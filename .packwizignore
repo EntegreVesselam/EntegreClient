@@ -54,3 +54,10 @@ config/entegre-markers/
 compatibility/
 
 .github/
+
+# Entegre updater sources and local rollback state are not game content.
+launcher/
+entegre-updater/*backup*
+.entegre-updater-disabled
+.entegre-bootstrap-*
+!mods/entegre-updater-transition-0.1.0.jar
