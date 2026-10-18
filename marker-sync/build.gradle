@@ -1,35 +1,34 @@
-plugins { id 'fabric-loom' version '1.14.10' }
-version = '0.1.3'
+plugins { id 'net.fabricmc.fabric-loom' version '1.17.21' }
+version = '0.2.1'
 group = 'com.entegrevesselam'
 base { archivesName = 'entegre-markers' }
 repositories { maven { url = 'https://api.modrinth.com/maven' } }
 // Xaero embeds its required library; Loom development runs do not load nested jars automatically.
 configurations { xaeroBundle { transitive = false } }
-dependencies { xaeroBundle 'maven.modrinth:xaeros-minimap:e0EvhWco' }
+dependencies { xaeroBundle 'maven.modrinth:xaeros-minimap:B2aG1aya' }
 def xaeroLibDirectory = file('.gradle/xaero-library')
-def xaeroLib = new File(xaeroLibDirectory, 'xaerolib-fabric-1.21.11-1.7.3.jar')
+def xaeroLib = new File(xaeroLibDirectory, 'xaerolib-fabric-26.3-1.7.17.jar')
 if (!xaeroLib.exists()) {
     copy {
         from zipTree(configurations.xaeroBundle.singleFile)
-        include 'META-INF/jars/xaerolib-fabric-1.21.11-1.7.3.jar'
+        include 'META-INF/jars/xaerolib-fabric-26.3-1.7.17.jar'
         eachFile { path = name }
         includeEmptyDirs = false
         into xaeroLibDirectory
     }
 }
 dependencies {
-    modLocalRuntime files(xaeroLib)
-    minecraft 'com.mojang:minecraft:1.21.11'
-    mappings 'net.fabricmc:yarn:1.21.11+build.6:v2'
-    modImplementation 'net.fabricmc:fabric-loader:0.18.4'
-    modImplementation 'net.fabricmc.fabric-api:fabric-api:0.141.3+1.21.11'
-    modCompileOnly 'maven.modrinth:xaeros-minimap:e0EvhWco'
-    modCompileOnly 'maven.modrinth:xaeros-world-map:oMGDn8rs'
-    modLocalRuntime 'maven.modrinth:xaeros-minimap:e0EvhWco'
-    modLocalRuntime 'maven.modrinth:xaeros-world-map:oMGDn8rs'
+    localRuntime files(xaeroLib)
+    minecraft 'com.mojang:minecraft:26.3'
+    implementation 'net.fabricmc:fabric-loader:0.19.5'
+    implementation 'net.fabricmc.fabric-api:fabric-api:0.163.0+26.3'
+    compileOnly 'maven.modrinth:xaeros-minimap:B2aG1aya'
+    compileOnly 'maven.modrinth:xaeros-world-map:nz9xjzWi'
+    localRuntime 'maven.modrinth:xaeros-minimap:B2aG1aya'
+    localRuntime 'maven.modrinth:xaeros-world-map:nz9xjzWi'
 }
-java { toolchain { languageVersion = JavaLanguageVersion.of(21) }; withSourcesJar() }
-tasks.withType(JavaCompile).configureEach { options.release = 21 }
+java { toolchain { languageVersion = JavaLanguageVersion.of(25) }; withSourcesJar() }
+tasks.withType(JavaCompile).configureEach { options.release = 25 }
 processResources { inputs.property 'version', project.version; filesMatching('fabric.mod.json') { expand 'version': project.version } }
 tasks.register('contractTest', JavaExec) { dependsOn testClasses; classpath = sourceSets.test.runtimeClasspath; mainClass = 'com.entegrevesselam.markers.ContractTests'; enableAssertions = true }
 check.dependsOn contractTest
@@ -53,7 +52,7 @@ loom {
         smoke {
             client()
             source sourceSets.smoke
-            runDir 'run-appearance-0.1.3'
+            runDir 'run-26.3'
         }
     }
 }

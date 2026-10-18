@@ -6,11 +6,11 @@ import net.fabricmc.fabric.api.client.command.v2.FabricClientCommandSource;
 import net.fabricmc.fabric.api.client.event.lifecycle.v1.ClientLifecycleEvents;
 import net.fabricmc.fabric.api.client.event.lifecycle.v1.ClientTickEvents;
 import net.fabricmc.loader.api.FabricLoader;
-import net.minecraft.client.MinecraftClient;
-import net.minecraft.command.CommandRegistryAccess;
-import net.minecraft.registry.DynamicRegistryManager;
-import net.minecraft.resource.featuretoggle.FeatureFlags;
-import net.minecraft.text.ClickEvent;
+import net.minecraft.client.Minecraft;
+import net.minecraft.commands.CommandBuildContext;
+import net.minecraft.core.RegistryAccess;
+import net.minecraft.world.flag.FeatureFlags;
+import net.minecraft.network.chat.ClickEvent;
 import java.lang.reflect.Field;
 import java.nio.charset.StandardCharsets;
 import java.util.concurrent.atomic.AtomicInteger;
@@ -26,8 +26,8 @@ public final class CommandRegistrationSmoke implements ClientModInitializer {
     public void onInitializeClient() {
         ClientLifecycleEvents.CLIENT_STARTED.register(client -> {
             if (!FabricLoader.getInstance().isDevelopmentEnvironment()) throw new IllegalStateException("development_only");
-            if (client.world != null || client.getNetworkHandler() != null) throw new AssertionError("smoke requires disconnected title screen");
-            var registry = CommandRegistryAccess.of(DynamicRegistryManager.EMPTY,FeatureFlags.DEFAULT_ENABLED_FEATURES);
+            if (client.level != null || client.getConnection() != null) throw new AssertionError("smoke requires disconnected title screen");
+            var registry = CommandBuildContext.simple(RegistryAccess.EMPTY,FeatureFlags.DEFAULT_FLAGS);
             ClientCommandRegistrationCallback.EVENT.invoker().register(dispatcher,registry);
             var root = dispatcher.getRoot().getChild("entegremarkers");
             if (root == null || root.getCommand() == null) throw new AssertionError("missing entegremarkers command");
@@ -70,9 +70,9 @@ public final class CommandRegistrationSmoke implements ClientModInitializer {
         });
         ClientTickEvents.END_CLIENT_TICK.register(this::tick);
     }
-    private void tick(MinecraftClient client) {
+    private void tick(Minecraft client) {
         if(!ready) return;
-        if(client.world!=null || client.getNetworkHandler()!=null) throw new AssertionError("native probe must remain disconnected");
+        if(client.level!=null || client.getConnection()!=null) throw new AssertionError("native probe must remain disconnected");
         if(++ticks>400) throw new AssertionError("native command probe timed out");
         try {
             switch(stage) {
@@ -88,9 +88,9 @@ public final class CommandRegistrationSmoke implements ClientModInitializer {
                 case 2 -> {
                     if(starts.get()!=2 || (boolean)get("pairBusy")) return;
                     syntheticContext();set("device",new DeviceStore.Device("synthetic-token-only",System.currentTimeMillis()+86400000,"00000000-0000-0000-0000-000000000001"));
-                    client.onWindowFocusChanged(false);run("entegremarkers sync");
+                    setFocus(client,false);run("entegremarkers sync");
                     if(reads.get()!=0) throw new AssertionError("unfocused manual command must not fetch");
-                    client.onWindowFocusChanged(true);run("entegremarkers sync");run("entegremarkers");stage=3;
+                    setFocus(client,true);run("entegremarkers sync");run("entegremarkers");stage=3;
                 }
                 case 3 -> {
                     if(reads.get()!=1 || state.syncing()) return;
@@ -100,11 +100,16 @@ public final class CommandRegistrationSmoke implements ClientModInitializer {
                     if(get("device")!=null || state.visible()) throw new AssertionError("forget must clear local device and visibility");
                     log("PASS native commands: local clickable pair, bare unpaired pair, paired sync, pending/target/foreground/60-second guards, status and forget");
                     log("DONE synthetic transport only; no browser, account, world, live server or real waypoint data");
-                    ready=false;client.scheduleStop();
+                    ready=false;client.stop();
                 }
                 default -> throw new AssertionError("unknown stage");
             }
         } catch(Exception e) { throw new AssertionError("native command probe",e); }
+    }
+    // SDL stores focus on Window in 26.3; this probe changes only its isolated fixture.
+    private void setFocus(Minecraft client, boolean focused) throws Exception {
+        Field field = client.getWindow().getClass().getDeclaredField("focused");
+        field.setAccessible(true); field.setBoolean(client.getWindow(),focused);
     }
     private void syntheticContext() {
         var context=new SyncState.Context("entegrevesselam.com","minecraft:overworld","synthetic-native");

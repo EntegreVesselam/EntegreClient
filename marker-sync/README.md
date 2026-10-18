@@ -1,3 +1,16 @@
+# Markers0.2.1 — Minecraft26.3 portu
+
+Bu dal Java25, Fabric0.19.5 ve Minecraft26.3 içindir. Resmi oyun adları kullanılır;
+Yarn/remap yoktur. Xaero26.6.0/1.47.0 için bu Minecraft sürümünün JAR'ları sabittir.
+Güncel kaynak canlı0.1.3 eşleştirme daveti/sync/16 renk düzeltmelerini içerir.
+`./gradlew build compileSmokeJava` sözleşme gruplarını da çalıştırır.
+Çıktı `build/libs/entegre-markers-0.2.1.jar` içindeki Minecraft bağımlılığına göre
+bu kanala özeldir; diğer oyun profilinin üstüne kopyalamayın.
+
+Aşağıdaki0.1.3 ve önceki kanıtlar tarihçedir; güncel test özeti `docs/dual-profile-release.txt`.
+
+---
+
 # Entegre Markers — yerel hazırlık modülü
 
 Salt okunur Fabric istemci köprüsü. Site, yayımlanmış markerların tek kaynağıdır.

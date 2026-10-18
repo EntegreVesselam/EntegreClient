@@ -22,7 +22,7 @@ ROOT = Path(__file__).resolve().parent.parent
 STAMP = (1980, 1, 1, 0, 0, 0)
 MODE = (stat.S_IFREG | 0o644) << 16
 COMMAND = ('"$INST_JAVA" -jar "$INST_DIR/minecraft/packwiz-installer-bootstrap.jar" '
-           'https://github.com/EntegreVesselam/EntegreClient/raw/main/pack.toml')
+           'https://raw.githubusercontent.com/EntegreVesselam/EntegreClient/minecraft-26.3/pack.toml')
 PAYLOADS = tuple(f"entegre-updater/{stem}.{extension}"
                  for stem in ("engine", "bootstrap") for extension in ("jar", "sha256"))
 ALLOWED = {"instance.cfg", "mmc-pack.json", "icon.png", "minecraft/packwiz-installer-bootstrap.jar",
@@ -50,8 +50,8 @@ def starter_files():
     version = pack["version"]
     require(re.fullmatch(r"[0-9]+(?:\.[0-9]+){2}", version), "Expected a numeric release version")
     versions = pack["versions"]
-    # This dependency version comes from the public 1.21.11 Prism starter.
-    require(versions["minecraft"] == "1.21.11", "Review LWJGL metadata before changing Minecraft")
+    # Reviewed against https://meta.prismlauncher.org/v1/net.minecraft/26.3.json (2026-10-18).
+    require(versions["minecraft"] == "26.3", "Review LWJGL metadata before changing Minecraft")
     require(re.fullmatch(r"[0-9]+(?:\.[0-9]+){2}", versions["fabric"]), "Invalid Fabric version")
     index_bytes = read_source("index.toml", 1024 * 1024)
     require(pack["index"]["file"] == "index.toml" and pack["index"]["hash-format"] == "sha256"
@@ -88,16 +88,15 @@ def starter_files():
     files["icon.png"] = icon
     command = COMMAND.replace('"', '\\"')
     files["instance.cfg"] = ("[General]\nInstanceType=OneSix\nOverrideCommands=true\n"
-                             f"PreLaunchCommand={command}\niconKey=icon\nname=Entegre Client {version}\n").encode()
+                             f"PreLaunchCommand={command}\niconKey=icon\nname=Entegre Client 26.3\n").encode()
     profile = {"formatVersion": 1, "components": [
-        {"uid": "org.lwjgl3", "version": "3.3.3", "dependencyOnly": True},
+        {"uid": "org.lwjgl3", "version": "3.4.3", "dependencyOnly": True},
         {"uid": "net.minecraft", "version": versions["minecraft"], "important": True},
-        {"uid": "net.fabricmc.intermediary", "version": versions["minecraft"], "dependencyOnly": True},
         {"uid": "net.fabricmc.fabric-loader", "version": versions["fabric"]},
     ]}
     files["mmc-pack.json"] = (json.dumps(profile, indent=2, sort_keys=True) + "\n").encode()
     require(set(files) == ALLOWED, "Unexpected starter file set")
-    return version, files
+    return version, versions["minecraft"], files
 
 
 def archive_bytes(files):
@@ -155,7 +154,7 @@ def main():
     args = parser.parse_args()
     if not args.output_dir and not args.self_check:
         parser.error("Specify --output-dir or --self-check")
-    version, files = starter_files()
+    version, minecraft_version, files = starter_files()
     payload = archive_bytes(files)
     verify_archive(payload, files)
     if args.self_check:
@@ -164,7 +163,7 @@ def main():
         directory = args.output_dir.resolve()
         require(not directory.is_relative_to(ROOT), "Release artifacts must remain outside the repository")
         directory.mkdir(parents=True, exist_ok=True)
-        destination = directory / f"EntegreClient-v{version}.zip"
+        destination = directory / f"EntegreClient-v{version}-mc{minecraft_version}.zip"
         destination.write_bytes(payload)
         verify_archive(destination.read_bytes(), files)
         destination.with_suffix(".zip.sha256").write_text(digest(payload) + "  " + destination.name + "\n")

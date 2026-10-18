@@ -1,16 +1,16 @@
 name = "Durability Tooltip"
-filename = "durabilitytooltip-1.1.6-fabric-mc1.21.11.jar"
+filename = "durabilitytooltip-1.2.0a-fabric-mc26.3.jar"
 side = "client"
 
 [download]
-url = "https://cdn.modrinth.com/data/smUP7V3r/versions/dCPa5AFM/durabilitytooltip-1.1.6-fabric-mc1.21.11.jar"
+url = "https://cdn.modrinth.com/data/smUP7V3r/versions/5qPHfg1S/durabilitytooltip-1.2.0a-fabric-mc26.3.jar"
 hash-format = "sha512"
-hash = "4472d904e60e04dfcc2252fabe089343bb4b684607ff279ca3a8976a8624f8d4c2d3c7c94f25405f8151902378bedacf1708eb1ae4489071528dba106060f800"
+hash = "8571dabf8d259110a36e1e93e2494f55b2a6886026ee7e7a57550702de17bcba73ca9de8100d0cf6aa1fe632af2aadcbdaec3a163bb581adf977de81d6ef0a4c"
 
 [update]
 [update.modrinth]
 mod-id = "smUP7V3r"
-version = "dCPa5AFM"
+version = "5qPHfg1S"
 
 [option]
 optional = true

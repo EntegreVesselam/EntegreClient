@@ -1,0 +1,16 @@
+{
+  "release": "2.4.1",
+  "game": "26.3",
+  "upstream_base": "2c5112d62135bf18a42f9545783972a28c225860",
+  "marker": "0.2.1",
+  "loader": "0.19.5",
+  "java": 25,
+  "official_26_2_mods_available": 74,
+  "gpu_lod_tested": false,
+  "server_connection_tested": false,
+  "channels": [
+    "minecraft-26.2",
+    "minecraft-26.3"
+  ],
+  "published_at_verification": false
+}

@@ -47,7 +47,7 @@ marker-sync/build/
 marker-sync/run/
 
 # Locally built Entegre bridge is bundled; downloaded third-party JARs remain excluded.
-!mods/entegre-markers-0.1.3.jar
+!mods/entegre-markers-0.2.1.jar
 
 
 # Python maintenance cache
@@ -59,3 +59,6 @@ __pycache__/
 entegre-updater/*backup*
 .entegre-updater-disabled
 .entegre-bootstrap-*
+
+# User-provided beta is included only in the 26.3 channel.
+!mods/voxy-0.2.20-beta-23b3486.jar

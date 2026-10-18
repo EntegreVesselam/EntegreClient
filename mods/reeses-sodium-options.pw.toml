@@ -1,16 +1,18 @@
 name = "Reese's Sodium Options"
-filename = "reeses-sodium-options-fabric-2.0.3+mc1.21.11.jar"
+filename = "reeses-sodium-options-fabric-2.2.5+mc26.3.jar"
 side = "client"
+# Keep this rendering stack together for the supplied Voxy 0.2.20-beta (23b3486).
+pin = true
 
 [download]
-url = "https://cdn.modrinth.com/data/Bh37bMuy/versions/yIgAFMna/reeses-sodium-options-fabric-2.0.3%2Bmc1.21.11.jar"
+url = "https://cdn.modrinth.com/data/Bh37bMuy/versions/EfchygKx/reeses-sodium-options-fabric-2.2.5%2Bmc26.3.jar"
 hash-format = "sha512"
-hash = "13b54698be3cbecdcf544ff92186423652c6b1e91544864c979f51297a3159137f794db4e3ee21e0bae3abcf651bb4ecc0e2a5b4aa1eab1f1a81d6529fe82e59"
+hash = "9c6f335618c1ec03cf9030cd88cdc32be5457bf4fbabd49c76ed68df53530730cf4681ec3742f2c6efbd48cb2b784f24c636977a95d78df62af1214ec5488be0"
 
 [update]
 [update.modrinth]
 mod-id = "Bh37bMuy"
-version = "yIgAFMna"
+version = "EfchygKx"
 
 [option]
 optional = true

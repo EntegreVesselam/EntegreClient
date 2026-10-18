@@ -48,7 +48,7 @@ marker-sync/
 config/entegre-markers/
 
 # Locally built Entegre bridge is bundled; downloaded third-party JARs remain excluded.
-!mods/entegre-markers-0.1.3.jar
+!mods/entegre-markers-0.2.1.jar
 
 # Permanent legacy ownership tombstones are generated, never distributed as files.
 compatibility/
@@ -61,3 +61,6 @@ entegre-updater/*backup*
 .entegre-updater-disabled
 .entegre-bootstrap-*
 !mods/entegre-updater-transition-0.1.0.jar
+
+# User-provided beta is included only in the 26.3 channel.
+!mods/voxy-0.2.20-beta-23b3486.jar

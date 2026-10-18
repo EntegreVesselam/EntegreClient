@@ -27,7 +27,7 @@ final class MarkerApi {
     }
     MarkerApi(Wire wire) { this.wire = wire; }
     private Response send(String path, String token, JsonObject data) throws Exception {
-        HttpRequest.Builder request = HttpRequest.newBuilder(ORIGIN.resolve(path)).timeout(Duration.ofSeconds(10)).header("Accept","application/json").header("User-Agent","EntegreMarkers/0.1.3");
+        HttpRequest.Builder request = HttpRequest.newBuilder(ORIGIN.resolve(path)).timeout(Duration.ofSeconds(10)).header("Accept","application/json").header("User-Agent","EntegreMarkers/0.2.1");
         if (token != null) request.header("Authorization","Bearer " + token);
         if (data != null) request.header("Content-Type","application/json").POST(HttpRequest.BodyPublishers.ofString(data.toString()));
         Response r = wire.send(request.build());
