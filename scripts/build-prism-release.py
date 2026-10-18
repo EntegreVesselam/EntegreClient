@@ -63,8 +63,12 @@ def starter_files():
     for relative in PAYLOADS:
         payload = read_source(relative, 16 * 1024 * 1024)
         entry = entries[relative]
-        require(not entry.get("metafile") and not entry.get("preserve") and not entry.get("alias"),
-                f"Payload must be directly managed: {relative}")
+        require(not entry.get("metafile") and not entry.get("alias"),
+                f"Payload must be a direct indexed file: {relative}")
+        if relative == "servers.dat":
+            require(entry.get("preserve") is True, "Existing player server lists must be preserved")
+        else:
+            require(not entry.get("preserve"), f"Runtime payload must be managed: {relative}")
         require(entry.get("hash-format", index["hash-format"]) == "sha256"
                 and entry["hash"] == digest(payload), f"Indexed payload checksum mismatch: {relative}")
         files["minecraft/" + relative] = payload
