@@ -107,7 +107,7 @@ def build():
         test_classes.mkdir(parents=True)
         subprocess.run(["javac", "--release", "17", "-encoding", "UTF-8", "-cp", os.pathsep.join([str(destination), *additional_classpath]),
                         "-d", str(test_classes), *map(str, tests)], check=True)
-    print("Built Turkish updater; only window, manifest and five UI literal tables changed.")
+    print("Built Turkish updater and Prism migration guard; pinned Packwiz engine preserved.")
     print("SHA256", digest)
 
 

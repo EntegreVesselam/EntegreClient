@@ -8,11 +8,12 @@ Yeni kurulumda GitHub2.4.1 yayınındaki `EntegreClient-v2.4.1-mc26.2.zip`
 dosyasını Prism'e içe aktarın. İki sürümü kullanmak için iki ZIP'i de ayrı profil
 olarak içe aktarın. Her profil kendi mod/ayar/harita/LOD klasörünü ve Türkçe
 güncelleyiciyi kullanır. Bir profili diğerinin üstüne açmayın; eski kişisel
-harita/LOD dosyalarını ilk teste taşımayın. Mevcut1.21.11 kurulumu korunur.
+harita/LOD dosyalarını ilk teste taşımayın. Mevcut 1.21.11 oyuncularının varsayılan geçiş hedefi 26.2’dir. 26.3 ayrı profildir.
+Geçişte profil yedeklenir; Prism’in yeniden açılması istenir. Java 25 gerekir.
 
 Bu profilin Packwiz adresi:
 `https://raw.githubusercontent.com/EntegreVesselam/EntegreClient/minecraft-26.2/pack.toml`
-Eski `main/pack.toml` adresi bu profilin kanalı değildir. Starter ZIP doğru adresi
+Eski `main/pack.toml` adresi güncellenmiş motorla varsayılan 26.2 kanalına yönlenir. Starter ZIP doğru adresi
 ve doğru Minecraft/Fabric/LWJGL profilini hazırlar; komutu elle değiştirmeniz gerekmez.
 Manuel updater ayar çağrısında `--settings` yanına bu kanalın adresini ekleyin.
 
@@ -29,7 +30,8 @@ entegrasyonu ve bazı Tweakeroo/Sodium/Iris alt özellikleri sınırlı kalır.
 
 Entegre Markers0.2.1, canlı0.1.3'ün eşleştirme daveti, `/entegremarkers sync`,
 bağlantı/odak/60s korumaları ve sitenin16 rengini aynen koruyan26.x portudur.
-Canlı2.1.5 topluluk menüsü/anı görselleri korunur. Güncelleyici binary'leri aynı;
+Canlı2.1.5 topluluk menüsü/anı görselleri korunur. Güncelleyici motoru güvenli varsayılan 26.2 geçişini hazırlar;
+Haber ve etkinlik alanı güncellendi; ortada kalan Friends ve yardımcı düğmeler düzeltildi.
 186 kalıcı oyuncu dosyası koruma kaydı korunur. Ayrıntı: `docs/dual-profile-release.txt`.
 
 **Bakım:** `python3 scripts/refresh-pack.py`, ardından `verify-pack.py`,

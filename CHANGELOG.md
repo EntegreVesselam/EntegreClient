@@ -1,5 +1,7 @@
-# 2.4.1 — iki Prism profili / Minecraft26.2 (2026-10-18)
+# 2.4.1 — iki Prism profili / Minecraft26.2 (2026-10-19)
 
+- Mevcut 1.21.11 oyuncuları için varsayılan 26.2 geçişi, profil yedeği ve Prism yeniden açılış koruması.
+- Haber/etkinlik menüsü ve yeni Friends/yardımcı düğme uyumluluğu.
 - Ayrı26.2 ve26.3 profil/Packwiz kanalı; Java25/Fabric0.19.5.
 - Voxy0.2.19-beta, Voxy Extra0.2.6 ve Voxy WorldGen2.4.3 içerir.
 - Canlı2.1.5 topluluk menüsü ve marker0.1.3 davranışları korunur; Markers0.2.1 portu.

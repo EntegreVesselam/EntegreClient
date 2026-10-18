@@ -1,0 +1,27 @@
+Entegre Client 2.4.1 — varsayılan 26.2 geçişi
+19 Ekim 2026
+
+Site önkoşulu doğrulandı: client-announcements/menu.txt ve client-events/menu.txt
+19 Ekim'de HTTP 200 döndü. Haber ve etkinlik içerikleri geldi.
+
+Yayın sırası: iki minecraft-26.x kanalı, iki starter ZIP, en son main motor teslimi.
+main paketinin Minecraft metadata'sı ilk aşamada 1.21.11 kalır. Bu, eski motorun
+26.2 modlarını henüz 1.21.11 ile başlatmasını önler. Yeni motor main URL'sini
+varsayılan minecraft-26.2 kanalına yönlendirir. 26.3 açık kanal URL'si korunur.
+
+Eski oyuncu akışı:
+1. İlk eski-motor açılışı yeni motoru indirir; mevcut 1.21.11 oyunu açılabilir.
+2. Sonraki açılışta motor profilin tam yedeğini alır, Minecraft/Fabric/LWJGL'yi
+   26.2/0.19.5/3.4.1 olarak hazırlar ve Packwiz'i çalıştırmadan exit3 ile durur.
+3. Oyuncu Prism'i tamamen kapatıp açar. Java 25 seçiliyse 26.2 paketi kurulur.
+   Java 21 ile motor exit2 döndürür ve yeni modları indirmez.
+4. Ayrı 26.3 starter'ı 26.3/0.19.5/3.4.3 kullanır ve 26.2'ye yönlenmez.
+
+Yedek: instance/mmc-pack.before-entegre-26.2.json. Eski main adresi güncel motorla
+26.2'ye yönlendiği için tek başına profil yedeğini geri koymak kalıcı geri dönüş
+sağlamaz. Geri dönüşte uyumlu eski motor/kanal ve eski modlar da geri kurulmalıdır.
+
+Doğrulama: gerçek eski starter profiliyle ayrı güncelleyici süreçleri 26.2/26.3
+hedeflerinde exit3 döndürdü; packwiz.json/mods oluşmadan durdu. Java21 exit2.
+Profil yedeği byte-byte aynı; kişisel options dosyası korunur. Gerçek Prism
+uygulaması üzerinden uçtan uca yeniden başlatma zinciri ve Windows denenmedi.

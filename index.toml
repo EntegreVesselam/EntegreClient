@@ -158,7 +158,7 @@ hash = "40ea43c356edcdf436453b4425e3e44200bb443231653c5cd1b0ce2eb1c9e99b"
 
 [[files]]
 file = "config/fancymenu/customization/entegre_title_screen.txt"
-hash = "815133efeb7a6112f905c14bef08db26578724637c54b72c7acfc426daa567aa"
+hash = "67d290eb8cc4b9e531fd4cfadc98567b15f139654063d90a7860f9cf0d5e1a44"
 
 [[files]]
 file = "config/fancymenu/layout_editor/widgets/element_layer_control.lewidget"
@@ -387,11 +387,11 @@ hash = "0c24e2531e2fefb120bbbdbdfca673e8c266199408e7df288b505b8e66c361b1"
 
 [[files]]
 file = "entegre-updater/engine.jar"
-hash = "03be01fa3dc055156dee55b955cce4a6455744de89800e3bd31a8ec8a2d3e154"
+hash = "46fb985456e61a44d3d97d3159b9d9573fd0a321ff63061a96a921a83429d073"
 
 [[files]]
 file = "entegre-updater/engine.sha256"
-hash = "5e780241d078f4734036e1aa269ff65b0765467fb816e4516a8034b060faf060"
+hash = "031733a744d5264b703ed26da23c6d82c4635a4bfaa6b099e1b76d8257d14506"
 
 [[files]]
 file = "icon.png"
@@ -509,7 +509,7 @@ metafile = true
 
 [[files]]
 file = "mods/entegre-markers-0.2.1.jar"
-hash = "945ecad1370a9f1ef696ff1ba081c20e2ed774c83da640bc168030f5222f41f9"
+hash = "48d3829117863a50369149aecad512774c59a6cfceb111a600d4a2607d6e4854"
 
 [[files]]
 file = "mods/entegre-updater-transition-0.1.0.jar"
