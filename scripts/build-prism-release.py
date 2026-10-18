@@ -24,7 +24,7 @@ MODE = (stat.S_IFREG | 0o644) << 16
 COMMAND = ('"$INST_JAVA" -jar "$INST_DIR/minecraft/packwiz-installer-bootstrap.jar" '
            'https://raw.githubusercontent.com/EntegreVesselam/EntegreClient/minecraft-26.3/pack.toml')
 PAYLOADS = tuple(f"entegre-updater/{stem}.{extension}"
-                 for stem in ("engine", "bootstrap") for extension in ("jar", "sha256"))
+                 for stem in ("engine", "bootstrap") for extension in ("jar", "sha256")) + ("servers.dat",)
 ALLOWED = {"instance.cfg", "mmc-pack.json", "icon.png", "minecraft/packwiz-installer-bootstrap.jar",
            *("minecraft/" + path for path in PAYLOADS)}
 
@@ -63,8 +63,12 @@ def starter_files():
     for relative in PAYLOADS:
         payload = read_source(relative, 16 * 1024 * 1024)
         entry = entries[relative]
-        require(not entry.get("metafile") and not entry.get("preserve") and not entry.get("alias"),
-                f"Payload must be directly managed: {relative}")
+        require(not entry.get("metafile") and not entry.get("alias"),
+                f"Payload must be a direct indexed file: {relative}")
+        if relative == "servers.dat":
+            require(entry.get("preserve") is True, "Existing player server lists must be preserved")
+        else:
+            require(not entry.get("preserve"), f"Runtime payload must be managed: {relative}")
         require(entry.get("hash-format", index["hash-format"]) == "sha256"
                 and entry["hash"] == digest(payload), f"Indexed payload checksum mismatch: {relative}")
         files["minecraft/" + relative] = payload
@@ -88,7 +92,7 @@ def starter_files():
     files["icon.png"] = icon
     command = COMMAND.replace('"', '\\"')
     files["instance.cfg"] = ("[General]\nInstanceType=OneSix\nOverrideCommands=true\n"
-                             f"PreLaunchCommand={command}\niconKey=icon\nname=Entegre Client 26.3\n").encode()
+                             f"PreLaunchCommand={command}\niconKey=icon\nname=Entegre Client\n").encode()
     profile = {"formatVersion": 1, "components": [
         {"uid": "org.lwjgl3", "version": "3.4.3", "dependencyOnly": True},
         {"uid": "net.minecraft", "version": versions["minecraft"], "important": True},
@@ -164,7 +168,7 @@ def main():
         directory = args.output_dir.resolve()
         require(not directory.is_relative_to(ROOT), "Release artifacts must remain outside the repository")
         directory.mkdir(parents=True, exist_ok=True)
-        destination = directory / f"EntegreClient-v{version}-mc{minecraft_version}.zip"
+        destination = directory / f"EntegreClient-v{version}.zip"
         destination.write_bytes(payload)
         verify_archive(destination.read_bytes(), files)
         destination.with_suffix(".zip.sha256").write_text(digest(payload) + "  " + destination.name + "\n")

@@ -45,7 +45,7 @@ public final class EntegreMarkers implements ClientModInitializer {
     }
     private boolean version(String mod, String expected) { return FabricLoader.getInstance().getModContainer(mod).map(m -> expected.equals(m.getMetadata().getVersion().getFriendlyString())).orElse(false); }
     private void message(String key) { if (client.player != null) client.player.sendSystemMessage(Component.translatable("entegre_markers."+key)); }
-    static boolean targetServer(String address) { return address != null && Set.of("entegrevesselam.com","entegrevesselam.com:25565").contains(address.toLowerCase(Locale.ROOT)); }
+    static boolean targetServer(String address) { return address != null && Set.of("entegrevesselam.com","entegrevesselam.com:25565","ugurdindar.com","ugurdindar.com:25565").contains(address.toLowerCase(Locale.ROOT)); }
     private void safeHide() {
         if (layer == null) return;
         try { layer.hide(); } catch (RuntimeException | LinkageError e) { incompatible = true; status = "incompatible"; }

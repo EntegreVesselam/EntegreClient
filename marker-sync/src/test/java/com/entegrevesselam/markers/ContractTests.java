@@ -38,13 +38,32 @@ public final class ContractTests {
         check(state.needsApply(), "authorization recovery reapplies same revision");
         var late = state.begin(300000, true, true); state.close();
         check(!state.accept(late, 13), "shutdown drops late response");
-        testSnapshot(); testApi(); testStore(); testBody(); testPolling(); testOwnership(); testAppearance(); testPairingInvitation();
+        testSnapshot(); testApi(); testStore(); testBody(); testPolling(); testOwnership(); testAppearance(); testPairingInvitation(); testServerAddresses();
         System.out.println("PASS state: epoch, revision, dimensions/subworld, auth, foreground, in-flight, shutdown");
     }
 
     static void rejects(Runnable action, String label) { try { action.run(); } catch (RuntimeException expected) { return; } throw new AssertionError(label); }
     static String marker() { return "{\"id\":\"synthetic-1\",\"name\":\"Home <b>\",\"description\":\"plain text\",\"mapId\":\"world\",\"dimension\":\"minecraft:overworld\",\"x\":-29999984,\"y\":-64,\"z\":29999984,\"color\":15,\"icon\":\"home\",\"version\":1}"; }
     static byte[] json(String marker) { return ("{\"schemaVersion\":1,\"revision\":12,\"updatedAt\":\"2026-10-15T12:00:00.000Z\",\"markers\":[" + marker + "]}").getBytes(StandardCharsets.UTF_8); }
+    static void testServerAddresses() throws Exception {
+        for (String host : List.of("entegrevesselam.com", "ugurdindar.com")) {
+            check(EntegreMarkers.targetServer(host), "accept main server alias " + host);
+            check(EntegreMarkers.targetServer(host.toUpperCase(Locale.ROOT)), "case-insensitive server alias");
+            check(EntegreMarkers.targetServer(host + ":25565"), "accept explicit default port");
+        }
+        for (String host : List.of("other.example", "ugurdindar.com.evil.test", "entegrevesselam.com.evil.test",
+                "ugurdindar.com@evil.test", "ugurdindar.com:25566", ""))
+            check(!EntegreMarkers.targetServer(host), "reject unrelated server " + host);
+        check(!EntegreMarkers.targetServer(null), "null server rejected");
+        var seed = net.minecraft.nbt.NbtIo.read(Path.of("../servers.dat"));
+        var servers = seed.getListOrEmpty("servers");
+        check(servers.size() == 1, "one distributed community server");
+        var server = servers.getCompoundOrEmpty(0);
+        check(server.getStringOr("ip", "").equals("entegrevesselam.com"), "actual default connection address");
+        check(server.getStringOr("name", "").equals("entegrevesselam.com"), "default display name matches connection");
+        System.out.println("PASS server addresses: both aliases/default port; rejects unrelated hosts; real NBT seed defaults to entegrevesselam.com");
+    }
+
     static void testSnapshot() {
         check(Snapshot.parse(json(marker())).markers().getFirst().name().equals("Home <b>"), "plain text retained");
         check(Snapshot.parse(json("")).markers().isEmpty(), "explicit empty list valid");

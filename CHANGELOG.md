@@ -1,3 +1,10 @@
+#2.4.4 — Varsayılan Minecraft26.3 (2026-10-19)
+
+- Tek ZIP doğrudan26.3 profili oluşturur.
+- Varsayılan motor hedefi26.3; açık26.2 kanalı korunur.
+- Doğru sunucu kaydı ve iki alan adı desteği26.3’e taşındı.
+- Voxy beta içerilir; Extra/WorldGen uyumsuz olduğu için kapalı.
+
 # 2.4.2 — Prism geçiş döngüsü düzeltmesi (2026-10-19)
 
 - Prism’in zorunlu Fabric bileşeni korunur ve doğru sürüme güncellenir.
