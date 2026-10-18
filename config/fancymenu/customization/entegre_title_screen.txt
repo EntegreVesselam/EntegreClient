@@ -2,7 +2,7 @@ type = fancymenu_layout
 
 layout-meta {
   identifier = title_screen
-  render_custom_elements_behind_vanilla = false
+  render_custom_elements_behind_vanilla = true
   last_edited_time = 1767558802850
   is_enabled = true
   randommode = false
@@ -14,7 +14,7 @@ layout-meta {
 }
 
 menu_background {
-  image_path = [source:web]https://entegrevesselam.com/wp-content/uploads/2025/01/2025-01-21_10.02.52.png
+  image_path = [source:local]/config/fancymenu/assets/community-city-2026.jpg
   slide = false
   repeat_texture = false
   parallax = false
@@ -40,398 +40,496 @@ scroll_list_customization {
   show_screen_background_overlay_on_custom_background = false
   apply_vanilla_background_blur = false
 }
-
 layout_action_executable_blocks {
 }
 
 element {
-  interactable = true
-  source = Entegre Client v2.0 - {"placeholder":"mcversion"}
-  source_mode = direct
-  shadow = true
-  scale = 1.0
-  base_color = #FFFFFFFF
-  text_border = 2
-  line_spacing = 2
-  enable_scrolling = true
-  auto_line_wrapping = true
-  remove_html_breaks = true
-  code_block_single_color = #737373FF
-  code_block_multi_color = #565656FF
-  headline_line_color = #A9A9A9FF
-  separation_line_color = #A9A9A9FF
-  hyperlink_color = #0771FCFF
-  quote_color = #818181FF
-  quote_indent = 8.0
-  quote_italic = false
-  bullet_list_dot_color = #A9A9A9FF
-  bullet_list_indent = 8.0
-  bullet_list_spacing = 3.0
-  parse_markdown = true
-  table_show_header = true
-  table_alternate_row_colors = true
-  table_line_color = #787878FF
-  table_header_background_color = #323232FF
-  table_row_background_color = #282828FF
-  table_alternate_row_color = #3C3C3CFF
-  table_line_thickness = 1.0
-  table_cell_padding = 8.0
-  table_margin = 4.0
-  element_type = text_v2
-  instance_identifier = edeb90bc-4aa7-4651-900d-0a5d8d5e9e33-1748387668492
-  custom_element_layer_name = Version
-  appearance_delay = no_delay
-  appearance_delay_seconds = 1.0
-  fade_in_v2 = no_fading
-  fade_in_speed = 1.0
-  fade_out = no_fading
-  fade_out_speed = 1.0
-  base_opacity = 1.0
-  auto_sizing = false
-  auto_sizing_base_screen_width = 2560
-  auto_sizing_base_screen_height = 1385
-  sticky_anchor = false
-  anchor_point = bottom-centered
-  advanced_posx = 0
-  x = 126
-  y = 54
-  width = 239
-  height = 13
-  stretch_x = true
-  stretch_y = false
-  stay_on_screen = true
-  element_loading_requirement_container_identifier = 1d882f32-bca5-4bcc-b75d-87c079606890-1748387668492
-  [loading_requirement_container_meta:1d882f32-bca5-4bcc-b75d-87c079606890-1748387668492] = [groups:][instances:]
-  enable_parallax = false
-  parallax_intensity_v2 = 0.5
-  invert_parallax = false
-  animated_offset_x = 0
-  animated_offset_y = 0
-  load_once_per_session = false
-  in_editor_color = #FFC800FF
-  layer_hidden_in_editor = false
-  rotation_degrees = 0.0
-  advanced_rotation_mode = false
-  vertical_tilt_degrees = 0.0
-  advanced_vertical_tilt_mode = false
-  horizontal_tilt_degrees = 0.0
-  advanced_horizontal_tilt_mode = false
-}
-
-element {
-  interactable = true
-  source = CPU: {"placeholder":"cpuinfo"}%n%GPU: {"placeholder":"gpuinfo"}%n%RAM: {"placeholder":"maxram"} MB%n%Java: {"placeholder":"javaver"}%n%OS: {"placeholder":"osname"}
-  source_mode = direct
-  shadow = true
-  scale = 0.75
-  base_color = #FFFFFFFF
-  text_border = 1
-  line_spacing = 1
-  enable_scrolling = true
-  auto_line_wrapping = true
-  remove_html_breaks = true
-  code_block_single_color = #737373FF
-  code_block_multi_color = #565656FF
-  headline_line_color = #A9A9A9FF
-  separation_line_color = #A9A9A9FF
-  hyperlink_color = #0771FCFF
-  quote_color = #818181FF
-  quote_indent = 8.0
-  quote_italic = false
-  bullet_list_dot_color = #A9A9A9FF
-  bullet_list_indent = 8.0
-  bullet_list_spacing = 3.0
-  parse_markdown = true
-  table_show_header = true
-  table_alternate_row_colors = true
-  table_line_color = #787878FF
-  table_header_background_color = #323232FF
-  table_row_background_color = #282828FF
-  table_alternate_row_color = #3C3C3CFF
-  table_line_thickness = 1.0
-  table_cell_padding = 8.0
-  table_margin = 4.0
-  element_type = text_v2
-  instance_identifier = e8ddf890-8f00-4440-a622-73911223e56e-1748387987724
-  custom_element_layer_name = System
-  appearance_delay = no_delay
-  appearance_delay_seconds = 1.0
-  fade_in_v2 = no_fading
-  fade_in_speed = 1.0
-  fade_out = no_fading
-  fade_out_speed = 1.0
-  base_opacity = 1.0
-  auto_sizing = false
-  auto_sizing_base_screen_width = 2560
-  auto_sizing_base_screen_height = 1385
-  sticky_anchor = false
-  anchor_point = bottom-left
-  advanced_posx = 0
-  x = 227
-  y = -57
-  width = 236
-  height = 41
-  stretch_x = true
-  stretch_y = false
-  stay_on_screen = true
-  element_loading_requirement_container_identifier = 1d882f32-bca5-4bcc-b75d-87c079606890-1748387668492
-  [loading_requirement_container_meta:1d882f32-bca5-4bcc-b75d-87c079606890-1748387668492] = [groups:][instances:]
-  enable_parallax = false
-  parallax_intensity_v2 = 0.5
-  invert_parallax = false
-  animated_offset_x = 0
-  animated_offset_y = 0
-  load_once_per_session = false
-  in_editor_color = #FFC800FF
-  layer_hidden_in_editor = false
-  rotation_degrees = 0.0
-  advanced_rotation_mode = false
-  vertical_tilt_degrees = 0.0
-  advanced_vertical_tilt_mode = false
-  horizontal_tilt_degrees = 0.0
-  advanced_horizontal_tilt_mode = false
-}
-
-element {
-  source = {"placeholder":"randomtext","values":{"path":"/config/fancymenu/assets/cucumber.txt","interval":"3"}}
-  source_mode = direct
-  scale = 1.0
-  shadow = true
-  rotation = 20.0
-  base_color = #FFFF00FF
-  refresh = false
-  bouncing = true
-  element_type = splash_text
-  instance_identifier = eb983bb9-5221-46af-b651-f997d68a9812-1748388642104
-  appearance_delay = no_delay
-  appearance_delay_seconds = 1.0
-  fade_in_v2 = no_fading
-  fade_in_speed = 1.0
-  fade_out = no_fading
-  fade_out_speed = 1.0
-  base_opacity = 1.0
-  auto_sizing = false
-  auto_sizing_base_screen_width = 2562
-  auto_sizing_base_screen_height = 1440
-  sticky_anchor = false
-  anchor_point = mid-centered
-  x = 64
-  y = -124
+  shape = rectangle
+  color = #09110B40
+  interactable = false
+  element_type = shape
+  instance_identifier = community-shade
+  custom_element_layer_name = community-shade
+  anchor_point = top-left
+  advanced_posx = {"placeholder":"calc","values":{"expression":"0","decimal":"false"}}
+  advanced_posy = {"placeholder":"calc","values":{"expression":"0","decimal":"false"}}
+  advanced_width = {"placeholder":"calc","values":{"expression":"{"placeholder":"guiwidth"}","decimal":"false"}}
+  advanced_height = {"placeholder":"calc","values":{"expression":"{"placeholder":"guiheight"}","decimal":"false"}}
+  x = 0
+  y = 0
   width = 100
-  height = 60
+  height = 20
+  auto_sizing = false
+  stay_on_screen = false
+  base_opacity = 1.0
+  appearance_delay = no_delay
+  fade_in_v2 = no_fading
+  fade_out = no_fading
+  enable_parallax = false
   stretch_x = false
   stretch_y = false
-  stay_on_screen = true
-  element_loading_requirement_container_identifier = 51e4fece-1529-4263-b536-1ddda72f836d-1748388642104
-  [loading_requirement_container_meta:51e4fece-1529-4263-b536-1ddda72f836d-1748388642104] = [groups:][instances:]
+}
+
+element {
+  shape = rectangle
+  color = #0D1714D9
+  interactable = false
+  element_type = shape
+  instance_identifier = community-play-panel
+  custom_element_layer_name = community-play-panel
+  anchor_point = top-left
+  advanced_posx = {"placeholder":"calc","values":{"expression":"({"placeholder":"guiwidth"}/2-((200+({"placeholder":"guiwidth"}-48)/2-abs(200-({"placeholder":"guiwidth"}-48)/2))/2)-8)-8","decimal":"false"}}
+  advanced_posy = {"placeholder":"calc","values":{"expression":"(({"placeholder":"guiheight"}-160)/2)-6","decimal":"false"}}
+  advanced_width = {"placeholder":"calc","values":{"expression":"((200+({"placeholder":"guiwidth"}-48)/2-abs(200-({"placeholder":"guiwidth"}-48)/2))/2)+16","decimal":"false"}}
+  advanced_height = {"placeholder":"calc","values":{"expression":"170","decimal":"false"}}
+  x = 0
+  y = 0
+  width = 100
+  height = 20
+  auto_sizing = false
+  stay_on_screen = false
+  base_opacity = 1.0
+  appearance_delay = no_delay
+  fade_in_v2 = no_fading
+  fade_out = no_fading
   enable_parallax = false
-  parallax_intensity_v2 = 0.5
-  invert_parallax = false
-  animated_offset_x = 0
-  animated_offset_y = 0
-  load_once_per_session = false
-  in_editor_color = #FFC800FF
-  layer_hidden_in_editor = false
-  rotation_degrees = 0.0
-  advanced_rotation_mode = false
-  vertical_tilt_degrees = 0.01605039
-  advanced_vertical_tilt_mode = false
-  horizontal_tilt_degrees = 0.029296875
-  advanced_horizontal_tilt_mode = false
+  stretch_x = false
+  stretch_y = false
+}
+
+element {
+  shape = rectangle
+  color = #0D1714D9
+  interactable = false
+  element_type = shape
+  instance_identifier = community-news-panel
+  custom_element_layer_name = community-news-panel
+  anchor_point = top-left
+  advanced_posx = {"placeholder":"calc","values":{"expression":"({"placeholder":"guiwidth"}/2+8)-8","decimal":"false"}}
+  advanced_posy = {"placeholder":"calc","values":{"expression":"(({"placeholder":"guiheight"}-160)/2)-6","decimal":"false"}}
+  advanced_width = {"placeholder":"calc","values":{"expression":"((200+({"placeholder":"guiwidth"}-48)/2-abs(200-({"placeholder":"guiwidth"}-48)/2))/2)+16","decimal":"false"}}
+  advanced_height = {"placeholder":"calc","values":{"expression":"170","decimal":"false"}}
+  x = 0
+  y = 0
+  width = 100
+  height = 20
+  auto_sizing = false
+  stay_on_screen = false
+  base_opacity = 1.0
+  appearance_delay = no_delay
+  fade_in_v2 = no_fading
+  fade_out = no_fading
+  enable_parallax = false
+  stretch_x = false
+  stretch_y = false
+}
+
+element {
+  shape = rectangle
+  color = #BCE095FF
+  interactable = false
+  element_type = shape
+  instance_identifier = community-play-accent
+  custom_element_layer_name = community-play-accent
+  anchor_point = top-left
+  advanced_posx = {"placeholder":"calc","values":{"expression":"({"placeholder":"guiwidth"}/2-((200+({"placeholder":"guiwidth"}-48)/2-abs(200-({"placeholder":"guiwidth"}-48)/2))/2)-8)-8","decimal":"false"}}
+  advanced_posy = {"placeholder":"calc","values":{"expression":"(({"placeholder":"guiheight"}-160)/2)-6","decimal":"false"}}
+  advanced_width = {"placeholder":"calc","values":{"expression":"((200+({"placeholder":"guiwidth"}-48)/2-abs(200-({"placeholder":"guiwidth"}-48)/2))/2)+16","decimal":"false"}}
+  advanced_height = {"placeholder":"calc","values":{"expression":"1","decimal":"false"}}
+  x = 0
+  y = 0
+  width = 100
+  height = 20
+  auto_sizing = false
+  stay_on_screen = false
+  base_opacity = 1.0
+  appearance_delay = no_delay
+  fade_in_v2 = no_fading
+  fade_out = no_fading
+  enable_parallax = false
+  stretch_x = false
+  stretch_y = false
+}
+
+element {
+  shape = rectangle
+  color = #BCE095FF
+  interactable = false
+  element_type = shape
+  instance_identifier = community-news-accent
+  custom_element_layer_name = community-news-accent
+  anchor_point = top-left
+  advanced_posx = {"placeholder":"calc","values":{"expression":"({"placeholder":"guiwidth"}/2+8)-8","decimal":"false"}}
+  advanced_posy = {"placeholder":"calc","values":{"expression":"(({"placeholder":"guiheight"}-160)/2)-6","decimal":"false"}}
+  advanced_width = {"placeholder":"calc","values":{"expression":"((200+({"placeholder":"guiwidth"}-48)/2-abs(200-({"placeholder":"guiwidth"}-48)/2))/2)+16","decimal":"false"}}
+  advanced_height = {"placeholder":"calc","values":{"expression":"1","decimal":"false"}}
+  x = 0
+  y = 0
+  width = 100
+  height = 20
+  auto_sizing = false
+  stay_on_screen = false
+  base_opacity = 1.0
+  appearance_delay = no_delay
+  fade_in_v2 = no_fading
+  fade_out = no_fading
+  enable_parallax = false
+  stretch_x = false
+  stretch_y = false
 }
 
 element {
   source = [source:local]/config/fancymenu/assets/entegre_rotating_logo.gif
   repeat_texture = false
   nine_slice_texture = false
-  nine_slice_texture_border_x = 5
-  nine_slice_texture_border_y = 5
   image_tint = #FFFFFF
-  restart_animated_on_menu_load = false
   element_type = image
-  instance_identifier = 988a35ca-18c0-4ae2-969b-f7244b950745-1748388736990
-  custom_element_layer_name = Logo
-  appearance_delay = no_delay
-  appearance_delay_seconds = 1.0
-  fade_in_v2 = no_fading
-  fade_in_speed = 1.0
-  fade_out = no_fading
-  fade_out_speed = 1.0
-  base_opacity = 1.0
-  auto_sizing = true
-  auto_sizing_base_screen_width = 2560
-  auto_sizing_base_screen_height = 1385
-  sticky_anchor = false
-  anchor_point = mid-centered
-  x = -152
-  y = -116
-  width = 48
-  height = 48
-  stretch_x = false
-  stretch_y = false
-  stay_on_screen = true
-  element_loading_requirement_container_identifier = acbaecc5-6744-4875-87c2-26e74ae41658-1748388736990
-  [loading_requirement_container_meta:acbaecc5-6744-4875-87c2-26e74ae41658-1748388736990] = [groups:][instances:]
-  enable_parallax = false
-  parallax_intensity_v2 = 0.5
-  invert_parallax = false
-  animated_offset_x = 0
-  animated_offset_y = 0
-  load_once_per_session = false
-  in_editor_color = #FFC800FF
-  layer_hidden_in_editor = false
-  rotation_degrees = 0.0
-  advanced_rotation_mode = false
-  vertical_tilt_degrees = 0.0
-  advanced_vertical_tilt_mode = false
-  horizontal_tilt_degrees = 0.018359374
-  advanced_horizontal_tilt_mode = false
-}
-
-element {
-  interactable = true
-  source = {"placeholder":"randomtext","values":{"path":"/config/fancymenu/assets/entegre.txt","interval":"3"}}
-  source_mode = direct
-  shadow = true
-  scale = 3.5
-  base_color = #FFFFFFFF
-  text_border = 2
-  line_spacing = 2
-  enable_scrolling = true
-  auto_line_wrapping = true
-  remove_html_breaks = true
-  code_block_single_color = #737373FF
-  code_block_multi_color = #565656FF
-  headline_line_color = #A9A9A9FF
-  separation_line_color = #A9A9A9FF
-  hyperlink_color = #0771FCFF
-  quote_color = #818181FF
-  quote_indent = 8.0
-  quote_italic = false
-  bullet_list_dot_color = #A9A9A9FF
-  bullet_list_indent = 8.0
-  bullet_list_spacing = 3.0
-  parse_markdown = true
-  table_show_header = true
-  table_alternate_row_colors = true
-  table_line_color = #787878FF
-  table_header_background_color = #323232FF
-  table_row_background_color = #282828FF
-  table_alternate_row_color = #3C3C3CFF
-  table_line_thickness = 1.0
-  table_cell_padding = 8.0
-  table_margin = 4.0
-  element_type = text_v2
-  instance_identifier = a1cb8902-7249-4dd4-a598-2519e9dc83bf-1748388862399
-  custom_element_layer_name = Entegre
-  appearance_delay = no_delay
-  appearance_delay_seconds = 1.0
-  fade_in_v2 = no_fading
-  fade_in_speed = 1.0
-  fade_out = no_fading
-  fade_out_speed = 1.0
-  base_opacity = 1.0
+  instance_identifier = community-logo
+  custom_element_layer_name = community-logo
+  anchor_point = top-left
+  advanced_posx = {"placeholder":"calc","values":{"expression":"({"placeholder":"guiwidth"}/2-((200+({"placeholder":"guiwidth"}-48)/2-abs(200-({"placeholder":"guiwidth"}-48)/2))/2)-8)","decimal":"false"}}
+  advanced_posy = {"placeholder":"calc","values":{"expression":"(({"placeholder":"guiheight"}-160)/2)+6","decimal":"false"}}
+  advanced_width = {"placeholder":"calc","values":{"expression":"28","decimal":"false"}}
+  advanced_height = {"placeholder":"calc","values":{"expression":"28","decimal":"false"}}
+  x = 0
+  y = 0
+  width = 100
+  height = 20
   auto_sizing = false
-  auto_sizing_base_screen_width = 2562
-  auto_sizing_base_screen_height = 1440
-  sticky_anchor = false
-  anchor_point = mid-centered
-  x = -100
-  y = -124
-  width = 200
-  height = 40
+  stay_on_screen = false
+  base_opacity = 1.0
+  appearance_delay = no_delay
+  fade_in_v2 = no_fading
+  fade_out = no_fading
+  enable_parallax = false
   stretch_x = false
   stretch_y = false
-  stay_on_screen = true
-  element_loading_requirement_container_identifier = aecac40d-d1c5-4803-9b46-37641a533515-1748388862399
-  [loading_requirement_container_meta:aecac40d-d1c5-4803-9b46-37641a533515-1748388862399] = [groups:][instances:]
-  enable_parallax = false
-  parallax_intensity_v2 = 0.5
-  invert_parallax = false
-  animated_offset_x = 0
-  animated_offset_y = 0
-  load_once_per_session = false
-  in_editor_color = #FFC800FF
-  layer_hidden_in_editor = false
-  rotation_degrees = 0.0
-  advanced_rotation_mode = false
-  vertical_tilt_degrees = 0.0
-  advanced_vertical_tilt_mode = false
-  horizontal_tilt_degrees = 0.0
-  advanced_horizontal_tilt_mode = false
 }
 
 element {
-  interactable = true
-  source = {"placeholder":"randomtext","values":{"path":"/config/fancymenu/assets/vesselam.txt","interval":"3"}}
+  source = {"placeholder":"randomtext","values":{"source":"/config/fancymenu/assets/entegre.txt","interval":"12"}}
   source_mode = direct
+  interactable = false
   shadow = true
-  scale = 3.5
-  base_color = #FFFFFFFF
-  text_border = 2
-  line_spacing = 2
-  enable_scrolling = true
+  scale = 1.7
+  base_color = #EDF2E9FF
+  text_border = 0
+  line_spacing = 3
+  enable_scrolling = false
   auto_line_wrapping = true
-  remove_html_breaks = true
-  code_block_single_color = #737373FF
-  code_block_multi_color = #565656FF
-  headline_line_color = #A9A9A9FF
-  separation_line_color = #A9A9A9FF
-  hyperlink_color = #0771FCFF
-  quote_color = #818181FF
-  quote_indent = 8.0
-  quote_italic = false
-  bullet_list_dot_color = #A9A9A9FF
-  bullet_list_indent = 8.0
-  bullet_list_spacing = 3.0
   parse_markdown = true
-  table_show_header = true
-  table_alternate_row_colors = true
-  table_line_color = #787878FF
-  table_header_background_color = #323232FF
-  table_row_background_color = #282828FF
-  table_alternate_row_color = #3C3C3CFF
-  table_line_thickness = 1.0
-  table_cell_padding = 8.0
-  table_margin = 4.0
+  remove_html_breaks = true
+  hyperlink_color = #BCE095FF
   element_type = text_v2
-  instance_identifier = 6b0c8da1-18ef-412d-8209-68eb894b08ca-1748389846481
-  custom_element_layer_name = Vesselam
-  appearance_delay = no_delay
-  appearance_delay_seconds = 1.0
-  fade_in_v2 = no_fading
-  fade_in_speed = 1.0
-  fade_out = no_fading
-  fade_out_speed = 1.0
+  instance_identifier = community-entegre
+  custom_element_layer_name = community-entegre
+  anchor_point = top-left
+  advanced_posx = {"placeholder":"calc","values":{"expression":"({"placeholder":"guiwidth"}/2-((200+({"placeholder":"guiwidth"}-48)/2-abs(200-({"placeholder":"guiwidth"}-48)/2))/2)-8)+36","decimal":"false"}}
+  advanced_posy = {"placeholder":"calc","values":{"expression":"(({"placeholder":"guiheight"}-160)/2)+3","decimal":"false"}}
+  advanced_width = {"placeholder":"calc","values":{"expression":"((200+({"placeholder":"guiwidth"}-48)/2-abs(200-({"placeholder":"guiwidth"}-48)/2))/2)-36","decimal":"false"}}
+  advanced_height = {"placeholder":"calc","values":{"expression":"18","decimal":"false"}}
+  x = 0
+  y = 0
+  width = 100
+  height = 20
+  auto_sizing = false
+  stay_on_screen = false
   base_opacity = 1.0
-  auto_sizing = true
-  auto_sizing_base_screen_width = 2562
-  auto_sizing_base_screen_height = 1440
-  sticky_anchor = false
-  anchor_point = mid-centered
-  x = -100
-  y = -80
-  width = 200
-  height = 35
+  appearance_delay = no_delay
+  fade_in_v2 = no_fading
+  fade_out = no_fading
+  enable_parallax = false
   stretch_x = false
   stretch_y = false
-  stay_on_screen = true
-  element_loading_requirement_container_identifier = aecac40d-d1c5-4803-9b46-37641a533515-1748388862399
-  [loading_requirement_container_meta:aecac40d-d1c5-4803-9b46-37641a533515-1748388862399] = [groups:][instances:]
+}
+
+element {
+  source = {"placeholder":"randomtext","values":{"source":"/config/fancymenu/assets/vesselam.txt","interval":"12"}}
+  source_mode = direct
+  interactable = false
+  shadow = true
+  scale = 1.7
+  base_color = #BCE095FF
+  text_border = 0
+  line_spacing = 3
+  enable_scrolling = false
+  auto_line_wrapping = true
+  parse_markdown = true
+  remove_html_breaks = true
+  hyperlink_color = #BCE095FF
+  element_type = text_v2
+  instance_identifier = community-vesselam
+  custom_element_layer_name = community-vesselam
+  anchor_point = top-left
+  advanced_posx = {"placeholder":"calc","values":{"expression":"({"placeholder":"guiwidth"}/2-((200+({"placeholder":"guiwidth"}-48)/2-abs(200-({"placeholder":"guiwidth"}-48)/2))/2)-8)+36","decimal":"false"}}
+  advanced_posy = {"placeholder":"calc","values":{"expression":"(({"placeholder":"guiheight"}-160)/2)+21","decimal":"false"}}
+  advanced_width = {"placeholder":"calc","values":{"expression":"((200+({"placeholder":"guiwidth"}-48)/2-abs(200-({"placeholder":"guiwidth"}-48)/2))/2)-36","decimal":"false"}}
+  advanced_height = {"placeholder":"calc","values":{"expression":"18","decimal":"false"}}
+  x = 0
+  y = 0
+  width = 100
+  height = 20
+  auto_sizing = false
+  stay_on_screen = false
+  base_opacity = 1.0
+  appearance_delay = no_delay
+  fade_in_v2 = no_fading
+  fade_out = no_fading
   enable_parallax = false
-  parallax_intensity_v2 = 0.5
-  invert_parallax = false
-  animated_offset_x = 0
-  animated_offset_y = 0
-  load_once_per_session = false
-  in_editor_color = #FFC800FF
-  layer_hidden_in_editor = false
-  rotation_degrees = 0.0
-  advanced_rotation_mode = false
-  vertical_tilt_degrees = 0.0
-  advanced_vertical_tilt_mode = false
-  horizontal_tilt_degrees = 0.0
-  advanced_horizontal_tilt_mode = false
+  stretch_x = false
+  stretch_y = false
+}
+
+element {
+  source = {"placeholder":"randomtext","values":{"source":"/config/fancymenu/assets/community-quotes.txt","interval":"12"}}
+  source_mode = direct
+  interactable = false
+  shadow = true
+  scale = 0.8
+  base_color = #DCE6D2FF
+  text_border = 0
+  line_spacing = 3
+  enable_scrolling = false
+  auto_line_wrapping = true
+  parse_markdown = true
+  remove_html_breaks = true
+  hyperlink_color = #BCE095FF
+  element_type = text_v2
+  instance_identifier = community-quote
+  custom_element_layer_name = community-quote
+  anchor_point = top-left
+  advanced_posx = {"placeholder":"calc","values":{"expression":"({"placeholder":"guiwidth"}/2-((200+({"placeholder":"guiwidth"}-48)/2-abs(200-({"placeholder":"guiwidth"}-48)/2))/2)-8)","decimal":"false"}}
+  advanced_posy = {"placeholder":"calc","values":{"expression":"(({"placeholder":"guiheight"}-160)/2)+44","decimal":"false"}}
+  advanced_width = {"placeholder":"calc","values":{"expression":"((200+({"placeholder":"guiwidth"}-48)/2-abs(200-({"placeholder":"guiwidth"}-48)/2))/2)","decimal":"false"}}
+  advanced_height = {"placeholder":"calc","values":{"expression":"19","decimal":"false"}}
+  x = 0
+  y = 0
+  width = 100
+  height = 20
+  auto_sizing = false
+  stay_on_screen = false
+  base_opacity = 1.0
+  appearance_delay = no_delay
+  fade_in_v2 = no_fading
+  fade_out = no_fading
+  enable_parallax = false
+  stretch_x = false
+  stretch_y = false
+}
+
+element {
+  source = DUYURULAR
+  source_mode = direct
+  interactable = false
+  shadow = true
+  scale = 1.25
+  base_color = #BCE095FF
+  text_border = 0
+  line_spacing = 3
+  enable_scrolling = false
+  auto_line_wrapping = true
+  parse_markdown = true
+  remove_html_breaks = true
+  hyperlink_color = #BCE095FF
+  element_type = text_v2
+  instance_identifier = community-news-title
+  custom_element_layer_name = community-news-title
+  anchor_point = top-left
+  advanced_posx = {"placeholder":"calc","values":{"expression":"({"placeholder":"guiwidth"}/2+8)","decimal":"false"}}
+  advanced_posy = {"placeholder":"calc","values":{"expression":"(({"placeholder":"guiheight"}-160)/2)+6","decimal":"false"}}
+  advanced_width = {"placeholder":"calc","values":{"expression":"((200+({"placeholder":"guiwidth"}-48)/2-abs(200-({"placeholder":"guiwidth"}-48)/2))/2)","decimal":"false"}}
+  advanced_height = {"placeholder":"calc","values":{"expression":"16","decimal":"false"}}
+  x = 0
+  y = 0
+  width = 100
+  height = 20
+  auto_sizing = false
+  stay_on_screen = false
+  base_opacity = 1.0
+  appearance_delay = no_delay
+  fade_in_v2 = no_fading
+  fade_out = no_fading
+  enable_parallax = false
+  stretch_x = false
+  stretch_y = false
+}
+
+element {
+  source = Sunucuda neler oluyor?
+  source_mode = direct
+  interactable = false
+  shadow = true
+  scale = 0.8
+  base_color = #EDF2E9FF
+  text_border = 0
+  line_spacing = 3
+  enable_scrolling = false
+  auto_line_wrapping = true
+  parse_markdown = true
+  remove_html_breaks = true
+  hyperlink_color = #BCE095FF
+  element_type = text_v2
+  instance_identifier = community-news-subtitle
+  custom_element_layer_name = community-news-subtitle
+  anchor_point = top-left
+  advanced_posx = {"placeholder":"calc","values":{"expression":"({"placeholder":"guiwidth"}/2+8)","decimal":"false"}}
+  advanced_posy = {"placeholder":"calc","values":{"expression":"(({"placeholder":"guiheight"}-160)/2)+24","decimal":"false"}}
+  advanced_width = {"placeholder":"calc","values":{"expression":"((200+({"placeholder":"guiwidth"}-48)/2-abs(200-({"placeholder":"guiwidth"}-48)/2))/2)","decimal":"false"}}
+  advanced_height = {"placeholder":"calc","values":{"expression":"12","decimal":"false"}}
+  x = 0
+  y = 0
+  width = 100
+  height = 20
+  auto_sizing = false
+  stay_on_screen = false
+  base_opacity = 1.0
+  appearance_delay = no_delay
+  fade_in_v2 = no_fading
+  fade_out = no_fading
+  enable_parallax = false
+  stretch_x = false
+  stretch_y = false
+}
+
+element {
+  source = [source:web]https://entegrevesselam.com/api/client-announcements/text
+  source_mode = resource
+  interactable = true
+  shadow = true
+  scale = 0.85
+  base_color = #EDF2E9FF
+  text_border = 0
+  line_spacing = 3
+  enable_scrolling = true
+  auto_line_wrapping = true
+  parse_markdown = true
+  remove_html_breaks = true
+  hyperlink_color = #BCE095FF
+  element_type = text_v2
+  instance_identifier = community-news-feed
+  custom_element_layer_name = community-news-feed
+  anchor_point = top-left
+  advanced_posx = {"placeholder":"calc","values":{"expression":"({"placeholder":"guiwidth"}/2+8)","decimal":"false"}}
+  advanced_posy = {"placeholder":"calc","values":{"expression":"(({"placeholder":"guiheight"}-160)/2)+40","decimal":"false"}}
+  advanced_width = {"placeholder":"calc","values":{"expression":"((200+({"placeholder":"guiwidth"}-48)/2-abs(200-({"placeholder":"guiwidth"}-48)/2))/2)","decimal":"false"}}
+  advanced_height = {"placeholder":"calc","values":{"expression":"79","decimal":"false"}}
+  x = 0
+  y = 0
+  width = 100
+  height = 20
+  auto_sizing = false
+  stay_on_screen = false
+  base_opacity = 1.0
+  appearance_delay = no_delay
+  fade_in_v2 = no_fading
+  fade_out = no_fading
+  enable_parallax = false
+  stretch_x = false
+  stretch_y = false
+}
+
+element {
+  source = [Pano](https://entegrevesselam.com/board) · [Galeri](https://entegrevesselam.com/gallery) · [Harita](https://entegrevesselam.com/map)
+  source_mode = direct
+  interactable = true
+  shadow = true
+  scale = 0.8
+  base_color = #EDF2E9FF
+  text_border = 0
+  line_spacing = 3
+  enable_scrolling = false
+  auto_line_wrapping = true
+  parse_markdown = true
+  remove_html_breaks = true
+  hyperlink_color = #BCE095FF
+  element_type = text_v2
+  instance_identifier = community-links
+  custom_element_layer_name = community-links
+  anchor_point = top-left
+  advanced_posx = {"placeholder":"calc","values":{"expression":"({"placeholder":"guiwidth"}/2+8)","decimal":"false"}}
+  advanced_posy = {"placeholder":"calc","values":{"expression":"(({"placeholder":"guiheight"}-160)/2)+123","decimal":"false"}}
+  advanced_width = {"placeholder":"calc","values":{"expression":"((200+({"placeholder":"guiwidth"}-48)/2-abs(200-({"placeholder":"guiwidth"}-48)/2))/2)","decimal":"false"}}
+  advanced_height = {"placeholder":"calc","values":{"expression":"13","decimal":"false"}}
+  x = 0
+  y = 0
+  width = 100
+  height = 20
+  auto_sizing = false
+  stay_on_screen = false
+  base_opacity = 1.0
+  appearance_delay = no_delay
+  fade_in_v2 = no_fading
+  fade_out = no_fading
+  enable_parallax = false
+  stretch_x = false
+  stretch_y = false
+}
+
+element {
+  label = Tüm duyurular >
+  description = Sitede açılır
+  navigatable = true
+  restartbackgroundanimations = false
+  nine_slice_custom_background = false
+  [executable_action_instance:community-all-news-open][action_type:openlink] = https://entegrevesselam.com/announcements
+  element_type = custom_button
+  instance_identifier = community-all-news
+  custom_element_layer_name = community-all-news
+  anchor_point = top-left
+  advanced_posx = {"placeholder":"calc","values":{"expression":"({"placeholder":"guiwidth"}/2+8)","decimal":"false"}}
+  advanced_posy = {"placeholder":"calc","values":{"expression":"(({"placeholder":"guiheight"}-160)/2)+138","decimal":"false"}}
+  advanced_width = {"placeholder":"calc","values":{"expression":"((200+({"placeholder":"guiwidth"}-48)/2-abs(200-({"placeholder":"guiwidth"}-48)/2))/2)","decimal":"false"}}
+  advanced_height = {"placeholder":"calc","values":{"expression":"20","decimal":"false"}}
+  x = 0
+  y = 0
+  width = 100
+  height = 20
+  auto_sizing = false
+  stay_on_screen = false
+  base_opacity = 1.0
+  appearance_delay = no_delay
+  fade_in_v2 = no_fading
+  fade_out = no_fading
+  enable_parallax = false
+  stretch_x = false
+  stretch_y = false
+}
+
+element {
+  source = Entegre Client 2.1.4
+  source_mode = direct
+  interactable = false
+  shadow = true
+  scale = 0.65
+  base_color = #DCE6D2FF
+  text_border = 0
+  line_spacing = 3
+  enable_scrolling = false
+  auto_line_wrapping = true
+  parse_markdown = true
+  remove_html_breaks = true
+  hyperlink_color = #BCE095FF
+  element_type = text_v2
+  instance_identifier = community-version
+  custom_element_layer_name = community-version
+  anchor_point = top-left
+  advanced_posx = {"placeholder":"calc","values":{"expression":"4","decimal":"false"}}
+  advanced_posy = {"placeholder":"calc","values":{"expression":"{"placeholder":"guiheight"}-21","decimal":"false"}}
+  advanced_width = {"placeholder":"calc","values":{"expression":"112","decimal":"false"}}
+  advanced_height = {"placeholder":"calc","values":{"expression":"8","decimal":"false"}}
+  x = 0
+  y = 0
+  width = 100
+  height = 20
+  auto_sizing = false
+  stay_on_screen = false
+  base_opacity = 1.0
+  appearance_delay = no_delay
+  fade_in_v2 = no_fading
+  fade_out = no_fading
+  enable_parallax = false
+  stretch_x = false
+  stretch_y = false
 }
 
 vanilla_button {
@@ -496,7 +594,6 @@ vanilla_button {
   is_hidden = true
   automated_button_clicks = 0
 }
-
 vanilla_button {
   button_element_executable_block_identifier = b879ef21-b74e-4160-8204-670772b45f8a-1748387217490
   [executable_block:b879ef21-b74e-4160-8204-670772b45f8a-1748387217490][type:generic] = [executables:]
@@ -532,14 +629,14 @@ vanilla_button {
   auto_sizing_base_screen_width = 2560
   auto_sizing_base_screen_height = 1385
   sticky_anchor = false
-  anchor_point = mid-centered
-  x = -100
-  y = -10
-  width = 200
+  anchor_point = top-left
+  x = 0
+  y = 0
+  width = 100
   height = 20
   stretch_x = false
   stretch_y = false
-  stay_on_screen = true
+  stay_on_screen = false
   element_loading_requirement_container_identifier = 0ba0cbd4-16cd-4a07-ab75-ec970dc90b22-1748387217490
   [loading_requirement_container_meta:0ba0cbd4-16cd-4a07-ab75-ec970dc90b22-1748387217490] = [groups:][instances:]
   enable_parallax = false
@@ -558,6 +655,10 @@ vanilla_button {
   advanced_horizontal_tilt_mode = false
   is_hidden = false
   automated_button_clicks = 0
+  advanced_posx = {"placeholder":"calc","values":{"expression":"({"placeholder":"guiwidth"}/2-((200+({"placeholder":"guiwidth"}-48)/2-abs(200-({"placeholder":"guiwidth"}-48)/2))/2)-8)","decimal":"false"}}
+  advanced_posy = {"placeholder":"calc","values":{"expression":"(({"placeholder":"guiheight"}-160)/2)+66","decimal":"false"}}
+  advanced_width = {"placeholder":"calc","values":{"expression":"((200+({"placeholder":"guiwidth"}-48)/2-abs(200-({"placeholder":"guiwidth"}-48)/2))/2)","decimal":"false"}}
+  advanced_height = {"placeholder":"calc","values":{"expression":"20","decimal":"false"}}
 }
 
 vanilla_button {
@@ -623,68 +724,6 @@ vanilla_button {
   automated_button_clicks = 0
 }
 
-vanilla_button {
-  button_element_executable_block_identifier = f4172c5e-5f63-488a-989a-182cc47af48c-1748387217491
-  [executable_block:f4172c5e-5f63-488a-989a-182cc47af48c-1748387217491][type:generic] = [executables:]
-  restartbackgroundanimations = true
-  nine_slice_custom_background = false
-  nine_slice_border_x = 5
-  nine_slice_border_y = 5
-  navigatable = true
-  widget_active_state_requirement_container_identifier = 36b93598-2f22-458b-967d-cf83b1715a4f-1748387217491
-  [loading_requirement_container_meta:36b93598-2f22-458b-967d-cf83b1715a4f-1748387217491] = [groups:][instances:]
-  is_template = false
-  template_apply_width = false
-  template_apply_height = false
-  template_apply_posx = false
-  template_apply_posy = false
-  template_apply_opacity = false
-  template_apply_visibility = false
-  template_apply_label = false
-  template_share_with = buttons
-  nine_slice_slider_handle = false
-  nine_slice_slider_handle_border_x = 5
-  nine_slice_slider_handle_border_y = 5
-  element_type = vanilla_button
-  instance_identifier = title_screen_copyright_button
-  appearance_delay = no_delay
-  appearance_delay_seconds = 1.0
-  fade_in_v2 = no_fading
-  fade_in_speed = 1.0
-  fade_out = no_fading
-  fade_out_speed = 1.0
-  base_opacity = 1.0
-  auto_sizing = false
-  auto_sizing_base_screen_width = 2562
-  auto_sizing_base_screen_height = 1419
-  sticky_anchor = false
-  anchor_point = vanilla
-  x = 656
-  y = 470
-  width = 196
-  height = 10
-  stretch_x = false
-  stretch_y = false
-  stay_on_screen = true
-  element_loading_requirement_container_identifier = 2f8497e9-6118-4bc5-a847-5561687be4bc-1748387217491
-  [loading_requirement_container_meta:2f8497e9-6118-4bc5-a847-5561687be4bc-1748387217491] = [groups:][instances:]
-  enable_parallax = false
-  parallax_intensity_v2 = 0.5
-  invert_parallax = false
-  animated_offset_x = 0
-  animated_offset_y = 0
-  load_once_per_session = false
-  in_editor_color = #FFC800FF
-  layer_hidden_in_editor = false
-  rotation_degrees = 0.0
-  advanced_rotation_mode = false
-  vertical_tilt_degrees = 0.0
-  advanced_vertical_tilt_mode = false
-  horizontal_tilt_degrees = 0.0
-  advanced_horizontal_tilt_mode = false
-  is_hidden = false
-  automated_button_clicks = 0
-}
 
 vanilla_button {
   button_element_executable_block_identifier = 147bd2c9-ee9f-4ce0-9fb7-55215cc0c4d9-1748387217490
@@ -721,14 +760,14 @@ vanilla_button {
   auto_sizing_base_screen_width = 2560
   auto_sizing_base_screen_height = 1385
   sticky_anchor = false
-  anchor_point = mid-centered
-  x = -100
-  y = 14
-  width = 200
+  anchor_point = top-left
+  x = 0
+  y = 0
+  width = 100
   height = 20
   stretch_x = false
   stretch_y = false
-  stay_on_screen = true
+  stay_on_screen = false
   element_loading_requirement_container_identifier = dc5a0314-98a5-4806-a5df-86893d3ca535-1748387217490
   [loading_requirement_container_meta:dc5a0314-98a5-4806-a5df-86893d3ca535-1748387217490] = [groups:][instances:]
   enable_parallax = false
@@ -747,6 +786,10 @@ vanilla_button {
   advanced_horizontal_tilt_mode = false
   is_hidden = false
   automated_button_clicks = 0
+  advanced_posx = {"placeholder":"calc","values":{"expression":"({"placeholder":"guiwidth"}/2-((200+({"placeholder":"guiwidth"}-48)/2-abs(200-({"placeholder":"guiwidth"}-48)/2))/2)-8)+(((200+({"placeholder":"guiwidth"}-48)/2-abs(200-({"placeholder":"guiwidth"}-48)/2))/2)+4)/2","decimal":"false"}}
+  advanced_posy = {"placeholder":"calc","values":{"expression":"(({"placeholder":"guiheight"}-160)/2)+114","decimal":"false"}}
+  advanced_width = {"placeholder":"calc","values":{"expression":"(((200+({"placeholder":"guiwidth"}-48)/2-abs(200-({"placeholder":"guiwidth"}-48)/2))/2)-4)/2","decimal":"false"}}
+  advanced_height = {"placeholder":"calc","values":{"expression":"20","decimal":"false"}}
 }
 
 vanilla_button {
@@ -784,14 +827,14 @@ vanilla_button {
   auto_sizing_base_screen_width = 2560
   auto_sizing_base_screen_height = 1385
   sticky_anchor = false
-  anchor_point = mid-centered
-  x = -100
-  y = 38
-  width = 98
+  anchor_point = top-left
+  x = 0
+  y = 0
+  width = 100
   height = 20
   stretch_x = false
   stretch_y = false
-  stay_on_screen = true
+  stay_on_screen = false
   element_loading_requirement_container_identifier = 72bc6ab8-21ce-4563-b1ab-1bff597a495b-1748387217490
   [loading_requirement_container_meta:72bc6ab8-21ce-4563-b1ab-1bff597a495b-1748387217490] = [groups:][instances:]
   enable_parallax = false
@@ -810,6 +853,10 @@ vanilla_button {
   advanced_horizontal_tilt_mode = false
   is_hidden = false
   automated_button_clicks = 0
+  advanced_posx = {"placeholder":"calc","values":{"expression":"({"placeholder":"guiwidth"}/2-((200+({"placeholder":"guiwidth"}-48)/2-abs(200-({"placeholder":"guiwidth"}-48)/2))/2)-8)","decimal":"false"}}
+  advanced_posy = {"placeholder":"calc","values":{"expression":"(({"placeholder":"guiheight"}-160)/2)+114","decimal":"false"}}
+  advanced_width = {"placeholder":"calc","values":{"expression":"(((200+({"placeholder":"guiwidth"}-48)/2-abs(200-({"placeholder":"guiwidth"}-48)/2))/2)-4)/2","decimal":"false"}}
+  advanced_height = {"placeholder":"calc","values":{"expression":"20","decimal":"false"}}
 }
 
 vanilla_button {
@@ -847,14 +894,14 @@ vanilla_button {
   auto_sizing_base_screen_width = 2560
   auto_sizing_base_screen_height = 1385
   sticky_anchor = false
-  anchor_point = mid-centered
-  x = -100
-  y = -34
-  width = 200
+  anchor_point = top-left
+  x = 0
+  y = 0
+  width = 100
   height = 20
   stretch_x = false
   stretch_y = false
-  stay_on_screen = true
+  stay_on_screen = false
   element_loading_requirement_container_identifier = 4fad54cb-64d3-43bc-9680-22e533292f5b-1748387217490
   [loading_requirement_container_meta:4fad54cb-64d3-43bc-9680-22e533292f5b-1748387217490] = [groups:][instances:]
   enable_parallax = false
@@ -873,6 +920,10 @@ vanilla_button {
   advanced_horizontal_tilt_mode = false
   is_hidden = false
   automated_button_clicks = 0
+  advanced_posx = {"placeholder":"calc","values":{"expression":"({"placeholder":"guiwidth"}/2-((200+({"placeholder":"guiwidth"}-48)/2-abs(200-({"placeholder":"guiwidth"}-48)/2))/2)-8)","decimal":"false"}}
+  advanced_posy = {"placeholder":"calc","values":{"expression":"(({"placeholder":"guiheight"}-160)/2)+90","decimal":"false"}}
+  advanced_width = {"placeholder":"calc","values":{"expression":"((200+({"placeholder":"guiwidth"}-48)/2-abs(200-({"placeholder":"guiwidth"}-48)/2))/2)","decimal":"false"}}
+  advanced_height = {"placeholder":"calc","values":{"expression":"20","decimal":"false"}}
 }
 
 vanilla_button {
@@ -937,7 +988,6 @@ vanilla_button {
   is_hidden = true
   automated_button_clicks = 0
 }
-
 vanilla_button {
   button_element_executable_block_identifier = b16df711-fc5b-4444-857d-7ed068fe2d9d-1748387217491
   [executable_block:b16df711-fc5b-4444-857d-7ed068fe2d9d-1748387217491][type:generic] = [executables:]
@@ -1000,7 +1050,6 @@ vanilla_button {
   is_hidden = true
   automated_button_clicks = 0
 }
-
 vanilla_button {
   button_element_executable_block_identifier = 3aac8bf9-c79e-4c65-bb4d-337876506076-1748387217491
   [executable_block:3aac8bf9-c79e-4c65-bb4d-337876506076-1748387217491][type:generic] = [executables:]
@@ -1063,7 +1112,6 @@ vanilla_button {
   is_hidden = true
   automated_button_clicks = 0
 }
-
 vanilla_button {
   button_element_executable_block_identifier = c14e1ded-b65d-48f9-9431-1e90299e1e82-1748387217491
   [executable_block:c14e1ded-b65d-48f9-9431-1e90299e1e82-1748387217491][type:generic] = [executables:]
@@ -1099,14 +1147,14 @@ vanilla_button {
   auto_sizing_base_screen_width = 2560
   auto_sizing_base_screen_height = 1385
   sticky_anchor = false
-  anchor_point = mid-centered
-  x = 2
-  y = 38
-  width = 98
+  anchor_point = top-left
+  x = 0
+  y = 0
+  width = 100
   height = 20
   stretch_x = false
   stretch_y = false
-  stay_on_screen = true
+  stay_on_screen = false
   element_loading_requirement_container_identifier = 0cdb079f-7335-4261-9740-5709e36b1a62-1748387217491
   [loading_requirement_container_meta:0cdb079f-7335-4261-9740-5709e36b1a62-1748387217491] = [groups:][instances:]
   enable_parallax = false
@@ -1125,6 +1173,10 @@ vanilla_button {
   advanced_horizontal_tilt_mode = false
   is_hidden = false
   automated_button_clicks = 0
+  advanced_posx = {"placeholder":"calc","values":{"expression":"({"placeholder":"guiwidth"}/2-((200+({"placeholder":"guiwidth"}-48)/2-abs(200-({"placeholder":"guiwidth"}-48)/2))/2)-8)","decimal":"false"}}
+  advanced_posy = {"placeholder":"calc","values":{"expression":"(({"placeholder":"guiheight"}-160)/2)+138","decimal":"false"}}
+  advanced_width = {"placeholder":"calc","values":{"expression":"((200+({"placeholder":"guiwidth"}-48)/2-abs(200-({"placeholder":"guiwidth"}-48)/2))/2)","decimal":"false"}}
+  advanced_height = {"placeholder":"calc","values":{"expression":"20","decimal":"false"}}
 }
 
 vanilla_button {
@@ -1189,7 +1241,6 @@ vanilla_button {
   is_hidden = true
   automated_button_clicks = 0
 }
-
 vanilla_button {
   button_element_executable_block_identifier = 1dcef85e-3068-48da-b511-28a28964cb46-1748387217490
   [executable_block:1dcef85e-3068-48da-b511-28a28964cb46-1748387217490][type:generic] = [executables:]
@@ -1252,4 +1303,3 @@ vanilla_button {
   is_hidden = true
   automated_button_clicks = 0
 }
-

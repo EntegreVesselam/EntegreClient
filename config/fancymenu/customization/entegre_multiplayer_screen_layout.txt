@@ -14,7 +14,7 @@ layout-meta {
 
 customization {
   action = backgroundoptions
-  keepaspectratio = false
+  keepaspectratio = true
 }
 
 scroll_list_customization {
@@ -32,47 +32,31 @@ layout_action_executable_blocks {
 }
 
 element {
-  source = [source:local]/config/fancymenu/assets/entegre-loading-screen.png
+  source = [source:local]/config/fancymenu/assets/community-city-2026.jpg
   repeat_texture = false
   nine_slice_texture = false
-  nine_slice_texture_border_x = 5
-  nine_slice_texture_border_y = 5
   image_tint = #FFFFFF
   element_type = image
-  instance_identifier = 238e5ee5-66c9-4e1b-be2f-1c1ec1959bea-1748642807775
-  appearance_delay = no_delay
-  appearance_delay_seconds = 1.0
-  fade_in_v2 = no_fading
-  fade_in_speed = 1.0
-  fade_out = no_fading
-  fade_out_speed = 1.0
-  base_opacity = 1.0
+  instance_identifier = community-multiplayer-photo
+  custom_element_layer_name = community-multiplayer-photo
+  anchor_point = top-left
+  advanced_posx = {"placeholder":"calc","values":{"expression":"({"placeholder":"guiwidth"}-(({"placeholder":"guiwidth"}+{"placeholder":"guiheight"}*2.5496296296296297+abs({"placeholder":"guiwidth"}-{"placeholder":"guiheight"}*2.5496296296296297))/2))/2","decimal":"false"}}
+  advanced_posy = {"placeholder":"calc","values":{"expression":"({"placeholder":"guiheight"}-((({"placeholder":"guiwidth"}+{"placeholder":"guiheight"}*2.5496296296296297+abs({"placeholder":"guiwidth"}-{"placeholder":"guiheight"}*2.5496296296296297))/2)/2.5496296296296297))/2","decimal":"false"}}
+  advanced_width = {"placeholder":"calc","values":{"expression":"(({"placeholder":"guiwidth"}+{"placeholder":"guiheight"}*2.5496296296296297+abs({"placeholder":"guiwidth"}-{"placeholder":"guiheight"}*2.5496296296296297))/2)","decimal":"false"}}
+  advanced_height = {"placeholder":"calc","values":{"expression":"((({"placeholder":"guiwidth"}+{"placeholder":"guiheight"}*2.5496296296296297+abs({"placeholder":"guiwidth"}-{"placeholder":"guiheight"}*2.5496296296296297))/2)/2.5496296296296297)","decimal":"false"}}
+  x = 0
+  y = 0
+  width = 100
+  height = 20
   auto_sizing = false
-  auto_sizing_base_screen_width = 2562
-  auto_sizing_base_screen_height = 1440
-  sticky_anchor = false
-  anchor_point = mid-centered
-  advanced_posx = 0
-  advanced_posy = 0
-  advanced_width = {"placeholder":"guiwidth"}
-  advanced_height = {"placeholder":"guiheight"}
-  x = -266
-  y = -194
-  width = 50
-  height = 50
+  stay_on_screen = false
+  base_opacity = 1.0
+  appearance_delay = no_delay
+  fade_in_v2 = no_fading
+  fade_out = no_fading
+  enable_parallax = false
   stretch_x = false
   stretch_y = false
-  stay_on_screen = true
-  element_loading_requirement_container_identifier = 1ae562c9-1098-4c30-b9a4-9a8e85b59fd7-1748642807775
-  [loading_requirement_container_meta:1ae562c9-1098-4c30-b9a4-9a8e85b59fd7-1748642807775] = [groups:][instances:]
-  enable_parallax = false
-  parallax_intensity = 0.5
-  invert_parallax = false
-  animated_offset_x = 0
-  animated_offset_y = 0
-  load_once_per_session = false
-  in_editor_color = #FFC800FF
-  layer_hidden_in_editor = false
 }
 
 vanilla_button {

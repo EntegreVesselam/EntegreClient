@@ -1,0 +1,108 @@
+{
+  "stages": [
+    {
+      "name": "title-default",
+      "framebuffer": [
+        1280,
+        720
+      ],
+      "gui": [
+        640,
+        360
+      ],
+      "custom_bounds_checked": 15
+    },
+    {
+      "name": "title-medium",
+      "framebuffer": [
+        800,
+        500
+      ],
+      "gui": [
+        400,
+        250
+      ],
+      "custom_bounds_checked": 15
+    },
+    {
+      "name": "title-minimum",
+      "framebuffer": [
+        640,
+        480
+      ],
+      "gui": [
+        320,
+        240
+      ],
+      "custom_bounds_checked": 15
+    },
+    {
+      "name": "title-wide",
+      "framebuffer": [
+        1920,
+        1080
+      ],
+      "gui": [
+        640,
+        360
+      ],
+      "custom_bounds_checked": 15
+    },
+    {
+      "name": "title-ultrawide",
+      "framebuffer": [
+        5120,
+        2160
+      ],
+      "gui": [
+        1707,
+        720
+      ],
+      "custom_bounds_checked": 15
+    },
+    {
+      "name": "title-after-reload",
+      "framebuffer": [
+        1280,
+        720
+      ],
+      "gui": [
+        640,
+        360
+      ],
+      "custom_bounds_checked": 15
+    }
+  ],
+  "custom_bounds_errors": [],
+  "no_game_connection_guard_failed": false,
+  "link_target_captured": true,
+  "source_hashes": {
+    "entegre_title_screen.txt": "9eaa2821528fa9d560b552e66f535100f2841e51da6903bf9241657606933d8e",
+    "entegre_loading_screen.txt": "40e154925729ff6c92fb24c6bfef1ae7fc53927070bec1bf1e003611ce073594",
+    "entegre_multiplayer_screen_layout.txt": "40ea43c356edcdf436453b4425e3e44200bb443231653c5cd1b0ce2eb1c9e99b"
+  },
+  "limits": [
+    "macOS native test; Windows not run",
+    "existing intro bypassed only in temporary options",
+    "development class names remapped only in temporary customizablemenus",
+    "feed success from localhost fixture; failure from refused localhost port",
+    "requested 2560x1080 window produced 5120x2160 Retina framebuffer",
+    "OS browser opening cancelled at test-only mixin boundary"
+  ],
+  "scroll": {
+    "dispatchAccepted": true,
+    "offsetBefore": 0,
+    "offsetAfter": -50,
+    "thirdAnnouncementVisuallyConfirmed": true,
+    "screenshot": "/tmp/entegre-community-native/game-final/screenshots/scroll-feed-after.png",
+    "keyboardEnterCanonicalTarget": true,
+    "completed": true
+  },
+  "feed_scroll": {
+    "dispatch": true,
+    "offset_before": 0,
+    "offset_after": -50,
+    "third_announcement_visually_verified": true
+  },
+  "keyboard_enter_target": "https://entegrevesselam.com/announcements"
+}

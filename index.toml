@@ -73,6 +73,18 @@ file = "config/fancymenu/assets/32x32.png"
 hash = "0857a0ac0e2141eb489e43a3b234f18f36d679e4ecbadefe3aed89e7029d465b"
 
 [[files]]
+file = "config/fancymenu/assets/community-city-2026.jpg"
+hash = "9eb20e0448f7a22a29244008bd81ecab8abd7d334feeec7e8fcf8d34d36b4b7f"
+
+[[files]]
+file = "config/fancymenu/assets/community-loading-2026.png"
+hash = "abcfe0e506cec74554966c87d34cc96ddfe53a86197ca6e554cf0f1a7cb76881"
+
+[[files]]
+file = "config/fancymenu/assets/community-quotes.txt"
+hash = "1717a33af13f55730e40beed1c5eda2bbc9c8a5ef285c9b12f3de4a023b977c9"
+
+[[files]]
 file = "config/fancymenu/assets/cucumber.txt"
 hash = "279eb4ef1bb7b4f0411c6e8b281321a8044539d8e6b8abb1876e3c15b5a1f01b"
 
@@ -114,15 +126,15 @@ hash = "9f0a730e0597da9fa59ce466bd2a1e7a65d3c190e7ae2e7d3ce55fad6211819c"
 
 [[files]]
 file = "config/fancymenu/customization/entegre_loading_screen.txt"
-hash = "bdae2712503f850ebb789f5769b2b45912dac21b59c58853413064e48f4f621a"
+hash = "40e154925729ff6c92fb24c6bfef1ae7fc53927070bec1bf1e003611ce073594"
 
 [[files]]
 file = "config/fancymenu/customization/entegre_multiplayer_screen_layout.txt"
-hash = "beac11b88ed1102ba858f61167d9c2fac58892f670b95cad3c4800754e3b209e"
+hash = "40ea43c356edcdf436453b4425e3e44200bb443231653c5cd1b0ce2eb1c9e99b"
 
 [[files]]
 file = "config/fancymenu/customization/entegre_title_screen.txt"
-hash = "51a8d0d8f25282bd0cbc7be834cc15b3de24180df6fd217d4ac6e73473abe86f"
+hash = "7b344300917ac8f4db0b21b8756e85fb909ff3d7a483f4b61176d814477c084a"
 
 [[files]]
 file = "config/fancymenu/layout_editor/widgets/element_layer_control.lewidget"
