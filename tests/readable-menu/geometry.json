@@ -1,0 +1,1066 @@
+{
+  "320x240": {
+    "community-shade": {
+      "x": 0,
+      "y": 0,
+      "w": 320,
+      "h": 240
+    },
+    "community-play-panel": {
+      "x": 12,
+      "y": 4,
+      "w": 136,
+      "h": 224
+    },
+    "community-news-panel": {
+      "x": 172,
+      "y": 4,
+      "w": 136,
+      "h": 122
+    },
+    "community-events-panel": {
+      "x": 172,
+      "y": 136,
+      "w": 136,
+      "h": 92
+    },
+    "community-play-accent": {
+      "x": 12,
+      "y": 4,
+      "w": 136,
+      "h": 2
+    },
+    "community-news-accent": {
+      "x": 172,
+      "y": 4,
+      "w": 136,
+      "h": 2
+    },
+    "community-events-accent": {
+      "x": 172,
+      "y": 136,
+      "w": 136,
+      "h": 2
+    },
+    "community-logo": {
+      "x": 22,
+      "y": 17,
+      "w": 32,
+      "h": 32
+    },
+    "community-entegre": {
+      "x": 64,
+      "y": 14,
+      "w": 74,
+      "h": 18
+    },
+    "community-vesselam": {
+      "x": 64,
+      "y": 32,
+      "w": 74,
+      "h": 20
+    },
+    "community-quote": {
+      "x": 22,
+      "y": 56,
+      "w": 116,
+      "h": 20
+    },
+    "community-news-title": {
+      "x": 182,
+      "y": 12,
+      "w": 116,
+      "h": 18
+    },
+    "community-news-feed": {
+      "x": 182,
+      "y": 30,
+      "w": 116,
+      "h": 62
+    },
+    "community-links": {
+      "x": 22,
+      "y": 192,
+      "w": 116,
+      "h": 18
+    },
+    "community-all-news": {
+      "x": 182,
+      "y": 100,
+      "w": 116,
+      "h": 18
+    },
+    "community-version": {
+      "x": 14,
+      "y": 220,
+      "w": 250,
+      "h": 18
+    },
+    "mc_titlescreen_multiplayer_button": {
+      "x": 22,
+      "y": 114,
+      "w": 116,
+      "h": 24
+    },
+    "modmenu_titlescreen_mods_button": {
+      "x": 83,
+      "y": 146,
+      "w": 55,
+      "h": 20
+    },
+    "mc_titlescreen_options_button": {
+      "x": 22,
+      "y": 146,
+      "w": 55,
+      "h": 20
+    },
+    "mc_titlescreen_singleplayer_button": {
+      "x": 22,
+      "y": 84,
+      "w": 116,
+      "h": 24
+    },
+    "mc_titlescreen_quit_button": {
+      "x": 22,
+      "y": 172,
+      "w": 116,
+      "h": 20
+    },
+    "community-events-title": {
+      "x": 182,
+      "y": 144,
+      "w": 116,
+      "h": 18
+    },
+    "community-events-feed": {
+      "x": 182,
+      "y": 162,
+      "w": 116,
+      "h": 38
+    },
+    "community-all-events": {
+      "x": 182,
+      "y": 202,
+      "w": 116,
+      "h": 18
+    },
+    "community-wallpapers": {
+      "x": 22,
+      "y": 210,
+      "w": 116,
+      "h": 18
+    }
+  },
+  "360x240": {
+    "community-shade": {
+      "x": 0,
+      "y": 0,
+      "w": 360,
+      "h": 240
+    },
+    "community-play-panel": {
+      "x": 12,
+      "y": 4,
+      "w": 156,
+      "h": 224
+    },
+    "community-news-panel": {
+      "x": 192,
+      "y": 4,
+      "w": 156,
+      "h": 122
+    },
+    "community-events-panel": {
+      "x": 192,
+      "y": 136,
+      "w": 156,
+      "h": 92
+    },
+    "community-play-accent": {
+      "x": 12,
+      "y": 4,
+      "w": 156,
+      "h": 2
+    },
+    "community-news-accent": {
+      "x": 192,
+      "y": 4,
+      "w": 156,
+      "h": 2
+    },
+    "community-events-accent": {
+      "x": 192,
+      "y": 136,
+      "w": 156,
+      "h": 2
+    },
+    "community-logo": {
+      "x": 22,
+      "y": 17,
+      "w": 32,
+      "h": 32
+    },
+    "community-entegre": {
+      "x": 64,
+      "y": 14,
+      "w": 94,
+      "h": 18
+    },
+    "community-vesselam": {
+      "x": 64,
+      "y": 32,
+      "w": 94,
+      "h": 20
+    },
+    "community-quote": {
+      "x": 22,
+      "y": 56,
+      "w": 136,
+      "h": 20
+    },
+    "community-news-title": {
+      "x": 202,
+      "y": 12,
+      "w": 136,
+      "h": 18
+    },
+    "community-news-feed": {
+      "x": 202,
+      "y": 30,
+      "w": 136,
+      "h": 62
+    },
+    "community-links": {
+      "x": 22,
+      "y": 192,
+      "w": 136,
+      "h": 18
+    },
+    "community-all-news": {
+      "x": 202,
+      "y": 100,
+      "w": 136,
+      "h": 18
+    },
+    "community-version": {
+      "x": 14,
+      "y": 220,
+      "w": 250,
+      "h": 18
+    },
+    "mc_titlescreen_multiplayer_button": {
+      "x": 22,
+      "y": 114,
+      "w": 136,
+      "h": 24
+    },
+    "modmenu_titlescreen_mods_button": {
+      "x": 93,
+      "y": 146,
+      "w": 65,
+      "h": 20
+    },
+    "mc_titlescreen_options_button": {
+      "x": 22,
+      "y": 146,
+      "w": 65,
+      "h": 20
+    },
+    "mc_titlescreen_singleplayer_button": {
+      "x": 22,
+      "y": 84,
+      "w": 136,
+      "h": 24
+    },
+    "mc_titlescreen_quit_button": {
+      "x": 22,
+      "y": 172,
+      "w": 136,
+      "h": 20
+    },
+    "community-events-title": {
+      "x": 202,
+      "y": 144,
+      "w": 136,
+      "h": 18
+    },
+    "community-events-feed": {
+      "x": 202,
+      "y": 162,
+      "w": 136,
+      "h": 38
+    },
+    "community-all-events": {
+      "x": 202,
+      "y": 202,
+      "w": 136,
+      "h": 18
+    },
+    "community-wallpapers": {
+      "x": 22,
+      "y": 210,
+      "w": 136,
+      "h": 18
+    }
+  },
+  "427x240": {
+    "community-shade": {
+      "x": 0,
+      "y": 0,
+      "w": 427,
+      "h": 240
+    },
+    "community-play-panel": {
+      "x": 12,
+      "y": 4,
+      "w": 189,
+      "h": 224
+    },
+    "community-news-panel": {
+      "x": 225,
+      "y": 4,
+      "w": 189,
+      "h": 122
+    },
+    "community-events-panel": {
+      "x": 225,
+      "y": 136,
+      "w": 189,
+      "h": 92
+    },
+    "community-play-accent": {
+      "x": 12,
+      "y": 4,
+      "w": 189,
+      "h": 2
+    },
+    "community-news-accent": {
+      "x": 225,
+      "y": 4,
+      "w": 189,
+      "h": 2
+    },
+    "community-events-accent": {
+      "x": 225,
+      "y": 136,
+      "w": 189,
+      "h": 2
+    },
+    "community-logo": {
+      "x": 22,
+      "y": 17,
+      "w": 32,
+      "h": 32
+    },
+    "community-entegre": {
+      "x": 64,
+      "y": 14,
+      "w": 127,
+      "h": 18
+    },
+    "community-vesselam": {
+      "x": 64,
+      "y": 32,
+      "w": 127,
+      "h": 20
+    },
+    "community-quote": {
+      "x": 22,
+      "y": 56,
+      "w": 169,
+      "h": 20
+    },
+    "community-news-title": {
+      "x": 235,
+      "y": 12,
+      "w": 169,
+      "h": 18
+    },
+    "community-news-feed": {
+      "x": 235,
+      "y": 30,
+      "w": 169,
+      "h": 62
+    },
+    "community-links": {
+      "x": 22,
+      "y": 192,
+      "w": 169,
+      "h": 18
+    },
+    "community-all-news": {
+      "x": 235,
+      "y": 100,
+      "w": 169,
+      "h": 18
+    },
+    "community-version": {
+      "x": 14,
+      "y": 220,
+      "w": 250,
+      "h": 18
+    },
+    "mc_titlescreen_multiplayer_button": {
+      "x": 22,
+      "y": 114,
+      "w": 169,
+      "h": 24
+    },
+    "modmenu_titlescreen_mods_button": {
+      "x": 109,
+      "y": 146,
+      "w": 81,
+      "h": 20
+    },
+    "mc_titlescreen_options_button": {
+      "x": 22,
+      "y": 146,
+      "w": 81,
+      "h": 20
+    },
+    "mc_titlescreen_singleplayer_button": {
+      "x": 22,
+      "y": 84,
+      "w": 169,
+      "h": 24
+    },
+    "mc_titlescreen_quit_button": {
+      "x": 22,
+      "y": 172,
+      "w": 169,
+      "h": 20
+    },
+    "community-events-title": {
+      "x": 235,
+      "y": 144,
+      "w": 169,
+      "h": 18
+    },
+    "community-events-feed": {
+      "x": 235,
+      "y": 162,
+      "w": 169,
+      "h": 38
+    },
+    "community-all-events": {
+      "x": 235,
+      "y": 202,
+      "w": 169,
+      "h": 18
+    },
+    "community-wallpapers": {
+      "x": 22,
+      "y": 210,
+      "w": 169,
+      "h": 18
+    }
+  },
+  "480x270": {
+    "community-shade": {
+      "x": 0,
+      "y": 0,
+      "w": 480,
+      "h": 270
+    },
+    "community-play-panel": {
+      "x": 12,
+      "y": 19,
+      "w": 216,
+      "h": 224
+    },
+    "community-news-panel": {
+      "x": 252,
+      "y": 19,
+      "w": 216,
+      "h": 122
+    },
+    "community-events-panel": {
+      "x": 252,
+      "y": 151,
+      "w": 216,
+      "h": 92
+    },
+    "community-play-accent": {
+      "x": 12,
+      "y": 19,
+      "w": 216,
+      "h": 2
+    },
+    "community-news-accent": {
+      "x": 252,
+      "y": 19,
+      "w": 216,
+      "h": 2
+    },
+    "community-events-accent": {
+      "x": 252,
+      "y": 151,
+      "w": 216,
+      "h": 2
+    },
+    "community-logo": {
+      "x": 22,
+      "y": 32,
+      "w": 32,
+      "h": 32
+    },
+    "community-entegre": {
+      "x": 64,
+      "y": 29,
+      "w": 154,
+      "h": 18
+    },
+    "community-vesselam": {
+      "x": 64,
+      "y": 47,
+      "w": 154,
+      "h": 20
+    },
+    "community-quote": {
+      "x": 22,
+      "y": 71,
+      "w": 196,
+      "h": 20
+    },
+    "community-news-title": {
+      "x": 262,
+      "y": 27,
+      "w": 196,
+      "h": 18
+    },
+    "community-news-feed": {
+      "x": 262,
+      "y": 45,
+      "w": 196,
+      "h": 62
+    },
+    "community-links": {
+      "x": 22,
+      "y": 207,
+      "w": 196,
+      "h": 18
+    },
+    "community-all-news": {
+      "x": 262,
+      "y": 115,
+      "w": 196,
+      "h": 18
+    },
+    "community-version": {
+      "x": 14,
+      "y": 250,
+      "w": 250,
+      "h": 18
+    },
+    "mc_titlescreen_multiplayer_button": {
+      "x": 22,
+      "y": 129,
+      "w": 196,
+      "h": 24
+    },
+    "modmenu_titlescreen_mods_button": {
+      "x": 123,
+      "y": 161,
+      "w": 95,
+      "h": 20
+    },
+    "mc_titlescreen_options_button": {
+      "x": 22,
+      "y": 161,
+      "w": 95,
+      "h": 20
+    },
+    "mc_titlescreen_singleplayer_button": {
+      "x": 22,
+      "y": 99,
+      "w": 196,
+      "h": 24
+    },
+    "mc_titlescreen_quit_button": {
+      "x": 22,
+      "y": 187,
+      "w": 196,
+      "h": 20
+    },
+    "community-events-title": {
+      "x": 262,
+      "y": 159,
+      "w": 196,
+      "h": 18
+    },
+    "community-events-feed": {
+      "x": 262,
+      "y": 177,
+      "w": 196,
+      "h": 38
+    },
+    "community-all-events": {
+      "x": 262,
+      "y": 217,
+      "w": 196,
+      "h": 18
+    },
+    "community-wallpapers": {
+      "x": 22,
+      "y": 225,
+      "w": 196,
+      "h": 18
+    }
+  },
+  "640x360": {
+    "community-shade": {
+      "x": 0,
+      "y": 0,
+      "w": 640,
+      "h": 360
+    },
+    "community-play-panel": {
+      "x": 38,
+      "y": 64,
+      "w": 220,
+      "h": 224
+    },
+    "community-news-panel": {
+      "x": 282,
+      "y": 64,
+      "w": 320,
+      "h": 122
+    },
+    "community-events-panel": {
+      "x": 282,
+      "y": 196,
+      "w": 320,
+      "h": 92
+    },
+    "community-play-accent": {
+      "x": 38,
+      "y": 64,
+      "w": 220,
+      "h": 2
+    },
+    "community-news-accent": {
+      "x": 282,
+      "y": 64,
+      "w": 320,
+      "h": 2
+    },
+    "community-events-accent": {
+      "x": 282,
+      "y": 196,
+      "w": 320,
+      "h": 2
+    },
+    "community-logo": {
+      "x": 48,
+      "y": 77,
+      "w": 32,
+      "h": 32
+    },
+    "community-entegre": {
+      "x": 90,
+      "y": 74,
+      "w": 158,
+      "h": 18
+    },
+    "community-vesselam": {
+      "x": 90,
+      "y": 92,
+      "w": 158,
+      "h": 20
+    },
+    "community-quote": {
+      "x": 48,
+      "y": 116,
+      "w": 200,
+      "h": 20
+    },
+    "community-news-title": {
+      "x": 292,
+      "y": 72,
+      "w": 300,
+      "h": 18
+    },
+    "community-news-feed": {
+      "x": 292,
+      "y": 90,
+      "w": 300,
+      "h": 62
+    },
+    "community-links": {
+      "x": 48,
+      "y": 252,
+      "w": 200,
+      "h": 18
+    },
+    "community-all-news": {
+      "x": 292,
+      "y": 160,
+      "w": 300,
+      "h": 18
+    },
+    "community-version": {
+      "x": 14,
+      "y": 340,
+      "w": 250,
+      "h": 18
+    },
+    "mc_titlescreen_multiplayer_button": {
+      "x": 48,
+      "y": 174,
+      "w": 200,
+      "h": 24
+    },
+    "modmenu_titlescreen_mods_button": {
+      "x": 151,
+      "y": 206,
+      "w": 97,
+      "h": 20
+    },
+    "mc_titlescreen_options_button": {
+      "x": 48,
+      "y": 206,
+      "w": 97,
+      "h": 20
+    },
+    "mc_titlescreen_singleplayer_button": {
+      "x": 48,
+      "y": 144,
+      "w": 200,
+      "h": 24
+    },
+    "mc_titlescreen_quit_button": {
+      "x": 48,
+      "y": 232,
+      "w": 200,
+      "h": 20
+    },
+    "community-events-title": {
+      "x": 292,
+      "y": 204,
+      "w": 300,
+      "h": 18
+    },
+    "community-events-feed": {
+      "x": 292,
+      "y": 222,
+      "w": 300,
+      "h": 38
+    },
+    "community-all-events": {
+      "x": 292,
+      "y": 262,
+      "w": 300,
+      "h": 18
+    },
+    "community-wallpapers": {
+      "x": 48,
+      "y": 270,
+      "w": 200,
+      "h": 18
+    }
+  },
+  "854x480": {
+    "community-shade": {
+      "x": 0,
+      "y": 0,
+      "w": 854,
+      "h": 480
+    },
+    "community-play-panel": {
+      "x": 145,
+      "y": 124,
+      "w": 220,
+      "h": 224
+    },
+    "community-news-panel": {
+      "x": 389,
+      "y": 124,
+      "w": 320,
+      "h": 122
+    },
+    "community-events-panel": {
+      "x": 389,
+      "y": 256,
+      "w": 320,
+      "h": 92
+    },
+    "community-play-accent": {
+      "x": 145,
+      "y": 124,
+      "w": 220,
+      "h": 2
+    },
+    "community-news-accent": {
+      "x": 389,
+      "y": 124,
+      "w": 320,
+      "h": 2
+    },
+    "community-events-accent": {
+      "x": 389,
+      "y": 256,
+      "w": 320,
+      "h": 2
+    },
+    "community-logo": {
+      "x": 155,
+      "y": 137,
+      "w": 32,
+      "h": 32
+    },
+    "community-entegre": {
+      "x": 197,
+      "y": 134,
+      "w": 158,
+      "h": 18
+    },
+    "community-vesselam": {
+      "x": 197,
+      "y": 152,
+      "w": 158,
+      "h": 20
+    },
+    "community-quote": {
+      "x": 155,
+      "y": 176,
+      "w": 200,
+      "h": 20
+    },
+    "community-news-title": {
+      "x": 399,
+      "y": 132,
+      "w": 300,
+      "h": 18
+    },
+    "community-news-feed": {
+      "x": 399,
+      "y": 150,
+      "w": 300,
+      "h": 62
+    },
+    "community-links": {
+      "x": 155,
+      "y": 312,
+      "w": 200,
+      "h": 18
+    },
+    "community-all-news": {
+      "x": 399,
+      "y": 220,
+      "w": 300,
+      "h": 18
+    },
+    "community-version": {
+      "x": 14,
+      "y": 460,
+      "w": 250,
+      "h": 18
+    },
+    "mc_titlescreen_multiplayer_button": {
+      "x": 155,
+      "y": 234,
+      "w": 200,
+      "h": 24
+    },
+    "modmenu_titlescreen_mods_button": {
+      "x": 258,
+      "y": 266,
+      "w": 97,
+      "h": 20
+    },
+    "mc_titlescreen_options_button": {
+      "x": 155,
+      "y": 266,
+      "w": 97,
+      "h": 20
+    },
+    "mc_titlescreen_singleplayer_button": {
+      "x": 155,
+      "y": 204,
+      "w": 200,
+      "h": 24
+    },
+    "mc_titlescreen_quit_button": {
+      "x": 155,
+      "y": 292,
+      "w": 200,
+      "h": 20
+    },
+    "community-events-title": {
+      "x": 399,
+      "y": 264,
+      "w": 300,
+      "h": 18
+    },
+    "community-events-feed": {
+      "x": 399,
+      "y": 282,
+      "w": 300,
+      "h": 38
+    },
+    "community-all-events": {
+      "x": 399,
+      "y": 322,
+      "w": 300,
+      "h": 18
+    },
+    "community-wallpapers": {
+      "x": 155,
+      "y": 330,
+      "w": 200,
+      "h": 18
+    }
+  },
+  "1280x720": {
+    "community-shade": {
+      "x": 0,
+      "y": 0,
+      "w": 1280,
+      "h": 720
+    },
+    "community-play-panel": {
+      "x": 358,
+      "y": 244,
+      "w": 220,
+      "h": 224
+    },
+    "community-news-panel": {
+      "x": 602,
+      "y": 244,
+      "w": 320,
+      "h": 122
+    },
+    "community-events-panel": {
+      "x": 602,
+      "y": 376,
+      "w": 320,
+      "h": 92
+    },
+    "community-play-accent": {
+      "x": 358,
+      "y": 244,
+      "w": 220,
+      "h": 2
+    },
+    "community-news-accent": {
+      "x": 602,
+      "y": 244,
+      "w": 320,
+      "h": 2
+    },
+    "community-events-accent": {
+      "x": 602,
+      "y": 376,
+      "w": 320,
+      "h": 2
+    },
+    "community-logo": {
+      "x": 368,
+      "y": 257,
+      "w": 32,
+      "h": 32
+    },
+    "community-entegre": {
+      "x": 410,
+      "y": 254,
+      "w": 158,
+      "h": 18
+    },
+    "community-vesselam": {
+      "x": 410,
+      "y": 272,
+      "w": 158,
+      "h": 20
+    },
+    "community-quote": {
+      "x": 368,
+      "y": 296,
+      "w": 200,
+      "h": 20
+    },
+    "community-news-title": {
+      "x": 612,
+      "y": 252,
+      "w": 300,
+      "h": 18
+    },
+    "community-news-feed": {
+      "x": 612,
+      "y": 270,
+      "w": 300,
+      "h": 62
+    },
+    "community-links": {
+      "x": 368,
+      "y": 432,
+      "w": 200,
+      "h": 18
+    },
+    "community-all-news": {
+      "x": 612,
+      "y": 340,
+      "w": 300,
+      "h": 18
+    },
+    "community-version": {
+      "x": 14,
+      "y": 700,
+      "w": 250,
+      "h": 18
+    },
+    "mc_titlescreen_multiplayer_button": {
+      "x": 368,
+      "y": 354,
+      "w": 200,
+      "h": 24
+    },
+    "modmenu_titlescreen_mods_button": {
+      "x": 471,
+      "y": 386,
+      "w": 97,
+      "h": 20
+    },
+    "mc_titlescreen_options_button": {
+      "x": 368,
+      "y": 386,
+      "w": 97,
+      "h": 20
+    },
+    "mc_titlescreen_singleplayer_button": {
+      "x": 368,
+      "y": 324,
+      "w": 200,
+      "h": 24
+    },
+    "mc_titlescreen_quit_button": {
+      "x": 368,
+      "y": 412,
+      "w": 200,
+      "h": 20
+    },
+    "community-events-title": {
+      "x": 612,
+      "y": 384,
+      "w": 300,
+      "h": 18
+    },
+    "community-events-feed": {
+      "x": 612,
+      "y": 402,
+      "w": 300,
+      "h": 38
+    },
+    "community-all-events": {
+      "x": 612,
+      "y": 442,
+      "w": 300,
+      "h": 18
+    },
+    "community-wallpapers": {
+      "x": 368,
+      "y": 450,
+      "w": 200,
+      "h": 18
+    }
+  }
+}

@@ -1,3 +1,27 @@
+# 0.2.2 — Türkçe varsayılan ve komut aliasları
+
+20 Ekim 2026 — Entegre Client 2.4.6 dağıtımı. Eşleştirme ve otomatik eşitleme akışı aynıdır.
+Mod mesajları oyun dili İngilizce olsa da Türkçedir; Minecraft genel dil ayarına
+müdahale edilmez. `en_us` fallback dosyasının Türkçe olması bilinçli bir tercihtir.
+
+| Türkçe komut | Korunan eski komut |
+| --- | --- |
+| `/entegremarkers bagla` veya `bağla` | `/entegremarkers pair` |
+| `/entegremarkers durum` | `/entegremarkers status` |
+| `/entegremarkers esitle` veya `eşitle` | `/entegremarkers sync` |
+| `/entegremarkers unut` | `/entegremarkers forget` |
+
+Çıplak `/entegremarkers` bağlantı yoksa eşleştirir, varsa eşitlemeyi dener.
+Türkçe aliaslar eski komutların aynı callback'ini kullanır; yetki, hedef sunucu,
+istek aralığı ve kişisel waypoint korumaları ortaktır. `unut` yalnız yerel
+bağlantıyı kaldırır; uzaktaki yetki sitedeki cihaz listesinden iptal edilir.
+
+Derleme `./gradlew build compileSmokeJava --offline`; oyun açılmaz, canlı API'ye
+istek gönderilmez. Bu aday yerel EntegreClient paketine eklenmiştir; otomatik dağıtım yayımlanmamış
+ve kurulu profil değiştirilmemiştir.
+
+---
+
 # Markers0.2.1 — Minecraft26.3 portu
 
 Bu dal Java25, Fabric0.19.5 ve Minecraft26.3 içindir. Resmi oyun adları kullanılır;

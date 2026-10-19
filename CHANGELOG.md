@@ -1,3 +1,14 @@
+# 2.4.6 — Okunabilir menü ve Türkçe Markers (2026-10-20)
+
+- Duyuru/etkinlik sütunu genişletildi; tek duyuru ve tek yaklaşan etkinlik için
+  daha fazla satır ve rahat aralık ayrıldı. Dar GUI’de kaydırma korunur.
+- macOS başlık, bağlantı ve sürüm yazısı kırpılması düzeltildi.
+- Entegre Markers 0.2.2 Türkçe varsayılan mesajlar ve Türkçe komut aliasları.
+- 60 varsayılan açık / 8 kapalı mod seçeneği, kişisel ayarlar ve 186 kalıcı
+  uyumluluk kaydı korunur. İstatistikler bu sürüme dahil değildir.
+- Yerel paket/hash, native menü geometrisi, Markers derleme/komut ve
+  site akışı kontrolleri geçti; yeni oyun içi FPS/GPU kabulü iddia edilmez.
+
 # 2.4.5 — Sadeleştirme, QOL ve yeni menü (2026-10-20)
 
 - Varsayılan 60 mod, sekiz kapalı seçenek; Bobby ve yedi toplam tekrar/gereksizlik adayı çıkarıldı.

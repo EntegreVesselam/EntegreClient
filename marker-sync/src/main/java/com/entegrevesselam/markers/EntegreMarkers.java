@@ -33,15 +33,20 @@ public final class EntegreMarkers implements ClientModInitializer {
         if (device != null) status = "waiting_server";
         if (!version("xaerominimap","26.6.0") || !version("xaeroworldmap","1.47.0")) { incompatible = true; status = "incompatible"; }
         else { try { layer = new XaeroLayer(client); } catch (LinkageError e) { incompatible = true; status = "incompatible"; } }
-        ClientCommandRegistrationCallback.EVENT.register((dispatcher, registry) -> dispatcher.register(literal("entegremarkers")
+        ClientCommandRegistrationCallback.EVENT.register((dispatcher, registry) -> registerCommands(dispatcher));
+        org.slf4j.LoggerFactory.getLogger("EntegreMarkers").info("Entegre Markers 0.2.2 initialized; client command registration callback installed; Xaero compatible={}", !incompatible);
+        ClientTickEvents.END_CLIENT_TICK.register(ignored -> tick());
+        ClientLifecycleEvents.CLIENT_STOPPING.register(ignored -> { stopped = true; pairEpoch++; state.close(); safeHide(); worker.shutdownNow(); });
+    }
+    private void registerCommands(com.mojang.brigadier.CommandDispatcher<net.fabricmc.fabric.api.client.command.v2.FabricClientCommandSource> dispatcher) {
+        var root = dispatcher.register(literal("entegremarkers")
             .executes(c -> { connectOrSync(); return 1; })
             .then(literal("status").executes(c -> { message(status); return 1; }))
             .then(literal("pair").executes(c -> { pair(); return 1; }))
             .then(literal("sync").executes(c -> { connectOrSync(); return 1; }))
-            .then(literal("forget").executes(c -> { forget(); return 1; }))));
-        org.slf4j.LoggerFactory.getLogger("EntegreMarkers").info("Entegre Markers 0.2.1 initialized; client command registration callback installed; Xaero compatible={}", !incompatible);
-        ClientTickEvents.END_CLIENT_TICK.register(ignored -> tick());
-        ClientLifecycleEvents.CLIENT_STOPPING.register(ignored -> { stopped = true; pairEpoch++; state.close(); safeHide(); worker.shutdownNow(); });
+            .then(literal("forget").executes(c -> { forget(); return 1; })));
+        Map.of("bagla","pair", "bağla","pair", "durum","status", "esitle","sync", "eşitle","sync", "unut","forget")
+            .forEach((alias, original) -> root.addChild(literal(alias).executes(root.getChild(original).getCommand()).build()));
     }
     private boolean version(String mod, String expected) { return FabricLoader.getInstance().getModContainer(mod).map(m -> expected.equals(m.getMetadata().getVersion().getFriendlyString())).orElse(false); }
     private void message(String key) { if (client.player != null) client.player.sendSystemMessage(Component.translatable("entegre_markers."+key)); }

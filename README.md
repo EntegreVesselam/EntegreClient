@@ -1,8 +1,8 @@
-# Entegre Client 2.4.5 — Minecraft 26.3
+# Entegre Client 2.4.6 — Minecraft 26.3
 
 Java **25**, Fabric **0.19.5**, LWJGL **3.4.3**, Intermediary **26.3**.
 
-[EntegreClient-v2.4.5.zip indir](https://github.com/EntegreVesselam/EntegreClient/releases/download/v2.4.5/EntegreClient-v2.4.5.zip)
+[EntegreClient-v2.4.6.zip indir](https://github.com/EntegreVesselam/EntegreClient/releases/download/v2.4.6/EntegreClient-v2.4.6.zip)
 ve Prism’de **Kurulum Ekle → İçe Aktar** ile ayrı profil olarak açın.
 Ardından Java 25 seçip başlatın. İlk açılışta modlar indirilir; sonraki
 güncellemeler aynı minecraft-26.3 kanalından gelir. Eski profilinizin üzerine
@@ -10,6 +10,17 @@ güncellemeler aynı minecraft-26.3 kanalından gelir. Eski profilinizin üzerin
 Açık minecraft-26.2 kanalını kullanan profiller 26.2’de kalır.
 
 ## Bu sürüm
+
+- Duyuru ve etkinlik kartları daha geniş, satır aralıkları daha rahattır.
+  Ana menüde tek güncel duyuru ve tek yaklaşan etkinlik gösterilir; tüm içerikler
+  için mevcut site bağlantıları kullanılır. Dar GUI boyutlarında kaydırma korunur.
+- macOS’ta başlıkların, alt bağlantıların ve sürüm yazısının kırpılması giderildi.
+- Entegre Markers 0.2.2: mesajlar varsayılan Türkçe; `bagla` / `bağla`, `durum`,
+  `esitle` / `eşitle`, `unut` komutları eklendi. Eski komutlar, mevcut eşleştirme ve
+  kişisel işaretler korunur. Minecraft genel dil tercihi değiştirilmez.
+- İstatistik hazırlığı bu sürüme dahil değildir.
+
+Önceki 2.4.5 paketinden korunanlar:
 
 - Bobby, Falling Leaves, Visuality, Clumps, Architectury API, üst düzey
   Text Placeholder API ve Packet Fixer çıkarıldı.
