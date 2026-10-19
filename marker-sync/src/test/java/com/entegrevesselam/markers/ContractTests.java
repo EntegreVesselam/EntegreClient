@@ -38,8 +38,36 @@ public final class ContractTests {
         check(state.needsApply(), "authorization recovery reapplies same revision");
         var late = state.begin(300000, true, true); state.close();
         check(!state.accept(late, 13), "shutdown drops late response");
-        testSnapshot(); testApi(); testStore(); testBody(); testPolling(); testOwnership(); testAppearance(); testPairingInvitation(); testServerAddresses();
+        testSnapshot(); testApi(); testStore(); testBody(); testPolling(); testOwnership(); testAppearance(); testPairingInvitation(); testServerAddresses(); testTurkishCommands(); testTurkishFallback();
         System.out.println("PASS state: epoch, revision, dimensions/subworld, auth, foreground, in-flight, shutdown");
+    }
+
+
+    static void testTurkishCommands() throws Exception {
+        var dispatcher = new com.mojang.brigadier.CommandDispatcher<net.fabricmc.fabric.api.client.command.v2.FabricClientCommandSource>();
+        var register = EntegreMarkers.class.getDeclaredMethod("registerCommands", com.mojang.brigadier.CommandDispatcher.class);
+        register.setAccessible(true);
+        register.invoke(new EntegreMarkers(), dispatcher);
+        var root = dispatcher.getRoot().getChild("entegremarkers");
+        check(root != null && root.getCommand() != null, "bare command remains executable");
+        for (var alias : Map.of("bagla","pair", "bağla","pair", "durum","status", "esitle","sync", "eşitle","sync", "unut","forget").entrySet()) {
+            var translated = root.getChild(alias.getKey());
+            var original = root.getChild(alias.getValue());
+            check(translated != null && original != null && original.getCommand() != null, "executable Turkish and English commands: " + alias);
+            check(translated.getCommand() == original.getCommand(), "alias must preserve original behavior: " + alias);
+            check(dispatcher.parse("entegremarkers " + alias.getKey(), null).getReader().getRemaining().isEmpty(), "Turkish alias parses completely");
+        }
+        System.out.println("PASS Turkish aliases: same callbacks as pair/status/sync/forget; ASCII and Turkish letters");
+    }
+    static void testTurkishFallback() throws Exception {
+        try (var tr = ContractTests.class.getResourceAsStream("/assets/entegre_markers/lang/tr_tr.json");
+             var fallback = ContractTests.class.getResourceAsStream("/assets/entegre_markers/lang/en_us.json")) {
+            var turkish = JsonParser.parseString(new String(tr.readAllBytes(), StandardCharsets.UTF_8)).getAsJsonObject();
+            var defaults = JsonParser.parseString(new String(fallback.readAllBytes(), StandardCharsets.UTF_8)).getAsJsonObject();
+            check(defaults.equals(turkish), "default fallback must display Turkish even when game language is English");
+            for (var entry : defaults.entrySet()) check(!entry.getValue().getAsString().isBlank(), "no missing message: " + entry.getKey());
+        }
+        System.out.println("PASS language resources: Turkish messages for Turkish and default fallback");
     }
 
     static void rejects(Runnable action, String label) { try { action.run(); } catch (RuntimeException expected) { return; } throw new AssertionError(label); }

@@ -12,7 +12,7 @@ from urllib.parse import urlsplit
 
 
 HASH_FORMATS = {"md5", "sha1", "sha256", "sha384", "sha512"}
-EXCLUDED_DIRS = {".git", ".claude", "scripts", "docs", "__pycache__", "compatibility", "launcher"}
+EXCLUDED_DIRS = {".git", ".claude", "scripts", "tests", "docs", "__pycache__", "compatibility", "launcher"}
 EXCLUDED_NAMES = {"readme.md", "changelog.md", ".ds_store", "servers.dat_old"}
 
 

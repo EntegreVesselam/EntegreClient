@@ -47,7 +47,7 @@ marker-sync/build/
 marker-sync/run/
 
 # Locally built Entegre bridge is bundled; downloaded third-party JARs remain excluded.
-!mods/entegre-markers-0.2.1.jar
+!mods/entegre-markers-0.2.2.jar
 
 
 # Python maintenance cache
