@@ -1,29 +1,54 @@
-# Entegre Client 2.4.4 — Minecraft 26.3
+# Entegre Client 2.4.5 — Minecraft 26.3
 
-Varsayılan tek kurulum paketi artık Minecraft **26.3** kullanır.
-Java **25**, Fabric **0.19.5**, LWJGL **3.4.3** ve Intermediary **26.3** hazırdır.
+Java **25**, Fabric **0.19.5**, LWJGL **3.4.3**, Intermediary **26.3**.
 
-[EntegreClient-v2.4.4.zip indir](https://github.com/EntegreVesselam/EntegreClient/releases/download/v2.4.4/EntegreClient-v2.4.4.zip)
-ve Prism’de **Kurulum Ekle / Add Instance → İçe Aktar / Import** ile açın.
-Profil adı **Entegre Client**. ZIP’i eski profilin üstüne çıkarmayın;
-eski profili harita, ayar ve kayıtlı dünyalarıyla saklayın. Yeni profilin ilk
-açılışında modlar indirilir; sonraki güncellemeler minecraft-26.3 kanalından gelir.
-Mevcut açıkça minecraft-26.2 kanalını kullanan profiller 26.2’de kalır;
-26.3’e geçmek için güncel tek ZIP’i ayrı profil olarak içe aktarın.
+[EntegreClient-v2.4.5.zip indir](https://github.com/EntegreVesselam/EntegreClient/releases/download/v2.4.5/EntegreClient-v2.4.5.zip)
+ve Prism’de **Kurulum Ekle → İçe Aktar** ile ayrı profil olarak açın.
+Ardından Java 25 seçip başlatın. İlk açılışta modlar indirilir; sonraki
+güncellemeler aynı minecraft-26.3 kanalından gelir. Eski profilinizin üzerine
+çıkarmayın; dünyalarınızı, haritalarınızı ve ayarlarınızı koruyun.
+Açık minecraft-26.2 kanalını kullanan profiller 26.2’de kalır.
 
-**Voxy:** Kullanıcının ilettiği 0.2.20-beta-23b3486 JAR’ı içerilir.
-Voxy Extra ve Voxy WorldGen için 26.3 uyumlu yayın bulunmadığından kapalıdır.
-26.2 modlarını 26.3’e zorla yükleyen sürüm geçersiz kılmaları kullanılmaz.
-Gerçek GPU LOD çizimi ve canlı sunucu LOD akışı doğrulanmadı.
+## Bu sürüm
 
-Varsayılan sunucu hem ad hem gerçek IP alanında **entegrevesselam.com**.
-**entegrevesselam.com** ve **ugurdindar.com**, büyük harf ve açık **:25565**
-biçimleriyle marker bağlama/eşitleme için kabul edilir. API asıl alan adında kalır.
-Yeni ZIP doğru fabrika sunucu kaydını içerir; mevcut kişisel sunucu listeleri
-preserve=true ile korunur. Harita/LOD/ayar dosyaları paketlenmez veya taşınmaz.
+- Bobby, Falling Leaves, Visuality, Clumps, Architectury API, üst düzey
+  Text Placeholder API ve Packet Fixer çıkarıldı.
+- Kullanıcının dağıtım izni bulunduğunu doğruladığı özel
+  [Voxy 0.2.20-beta](https://modrinth.com/mod/voxy), commit `3c8b67de`, korunur.
+  Bu dosya aynı adla yayımlanmış farklı Modrinth derlemesiyle değiştirilmedi.
+- [Freecam 1.5.0](https://modrinth.com/mod/freecam),
+  [Particle Rain 4.0.2](https://modrinth.com/mod/particle-rain),
+  [Icons 1.14](https://modrinth.com/resourcepack/icons) ve
+  [Even Better Enchants v3](https://modrinth.com/resourcepack/even-better-enchants) eklendi.
+  Modrinth içerikleri özgün CDN adreslerinden indirilir.
+- NoTotemOfUndyingOnOffHand, QuietThunderPack ve
+  TurtlePumpkinPackByEminGT etkin. Bu kullanıcı paketlerinin yalnız metadata’sı
+  kaynak biçimi 97.1’e uyarlandı; model, ses ve dokuları korundu.
+- Ana menüde Tek Oyunculu en üstte; oyun, haber ve etkinlikler ayrı kartlarda.
+  Galeri/Wallpaper bağlantıları ve toplam 16 topluluk slaytı vardır.
 
-Eski main adresini kullanan güncel motorun varsayılan geçiş hedefi artık26.3’tür.
-main, eski motorlara uyumlu teslim metadata’sını korur; güncel oyun/mod paketi
-minecraft-26.3 kanalındadır. Önceki Prism Intermediary ve sürüm cache düzeltmeleri,
-haber/etkinlik menüsü, Friends düzeltmesi ve186 kalıcı koruma kaydı korunur.
-Windows’ta gerçek Prism kullanıcı kabulü henüz yapılmadı.
+## Mod seçenekleri ve kişisel ayarlar
+
+Yeni profilde 60 üst düzey mod kurulur; sekiz seçenek varsayılan kapalıdır:
+Controlify, Sound Physics Remastered, Presence Footsteps, 3D Skin Layers,
+Not Enough Animations, Smooth Swapping, Capes ve Shoulder Surfing.
+Tüm seçenekler açıkken 68 mod vardır; gömülü kütüphaneler bu sayıya dahil değildir.
+Güncelleyici seçenek ekranı veya `--settings` ile tercihler değiştirilebilir.
+Mevcut isteğe bağlı mod seçimleri korunur; eski zorunlu Controlify yeni
+isteğe bağlı duruma geçerken varsayılan kapalı olur.
+
+Yeni profil Voxy SSAO Basic ve daha seyrek Particle Rain efektleri kullanır.
+Thread sayısı otomatik kalır; Sodium 0.9.2 ve Iris 1.11.7 korunur.
+`options.txt`, Voxy/Particle Rain ayarları ve kayıtlı sunucu listesi
+`preserve=true` ile mevcut kişisel dosyaların üzerine yazılmaz.
+Harita/LOD önbelleği veya oyuncu verileri paketlenmez ve silinmez.
+186 kalıcı uyumluluk kaydı korunur. Varsayılan sunucu `entegrevesselam.com`;
+marker eşitlemesi `entegrevesselam.com` ve `ugurdindar.com` adreslerini destekler.
+
+## Doğrulama sınırı
+
+Paket/hash, bağımlılık çözümü, güncelleyici seçimleri, veri koruması ve menü
+geometrisi kontrol edildi. Tarayıcı tasarım önizlemesi gerçek Minecraft
+çizimi değildir. Bu sürüm için ölçülmüş FPS artışı, canlı Voxy LOD akışı veya
+Windows Prism uçtan uca kabulü iddia edilmiyor. Even Better Enchants v3
+resmî sürüm listesinde 26.3 etiketi taşımıyor.

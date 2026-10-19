@@ -63,7 +63,7 @@ damageTiltStrength:1.0
 highContrast:false
 highContrastBlockOutline:false
 narratorHotkey:true
-resourcePacks:[]
+resourcePacks:["vanilla","fabric","file/Icons v.1.14.zip","file/EvenBetterEnchants_v3_1.21.5+.zip","file/NoTotemOfUndyingOnOffHand-26.3.zip","file/QuietThunderPack-26.3.zip","file/TurtlePumpkinPackByEminGT-26.3.zip"]
 incompatibleResourcePacks:[]
 lastServer:
 lang:en_us

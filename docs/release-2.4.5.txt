@@ -1,0 +1,23 @@
+# EntegreClient 2.4.5 — Minecraft 26.3
+
+[EntegreClient-v2.4.5.zip indir](https://github.com/EntegreVesselam/EntegreClient/releases/download/v2.4.5/EntegreClient-v2.4.5.zip)
+
+ZIP’i Prism’de Kurulum Ekle → İçe Aktar ile ayrı profil olarak açın ve
+Java 25 seçin. İlk açılışta modlar indirilir. Eski profilin üzerine çıkarmayın.
+
+Bobby ve gereksiz/tekrarlayan modlar çıkarıldı; yeni profilde 60 mod,
+varsayılan kapalı sekiz seçenekle birlikte toplam 68 mod var.
+Freecam, Particle Rain, Icons ve Even Better Enchants eklendi.
+Dağıtım izinli özel Voxy 0.2.20-beta / 3c8b67de korundu.
+NoTotemOfUndyingOnOffHand, QuietThunderPack ve TurtlePumpkinPackByEminGT etkin.
+Ana menü yenilendi; Tek Oyunculu en üstte, ayrı duyuru/etkinlik kartları,
+Wallpaper bağlantısı ve 16 topluluk slaytı var.
+
+Mevcut ayarlar, mod tercihleri, dünyalar ve harita/LOD verileri korunur.
+Yeni varsayılan Basic SSAO/düşük yağmur ayarları eski kişisel configleri ezmez.
+26.2 kanalı ayrı kalır. Mevcut 26.3 kanalı bu sürüme güncellenir.
+
+Paket/hash, bağımlılık çözümü, güncelleyici ve veri koruma kontrolleri geçti;
+menü geometri ve tarayıcı tasarım önizlemesi kontrol edildi.
+Oyun içi FPS/GPU/LOD veya Windows Prism uçtan uca kabulü iddia edilmez.
+Even Better Enchants v3 resmî listesinde henüz 26.3 etiketi taşımıyor.

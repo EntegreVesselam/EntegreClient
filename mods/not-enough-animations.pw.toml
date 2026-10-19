@@ -12,6 +12,8 @@ hash = "a27a2cf8caa57a15871cd1a2c2f37fa1b1f4a55b25345306b87989c3b5030e4d4409c6b5
 mod-id = "MPCX6s5C"
 version = "EhSk2OTD"
 
+
 [option]
 optional = true
-default = true
+default = false
+description = "Ek oyuncu animasyonlari. Kozmetik; varsayilan kapali."

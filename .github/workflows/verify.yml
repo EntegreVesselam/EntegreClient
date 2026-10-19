@@ -2,7 +2,7 @@ name: Verify packwiz distribution
 on:
   pull_request:
   push:
-    branches: [main]
+    branches: [main, minecraft-26.3]
 permissions:
   contents: read
 jobs:
