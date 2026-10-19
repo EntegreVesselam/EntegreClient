@@ -12,6 +12,8 @@ hash = "c6bbe6e2018a19fa98e9590f17feeac17ccea4eb2327f23915a4c112f4a7ed99220f99b9
 mod-id = "qyVF9oeo"
 version = "9loJgQlO"
 
+
 [option]
 optional = true
-default = true
+default = false
+description = "Yanki ve ses yayilimi. Ek islemci yukunu azaltmak icin varsayilan kapali."

@@ -1,3 +1,11 @@
+# 2.4.5 — Sadeleştirme, QOL ve yeni menü (2026-10-20)
+
+- Varsayılan 60 mod, sekiz kapalı seçenek; Bobby ve yedi toplam tekrar/gereksizlik adayı çıkarıldı.
+- Özel izinli Voxy beta, Freecam/Particle Rain ve Icons/Even Better Enchants.
+- NoTotem, QuietThunder ve TurtlePumpkin paketleri; 16 slayt ve yenilenen menü.
+- Kişisel ayarlar, eski seçenekler ve 186 uyumluluk kaydı korunur.
+- Ölçülmüş FPS kazanımı veya yeni canlı oyun kabulü iddia edilmez.
+
 #2.4.4 — Varsayılan Minecraft26.3 (2026-10-19)
 
 - Tek ZIP doğrudan26.3 profili oluşturur.

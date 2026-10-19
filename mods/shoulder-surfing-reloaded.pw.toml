@@ -12,6 +12,8 @@ hash = "3d813b04778300bdb387cf803ff326c1748e24bb4ad4e7556a9c649e5c116ae0935b4eb0
 mod-id = "kepjj2sy"
 version = "sEg9bfXx"
 
+
 [option]
 optional = true
-default = true
+default = false
+description = "Omuz ustu ucuncu sahis kamerasi. Freecam ayri bir moddur; bu secenek varsayilan kapali."

@@ -11,3 +11,9 @@ hash = "cd4e64a9621dff200329b249dc63fc4542ce554db16c75c4b04cfa7495bf84e1a4bca0f8
 [update.modrinth]
 mod-id = "DOUdJVEm"
 version = "fo76vL20"
+
+
+[option]
+optional = true
+default = false
+description = "Gamepad destegi. Klavye/fare kullaniyorsan kapali tut."

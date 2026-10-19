@@ -1,0 +1,9 @@
+{
+  "perf": {
+    "maxParticleAmount": 600,
+    "particleDensity": 35,
+    "particleStormDensity": 50,
+    "particleDistance": 12,
+    "surfaceRange": 48
+  }
+}

@@ -12,6 +12,8 @@ hash = "70525da0c631f50608b67ecdfe62fd9410fdec7bc95510946716a6465cc109fe6b93be7c
 mod-id = "rcTfTZr3"
 version = "UUNiN7Tm"
 
+
 [option]
 optional = true
-default = true
+default = false
+description = "Gelismis ayak sesi efektleri. Hafif kurulumda varsayilan kapali."

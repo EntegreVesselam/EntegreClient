@@ -12,6 +12,8 @@ hash = "1a93ba9f726f8053e111abbe225f67b85e74bdfb78955711218ef103e670bc2c0f011f59
 mod-id = "zV5r3pPn"
 version = "gjM2TO0L"
 
+
 [option]
 optional = true
-default = true
+default = false
+description = "Kaplamalarda uc boyutlu katmanlar. Kozmetik; varsayilan kapali."

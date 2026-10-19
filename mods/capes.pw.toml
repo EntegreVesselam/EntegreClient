@@ -12,6 +12,8 @@ hash = "12b75d29294999759f78dfc7bb60ff3594a020e99dea660b1f199537e76278b2f4963e85
 mod-id = "89Wsn8GD"
 version = "I89rLLKh"
 
+
 [option]
 optional = true
-default = true
+default = false
+description = "Ek pelerin destegi. Kozmetik; varsayilan kapali."
