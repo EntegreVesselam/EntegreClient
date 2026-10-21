@@ -6,7 +6,7 @@ const root=new URL('./',import.meta.url)
 const geometry=JSON.parse(readFileSync(new URL('geometry.json',root),'utf8'))
 const browser=await chromium.launch({channel:'chrome',headless:true})
 const escape=s=>s.replaceAll('&','&amp;').replaceAll('<','&lt;').replaceAll('"','&quot;')
-const newsTitle='Entegre Client 2.4.6: daha okunaklı ana menü ve Türkçe harita işaretleri'
+const newsTitle='Entegre Client 2.4.7: daha okunaklı ana menü ve Türkçe harita işaretleri'
 const newsSummary='Tek paket: Prism’de Kurulum Ekle → İçe Aktar ile ZIP’i ekleyin. Ayrıntılar duyuru sayfasında.'
 const eventTitle='Yeni ENTEGRE sistemini kutluyoruz: topluluk buluşması ve ortak keşif'
 try {
@@ -24,7 +24,7 @@ try {
    panel('community-links','Pano · Harita'),panel('community-wallpapers','Galeri · Wallpaper'),
    panel('community-news-title','DUYURULAR','heading'),feed('community-news-feed',newsTitle,newsSummary),button('community-all-news','Tüm duyurular ›'),
    panel('community-events-title','ETKİNLİKLER','heading event'),feed('community-events-feed',eventTitle,'24.10.2026 — 21:00 TSİ'),button('community-all-events','Tüm etkinlikler ›'),
-   panel('community-version','Entegre Client 2.4.6 | 26.3')
+   panel('community-version','Entegre Client 2.4.7 | 26.3')
   ].join('')
   await page.setContent(`<!doctype html><meta charset="utf-8"><style>*{box-sizing:border-box}html{scroll-behavior:auto}body{margin:0;background:#15251e;color:#edf2e9;font:14px/1.5 system-ui}.notice{padding:12px;height:112px;overflow:hidden} .stage{position:relative;transform-origin:top left;background:linear-gradient(135deg,#283d32,#1c2d28);font:9px/11px monospace;letter-spacing:.6px}.box{position:absolute}.panel{background:#0c1a17ed;border-top:2px solid #c8acf0}.news{border-color:#bce095}.events{border-color:#e8c98f}.logo{color:#c8acf0;font-size:30px;line-height:32px}.vesselam{color:#c8acf0;font-size:12px}.heading{color:#bce095;padding-top:3px}.event{color:#e8c98f}.feed{padding:3px 5px}.scroll{height:100%;overflow:auto;overflow-wrap:anywhere;scrollbar-width:thin;scrollbar-color:#46594d transparent}.scroll a{color:#bce095;text-decoration:none}.scroll:focus-visible,button:focus-visible{outline:2px solid #e8c98f;outline-offset:0}button{width:100%;height:100%;border:1px solid #56735e;background:#162e25;color:#edf2e9;font:inherit;letter-spacing:inherit;cursor:pointer}</style><div class="notice">Tarayıcı maketi — gerçek oyun görüntüsü değildir.<br>${gui} GUI → ${physicalWidth}px önizleme. Dar GUI’de metin alanları kaydırılabilir.</div><div style="width:${physicalWidth}px;height:${gh*scale}px;overflow:hidden"><div class="stage" style="width:${gw}px;height:${gh}px;transform:scale(${scale})">${body}</div></div>`)
   assert(await page.evaluate(()=>document.documentElement.scrollWidth<=innerWidth),'No physical preview overflow')

@@ -63,6 +63,24 @@ duplicate_pack('duplicate-retired-unchanged','1',retire=True)
 duplicate_pack('duplicate-retired-updated','2',retire=True)
 duplicate_pack('duplicate-unsafe-remove','1',remove=True)
 
+def direct_to_metadata_pack(label,payload,metadata=False,filename='shared.jar'):
+    destination='mods/'+filename
+    if metadata:
+        uri='/binary/'+label+'.jar';served[uri]=payload
+        content=('name = "Synthetic official mod"\nfilename = "'+filename+'"\nside = "client"\n[download]\nurl = "'+base+uri+'"\nhash-format = "sha256"\nhash = "'+sha(payload)+'"\n').encode()
+        source='mods/official.pw.toml';served['/'+label+'/'+source]=content
+    else:
+        source=destination;content=payload;served['/'+label+'/'+source]=payload
+    index=('hash-format = "sha256"\n[[files]]\nfile = "'+source+'"\nhash = "'+sha(content)+'"\nmetafile = '+str(metadata).lower()+'\n').encode()
+    served['/'+label+'/index.toml']=index
+    served['/'+label+'/pack.toml']=('name = "Synthetic direct to metadata"\npack-format = "packwiz:1.1.0"\nversion = "'+label+'"\n[index]\nfile = "index.toml"\nhash-format = "sha256"\nhash = "'+sha(index)+'"\n').encode()
+
+direct_to_metadata_pack('direct-old',b'synthetic-official-1')
+direct_to_metadata_pack('metadata-same-unchanged',b'synthetic-official-1',metadata=True)
+direct_to_metadata_pack('metadata-same-changed',b'synthetic-official-2',metadata=True)
+direct_to_metadata_pack('metadata-renamed-unchanged',b'synthetic-official-1',metadata=True,filename='shared-official.jar')
+direct_to_metadata_pack('metadata-renamed-changed',b'synthetic-official-2',metadata=True,filename='shared-official.jar')
+
 def run(instance,label):
     instance.mkdir(parents=True,exist_ok=True)
     result=subprocess.run([JAVA,'-Djava.awt.headless=true','-cp',JAR,'link.infra.packwiz.installer.Main','-g','--pack-folder',str(instance),'--multimc-folder',str(root/'no-launcher'),base+'/'+label+'/pack.toml'],cwd=instance,stdout=subprocess.PIPE,stderr=subprocess.STDOUT,timeout=30)
@@ -113,6 +131,35 @@ try:
     run(duplicate_control,'duplicate-unsafe-remove')
     assert not (duplicate_control/'mods/shared.jar').exists()
     print('PASS duplicate destructive control: removing duplicate URI deletes the unchanged primary JAR after its cache validation')
+    direct=root/'direct-installation';run(direct,'direct-old')
+    sentinel=direct/'unmanaged-test.bin';sentinel.write_bytes(b'SYNTHETIC UNMANAGED SETTINGS\x00\xff')
+    for label,filename,payload in [
+        ('metadata-same-unchanged','shared.jar',b'synthetic-official-1'),
+        ('metadata-same-changed','shared.jar',b'synthetic-official-2'),
+        ('metadata-renamed-unchanged','shared-official.jar',b'synthetic-official-1'),
+        ('metadata-renamed-changed','shared-official.jar',b'synthetic-official-2'),
+    ]:
+        converted=root/('direct-to-'+label);shutil.copytree(direct,converted)
+        for _ in range(2):
+            run(converted,label)
+            assert (converted/'mods'/filename).is_file(), 'Direct JAR -> metadata deleted the new payload: '+label
+            assert (converted/'mods'/filename).read_bytes()==payload,label
+            assert (converted/'unmanaged-test.bin').read_bytes()==sentinel.read_bytes(),label
+            if filename!='shared.jar':assert not (converted/'mods/shared.jar').exists(),label
+        converted_manifest=json.loads((converted/'packwiz.json').read_text())
+        assert 'mods/shared.jar' not in converted_manifest['cachedFiles'],label
+        assert converted_manifest['cachedFiles']['mods/official.pw.toml']['cachedLocation']=='mods/'+filename,label
+        print('PASS direct JAR -> metadata and repeat: '+label+'; payload/hash, sole ownership and unmanaged sentinel preserved',flush=True)
+    for label,filename,payload in [
+        ('metadata-same-changed','shared.jar',b'synthetic-official-2'),
+        ('metadata-renamed-changed','shared-official.jar',b'synthetic-official-2'),
+    ]:
+        fresh_metadata=root/('fresh-'+label)
+        for _ in range(2):
+            run(fresh_metadata,label)
+            assert (fresh_metadata/'mods'/filename).read_bytes()==payload,label
+            if filename!='shared.jar':assert not (fresh_metadata/'mods/shared.jar').exists(),label
+        print('PASS fresh metadata installation and repeat: '+label,flush=True)
     print('PASS installer version v0.5.14; SHA256 '+sha(pathlib.Path(JAR).read_bytes()))
     if args.keep: print('EVIDENCE '+str(root))
 finally:

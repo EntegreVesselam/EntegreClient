@@ -1,8 +1,8 @@
-# Entegre Client 2.4.6 — Minecraft 26.3
+# Entegre Client 2.4.7 — Minecraft 26.3
 
 Java **25**, Fabric **0.19.5**, LWJGL **3.4.3**, Intermediary **26.3**.
 
-[EntegreClient-v2.4.6.zip indir](https://github.com/EntegreVesselam/EntegreClient/releases/download/v2.4.6/EntegreClient-v2.4.6.zip)
+[EntegreClient-v2.4.7.zip indir](https://github.com/EntegreVesselam/EntegreClient/releases/download/v2.4.7/EntegreClient-v2.4.7.zip)
 ve Prism’de **Kurulum Ekle → İçe Aktar** ile ayrı profil olarak açın.
 Ardından Java 25 seçip başlatın. İlk açılışta modlar indirilir; sonraki
 güncellemeler aynı minecraft-26.3 kanalından gelir. Eski profilinizin üzerine
@@ -10,6 +10,16 @@ güncellemeler aynı minecraft-26.3 kanalından gelir. Eski profilinizin üzerin
 Açık minecraft-26.2 kanalını kullanan profiller 26.2’de kalır.
 
 ## Bu sürüm
+
+- [Voxy 0.2.20-beta](https://modrinth.com/mod/voxy/version/iIrM8ZKQ), resmi
+  Minecraft 26.3 derlemesine (`5bf33350`) taşındı. Özel beta yerine resmi CDN
+  kullanılır; sürüm adı aynı olsa da dosya hash'i değişti.
+- Fabric API **0.164.0**, Freecam **1.5.1**, Xaero Minimap **26.6.1** ve
+  Xaero World Map **1.47.1** güncellendi. Xaero modları birlikte güncellenir.
+- Sodium **0.9.2**, Iris **1.11.7** ve Reese's Sodium Options **2.2.5** korunur.
+  JVM/RAM/thread ayarları zorlanmaz. Bu sürüm için ölçülmüş FPS kazancı yoktur.
+
+Önceki 2.4.6 paketinden korunanlar:
 
 - Duyuru ve etkinlik kartları daha geniş, satır aralıkları daha rahattır.
   Ana menüde tek güncel duyuru ve tek yaklaşan etkinlik gösterilir; tüm içerikler
@@ -24,11 +34,7 @@ Açık minecraft-26.2 kanalını kullanan profiller 26.2’de kalır.
 
 - Bobby, Falling Leaves, Visuality, Clumps, Architectury API, üst düzey
   Text Placeholder API ve Packet Fixer çıkarıldı.
-- Kullanıcının dağıtım izni bulunduğunu doğruladığı özel
-  [Voxy 0.2.20-beta](https://modrinth.com/mod/voxy), commit `3c8b67de`, korunur.
-  Bu dosya aynı adla yayımlanmış farklı Modrinth derlemesiyle değiştirilmedi.
-- [Freecam 1.5.0](https://modrinth.com/mod/freecam),
-  [Particle Rain 4.0.2](https://modrinth.com/mod/particle-rain),
+- [Particle Rain 4.0.2](https://modrinth.com/mod/particle-rain),
   [Icons 1.14](https://modrinth.com/resourcepack/icons) ve
   [Even Better Enchants v3](https://modrinth.com/resourcepack/even-better-enchants) eklendi.
   Modrinth içerikleri özgün CDN adreslerinden indirilir.

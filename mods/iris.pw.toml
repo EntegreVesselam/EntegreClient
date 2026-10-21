@@ -1,7 +1,7 @@
 name = "Iris Shaders"
 filename = "iris-fabric-1.11.7+mc26.3.jar"
 side = "client"
-# Keep this rendering stack together for the supplied Voxy 0.2.20-beta (23b3486).
+# Keep this rendering stack together for the official Voxy 0.2.20-beta (5bf33350).
 pin = true
 
 [download]

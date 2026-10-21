@@ -214,7 +214,7 @@ hash = "40ea43c356edcdf436453b4425e3e44200bb443231653c5cd1b0ce2eb1c9e99b"
 
 [[files]]
 file = "config/fancymenu/customization/entegre_title_screen.txt"
-hash = "bd11a8ffcd495709e2f8f95c9c3e39c93e856a0d4aecf76f95c32494f6010d30"
+hash = "c14334c889c7aeb73ccf9488f8cfcb5017b115763e3a43c4e6f24787216eefba"
 
 [[files]]
 file = "config/fancymenu/layout_editor/widgets/element_layer_control.lewidget"
@@ -592,7 +592,7 @@ metafile = true
 
 [[files]]
 file = "mods/fabric-api.pw.toml"
-hash = "a246c572592eaca1ab67690297bbd2acc3a3c13662aa1691594f9cf7dfec615b"
+hash = "d75ccfdffed96491ef63e43cddcf6be7056394cc47014cc10fc50c6b6c2c2848"
 metafile = true
 
 [[files]]
@@ -622,7 +622,7 @@ metafile = true
 
 [[files]]
 file = "mods/freecam.pw.toml"
-hash = "c22fcc6aa11d759af4546582764d5da52c50bf2cef4a98bacd0175b0b728cfff"
+hash = "956925160888e1f05887dc1a5a97ba91ce0288b967d4d1dc826af52c737b1a29"
 metafile = true
 
 [[files]]
@@ -637,7 +637,7 @@ metafile = true
 
 [[files]]
 file = "mods/iris.pw.toml"
-hash = "525d31031ede2f67b610f1147331146769c341066af979f742166a6b32e4b7dc"
+hash = "57e42eae06a4e418b498e52fc79e27d60b9eaca91462bc47a72f3e4be79e679f"
 metafile = true
 
 [[files]]
@@ -737,7 +737,7 @@ metafile = true
 
 [[files]]
 file = "mods/reeses-sodium-options.pw.toml"
-hash = "cf2fdd5a95bd207f407ce6f14bb33242acb23c1a9c76afb2b689710b148edc91"
+hash = "9c4384e7d4fa5ea62d5bde4614de34b1f7ea51ac76954c465dcf058bbcadce63"
 metafile = true
 
 [[files]]
@@ -772,7 +772,7 @@ metafile = true
 
 [[files]]
 file = "mods/sodium.pw.toml"
-hash = "64f308289adc48ea19e65f15377750905248d39b2033d5eeb520027738851484"
+hash = "244e69667d72b27645be4384e1466cdd99fd9d67a2337cf4eb671df87b1c4845"
 metafile = true
 
 [[files]]
@@ -801,22 +801,23 @@ hash = "f0f8fdabdec243780c8d6841461b8f79fa4feaf6bb4f354f21991cd6ed0ae3fa"
 metafile = true
 
 [[files]]
-file = "mods/voxy-0.2.20-beta.jar"
-hash = "13ffa1c90141c27080b86c330a34726dc3304dfd83a082b0483091d2fcb8b6f7"
-
-[[files]]
 file = "mods/voxy-server-side.pw.toml"
 hash = "2f9e52ece1cbbf856d1ce429422f96c32ea35ae78e57ae3a87afc64bc570cb42"
 metafile = true
 
 [[files]]
+file = "mods/voxy.pw.toml"
+hash = "d35cddd9099cbeead6107353de0136672b883dce59df0017ec938db87a531270"
+metafile = true
+
+[[files]]
 file = "mods/xaeros-minimap.pw.toml"
-hash = "53a16e79ffc48f29b54f8eccb04bc1d35e8bc181c0c912ffbaa819078401be98"
+hash = "0c79b87ea6400574bf94ff1e989fdea8ad92f3a9c429042a7675c97d06d145a7"
 metafile = true
 
 [[files]]
 file = "mods/xaeros-world-map.pw.toml"
-hash = "7e306b02e3be0f8a7013a9c7ddb233605c87580cc39d120c1aca82ae53393af5"
+hash = "bbaed0a98d8cfe6a4bb08b8284d6a7232328cc3a63962cf09312f442d6b039cc"
 metafile = true
 
 [[files]]

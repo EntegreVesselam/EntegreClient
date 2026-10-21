@@ -20,7 +20,7 @@ for kind, block in BLOCKS:
         assert hashlib.sha256(canonical.encode()).hexdigest() == BASELINE[name], name + ': native actions/labels/hide guards changed'
 assert 'statistics' not in SOURCE
 assert 'slideshow_name = community-memories' in SOURCE
-assert 'source = Entegre Client 2.4.6 | 26.3' in SOURCE
+assert 'source = Entegre Client 2.4.7 | 26.3' in SOURCE
 
 
 def value(fields, key, width, height):

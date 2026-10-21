@@ -515,7 +515,7 @@ element {
 }
 
 element {
-  source = Entegre Client 2.4.6 | 26.3
+  source = Entegre Client 2.4.7 | 26.3
   source_mode = direct
   interactable = false
   shadow = true
