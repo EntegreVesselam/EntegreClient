@@ -62,6 +62,3 @@ entegre-updater/*backup*
 .entegre-updater-disabled
 .entegre-bootstrap-*
 !mods/entegre-updater-transition-0.1.0.jar
-
-# User-provided beta is included only in the 26.3 channel.
-!mods/voxy-0.2.20-beta.jar

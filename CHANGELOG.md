@@ -1,3 +1,11 @@
+# 2.4.7 — Resmi Voxy ve bağımlılık güncellemeleri (2026-10-21)
+
+- Özel Voxy beta yerine resmi Minecraft 26.3 betası (`5bf33350`) kullanılır.
+- Fabric API 0.164.0, Freecam 1.5.1, Xaero Minimap 26.6.1 ve World Map 1.47.1.
+- Sodium 0.9.2 / Iris 1.11.7 / Reese 2.2.5 uyumluluk grubu korunur.
+- 60 varsayılan açık / 8 kapalı seçenek, Markers 0.2.2 ve kişisel ayarlar korunur.
+- JVM/RAM/thread ayarları zorlanmaz; oyun içi FPS kazancı ölçülmedi.
+
 # 2.4.6 — Okunabilir menü ve Türkçe Markers (2026-10-20)
 
 - Duyuru/etkinlik sütunu genişletildi; tek duyuru ve tek yaklaşan etkinlik için
